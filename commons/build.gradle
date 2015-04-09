@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+	jcenter()
+    // mavenCentral()
+}
+
+dependencies {
+    compile 'commons-io:commons-io:2.4'
+}
+
+task runComposite(type: JavaExec, dependsOn: 'classes') {
+   main = 'CompositeFileComparatorExample'
+   classpath = sourceSets.main.runtimeClasspath
+}
+
+task runLastMod(type: JavaExec, dependsOn: 'classes') {
+   main = 'LastModFileComparatorExample'
+   classpath = sourceSets.main.runtimeClasspath
+}
+
+task runModFilter(type: JavaExec, dependsOn: 'classes') {
+   main = 'AgeFileFilterTest'
+   classpath = sourceSets.main.runtimeClasspath
+}
+
+task runAll(dependsOn: ['runComposite', 'runLastMod'])
+
+

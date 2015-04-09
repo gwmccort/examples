@@ -1,0 +1,39 @@
+
+buildscript {
+  repositories {
+    jcenter()
+  }
+
+  dependencies {
+    classpath 'com.github.ben-manes:gradle-versions-plugin:0.8'
+  }
+}
+
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+apply plugin: 'com.github.ben-manes.versions'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	compile localGroovy()
+	
+	//////// spock depends ////////
+	//problem w/ eclipse: 
+	//testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+	//works in eclipse:
+	testCompile 'org.spockframework:spock-core:1.0-groovy-2.3', {
+		exclude module: "groovy-all" // avoid version missmatch
+	}
+	//old version
+	//testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+
+}
+
+
+task runGroovyVersion (type: JavaExec) {
+    main = 'printVersion'
+    classpath = sourceSets.main.runtimeClasspath
+}

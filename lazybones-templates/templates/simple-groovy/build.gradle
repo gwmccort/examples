@@ -1,0 +1,14 @@
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+mainClassName = "HelloWorld"
+
+repositories {
+      mavenCentral()
+}
+
+dependencies {
+      compile 'org.codehaus.groovy:groovy-all:2.2.0'
+}
+
+defaultTasks 'run'

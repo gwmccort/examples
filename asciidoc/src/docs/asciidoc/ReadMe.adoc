@@ -1,0 +1,34 @@
+= Example from Awesome Asciidoctor
+
+From mrhaki http://mrhaki.blogspot.com/search/label/Awesome%3AAsciidoctor[Awsome Asciidoctor blog]
+
+== http://mrhaki.blogspot.com/2015/04/awesome-asciidoctor-display-keyboard.html[Display Keyboard Shortcuts]
+
+=== Keyboard macro
+
+With the keyboard macro `kbd:[shortcut]`
+we can include nicely formatted keyboard
+shortcuts.
+
+// We must enable experimental attribute.
+:experimental:
+
+// Define unicode for Apple Command key.
+:commandkey: &#89w84;
+
+Press kbd:[{commandkey} + 1] or kbd:[Ctrl + 1] 
+to access the _Project_ view.
+
+To zoom out press kbd:[Ctrl + -].
+
+Find files with kbd:[Ctrl + Alt + N] or kbd:[{commandkey} + Shift + N].
+
+== http://mrhaki.blogspot.com/2014/04/awesome-asciidoc-include-partial-parts.html[Include Partial Parts from Code Samples]
+
+=== Sample Asciidoc
+
+[source,groovy]
+.Sample.groovy
+----
+include::Sample.groovy[tags=helloMethod]
+----

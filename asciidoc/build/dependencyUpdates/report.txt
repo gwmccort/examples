@@ -1,0 +1,14 @@
+
+------------------------------------------------------------
+: Project Dependency Updates (report to plain text file)
+------------------------------------------------------------
+
+The following dependencies are using the latest milestone version:
+ - com.github.ben-manes:gradle-versions-plugin:0.9
+ - org.asciidoctor:asciidoctorj:1.5.2
+ - org.asciidoctor:asciidoctorj-groovy-dsl:1.0.0.preview2
+
+All dependencies are using the latest milestone versions.
+
+Failed to determine the latest version for the following dependencies (use --info for details):
+ - org.asciidoctor:asciidoctor-gradle-plugin

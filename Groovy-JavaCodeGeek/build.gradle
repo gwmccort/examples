@@ -5,9 +5,19 @@ plugins {
 	id 'com.github.ben-manes.versions' version '0.11.3'
 }
 
-dependencies { compile localGroovy() //compile 'org.codehaus.groovy:groovy-all:2.3.10'
+dependencies { 
+	compile localGroovy() 
+	//compile 'org.codehaus.groovy:groovy-all:2.3.10'
 }
 
-// asciidoctor {
-// 	sources { include 'ReadMe.adoc' }
-// }
+task copyReadMeAsciidoc(type: Copy) {
+	from './ReadMe.adoc'
+	// into 'src/docs/asciidoc'
+	into 'build/tmp/docs/asciidoc'
+}
+
+asciidoctor {
+	dependsOn copyReadMeAsciidoc
+	logDocuments = true
+	sourceDir = file('build/tmp/docs/asciidoc')
+}

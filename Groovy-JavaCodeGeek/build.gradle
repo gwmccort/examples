@@ -1,0 +1,13 @@
+plugins {
+	id 'groovy'
+	id 'eclipse'
+	id 'org.asciidoctor.convert' version '1.5.2'
+	id 'com.github.ben-manes.versions' version '0.11.3'
+}
+
+dependencies { compile localGroovy() //compile 'org.codehaus.groovy:groovy-all:2.3.10'
+}
+
+// asciidoctor {
+// 	sources { include 'ReadMe.adoc' }
+// }

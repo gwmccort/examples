@@ -1,0 +1,4 @@
+= Java Code Geeks - Groovy Examples
+
+* http://examples.javacodegeeks.com/core-java/groovy-list-example/[Groovy List]
+* http://www.javacodegeeks.com/2014/05/groovy-closures-this-owner-delegate-lets-make-a-dsl.html[closures]

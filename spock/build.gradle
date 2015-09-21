@@ -1,32 +1,28 @@
-
-buildscript {
-  repositories {
-    jcenter()
-  }
-
-  dependencies {
-    classpath 'com.github.ben-manes:gradle-versions-plugin:0.8'
-  }
+plugins {
+	id 'groovy'
+	id 'eclipse'
+	id 'com.github.ben-manes.versions' version '0.11.3'
 }
-
-apply plugin: 'groovy'
-apply plugin: 'eclipse'
-apply plugin: 'com.github.ben-manes.versions'
 
 repositories {
     jcenter()
 }
 
 dependencies {
-	compile localGroovy()
+	// def groovyVer = '2.3.+''
+	def groovyVer = '2.4.+'
+
+	// compile localGroovy()
+	compile "org.codehaus.groovy:groovy-all:${groovyVer}"
 	
 	//////// spock depends ////////
 	//problem w/ eclipse: 
-	//testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+	testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+	
 	//works in eclipse:
-	testCompile 'org.spockframework:spock-core:1.0-groovy-2.3', {
-		exclude module: "groovy-all" // avoid version missmatch
-	}
+	// testCompile 'org.spockframework:spock-core:1.0-groovy-2.3', {
+	// 	exclude module: "groovy-all" // avoid version missmatch
+	// }
 	//old version
 	//testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
 
@@ -34,6 +30,7 @@ dependencies {
 
 
 task runGroovyVersion (type: JavaExec) {
+	description 'Print groovy version from JavaExec task.'
     main = 'printVersion'
     classpath = sourceSets.main.runtimeClasspath
 }

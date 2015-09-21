@@ -1,1 +1,0 @@
-Groovy regular expression example from: http://examples.javacodegeeks.com/core-java/util/regex/groovy-regex-example/

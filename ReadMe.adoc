@@ -2,6 +2,9 @@
 
 == Projects
 
+* asciidoc - asciidoctor gradle
 * commons - apache commons
+* groovyRegex - groovy regex matching
+* lazybones-templates - how to create a lazybones template
+* luceneWriter - lucene writer
 * spock - spock gradle
-this is an edit from work

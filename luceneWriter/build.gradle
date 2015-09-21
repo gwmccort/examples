@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+	jcenter()
+	// mavenCentral()
+}
+
+dependencies {
+//	def luceneVersion = '5.2.1'
+	def luceneVersion = '4.2.1'
+	compile "org.apache.lucene:lucene-core:$luceneVersion"
+	compile "org.apache.lucene:lucene-analyzers-common:$luceneVersion"
+	compile "org.apache.lucene:lucene-queryparser:$luceneVersion"
+}

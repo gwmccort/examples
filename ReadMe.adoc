@@ -4,6 +4,7 @@
 
 * asciidoc - asciidoctor gradle
 * commons - apache commons
+* Groovy-JavaCodeGeeks - groovy examples from Java Code Geeks
 * groovyRegex - groovy regex matching
 * lazybones-templates - how to create a lazybones template
 * luceneWriter - lucene writer

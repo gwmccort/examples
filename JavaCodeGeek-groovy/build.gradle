@@ -1,9 +1,0 @@
-plugins {
-    id 'groovy'
-    id 'eclipse'
-}
-
-dependencies {
-    compile localGroovy()
-    //compile 'org.codehaus.groovy:groovy-all:2.3.10'
-}

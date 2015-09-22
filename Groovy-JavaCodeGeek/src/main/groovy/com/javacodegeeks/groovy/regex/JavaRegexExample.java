@@ -13,6 +13,7 @@ public class JavaRegexExample {
 		Pattern pattern = Pattern.compile(scanner.next());
 		Matcher matcher = pattern.matcher(myString);
 		printMatcher(matcher);
+		scanner.close();
 	}
 
 	/**

@@ -1,5 +1,9 @@
-apply plugin: 'java'
-apply plugin: 'eclipse'
+plugins {
+	id 'java'
+	id 'eclipse'
+	id 'org.asciidoctor.convert' version '1.5.2'
+	id 'com.github.ben-manes.versions' version '0.11.3'
+}
 
 repositories {
 	jcenter()
@@ -12,4 +16,17 @@ dependencies {
 	compile "org.apache.lucene:lucene-core:$luceneVersion"
 	compile "org.apache.lucene:lucene-analyzers-common:$luceneVersion"
 	compile "org.apache.lucene:lucene-queryparser:$luceneVersion"
+}
+
+task copyReadMeAsciidoc(type: Copy) {
+	description 'copies root ReadMe.adoc to temp location'
+	from './ReadMe.adoc'
+	// into 'src/docs/asciidoc'
+	into 'build/tmp/docs/asciidoc'
+}
+
+asciidoctor {
+	dependsOn copyReadMeAsciidoc
+	logDocuments = true
+	sourceDir = file('build/tmp/docs/asciidoc')
 }

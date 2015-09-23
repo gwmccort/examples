@@ -1,6 +1,7 @@
 plugins {
 	id 'groovy'
 	id 'eclipse'
+	id 'org.asciidoctor.convert' version '1.5.2'
 	id 'com.github.ben-manes.versions' version '0.11.3'
 }
 
@@ -18,7 +19,7 @@ dependencies {
 	//////// spock depends ////////
 	//problem w/ eclipse: 
 	testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
-	
+
 	//works in eclipse:
 	// testCompile 'org.spockframework:spock-core:1.0-groovy-2.3', {
 	// 	exclude module: "groovy-all" // avoid version missmatch
@@ -28,6 +29,18 @@ dependencies {
 
 }
 
+task copyReadMeAsciidoc(type: Copy) {
+	description 'copies root ReadMe.adoc to temp location'
+	from './ReadMe.adoc'
+	// into 'src/docs/asciidoc'
+	into 'build/tmp/docs/asciidoc'
+}
+
+asciidoctor {
+	dependsOn copyReadMeAsciidoc
+	logDocuments = true
+	sourceDir = file('build/tmp/docs/asciidoc')
+}
 
 task runGroovyVersion (type: JavaExec) {
 	description 'Print groovy version from JavaExec task.'

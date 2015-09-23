@@ -1,0 +1,8 @@
+= Spock Examples
+
+
+== Examples
+* http://mrhaki.blogspot.com/2015/09/spocklight-mocks-and-stubs-returning_21.html[Mocks And Stubs Returning Sequence of Values]
+
+== Blogs
+* http://mrhaki.blogspot.com/search/label/Spocklight[Mr Haki's Spocklight Posts]

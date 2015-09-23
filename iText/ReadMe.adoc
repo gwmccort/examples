@@ -1,0 +1,8 @@
+= Java Code Geeks - iText Examples
+
+== Articles
+* http://examples.javacodegeeks.com/core-java/itext-tutorial-beginners/[IText Tutorial for Beginners]
+
+== Auther Arcives
+* http://www.javacodegeeks.com/author/Alex-Staveley/[Alex Staveley]
+* http://examples.javacodegeeks.com/author/huseyin-babal/[Huseyin Babal]

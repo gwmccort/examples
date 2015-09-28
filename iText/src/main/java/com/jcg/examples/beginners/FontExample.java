@@ -1,4 +1,4 @@
-package com.jcg.examples;
+package com.jcg.examples.beginners;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

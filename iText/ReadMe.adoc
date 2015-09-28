@@ -2,6 +2,7 @@
 
 == Articles
 * http://examples.javacodegeeks.com/core-java/itext-tutorial-beginners/[IText Tutorial for Beginners]
+* http://examples.javacodegeeks.com/core-java/itext-pdfwriter-example/[iText PDFwriter Example]
 
 == Auther Arcives
 * http://www.javacodegeeks.com/author/Alex-Staveley/[Alex Staveley]

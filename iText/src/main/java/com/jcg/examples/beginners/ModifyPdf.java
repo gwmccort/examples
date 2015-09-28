@@ -1,4 +1,4 @@
-package com.jcg.examples;
+package com.jcg.examples.beginners;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

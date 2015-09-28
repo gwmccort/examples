@@ -6,6 +6,7 @@
 * http://examples.javacodegeeks.com/core-java/groovy-substring-example/[Groovy Substring]
 * http://www.javacodegeeks.com/2014/05/groovy-closures-this-owner-delegate-lets-make-a-dsl.html[Groovy Closures]
 * http://examples.javacodegeeks.com/core-java/util/regex/groovy-regex-example/[Groovy Regex]
+* https://tedvinke.wordpress.com/2015/09/25/avoid-nullpointerexception-safe-navigation-with-groovy/[Avoid NullPointerException: Safe Navigation with Groovy]
 
 == Auther Arcives
 * http://www.javacodegeeks.com/author/Alex-Staveley/[Alex Staveley]

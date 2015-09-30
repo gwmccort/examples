@@ -29,7 +29,7 @@ class MusicQuery {
 		// get input from console
 		println 'Enter query or "exit!" to quit:'
 		System.in.eachLine() { line ->
-			if (line == 'exit!') System.exit(1)
+			if (line == 'exit!') System.exit(0)
 			else {
 				String[] fields = [ARTIST_FIELD, NAME_FIELD, ALBUM_FIELD]
 				QueryParser parser = new MultiFieldQueryParser(fields, analyzer)
@@ -37,7 +37,7 @@ class MusicQuery {
 				TopDocs results = searcher.search(query, 100)
 
 				ScoreDoc[] hits = results.scoreDocs
-				println hits.size()
+				println "hits: ${hits.size()}"
 				for (sd in hits) {
 					//			tesprintln sd
 					//			println sd.dump()

@@ -26,6 +26,8 @@ import org.jaudiotagger.audio.mp3.MP3File
 import org.jaudiotagger.tag.FieldKey
 import org.jaudiotagger.tag.Tag
 
+import au.com.bytecode.opencsv.CSVWriter
+
 @TupleConstructor(force=true)
 @ToString(includeNames=true)
 class Track {
@@ -34,25 +36,33 @@ class Track {
 	String album
 
 	private static final INDEX = 'index'
-	private static final ARTIST_FIELD = 'artist'
-	private static final NAME_FIELD = 'name'
-	private static final ALBUM_FIELD = 'album'
-
+	private static final ARTIST_FIELD = 'artist'	private static final NAME_FIELD = 'name'	private static final ALBUM_FIELD = 'album'
 	/**
 	 * Create Track from music file tags
 	 * @param tag
 	 */
 	Track(Tag tag) {
-		 artist = tag.getFirst(FieldKey.ARTIST)
-		 name=tag.getFirst(FieldKey.TITLE)
-		 album=tag.getFirst(FieldKey.ALBUM)
+		artist = tag.getFirst(FieldKey.ARTIST)
+		name=tag.getFirst(FieldKey.TITLE)
+		album=tag.getFirst(FieldKey.ALBUM)
+	}
+
+	/**
+	 * Convert track to array of strings
+	 * @return
+	 */
+	String[] toStringArray() {
+		[artist, name, album] as String[]
 	}
 
 	static main(args) {
-				indexTest()
+		println 'starting...'
+		//indexTest()
 		//		searchTest('test')
 		//		multiSearchTest('test')
-//		getMp3Files()
+		//		getMp3Files()
+		writeTracksToCSV(getTracks())
+		println 'end!'
 	}
 
 	static indexTest() {
@@ -154,11 +164,11 @@ class Track {
 
 		new File(/C:\Users\Public\Music/).eachDirRecurse { dir ->
 			dir.eachFileMatch(~/.*.mp3/) { file ->
-//				println file
+				//				println file
 				try {
 					MP3File mf = new MP3File(file)
 					Tag tag = mf.getTag()
-//					Track t = new Track(artist:tag.getFirst(FieldKey.ARTIST), name:tag.getFirst(FieldKey.TITLE), album:tag.getFirst(FieldKey.ALBUM))
+					//					Track t = new Track(artist:tag.getFirst(FieldKey.ARTIST), name:tag.getFirst(FieldKey.TITLE), album:tag.getFirst(FieldKey.ALBUM))
 					Track t = new Track(tag)
 					println t
 				}
@@ -168,6 +178,20 @@ class Track {
 
 			}
 		}
+	}
+
+	/**
+	 * Write tacks to a CSV file
+	 * @param tracks
+	 * @return
+	 */
+	static writeTracksToCSV(Track[] tracks) {
+		println 'in writeTracksToCSV'
+		CSVWriter writer = new CSVWriter(new FileWriter('test.csv'))
+		tracks.each { t ->
+			writer.writeNext(t.toStringArray())
+		}
+		writer.close()
 	}
 
 }

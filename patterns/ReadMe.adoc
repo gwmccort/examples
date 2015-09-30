@@ -1,0 +1,9 @@
+= Design Patterns
+
+== Articles
+
+* http://www.javacodegeeks.com/2015/09/visitor-design-pattern.html[Visitor]
+
+== Site's
+
+* http://www.javacodegeeks.com/tag/design-patterns/[Java Code Geeks, Design Patterns]

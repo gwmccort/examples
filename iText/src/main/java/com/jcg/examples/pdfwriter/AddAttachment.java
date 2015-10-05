@@ -19,9 +19,9 @@ public class AddAttachment
 		public static void main(String[] args) throws FileNotFoundException, DocumentException
 		{
 				Document document = new Document();
-				PdfWriter pdfWriter = PdfWriter.getInstance(document, new FileOutputStream("HelloWorld.pdf"));
+				PdfWriter pdfWriter = PdfWriter.getInstance(document, new FileOutputStream("PdfWithAttachment.pdf"));
 				document.open();
-				File file  = new File("HelloWorld1.pdf");
+				File file  = new File("HelloWorld.pdf");
 				if(file.exists())
 				try
 				{
@@ -36,8 +36,7 @@ public class AddAttachment
 				
 				
 				Paragraph paragraph = new Paragraph();
-				paragraph.add("Hello World!");
-				paragraph.add("Welcome to JCG!");
+				paragraph.add("PDF with attachment");
 				paragraph.setAlignment(Element.ALIGN_CENTER);
 
 				document.add(paragraph);

@@ -57,11 +57,16 @@ class Track {
 
 	static main(args) {
 		println 'starting...'
-		//indexTest()
+		//		indexTest()
 		//		searchTest('test')
 		//		multiSearchTest('test')
-		//		getMp3Files()
-		writeTracksToCSV(getTracks())
+
+		def tracks = getMp3Files()
+		println tracks.size()
+		writeTracksToCSV(tracks)
+		indexTracks(tracks)
+
+		//		writeTracksToCSV(getTracks())
 		println 'end!'
 	}
 
@@ -78,6 +83,32 @@ class Track {
 
 		// add track to index
 		def tracks = getTracks()
+		for (track in tracks) {
+			Document doc = new Document()
+			Field artist = new Field(ARTIST_FIELD, track.artist, TextField.TYPE_STORED)
+			Field name = new Field(NAME_FIELD, track.name, TextField.TYPE_STORED)
+			Field album = new Field(ALBUM_FIELD, track.album, TextField.TYPE_STORED)
+			doc.add(artist)
+			doc.add(name)
+			doc.add(album)
+			writer.addDocument(doc)
+		}
+
+		writer.close()
+	}
+
+	static indexTracks(Track[] tracks) {
+		println '>>> indexing tracks...'
+
+		Directory dir = FSDirectory.open(Paths.get(INDEX))
+		Analyzer analyzer = new StandardAnalyzer()
+		IndexWriterConfig iwc = new IndexWriterConfig(analyzer)
+
+		//		iwc.setOpenMode(OpenMode.CREATE_OR_APPEND)
+		iwc.setOpenMode(OpenMode.CREATE)
+		IndexWriter writer = new IndexWriter(dir, iwc)
+
+		// add track to index
 		for (track in tracks) {
 			Document doc = new Document()
 			Field artist = new Field(ARTIST_FIELD, track.artist, TextField.TYPE_STORED)
@@ -154,7 +185,10 @@ class Track {
 	 * Example of using jaudiotagger to get mp3 tags
 	 * @return
 	 */
-	static getMp3Files() {
+	static Track[] getMp3Files() {
+		println 'in getMp3Files...'
+		def results = []
+
 		// disable jul logging output
 		java.util.logging.Logger globalLogger = java.util.logging.Logger.getLogger("");
 		Handler[] handlers = globalLogger.getHandlers();
@@ -162,22 +196,25 @@ class Track {
 			globalLogger.removeHandler(handler);
 		}
 
-		new File(/C:\Users\Public\Music/).eachDirRecurse { dir ->
+		//		new File(/C:\Users\Public\Music/).eachDirRecurse { dir ->
+		//			new File(/C:\Users\Glen\Music/).eachDirRecurse { dir ->
+		new File(/C:\Users\Glen\Downloads/).eachDirRecurse { dir ->
 			dir.eachFileMatch(~/.*.mp3/) { file ->
-				//				println file
 				try {
-					MP3File mf = new MP3File(file)
+					//					MP3File mf = new MP3File(file)
+					MP3File mf = new MP3File(file, MP3File.LOAD_ALL, true)
 					Tag tag = mf.getTag()
 					//					Track t = new Track(artist:tag.getFirst(FieldKey.ARTIST), name:tag.getFirst(FieldKey.TITLE), album:tag.getFirst(FieldKey.ALBUM))
 					Track t = new Track(tag)
-					println t
+					results << t
 				}
 				catch (Exception e) {
-					e.printStackTrace()
+					//					e.printStackTrace()
+					println e
 				}
-
 			}
 		}
+		results
 	}
 
 	/**

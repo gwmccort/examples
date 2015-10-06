@@ -13,8 +13,9 @@ repositories {
 dependencies {
 	// compile 'org.codehaus.groovy:groovy-all:2.1.3'
 	// compile localGroovy()
-	compile 'org.codehaus.groovy:groovy-all:2.4.1'
-
+//	compile 'org.codehaus.groovy:groovy-all:2.4.1'
+	compile 'org.codehaus.groovy:groovy-all:2.3.+'
+	
 	def luceneVersion = '5.2.0'
 	compile "org.apache.lucene:lucene-core:${luceneVersion}"
 	compile "org.apache.lucene:lucene-analyzers-common:${luceneVersion}"

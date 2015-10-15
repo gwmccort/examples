@@ -4,6 +4,7 @@
 * http://examples.javacodegeeks.com/core-java/itext-tutorial-beginners/[IText Tutorial for Beginners]
 * http://examples.javacodegeeks.com/core-java/itext-pdfwriter-example/[iText PDFwriter Example]
 * http://examples.javacodegeeks.com/core-java/itext-pdfreader-example/[IText PDFReader Example]
+* http://examples.javacodegeeks.com/core-java/itext-rectangle-example/[Rectangle Example]
 
 == Auther Arcives
 * http://www.javacodegeeks.com/author/Alex-Staveley/[Alex Staveley]

@@ -1,0 +1,30 @@
+= Geb Project
+
+== Gradle Plugins
+
+=== GroovySh
+* https://github.com/tkruse/gradle-groovysh-plugin[gradle-groovysh-plugin] and https://plugins.gradle.org/plugin/com.github.tkruse.groovysh[plugin portal]
+** allows running groovysh from gradle
+** need to run like: 'gradle -q --no-daemon --parallel-threads 0 shell'
+* http://tech.puredanger.com/2010/03/01/groovy-grape-groovysh/[Using Groovy Grape in groovysh]
+
+== Geb
+* http://www.openscope.net/2015/02/21/how-to-configure-gebspock-with-gradle/[How to configure Geb/Spock with Gradle]
+* https://jaxenter.com/tutorial-groovy-functional-testing-with-geb-104382.html[Tutorial: Groovy Functional Testing with Geb]
+
+
+== Example
+* type commands
+....
+> gradle -q --no-daemon --parallel-threads 0 shell
+groovy:000> import geb.*
+groovy:000> b = new Browser(baseUrl: "http://nile:8008/webquery")
+groovy:000> b.title
+b.title
+===> PDM WebQuery
+....
+
+* load script
+....
+groovy:000> :l wqTitle.groovy
+....

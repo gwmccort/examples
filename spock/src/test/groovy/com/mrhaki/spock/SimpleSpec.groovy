@@ -4,6 +4,14 @@ package com.mrhaki.spock
 import spock.lang.Specification
 import spock.lang.Subject
 
+/**
+ * Spocklight: Mocks And Stubs Returning Sequence of Values
+ * from: Spocklight: Mocks And Stubs Returning Sequence of Values
+ *
+ * @author gwmccort
+ *
+ */
+
 class SampleSpec extends Specification {
 
     @Subject

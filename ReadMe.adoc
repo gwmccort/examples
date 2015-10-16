@@ -4,8 +4,11 @@
 
 * asciidoc - asciidoctor gradle
 * commons - apache commons
+* geb - groovy browser testing
 * Groovy-JavaCodeGeeks - groovy examples from Java Code Geeks
 * groovyRegex - groovy regex matching
+* iText - java pdf api
 * lazybones-templates - how to create a lazybones template
 * luceneWriter - lucene writer
+* patterns - design patterns
 * spock - spock gradle

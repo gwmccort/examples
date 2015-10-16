@@ -19,6 +19,7 @@
 > gradle -q --no-daemon --parallel-threads 0 shell
 groovy:000> import geb.*
 groovy:000> b = new Browser(baseUrl: "http://nile:8008/webquery")
+groovy:000> b.go
 groovy:000> b.title
 b.title
 ===> PDM WebQuery

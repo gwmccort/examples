@@ -1,0 +1,31 @@
+import geb.Browser
+
+
+/**
+ * print title of webquery
+ */
+class XmJamOn {
+
+	static main(args) {
+		Browser.drive {
+			//			go "http://nile.8008/webquery"
+			go 'http://beaver:8003/webquery/FrameLoader.html'
+			println "wq title: $title"
+		}
+	}
+
+//	static main2(args) {
+////			Browser.drive {
+////				//setProxy("proxy", 9090)
+//////				go 'http://dogstarradio.com/search_xm_playlist.php?channel=29'
+////				go 'http://beaver:8003/webquery/FrameLoader.html'
+////				println title
+////			}
+//
+//			Browser.drive {
+//				go 'http://beaver:8003/webquery/FrameLoader.html'
+//			}
+//		}
+}
+
+

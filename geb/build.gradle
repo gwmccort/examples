@@ -5,20 +5,31 @@ plugins {
 	id "com.github.tkruse.groovysh" version "1.0.8"
 }
 
-repositories { jcenter() }
+repositories {
+	jcenter()
+	maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
+}
 
 dependencies {
-	def gebVersion = '0.7.2'
+	def gebVersion = '0.12.2'
 	def seleniumVersion = '2.48.2'
 
-//	compile localGroovy()
+	//	compile localGroovy()
 	compile 'org.codehaus.groovy:groovy-all:2.3.10'
-//	compile 'org.codehaus.groovy:groovy-all:2.3.+'
+	//	compile 'org.codehaus.groovy:groovy-all:2.3.+'
+	//	compile 'org.codehaus.groovy:groovy-all:2.4.+'
 
-	compile "org.codehaus.geb:geb-core:$gebVersion"
+	compile "org.gebish:geb-core:$gebVersion"
+	testCompile "org.gebish:geb-spock:$gebVersion"
+	testCompile "org.gebish:geb-junit4:$gebVersion"
 
 	compile "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
 	compile "org.seleniumhq.selenium:selenium-htmlunit-driver:$seleniumVersion"
+	
+	testCompile 'junit:junit:4.12'
+
+//	testCompile("org.spockframework:spock-core:1.0-groovy-2.4") { exclude group: "org.codehaus.groovy" }
+	testCompile("org.spockframework:spock-core:1.1-groovy-2.3-SNAPSHOT") { exclude group: "org.codehaus.groovy" }
 }
 
 task runScript(type: JavaExec) {

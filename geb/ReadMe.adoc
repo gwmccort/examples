@@ -11,7 +11,7 @@
 == Geb
 * http://www.openscope.net/2015/02/21/how-to-configure-gebspock-with-gradle/[How to configure Geb/Spock with Gradle]
 * https://jaxenter.com/tutorial-groovy-functional-testing-with-geb-104382.html[Tutorial: Groovy Functional Testing with Geb]
-
+* http://desmontandojava.blogspot.com/2012/06/scraping-with-groovy-ii-geb.html[Scraping with Groovy (II): Geb]
 
 == Example
 * type commands

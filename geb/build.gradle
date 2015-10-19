@@ -37,3 +37,9 @@ task runScript(type: JavaExec) {
 	main = 'WqTitle'
 	classpath = sourceSets.main.runtimeClasspath
 }
+
+task runJamBase(type: JavaExec) {
+	description 'Run WqTitle'
+	main = 'music.home.JamBase'
+	classpath = sourceSets.main.runtimeClasspath
+}

@@ -1,0 +1,13 @@
+plugins {
+    id 'war'
+    id 'jetty'
+    id 'com.github.ben-manes.versions' version '0.11.3'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    providedCompile group: 'javax', name: 'javaee-api', version:'7.0'
+}

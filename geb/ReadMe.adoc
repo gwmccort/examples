@@ -13,6 +13,10 @@
 * https://jaxenter.com/tutorial-groovy-functional-testing-with-geb-104382.html[Tutorial: Groovy Functional Testing with Geb]
 * http://desmontandojava.blogspot.com/2012/06/scraping-with-groovy-ii-geb.html[Scraping with Groovy (II): Geb]
 
+== Help
+* http://www.tothenew.com/blog/using-modules-to-avoid-structures-repetition-in-geb-test-pages/[Using Modules to avoid structures repetition in Geb Test Pages]
+* http://adhockery.blogspot.com/2010/11/modelling-repeating-structures-with-geb.html[Modelling repeating structures with Geb page objects]
+
 == Example
 * type commands
 ....
@@ -41,4 +45,9 @@ b.driver.pageSource
 ....
 b.driver.setProxy("proxy", 9090)
 ....
+
+=== Links to save
+* http://blog.freeside.co/
+* http://ad-hockery.tumblr.com/
+
 

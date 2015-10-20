@@ -13,8 +13,13 @@ class XmJamOnWithPage {
         println 'main...'
 
         Browser.drive(baseUrl: 'http://dogstarradio.com') {
-            //TODO auto set proxy
-            driver.setProxy("proxy", 9090)
+
+            //TODO auto set proxy better way
+            def workHost = 'CRP22627'
+            if (workHost==InetAddress.localHost.hostName) {
+                driver.setProxy("proxy", 9090)
+            }
+
 //            to XmJamOnPage, Channels.JAMON
             to XmJamOnPage, Channels.BLUEGRASS
             assert at(XmJamOnPage)

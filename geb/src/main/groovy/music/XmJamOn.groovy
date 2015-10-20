@@ -15,8 +15,8 @@ class XmJamOn {
 	static main(args) {
 		Browser.drive() {
 			driver.setProxy("proxy", 9090)
-//			go 'http://dogstarradio.com/search_xm_playlist.php?channel=29'
-			go "file:///H:/Project_Files/bit-bucket/examples/geb/XmJamOn.html"
+			go 'http://dogstarradio.com/search_xm_playlist.php?channel=29'
+//			go "file:///H:/Project_Files/bit-bucket/examples/geb/XmJamOn.html"
 
 			println 'title:' + title
 //			println 'first channel class:' + $('td', 0, class: 'channel').text()
@@ -54,12 +54,29 @@ class XmJamOn {
 //                println it.text()
 //            }
 
-            println '-------------------------'
-            $('table', 1).$('td').eachWithIndex { it2, index ->
-                println "$index : ${it2.text()}"
-                if (index > 8)
-                    println it2.text()
-            }
+//            println '---------eachWithIndex----------------'
+//            $('table', 1).$('td').eachWithIndex { it2, index ->
+////                println "$index : ${it2.text()}"
+//                if (index > 8 && index < 260)
+//                    println it2.text()
+//            }
+
+			println '--------- each row -------------'
+////            $('table', 1).$('tr').each { println it.text()}
+//            def rows = $('table', 1).$('tr')
+////            rows.each {println it.text()}
+////            rows.$('td', 1).each { println it.text() }
+//            rows.$('td').each { println 'td: ' + it.text() }
+//            println rows.$('td', 1).text()
+
+            // WORKS - get band names
+            def gr = $('table', 1).$('tr', 3..52)
+            gr.each { println it.$('td', 1).text()}
+
+            // 2nd table, 'real' rows, 2nd cell (i.e. band)
+            def bands = $('table', 1).$('tr', 3..52).collect { it.$('td', 1).text()}.unique()
+            println 'bands:' + bands
+
 		}
 	}
 

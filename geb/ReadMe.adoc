@@ -49,5 +49,6 @@ b.driver.setProxy("proxy", 9090)
 === Links to save
 * http://blog.freeside.co/
 * http://ad-hockery.tumblr.com/
+* http://swalsh.org/blog/2014/06/25/groovy-browser-automation-with-geb/[Groovy Browser Automation with Geb] shows use of modules & pages
 
 

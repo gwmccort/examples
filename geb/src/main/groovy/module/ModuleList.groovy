@@ -26,9 +26,19 @@ class ModuleList {
             println booksFromPage
 
             println '-----bookResults--------'
-            println bookResults(0).title
-            println bookResults(3).price
-            println bookResults(0)
+            println bookTable(0).title
+            println bookTable(3).price
+            println bookTable(0)
+            println bookTable(0).dump()
+
+            println '----------booksList-----------'
+            println booksList.size()
+            println booksList
+            println booksList.title
+            for (row in booksList) {
+                println row.dump()
+                println row.title
+            }
 
 //            {module Books}.each{println it}
         }
@@ -38,6 +48,7 @@ class ModuleList {
 class Books extends Module {
     static content = {
         recentBooks { $("ol#recent-books li")*.text() }
+
     }
 
 //    static base = {
@@ -67,7 +78,12 @@ class ModuleListPage extends Page {
     static content = {
         booksModule { module Books }
         booksFromPage { $("ol#recent-books li")*.text() }
-        bookResults { i -> module BookRow, $("table#book-results tbody tr", i) }
+        bookTable { i -> module BookRow, $("table#book-results tbody tr", i) }
+        booksList {
+            $("tbody tr").collect {
+                module BookRow, it
+            }
+        }
     }
 //    static content = { module Books }
 

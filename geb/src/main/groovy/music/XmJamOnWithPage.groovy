@@ -11,9 +11,12 @@ class XmJamOnWithPage {
 
     static main(args) {
         println 'main...'
-        Browser.drive() {
-            driver.setProxy("proxy", 9090)//why do i need this for file url???
-            to XmJamOnPage
+
+        Browser.drive(baseUrl: 'http://dogstarradio.com') {
+            //TODO auto set proxy
+            driver.setProxy("proxy", 9090)
+//            to XmJamOnPage, Channels.JAMON
+            to XmJamOnPage, Channels.BLUEGRASS
             assert at(XmJamOnPage)
 
             println bands
@@ -24,9 +27,9 @@ class XmJamOnWithPage {
 }
 
 class XmJamOnPage extends Page {
+
     // url of page
-//    static url = "file:///H:/Project_Files/bit-bucket/examples/geb/XmJamOn.html"
-    static url = 'http://dogstarradio.com/search_xm_playlist.php?channel=29'
+    static url = '/search_xm_playlist.php'
 
     // check page is opened
     static at = { title == 'XM Playlist Search - XM Satellite Radio - DogstarRadio.com' }
@@ -37,4 +40,31 @@ class XmJamOnPage extends Page {
             $('table', 1).$('tr', 3..52).collect { it.$('td', 1).text() }.unique()
         }
     }
+
+    // convert parameter arguments
+    //TODO add date range
+    String convertToPath(Object[] args) {
+        args ? '?channel=' + args[0] : ""
+    }
 }
+
+//TODO is this the best way to get constants
+public enum Channels {
+    JAMON('29'), BLUEGRASS('61')
+
+    private final String channelNumber
+
+    private Channels(String s) {
+        channelNumber = s;
+    }
+
+    public boolean equalsName(String otherName) {
+        return (otherName == null) ? false : channelNumber.equals(otherName);
+    }
+
+    public String toString() {
+        return this.channelNumber;
+    }
+}
+
+

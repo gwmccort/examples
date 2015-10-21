@@ -8,9 +8,16 @@ import geb.Browser
  * Created by gwmccort on 10/20/2015.
  */
 class XmJamOnWithPage {
+    static  fileName = 'output/bluegrass.txt'
+
 
     static main(args) {
         println 'main...'
+
+        // get bands from file
+        String[] origBands = new File(fileName)
+        Set bandsSet = [] as Set
+        bandsSet.addAll(origBands)
 
         Browser.drive(baseUrl: 'http://dogstarradio.com') {
 
@@ -25,7 +32,17 @@ class XmJamOnWithPage {
             assert at(XmJamOnPage)
 
             println bands
+
+            bandsSet.addAll(bands)
         }
+
+        // write sorted bands to file
+        new File(fileName).withWriter { out ->
+            bandsSet.sort().each {
+                out.println it
+            }
+        }
+
 
         println 'finished!'
     }

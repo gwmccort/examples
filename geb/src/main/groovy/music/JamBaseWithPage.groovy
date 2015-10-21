@@ -11,6 +11,8 @@ import java.util.logging.Logger
  * Created by gwmccort on 10/20/2015.
  */
 class JamBaseWithPage {
+    static  fileName = 'output/jambase.txt'
+
     static main(args) {
         println 'main...'
 
@@ -19,6 +21,10 @@ class JamBaseWithPage {
         Logger logger = Logger.getLogger("");
         logger.setLevel(Level.OFF);
 
+        // get bands from file
+        String[] origBands = new File(fileName)
+        Set bands = [] as Set
+        bands.addAll(origBands)
 
         Browser.drive(baseUrl: "http://jambase.com") {
 
@@ -34,16 +40,18 @@ class JamBaseWithPage {
 //            println $('div', id:"ctl00_MainContent_ctlByDay_showList").text()
 
             // get all bands
-            def bands = []
             $('div', id:"ctl00_MainContent_ctlByDay_showList").$('td', class:'artistCol').each {
 //                println it.text()
 //                println '-------'
                 bands.addAll(it.text().split(/\n/))
             }
-            println "bands: $bands"
+        }
 
-
-
+        // write sorted bands to file
+        new File(fileName).withWriter { out ->
+            bands.sort().each {
+                out.println it
+            }
         }
 
         println 'finished!'
@@ -56,7 +64,7 @@ class JamBasePage extends Page {
 // http://jambase.com/shows/Shows.aspx?Zip=52403
 
     // url of page
-//    static url = '/shows/Shows.aspx?'
+    //todo add more parms
     static url = '/shows/Shows.aspx?Zip=52403'
 
     // check page is opened

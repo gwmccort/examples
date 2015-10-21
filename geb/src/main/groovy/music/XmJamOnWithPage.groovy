@@ -8,7 +8,10 @@ import geb.Browser
  * Created by gwmccort on 10/20/2015.
  */
 class XmJamOnWithPage {
-    static  fileName = 'output/bluegrass.txt'
+    static fileName = 'output/jamon.txt'
+    static channel = Channels.JAMON
+//    static fileName = 'output/bluegrass.txt'
+//    static channel = Channels.BLUEGRASS
 
 
     static main(args) {
@@ -19,22 +22,12 @@ class XmJamOnWithPage {
         Set bandsSet = [] as Set
         bandsSet.addAll(origBands)
 
-        Browser.drive(baseUrl: 'http://dogstarradio.com') {
-
-            //TODO auto set proxy better way
-            def workHost = 'CRP22627'
-            if (workHost==InetAddress.localHost.hostName) {
-                driver.setProxy("proxy", 9090)
-            }
-
-//            to XmJamOnPage, Channels.JAMON
-            to XmJamOnPage, Channels.BLUEGRASS
-            assert at(XmJamOnPage)
-
-            println bands
-
-            bandsSet.addAll(bands)
-        }
+        // get bands
+//        bandsSet.addAll(getBands(bandsSet, channel))
+        def x = getBands(bandsSet, channel)
+        println "bandsSet: $bandsSet"
+        println "getBands: $x"
+        bandsSet.addAll(x)
 
         // write sorted bands to file
         new File(fileName).withWriter { out ->
@@ -43,8 +36,26 @@ class XmJamOnWithPage {
             }
         }
 
-
         println 'finished!'
+    }
+
+    private static List  getBands(bandsSet, channel) {
+        List results
+        Browser.drive(baseUrl: 'http://dogstarradio.com') {
+
+            //TODO auto set proxy better way
+            def workHost = 'CRP22627'
+            if (workHost == InetAddress.localHost.hostName) {
+                driver.setProxy("proxy", 9090)
+            }
+
+//            to XmJamOnPage, Channels.JAMON
+            to XmJamOnPage, channel
+            assert at(XmJamOnPage)
+            results = bands
+
+        }
+        return results
     }
 }
 

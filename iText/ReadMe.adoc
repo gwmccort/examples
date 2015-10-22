@@ -2,10 +2,21 @@
 
 == Articles
 * http://examples.javacodegeeks.com/core-java/itext-tutorial-beginners/[IText Tutorial for Beginners]
-* http://examples.javacodegeeks.com/core-java/itext-pdfwriter-example/[iText PDFwriter Example]
-* http://examples.javacodegeeks.com/core-java/itext-pdfreader-example/[IText PDFReader Example]
+* http://examples.javacodegeeks.com/core-java/itext-pdfwriter-example/[PDFwriter Example]
+* http://examples.javacodegeeks.com/core-java/itext-pdfreader-example/[PDFReader Example]
 * http://examples.javacodegeeks.com/core-java/itext-rectangle-example/[Rectangle Example]
+* http://examples.javacodegeeks.com/core-java/itext-pdfstamper-example/[PDFstamper Example]
 
 == Auther Arcives
 * http://www.javacodegeeks.com/author/Alex-Staveley/[Alex Staveley]
 * http://examples.javacodegeeks.com/author/huseyin-babal/[Huseyin Babal]
+
+== Resources
+* http://itextpdf.com/[iText Home]
+* https://github.com/itext[GitHub]
+* https://www.youtube.com/channel/UC6kL1_Vm712V3XDM1_RSY8w[iText YouTube]
+* http://stackoverflow.com/questions/tagged/itext[StackOverflow]
+
+== Books
+* https://www.manning.com/books/itext-in-action-second-edition[iText in Action 2ed]
+* https://leanpub.com/u/itextsoftware[iText books on LeanPub]

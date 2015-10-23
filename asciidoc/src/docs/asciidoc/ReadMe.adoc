@@ -1,10 +1,15 @@
-= Example from Awesome Asciidoctor
+= Asciidoctor Gradle Examples
+Glen McCort <gwmccort@gmail.com>
 
+== Examples
+* Asciidoctor Gradle Examples http://danhyun.github.io/asciidoctor-gradle-examples/[documentation] and https://github.com/danhyun/asciidoctor-gradle-examples[github reprository]
+
+== Example from Awesome Asciidoctor
 From mrhaki http://mrhaki.blogspot.com/search/label/Awesome%3AAsciidoctor[Awsome Asciidoctor blog]
 
-== http://mrhaki.blogspot.com/2015/04/awesome-asciidoctor-display-keyboard.html[Display Keyboard Shortcuts]
+=== http://mrhaki.blogspot.com/2015/04/awesome-asciidoctor-display-keyboard.html[Display Keyboard Shortcuts]
 
-=== Keyboard macro
+==== Keyboard macro
 
 With the keyboard macro `kbd:[shortcut]`
 we can include nicely formatted keyboard
@@ -23,12 +28,13 @@ To zoom out press kbd:[Ctrl + -].
 
 Find files with kbd:[Ctrl + Alt + N] or kbd:[{commandkey} + Shift + N].
 
-== http://mrhaki.blogspot.com/2014/04/awesome-asciidoc-include-partial-parts.html[Include Partial Parts from Code Samples]
+=== http://mrhaki.blogspot.com/2014/04/awesome-asciidoc-include-partial-parts.html[Include Partial Parts from Code Samples]
 
-=== Sample Asciidoc
+==== Sample Asciidoc
 
 [source,groovy]
 .Sample.groovy
 ----
 include::Sample.groovy[tags=helloMethod]
 ----
+

@@ -1,0 +1,19 @@
+plugins {
+    id 'org.asciidoctor.convert' version '1.5.2'
+    id 'com.github.ben-manes.versions' version '0.11.3'
+    id 'de.aaschmid.cpd' version '0.5'
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+cpdCheck {
+    ignoreFailures = true
+    reports {
+        text.enabled = true
+        xml.enabled = false
+    }
+    source = files('H:/Project_Files/PdmSvn/Intg/jars/PdmWeb/src', 'H:/Project_Files/PdmSvn/Intg/jars/PdmVcp/src')
+}

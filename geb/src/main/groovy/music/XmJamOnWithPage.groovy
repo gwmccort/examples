@@ -8,10 +8,10 @@ import geb.Browser
  * Created by gwmccort on 10/20/2015.
  */
 class XmJamOnWithPage {
-    static fileName = 'output/jamon.txt'
-    static channel = Channels.JAMON
-//    static fileName = 'output/bluegrass.txt'
-//    static channel = Channels.BLUEGRASS
+//    static fileName = 'output/jamon.txt'
+//    static channel = Channels.JAMON
+    static fileName = 'output/bluegrass.txt'
+    static channel = Channels.BLUEGRASS
 
 
     static main(args) {

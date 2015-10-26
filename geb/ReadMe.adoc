@@ -1,4 +1,5 @@
 = Geb Project
+Glen McCort <gwmccort@gmail.com>
 
 == Gradle Plugins
 
@@ -53,3 +54,15 @@ b.driver.setProxy("proxy", 9090)
 * Geb Page object - Groovy-Geb-Cucumber framework http://qastrategies.blogspot.com/2012/06/geb-page-object-groovy-geb-cucumber.html[part 1], http://qastrategies.blogspot.com/2012/06/geb-page-object-groovy-geb-cucumber_08.html[part 2] & http://qastrategies.blogspot.com/2012/06/geb-page-object-groovy-geb-cucumber_3735.html[part 2] shows how to parameterize page objects
 
 
+== Music
+
+== kat
+ https://kat.cr/usearch/category%3Amusic%20skinners/
+
+=== Bluegrass sites
+* http://www.billboard.com/charts/bluegrass-albums[Billboard Bluegrass]
+* http://www.newreleasesnow.com/new-bluegrass-songs[New Bluegrass Releases]
+* http://www.bluegrassfestivalguide.com/bluegrass-music-charts.htm[Bluegrass Festival Guide]
+* http://www.cybergrass.com/taxonomy/term/158[Cybergras]
+* http://bluegrasstoday.com/chart/[Bluegrass Today]
+* http://www.jamgrass.net/jamgrass_net_recommends/[JamGrass Recommendations] 

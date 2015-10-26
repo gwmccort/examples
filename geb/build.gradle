@@ -34,14 +34,25 @@ dependencies {
 	testCompile("org.spockframework:spock-core:1.1-groovy-2.3-SNAPSHOT") { exclude group: "org.codehaus.groovy" }
 }
 
+task runJamBase(type: JavaExec) {
+	description 'Run JamBase'
+	main = 'music.JamBaseWithPage'
+	classpath = sourceSets.main.runtimeClasspath
+}
+
+task runXM(type: JavaExec) {
+	description 'Run WqTitle'
+	main = 'music.XmJamOnWithPage'
+	classpath = sourceSets.main.runtimeClasspath
+}
+
 task runScript(type: JavaExec) {
 	description 'Run WqTitle'
 	main = 'WqTitle'
 	classpath = sourceSets.main.runtimeClasspath
 }
-
-task runJamBase(type: JavaExec) {
-	description 'Run WqTitle'
-	main = 'music.home.JamBase'
+task runWebQuery(type: JavaExec) {
+	description 'Run WebqueryTest'
+	main = 'webquery.WebqueryTest'
 	classpath = sourceSets.main.runtimeClasspath
 }

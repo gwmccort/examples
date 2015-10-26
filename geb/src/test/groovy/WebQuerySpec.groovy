@@ -1,4 +1,5 @@
 import geb.spock.GebReportingSpec
+import webquery.LoginPage
 
 class WebQuerySpec extends GebReportingSpec {
 
@@ -18,5 +19,13 @@ class WebQuerySpec extends GebReportingSpec {
 		title == "PDM WebQuery"
 
 		println $("div", 0)
+	}
+
+	def 'use page'() {
+		when:
+		to LoginPage
+
+		then:
+		title == 'PDM on the Web'
 	}
 }

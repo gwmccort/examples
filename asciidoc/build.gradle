@@ -22,5 +22,4 @@ plugins {
 
 asciidoctor {
 	attributes	'toc': 'left'
-
 }

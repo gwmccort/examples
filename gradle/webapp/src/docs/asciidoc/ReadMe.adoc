@@ -1,0 +1,8 @@
+* Gradle https://github.com/adrianmoya/gradle-training[webapp example] with greeter bean
+* http://crunchify.com/how-to-generate-out-of-memory-oom-in-java-programatically/[Generate out of memory (oom) error]
+* http://mrhaki.blogspot.com/2014/09/gradle-goodness-adding-dependencies.html[Adding Dependencies Only for Packaging to War]
+
+== WebJars
+* http://svene.github.io/adocblog/html/2015_05_09_webjars_in_webapplications.html[Use webjars in your Webapplications]
+* http://www.webjars.org/[WebJars] home page
+* https://dzone.com/articles/javascript-webapps-gradle[JavaScript Webapps with Gradle]

@@ -8,8 +8,10 @@ plugins {
 }
 
 dependencies { 
-	compile localGroovy() 
-	//compile 'org.codehaus.groovy:groovy-all:2.3.10'
+//	compile localGroovy() 
+	compile 'org.codehaus.groovy:groovy-all:2.3.10'
+	
+	runtime 'commons-cli:commons-cli:1.2'
 }
 
 task copyReadMeAsciidoc(type: Copy) {

@@ -1,6 +1,8 @@
 = Java Code Geeks - Groovy Examples
 
 == Articles
+
+=== Java Code Geeks
 * http://examples.javacodegeeks.com/core-java/groovy-array-example/[Groovy Arrays]
 * http://examples.javacodegeeks.com/core-java/groovy-list-example/[Groovy List]
 * http://examples.javacodegeeks.com/core-java/groovy-substring-example/[Groovy Substring]
@@ -9,8 +11,15 @@
 * http://www.javacodegeeks.com/2014/05/groovy-closures-this-owner-delegate-lets-make-a-dsl.html[Groovy Closures]
 * http://examples.javacodegeeks.com/core-java/groovy-closure-example-2/[Groovy Closure Example]
 * http://examples.javacodegeeks.com/core-java/util/regex/groovy-regex-example/[Groovy Regex]
+
+=== Groovy Goodness
+* http://mrhaki.blogspot.com/2009/09/groovy-goodness-parsing-commandline.html[Parsing Commandline Arguments with CliBuilder]
+* http://mrhaki.blogspot.com/2011/04/groovy-goodness-inject-logging-using.html[Inject Logging Using Annotations]
+
+=== Misc
 * https://tedvinke.wordpress.com/2015/09/25/avoid-nullpointerexception-safe-navigation-with-groovy/[Avoid NullPointerException: Safe Navigation with Groovy]
 
 == Auther Arcives
+* http://mrhaki.blogspot.com/search/label/Groovy%3AGoodness[mrhaki's Groovy Goodness]
 * http://www.javacodegeeks.com/author/Alex-Staveley/[Alex Staveley]
 * http://examples.javacodegeeks.com/author/huseyin-babal/[Huseyin Babal]

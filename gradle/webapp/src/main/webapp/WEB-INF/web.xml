@@ -10,10 +10,18 @@
         based on the recommendations of the Application Developer's Guide.
     </description>
 
-	<!-- trying to get webjars to work -->
+	<!-- trying to get webjars to work with tomcat 6
 	<servlet>
 		<servlet-name>WebjarsServlet</servlet-name>
 		<servlet-class>org.webjars.servlet.WebjarsServlet</servlet-class>
+	-->
+		<!--  
+		<init-param>
+			<param-name>disableCache</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		-->
+		<!--  
 		<load-on-startup>2</load-on-startup>
 	</servlet>
 
@@ -21,6 +29,7 @@
 		<servlet-name>WebjarsServlet</servlet-name>
 		<url-pattern>/webjars/*</url-pattern>
 	</servlet-mapping>
+-->
 
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>

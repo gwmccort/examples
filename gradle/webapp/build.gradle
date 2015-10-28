@@ -18,12 +18,20 @@ dependencies {
     
     // webjars
     compile 'org.webjars:webjars-servlet-2.x:1.1'
-    compile 'org.webjars:bootstrap:3.3.1'
+    compile 'org.webjars:bootstrap:3.3.5'
+    compile 'org.webjars:jquery:1.11.3'
 
+/*
     def tomcatVersion = '6.0.44'
 	tomcat "org.apache.tomcat:catalina:${tomcatVersion}",
 		   "org.apache.tomcat:coyote:${tomcatVersion}",
 		   "org.apache.tomcat:jasper:${tomcatVersion}"
+*/		  
+
+	def tomcatVersion = '7.0.59'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+           "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
+           "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
 }
 
 tomcat {

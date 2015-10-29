@@ -8,3 +8,7 @@
 == Site's
 
 * http://www.javacodegeeks.com/tag/design-patterns/[Java Code Geeks, Design Patterns]
+* http://www.javabeat.net/tag/design-patterns/[JavaBeat Design Patterns]
+
+== TODO
+* http://www.javabeat.net/builder-design-pattern/[Builder Design Pattern]

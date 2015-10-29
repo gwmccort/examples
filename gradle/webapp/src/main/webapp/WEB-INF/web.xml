@@ -15,7 +15,7 @@
 		<servlet-name>WebjarsServlet</servlet-name>
 		<servlet-class>org.webjars.servlet.WebjarsServlet</servlet-class>
 	-->
-		<!--  
+		<!--  stop browser from caching 
 		<init-param>
 			<param-name>disableCache</param-name>
 			<param-value>true</param-value>
@@ -32,7 +32,7 @@
 -->
 
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 
 </web-app>  

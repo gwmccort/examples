@@ -3,15 +3,24 @@
 == Projects
 
 * asciidoc - asciidoctor gradle
-* commons - apache commons
+* commons - apache commons api
 * geb - groovy browser testing
 * gradle
+** CopyPasteDetection - use PMD's copy/paste dector (cpd) on pdm's jar's
 ** webapp
 * Groovy-JavaCodeGeeks - groovy examples from Java Code Geeks
-* groovyRegex - groovy regex matching
+* guava - google's guava api
 * iText - java pdf api
+* java - java examples
 * lazybones-templates - how to create a lazybones template
+* LuceneMusicTest - lucene music  wip
 * luceneWriter - lucene writer
 * patterns - design patterns
 * spock - spock gradle
 * webdrive - selenium webdrive java examples
+* webScrape - scrape music web sites
+
+== T2D
+. rename luceneWriter & Groovy-JavaCodeGeeks
+. asciidoctor & github pages
+.. bit-bucket pages???

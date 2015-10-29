@@ -1,0 +1,9 @@
+= Google's Guava API
+* Orignal https://code.google.com/p/guava-libraries/[Google Code] and new https://github.com/google/guava[GitHub] home
+
+== Articles
+* http://codingjunkie.net/guava-and-java8-collectors/[Guava ImmutableCollections, Multimaps and Java 8 Collectors]
+
+== References
+* Packt's https://www.packtpub.com/application-development/getting-started-google-guava[Getting Started with Google Guava]
+* Random Thoughts on Coding http://codingjunkie.net/categories/guava/[Guava tag]

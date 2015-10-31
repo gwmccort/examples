@@ -6,6 +6,8 @@ plugins {
 	id "com.github.tkruse.groovysh" version "1.0.8"
 }
 
+description = 'scrape web sites'
+
 repositories {
     jcenter()
 	maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
@@ -17,7 +19,7 @@ dependencies {
 
 	def gebVersion = '0.12.2'
     compile "org.gebish:geb-core:$gebVersion"
-	
+
 	def seleniumVersion = '2.48.2'
 	compile "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
 	compile "org.seleniumhq.selenium:selenium-htmlunit-driver:$seleniumVersion"
@@ -25,7 +27,7 @@ dependencies {
 	//testCompile("org.spockframework:spock-core:1.0-groovy-2.4") { exclude group: "org.codehaus.groovy" }
 //	testCompile("org.spockframework:spock-core:1.1-groovy-2.3-SNAPSHOT") { exclude group: "org.codehaus.groovy" }
 	compile("org.spockframework:spock-core:1.1-groovy-2.3-SNAPSHOT") { exclude group: "org.codehaus.groovy" }
-	
+
 	compile 'org.ccil.cowan.tagsoup:tagsoup:1.2.1'
 }
 

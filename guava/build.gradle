@@ -12,7 +12,8 @@ repositories {
 }
 
 dependencies {
-    compile 'com.google.guava:guava:15.0' 
+//    compile 'com.google.guava:guava:15.0' 
+    compile 'com.google.guava:guava:18.0' 
 }
 
 task copyReadMeAsciidoc(type: Copy) {

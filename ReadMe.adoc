@@ -8,10 +8,10 @@
 * gradle
 ** CopyPasteDetection - use PMD's copy/paste dector (cpd) on pdm's jar's
 ** webapp
-* Groovy-JavaCodeGeeks - groovy examples from Java Code Geeks
+* groovy-examples - groovy examples from Java Code Geeks
 * guava - google's guava api
 * iText - java pdf api
-* java - java examples
+* java-examples - java examples
 * lazybones-templates - how to create a lazybones template
 * LuceneMusicTest - lucene music  wip
 * luceneWriter - lucene writer

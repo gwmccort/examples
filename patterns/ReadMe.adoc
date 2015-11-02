@@ -4,6 +4,8 @@
 
 * http://www.javacodegeeks.com/2015/09/visitor-design-pattern.html[Visitor]
 * http://www.javacodegeeks.com/2015/10/wrap-around-design-pattern-in-java8.html[Wrap around design pattern in java8]
+* https://springframework.guru/gang-of-four-design-patterns/[Gang of Four Design Patterns] - looks like a good tutorial
+** https://springframework.guru/abstract-factory-design-pattern/[Abstract Factory Pattern] in package package guru.springframework.gof
 
 == Site's
 

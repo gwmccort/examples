@@ -6,11 +6,13 @@
 * http://www.javacodegeeks.com/2015/10/wrap-around-design-pattern-in-java8.html[Wrap around design pattern in java8]
 * https://springframework.guru/gang-of-four-design-patterns/[Gang of Four Design Patterns] - looks like a good tutorial
 ** https://springframework.guru/abstract-factory-design-pattern/[Abstract Factory Pattern] in package package guru.springframework.gof
+* https://dzone.com/articles/singleton-explained?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[The Singleton Class Explained]
 
 == Site's
 
 * http://www.javacodegeeks.com/tag/design-patterns/[Java Code Geeks, Design Patterns]
 * http://www.javabeat.net/tag/design-patterns/[JavaBeat Design Patterns]
+* https://springframework.guru/gang-of-four-design-patterns/[Gang of Four Design Patterns]
 
 == TODO
 * http://www.javabeat.net/builder-design-pattern/[Builder Design Pattern]

@@ -1,8 +1,0 @@
-= Java Examples
-Glen McCort <gwmccort@gmail.com>
-
-== Examples
-* gwm.nio.WalkFileTree ????
-
-== Articles
-* http://javarticles.com/2015/11/java-file-compression-example.html[File Compression]

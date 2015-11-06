@@ -1,0 +1,5 @@
+= JBake
+Glen McCort <gwmccort@gmail.com>
+
+== Example sites built with JBake
+* http://vorozco.com/blog/[The J*] and https://github.com/tuxtor/the-j[GitHub repro]

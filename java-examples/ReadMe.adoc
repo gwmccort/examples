@@ -1,0 +1,14 @@
+= Java Examples
+Glen McCort <gwmccort@gmail.com>
+
+== Examples
+* gwm.nio.WalkFileTree ????
+
+== Articles
+* http://javarticles.com/2015/11/java-file-compression-example.html[File Compression]
+* http://javarticles.com/2015/11/java-decompressing-files-example.html[Decompressing Files]
+
+== T2D
+
+* https://dzone.com/articles/sorting-java-arraylist?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Different Approaches To Sorting Elements of an ArrayList in Java]
+* https://springframework.guru/sorting-java-arraylist/[SORTING JAVA ARRAYLIST]

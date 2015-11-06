@@ -3,7 +3,8 @@
 
 == Articles
 * http://codingjunkie.net/guava-and-java8-collectors/[Guava ImmutableCollections, Multimaps and Java 8 Collectors]
-* http://javarticles.com/2015/04/guava-eventbus-examples.html[EventBus]
+* http://javarticles.com/2015/04/guava-eventbus-examples.html[EventBus] - subscribing and publishing events
+
 == References
 * Packt's https://www.packtpub.com/application-development/getting-started-google-guava[Getting Started with Google Guava]
 * Random Thoughts on Coding http://codingjunkie.net/categories/guava/[Guava tag]

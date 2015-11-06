@@ -23,3 +23,6 @@
 * http://mrhaki.blogspot.com/search/label/Groovy%3AGoodness[mrhaki's Groovy Goodness]
 * http://www.javacodegeeks.com/author/Alex-Staveley/[Alex Staveley]
 * http://examples.javacodegeeks.com/author/huseyin-babal/[Huseyin Babal]
+
+== T2D
+* https://dzone.com/articles/how-to-debug-groovy-script-from-shell?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[How to Debug a Groovy Script From Shell]

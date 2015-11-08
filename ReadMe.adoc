@@ -11,12 +11,16 @@
 * groovy-examples - groovy examples from Java Code Geeks
 * guava - google's guava api
 * iText - java pdf api
+* java8 - java 8 examples
 * java-examples - java examples
+* jbake - create web blog's with asciidoc on github pages
 * lazybones-templates - how to create a lazybones template
+* lucene - lucene search
 * LuceneMusicTest - lucene music  wip
 * luceneWriter - lucene writer
 * patterns - design patterns
 * spock - spock gradle
+* spring - spring framework examples
 * webdrive - selenium webdrive java examples
 * webScrape - scrape music web sites
 

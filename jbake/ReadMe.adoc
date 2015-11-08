@@ -1,5 +1,15 @@
 = JBake
 Glen McCort <gwmccort@gmail.com>
 
+== Articls
+* http://melix.github.io/blog/2014/02/hosting-jbake-github.html[Authoring your blog on GitHub with JBake and Gradle]
+** Cédric Champeau (melix) https://github.com/melix[GitHub repro's]
+
 == Example sites built with JBake
 * http://vorozco.com/blog/[The J*] and https://github.com/tuxtor/the-j[GitHub repro]
+
+== Tools
+* http://jbake.org/[JBake] - "Jekyll of the JVM"
+* https://github.com/jbake-org/jbake-gradle-plugin[jbake-gradle-plugin]
+* https://github.com/ajoberstar/gradle-git[gradle-git] includes github-pages to
+publishes files to the gh-pages branch of a GitHub repository

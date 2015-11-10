@@ -1,0 +1,28 @@
+buildscript {
+  repositories {
+      jcenter()
+  }
+
+  dependencies {
+  //classpath 'org.ajoberstar:gradle-git:0.6.3'     
+  classpath 'org.ajoberstar:gradle-git:0.9.0'     
+
+  classpath 'com.github.ben-manes:gradle-versions-plugin:0.8'
+  }
+}
+
+apply plugin: 'github-pages'  
+// apply plugin: 'org.ajoberstar.github-pages'
+
+apply plugin: 'com.github.ben-manes.versions'
+
+githubPages {
+  //repoUri = 'git@github.com:youtname/blog.git'      
+  //repoUri = 'git@github.com:gwmccort/blog.git'      
+  repoUri = 'https://github.com/gwmccort/gwmccort.github.io.git'      
+  pages {
+     from(file('build/jbake')) {
+     	into '.'                                    
+     }
+  }
+}

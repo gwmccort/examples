@@ -1,0 +1,78 @@
+
+// new plugin not working
+// plugins {
+//   id 'me.champeau.jbake' version '0.2'
+//   id 'com.github.ben-manes.versions' version '0.11.3'
+// }
+
+// repositories {
+//     jcenter()
+// }
+
+// dependencies {
+//   // classpath 'org.asciidoctor:asciidoctor-java-integration:0.1.4'
+//   // compile 'org.asciidoctor:asciidoctor-java-integration:0.1.4'
+// }
+
+
+//// old plugin method
+// buildscript {
+//   repositories {
+//       //mavenLocal() // needed to use the local JBake 2.3.0 build
+//       mavenCentral()
+//       jcenter()
+//   }
+
+//   dependencies {
+//     //classpath 'me.champeau.gradle:jbake-gradle-plugin:0.1-SNAPSHOT' - doesn't work
+//     //classpath 'me.champeau.gradle:jbake-gradle-plugin:0.1' - works
+//     classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2' 
+
+
+//     classpath 'org.asciidoctor:asciidoctor-java-integration:0.1.4'  
+//     // classpath 'org.freemarker:freemarker:2.3.19'   
+//     classpath 'org.freemarker:freemarker:2.3.+'   
+
+//     classpath 'com.github.ben-manes:gradle-versions-plugin:0.5+'                 
+//   }
+// }
+
+
+// // new plugin method
+buildscript {
+  repositories {
+      jcenter()
+  }
+
+  dependencies {
+
+    classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2' 
+
+    // optional, if you use asciidoctor markup
+    classpath 'org.asciidoctor:asciidoctor-java-integration:0.1.4'
+
+    // optional, if you use freemarker template engine
+    // classpath 'org.freemarker:freemarker:2.3.19'
+    classpath 'org.freemarker:freemarker:2.3.+'
+
+    // classpath 'com.github.ben-manes:gradle-versions-plugin:0.8'
+    classpath 'com.github.ben-manes:gradle-versions-plugin:0.11.3'
+
+  }
+}
+
+apply plugin: 'me.champeau.jbake' 
+apply plugin: 'com.github.ben-manes.versions'  
+
+
+// plugins {
+//   id "me.champeau.jbake" version "0.2"
+//   id "com.github.ben-manes.versions" version "0.6"
+// }
+
+apply plugin: 'base'
+
+task publish(type: GradleBuild) {           
+    buildFile = 'publish.gradle'
+    tasks = ['publishGhPages']
+} 

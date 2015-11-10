@@ -13,3 +13,10 @@ Glen McCort <gwmccort@gmail.com>
 * https://github.com/jbake-org/jbake-gradle-plugin[jbake-gradle-plugin]
 * https://github.com/ajoberstar/gradle-git[gradle-git] includes github-pages to
 publishes files to the gh-pages branch of a GitHub repository
+
+== GitHub Pages
+* http://gwmccort.github.io/[gwmccort.github.io site]
+* http://gwmccort.github.io/pl/[My pl repro gh-pages site]
+
+== Bitbucket pages
+* http://gwmccort.bitbucket.org/[gwmccort.bitbucket.org] - not working

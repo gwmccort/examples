@@ -25,6 +25,8 @@
 * webScrape - scrape music web sites
 
 == T2D
+. git push/pull w/o password
+. gwmccort.github.io untracked content http://stackoverflow.com/questions/4161022/git-how-to-track-untracked-content[see stackoverflow]
 . rename luceneWriter & Groovy-JavaCodeGeeks
-. asciidoctor & github pages
+. asciidoctor & github pages (see jbake/gh-pages for working example)
 .. bit-bucket pages???

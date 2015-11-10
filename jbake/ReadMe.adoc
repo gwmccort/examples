@@ -14,6 +14,10 @@ Glen McCort <gwmccort@gmail.com>
 * https://github.com/ajoberstar/gradle-git[gradle-git] includes github-pages to
 publishes files to the gh-pages branch of a GitHub repository
 
+== Projects
+* gh-pages - example of publishing doc's to github's gh-pages
+** http://gwmccort.github.io/test-gh-pages/
+
 == GitHub Pages
 * http://gwmccort.github.io/[gwmccort.github.io site]
 * http://gwmccort.github.io/pl/[My pl repro gh-pages site]

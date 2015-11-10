@@ -12,3 +12,5 @@ Glen McCort <gwmccort@gmail.com>
 
 * https://dzone.com/articles/sorting-java-arraylist?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Different Approaches To Sorting Elements of an ArrayList in Java]
 * https://springframework.guru/sorting-java-arraylist/[SORTING JAVA ARRAYLIST]
+* http://www.shaunabram.com/test-doubles/[Test Doubles: mocks, dummies and stubs]
+* https://dzone.com/articles/beware-of-what-you-wish-for-1?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+dzone%2Fjava[Adding Search and Analytics to Log4j]

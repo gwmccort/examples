@@ -4,9 +4,12 @@
 == Articles
 * http://codingjunkie.net/guava-and-java8-collectors/[Guava ImmutableCollections, Multimaps and Java 8 Collectors]
 * http://javarticles.com/2015/04/guava-eventbus-examples.html[EventBus] - subscribing and publishing events
+* http://javarticles.com/2015/11/guava-multimap-example.html[Multimap Example]
 
 == T2D
-* http://javarticles.com/2015/11/guava-multimap-example.html[Multimap Example]
+* http://mrhaki.blogspot.com/2015/10/awesome-asciidoctor-using-asciidoctor.html[asciidoc javadoc]
+** http://www.scriptscoop.net/t/aaa73d1da03d/how-to-use-asciidoclet-to-generate-asciidoc-file-from-javadoc-comments.html[How to use AsciiDoclet to generate asciidoc file from javadoc comments in .java file]
+** https://raw.githubusercontent.com/asciidoctor/asciidoclet/master/README.adoc[GOOD EXAMPLE Asciidoclet]
 
 == References
 * Packt's https://www.packtpub.com/application-development/getting-started-google-guava[Getting Started with Google Guava]

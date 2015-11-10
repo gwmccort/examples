@@ -4,12 +4,35 @@ import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 
 
-/**
+/* - plain javadoc
  * Multimap example
  * from: http://javarticles.com/2015/11/guava-multimap-example.html
  * 
  * @author Glen
  *
+ */
+
+/**
+ * = MultimapExample
+ *
+ * Sample comments that include `source code`.
+ * 
+ * from: http://javarticles.com/2015/11/guava-multimap-example.html
+ *
+ * [source,java]
+ * --
+ * public class Asciidoclet extends Doclet {
+ *     private final Asciidoctor asciidoctor = Asciidoctor.Factory.create();
+ *
+ *     @SuppressWarnings("UnusedDeclaration")
+ *     public static boolean start(RootDoc rootDoc) {
+ *         new Asciidoclet().render(rootDoc);
+ *         return Standard.start(rootDoc);
+ *     }
+ * }
+ * --
+ *
+ * @author https://github.com/johncarl81[John Ericksen]
  */
 public class MultimapExample {
     private static final String COLOR = "Color";

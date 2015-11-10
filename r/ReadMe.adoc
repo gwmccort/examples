@@ -1,0 +1,5 @@
+= R
+Glen McCort <gwmccort@gmail.com>
+
+== T2D
+*http://tm.durusau.net/?p=65563[Learn R From Scratch]

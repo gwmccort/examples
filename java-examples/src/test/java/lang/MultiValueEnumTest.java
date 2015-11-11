@@ -1,6 +1,8 @@
-package gwm;
+package lang;
 
 import org.junit.Test;
+
+import lang.StatesMultiValueEnum;
 
 /**
  * Multi-value enum example from:
@@ -13,7 +15,7 @@ import org.junit.Test;
  * @author gwmccort
  *
  */
-public class MultiValueEnum {
+public class MultiValueEnumTest {
 	// public static void main(String[] args) {
 	// System.out.println(States.IOWA);
 	// System.out.println(States.IOWA.getAbbreviatedName());
@@ -29,9 +31,9 @@ public class MultiValueEnum {
 
 	@Test
 	public void testMultiValueEnumStates() throws Exception {
-		System.out.println(States.IOWA);
-		System.out.println(States.IOWA.getAbbreviatedName());
-		for (States st : States.values()) {
+		System.out.println(StatesMultiValueEnum.IOWA);
+		System.out.println(StatesMultiValueEnum.IOWA.getAbbreviatedName());
+		for (StatesMultiValueEnum st : StatesMultiValueEnum.values()) {
 			System.out.println(st + "\n\t" + st.isOriginallyColony());
 		}
 	}

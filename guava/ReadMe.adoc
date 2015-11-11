@@ -6,6 +6,7 @@
 * http://javarticles.com/2015/04/guava-eventbus-examples.html[EventBus] - subscribing and publishing events
 * http://javarticles.com/2015/11/guava-multimap-example.html[Multimap Example]
 * http://javarticles.com/2015/11/guava-bimap-example.html[BiMap Example]
+* http://javarticles.com/2015/11/guava-table-example.html[Table Example]
 
 == T2D
 * http://mrhaki.blogspot.com/2015/10/awesome-asciidoctor-using-asciidoctor.html[asciidoc javadoc]
@@ -14,4 +15,6 @@
 
 == References
 * Packt's https://www.packtpub.com/application-development/getting-started-google-guava[Getting Started with Google Guava]
+** 'C:\Users\Glen\Documents\Books\Java\API\Guava'
 * Random Thoughts on Coding http://codingjunkie.net/categories/guava/[Guava tag]
+* http://javarticles.com/category/guava[Java Articles Guava articles]

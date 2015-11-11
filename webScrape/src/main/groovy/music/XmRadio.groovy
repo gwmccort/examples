@@ -3,7 +3,7 @@ package music
 import org.ccil.cowan.tagsoup.Parser
 
 /**
- * Get's a list of artists from XM Playlist site
+ * Get's a list of artists from XM Playlist site using tagsoup
  */
 
 //url = 'http://dogstarradio.com/search_xm_playlist.php?artist=&title=&channel=29&month=&date=&shour=&sampm=&stz=&ehour=&eampm='

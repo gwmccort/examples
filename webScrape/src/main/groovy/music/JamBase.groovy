@@ -2,7 +2,7 @@ package music
 import org.ccil.cowan.tagsoup.Parser
 
 /**
- * Read JamBase artist pages and write artists to file.
+ * Read JamBase artist pages using tagsoup and write artists to file.
  */
 
 url = 'http://www.jambase.com/Artists/default.aspx?pg='

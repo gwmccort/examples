@@ -1,8 +1,10 @@
 plugins {
     id 'java'
     id 'eclipse'
+    id 'idea'
     id 'com.github.ben-manes.versions' version '0.11.3'
 	  id 'org.asciidoctor.convert' version '1.5.2'
+    // for asciidoclet
     id 'com.github.jruby-gradle.base' version '0.1.5'
 }
 
@@ -12,33 +14,11 @@ repositories {
     jcenter()
 }
 
-/*
 configurations {
     asciidoclet
 }
 
 dependencies {
-    asciidoclet 'org.asciidoctor:asciidoclet:1.+'
-}
-
-javadoc {
-    options.docletpath = configurations.asciidoclet.files.asType(List)
-    options.doclet = 'org.asciidoctor.Asciidoclet'
-    options.overview = "src/main/java/overview.adoc"
-    options.addStringOption "-base-dir", "${projectDir}"
-    options.addStringOption "-attribute",
-            "name=${project.name}," +
-            "version=${project.version}," +
-            "title-link=http://example.com[${project.name} ${project.version}]")
-}
-*/
-
-configurations {
-    asciidoclet
-}
-
-dependencies {
-//    compile 'com.google.guava:guava:15.0'
     compile 'com.google.guava:guava:18.0'
 
     // asciidoclet

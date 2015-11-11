@@ -5,6 +5,9 @@ plugins {
 	id 'com.github.ben-manes.versions' version '0.11.3'
 }
 
+description = 'spock examples'
+sourceCompatibility = '1.8'
+
 repositories {
     jcenter()
 }
@@ -15,9 +18,9 @@ dependencies {
 
 	// compile localGroovy()
 	compile "org.codehaus.groovy:groovy-all:${groovyVer}"
-	
+
 	//////// spock depends ////////
-	//problem w/ eclipse: 
+	//problem w/ eclipse:
 	testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
 
 	//works in eclipse:

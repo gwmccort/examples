@@ -7,11 +7,13 @@ Glen McCort <gwmccort@gmail.com>
 . rename luceneWriter & Groovy-JavaCodeGeeks
 . asciidoctor & github pages (see jbake/gh-pages for working example)
 .. bit-bucket pages???
+. gradle multi-project
 
 === Ratpack
 * https://ratpack.io/[Home page]
 * mrhaki's http://mrhaki.blogspot.com/search/label/Ratpack[Ratpack blog's]
 * http://mrhaki.blogspot.com/2015/11/ratpacked-apply-configuration-to.html[Apply Configuration To Configurable Module]
+* http://kyleboon.org/blog/2015/08/05/zero-to-ratpack/[Zero to Ratpack - Part 1] & http://kyleboon.org/blog/2015/08/14/zero-to-ratpack-part-2/[Zero to Ratpack - Part 2]
 
 == Projects
 

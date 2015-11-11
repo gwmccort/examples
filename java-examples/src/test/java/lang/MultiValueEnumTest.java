@@ -26,11 +26,13 @@ public class MultiValueEnumTest {
 
 	@Test
 	public void testSomething() throws Exception {
-		System.out.println("in testSomething");
+		System.out.println("---- testSomething");
+		System.out.println("output from testSomething");
 	}
 
 	@Test
 	public void testMultiValueEnumStates() throws Exception {
+		System.out.println("---- testMultiValueEnumStates");
 		System.out.println(StatesMultiValueEnum.IOWA);
 		System.out.println(StatesMultiValueEnum.IOWA.getAbbreviatedName());
 		for (StatesMultiValueEnum st : StatesMultiValueEnum.values()) {

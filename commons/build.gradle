@@ -1,7 +1,11 @@
 plugins {
 	id 'java'
 	id 'eclipse'
+	id 'idea'
 }
+
+description = 'apache commons examples'
+sourceCompatibility = '1.8'
 
 repositories {
 	jcenter()
@@ -28,5 +32,3 @@ task runModFilter(type: JavaExec, dependsOn: 'classes') {
 }
 
 task runAll(dependsOn: ['runComposite', 'runLastMod'])
-
-

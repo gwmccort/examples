@@ -9,6 +9,7 @@ plugins {
 }
 
 description = "Google's Guava examples"
+sourceCompatibility = '1.8'
 
 repositories {
     jcenter()

@@ -14,6 +14,7 @@ Glen McCort <gwmccort@gmail.com>
 * mrhaki's http://mrhaki.blogspot.com/search/label/Ratpack[Ratpack blog's]
 * http://mrhaki.blogspot.com/2015/11/ratpacked-apply-configuration-to.html[Apply Configuration To Configurable Module]
 * http://kyleboon.org/blog/2015/08/05/zero-to-ratpack/[Zero to Ratpack - Part 1] & http://kyleboon.org/blog/2015/08/14/zero-to-ratpack-part-2/[Zero to Ratpack - Part 2]
+* https://github.com/beckje01/devoxx-hands-on-ratpack-java[Hands on Ratpack] -The Devoxx 2015 Hands on Lab for Ratpack.
 
 == Projects
 

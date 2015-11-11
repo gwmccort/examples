@@ -15,9 +15,13 @@ repositories {
 dependencies {
     compile 'org.slf4j:slf4j-api:1.7.12'
 
-	// needed for WalkFileTree
-	compile 'net.sf.opencsv:opencsv:2.3'
-	compile 'com.google.guava:guava:15.0'
+    //TODO: logback are both needed???
+    compile group: 'ch.qos.logback', name: 'logback-classic', version:'1.0.1'
+    compile group: 'ch.qos.logback', name: 'logback-core', version:'1.0.1'
+
+  	// needed for WalkFileTree
+  	compile 'net.sf.opencsv:opencsv:2.3'
+  	compile 'com.google.guava:guava:15.0'
 
     testCompile 'junit:junit:4.12'
 }

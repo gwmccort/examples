@@ -10,8 +10,10 @@ Glen McCort <gwmccort@gmail.com>
 * http://examples.javacodegeeks.com/core-java/junit/junit-disable-test-example/[JUnit Disable Test Example]
 * http://examples.javacodegeeks.com/core-java/create-immutable-class-java/[How to create Immutable class]
 * http://www.javacodegeeks.com/2012/04/using-slf4j-with-logback-tutorial.html[slf4j with logback]
+
 == T2D
 
+* asciidoc javadoc - working w/ guava project
 * https://dzone.com/articles/sorting-java-arraylist?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Different Approaches To Sorting Elements of an ArrayList in Java]
 * https://springframework.guru/sorting-java-arraylist/[SORTING JAVA ARRAYLIST]
 * http://www.shaunabram.com/test-doubles/[Test Doubles: mocks, dummies and stubs]

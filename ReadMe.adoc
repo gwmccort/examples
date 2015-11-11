@@ -3,6 +3,9 @@ Glen McCort <gwmccort@gmail.com>
 
 == T2D
 . git push/pull w/o password
+.. https://help.github.com/articles/caching-your-github-password-in-git/[Caching your GitHub password in Git]
+.. http://stackoverflow.com/questions/11069256/automate-username-password-entry-when-git-pushing-over-http-from-windows-machine[Automate username/password entry when git pushing]
+.. http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github/18362082#18362082
 . gwmccort.github.io untracked content http://stackoverflow.com/questions/4161022/git-how-to-track-untracked-content[see stackoverflow]
 . rename luceneWriter & Groovy-JavaCodeGeeks
 . asciidoctor & github pages (see jbake/gh-pages for working example)

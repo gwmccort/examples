@@ -42,7 +42,7 @@ public class MessageService {
 	
 	/**
 	 * This will be the method to get the salutation messages specifically for executives.
-	 * @return
+	 * @return a string
 	 */
 	public String salutationMessageForExecutives() {
 		return "this is not yet implemented";

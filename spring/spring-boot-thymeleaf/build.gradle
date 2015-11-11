@@ -1,0 +1,33 @@
+plugins {
+  id 'application'
+  // id 'java'
+  id 'maven'
+  id 'com.github.ben-manes.versions' version '0.11.3'
+}
+
+description = """spring-boot-thymeleaf"""
+group = 'pl.codeleak.demos.sbt'
+version = '1.0'
+
+sourceCompatibility = '1.8'
+
+mainClassName = 'pl.codeleak.demos.sbt.Application'
+
+repositories {
+    jcenter()
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.2.7.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version:'1.2.7.RELEASE'
+    compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-java8time', version:'2.1.0.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version:'1.2.7.RELEASE'
+    compile group: 'org.webjars', name: 'bootstrap', version:'3.2.0'
+    compile group: 'org.webjars', name: 'jquery', version:'2.1.1'
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'1.2.7.RELEASE') {
+      exclude(module: 'commons-logging')
+    }
+    testCompile group: 'org.assertj', name: 'assertj-core', version:'3.2.0'
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version:'2.48.2'
+}

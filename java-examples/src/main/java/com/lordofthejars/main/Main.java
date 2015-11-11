@@ -4,7 +4,7 @@ import com.lordofthejars.bar.BarComponent;
 import com.lordofthejars.foo.FooComponent;
 
 /**
- * sl4j example
+ * sl4j example <br>
  * from: http://www.javacodegeeks.com/2012/04/using-slf4j-with-logback-tutorial.html
  * 
  * @author Glen

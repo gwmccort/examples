@@ -1,6 +1,6 @@
 package lang;
 
-/**
+/* regular javadoc
  * Multi-value enum example from:
  * http://stackoverflow.com/questions/19600684/java-enum-with-multiple-value-
  * types
@@ -10,6 +10,34 @@ package lang;
  *
  * @author gwmccort
  *
+ */
+
+/**
+ * = StateMultiValueEnum
+ *
+ * Multi-value enum example of states
+ * 
+ * from: http://stackoverflow.com/questions/19600684/java-enum-with-multiple-value-types
+ *
+ * More enum examples: 
+ * from: http://examples.javacodegeeks.com/java-basics/java-enumeration-example
+ * 
+ * Sample comments that include `source code`.
+ *
+ * [source,java]
+ * --
+ * public class Asciidoclet extends Doclet {
+ *     private final Asciidoctor asciidoctor = Asciidoctor.Factory.create();
+ *
+ *     @SuppressWarnings("UnusedDeclaration")
+ *     public static boolean start(RootDoc rootDoc) {
+ *         new Asciidoclet().render(rootDoc);
+ *         return Standard.start(rootDoc);
+ *     }
+ * }
+ * --
+ *
+ * @author https://github.com/gwmccort[Glen McCort]
  */
 public enum StatesMultiValueEnum {
 	// all 50 of those ..

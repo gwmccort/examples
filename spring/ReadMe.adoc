@@ -1,5 +1,9 @@
 = Spring
 Glen McCort <gwmccort@gmail.com>
 
+== Projects
+* spring-boot-thymeleaf http://www.javacodegeeks.com/2014/04/how-to-spring-boot-and-thymeleaf-with-maven.html[Spring Boot and Thymeleaf with Maven]
+and https://github.com/kolorobot/spring-boot-thymeleaf[github repro]
+
 == T2D
 * https://dzone.com/articles/under-the-boot?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Under The Boot – Spring Boot]

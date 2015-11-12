@@ -1,0 +1,13 @@
+= gradle
+Glen McCort <gwmccort@gmail.com>
+
+* CompPasteDetection - example of cpd to find copied codehaus
+* gradle-examples - from https://github.com/pkainulainen/gradle-examples[github]
+* mutli-project - multi-project example
+* webapp - web application example
+
+
+== T2D
+* https://github.com/JFrogDev/project-examples/tree/master/gradle-examples[more gradle examples]
+* https://github.com/gradle/gradle/tree/master/subprojects/docs/src/samples/java/multiproject[mutli-project from gradle ware]
+* http://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-creating-a-multi-project-build/[Getting started with multi-project]

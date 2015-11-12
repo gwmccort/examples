@@ -53,6 +53,8 @@ b.driver.setProxy("proxy", 9090)
 * http://swalsh.org/blog/2014/06/25/groovy-browser-automation-with-geb/[Groovy Browser Automation with Geb] shows use of modules & pages
 * Geb Page object - Groovy-Geb-Cucumber framework http://qastrategies.blogspot.com/2012/06/geb-page-object-groovy-geb-cucumber.html[part 1], http://qastrategies.blogspot.com/2012/06/geb-page-object-groovy-geb-cucumber_08.html[part 2] & http://qastrategies.blogspot.com/2012/06/geb-page-object-groovy-geb-cucumber_3735.html[part 2] shows how to parameterize page objects
 
+== T2D
+* http://www.grailsbrasil.com.br/blog/index.php/2015/11/11/geb-automatizando-seu-browser-com-groovy/[geb article]
 
 == Music
 
@@ -65,4 +67,4 @@ b.driver.setProxy("proxy", 9090)
 * http://www.bluegrassfestivalguide.com/bluegrass-music-charts.htm[Bluegrass Festival Guide]
 * http://www.cybergrass.com/taxonomy/term/158[Cybergras]
 * http://bluegrasstoday.com/chart/[Bluegrass Today]
-* http://www.jamgrass.net/jamgrass_net_recommends/[JamGrass Recommendations] 
+* http://www.jamgrass.net/jamgrass_net_recommends/[JamGrass Recommendations]

@@ -1,0 +1,28 @@
+plugins {
+  id 'java'
+  id 'eclipse'
+  id 'idea'
+  id 'com.github.ben-manes.versions' version '0.11.3'
+
+  // for asciidoclet, DONT SEEM TO NEED THIS
+  // id 'com.github.jruby-gradle.base' version '0.1.5'
+}
+
+subprojects {
+  plugins {
+    id 'java'
+    id 'eclipse'
+    id 'idea'
+    id 'com.github.ben-manes.versions' version '0.11.3'
+  }
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+  //compile project('common')
+  compile 'org.apache.commons:commons-lang3:3.3.2'
+  compile 'log4j:log4j:1.2.17'
+  }

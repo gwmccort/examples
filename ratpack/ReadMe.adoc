@@ -1,0 +1,16 @@
+= Ratpack
+Glen McCort <gwmccort@gmail.com>
+
+== Resources
+* https://ratpack.io/[Home page]
+* mrhaki's http://mrhaki.blogspot.com/search/label/Ratpack[Ratpack blog's]
+* http://mrhaki.blogspot.com/2015/11/ratpacked-apply-configuration-to.html[Apply Configuration To Configurable Module]
+* http://kyleboon.org/blog/2015/08/05/zero-to-ratpack/[Zero to Ratpack - Part 1] & http://kyleboon.org/blog/2015/08/14/zero-to-ratpack-part-2/[Zero to Ratpack - Part 2]
+* https://github.com/beckje01/devoxx-hands-on-ratpack-java[Hands on Ratpack] -The Devoxx 2015 Hands on Lab for Ratpack.
+* http://mrhaki.blogspot.com/2015/11/ratpacked-deploy-application-as-docker.html[Deploy Application As Docker Container]
+* http://mrhaki.blogspot.com/2015/11/ratpacked-add-health-checks.html[Add Health Checks]
+* https://www.youtube.com/watch?v=jL8fB-SS4yM[Lightweight HTTP applications in the JVM with Groovy and Ratpack] video
+** http://bit.ly/ratpack-101-slides[slides]
+** http://bit.ly/ratpack-101-code[code]
+** http://bit.ly/ratpack-101-workshop[workshop]
+* http://www.slideshare.net/danveloper?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview[dan woods slides]

@@ -12,11 +12,15 @@ Glen McCort <gwmccort@gmail.com>
 .. bit-bucket pages???
 . gradle multi-project
 
+== JavaScript
+* http://jsforcats.com/[JavaScript for cats]
+
 == Dropwizard
 * https://dzone.com/articles/getting-started-with-dropwizard-connecting-to-a-da?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Connecting to a Database Using Hibernate]
 
 == Scala
 * https://dzone.com/articles/java-8-%CE%BBe-vs-scalapart-i?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java 8 vs. Scala: Part I]
+* https://dzone.com/articles/java-8-vs-scalapart-ii-streams-api?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[part 2]
 
 == Java
 * https://dzone.com/articles/executable-java-applications?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Guide to Executable Java Applications]

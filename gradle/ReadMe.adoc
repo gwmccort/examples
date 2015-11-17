@@ -1,13 +1,19 @@
 = gradle
 Glen McCort <gwmccort@gmail.com>
 
+== Projects
 * CompPasteDetection - example of cpd to find copied codehaus
 * gradle-examples - from https://github.com/pkainulainen/gradle-examples[github]
 * mutli-project - multi-project example
 * webapp - web application example
+
+== Articles
+* http://gradle.org/migrating-a-maven-build-to-gradle/[Migrating a maven build to Gradle]
 
 
 == T2D
 * https://github.com/JFrogDev/project-examples/tree/master/gradle-examples[more gradle examples]
 * https://github.com/gradle/gradle/tree/master/subprojects/docs/src/samples/java/multiproject[mutli-project from gradle ware]
 * http://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-creating-a-multi-project-build/[Getting started with multi-project]
+* http://www.javacodegeeks.com/2015/10/integration-testing-with-gradle.html[Integration testing with Gradle]
+* http://www.javacodegeeks.com/tag/gradle/[java code geeks gradle tag]

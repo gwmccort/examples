@@ -11,8 +11,12 @@ Glen McCort <gwmccort@gmail.com>
 * http://examples.javacodegeeks.com/core-java/create-immutable-class-java/[How to create Immutable class]
 * http://www.javacodegeeks.com/2012/04/using-slf4j-with-logback-tutorial.html[slf4j with logback]
 
-== T2D
+=== Puzzlers
+* http://www.javapuzzlers.com/[Java Puzzlers] Traps, Pitfalls, and Corner Cases By Joshua Bloch and Neal Gafter
+** http://cs.fit.edu/~ryan/cse4051/java-puzzlers/[examples]
+* https://codexplo.wordpress.com/2015/11/14/why-1000-1000-returns-false-but-100-100-returns-true-in-java/[Why 100==100 returns true]
 
+== T2D
 * asciidoc javadoc - working w/ guava project
 * https://dzone.com/articles/sorting-java-arraylist?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Different Approaches To Sorting Elements of an ArrayList in Java]
 * https://springframework.guru/sorting-java-arraylist/[SORTING JAVA ARRAYLIST]
@@ -26,3 +30,5 @@ Glen McCort <gwmccort@gmail.com>
 ** http://www.javacodegeeks.com/2015/11/getting-started-with-mockito.html[Getting started with Mockito]
 ** http://www.javacodegeeks.com/2015/11/mocks-spies-partial-mocks-and-stubbing.html[Mocks, Spies, Partial Mocks and Stubbing]
 ** http://www.javacodegeeks.com/2015/11/mockito-verification.html[Mockito Verification]
+* http://www.javabeat.net/java-exceptions/[Exceptions Tutorial]
+* http://neo4j.com/blog/cli-markov-chains/[CLI’s Autocomplete with Markov Chains]

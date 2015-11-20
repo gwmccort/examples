@@ -12,12 +12,19 @@ Glen McCort <gwmccort@gmail.com>
 .. bit-bucket pages???
 . gradle multi-project
 
-=== Ratpack
-* https://ratpack.io/[Home page]
-* mrhaki's http://mrhaki.blogspot.com/search/label/Ratpack[Ratpack blog's]
-* http://mrhaki.blogspot.com/2015/11/ratpacked-apply-configuration-to.html[Apply Configuration To Configurable Module]
-* http://kyleboon.org/blog/2015/08/05/zero-to-ratpack/[Zero to Ratpack - Part 1] & http://kyleboon.org/blog/2015/08/14/zero-to-ratpack-part-2/[Zero to Ratpack - Part 2]
-* https://github.com/beckje01/devoxx-hands-on-ratpack-java[Hands on Ratpack] -The Devoxx 2015 Hands on Lab for Ratpack.
+== JavaScript
+* http://jsforcats.com/[JavaScript for cats]
+
+== Dropwizard
+* https://dzone.com/articles/getting-started-with-dropwizard-connecting-to-a-da?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Connecting to a Database Using Hibernate]
+
+== Scala
+* https://dzone.com/articles/java-8-%CE%BBe-vs-scalapart-i?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java 8 vs. Scala: Part I]
+* https://dzone.com/articles/java-8-vs-scalapart-ii-streams-api?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[part 2]
+
+== Java
+* https://dzone.com/articles/executable-java-applications?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Guide to Executable Java Applications]
+* http://examples.javacodegeeks.com/enterprise-java/jms/jms-topic-example/[Guide to Executable Java Applications]
 
 == Projects
 

@@ -1,0 +1,8 @@
+= Muisc Search
+Glen McCort <gwmccort.gmail.com>
+
+== T2D
+* look at https://github.com/griffon/griffon[griffon build]
+** http://griffon-framework.org/[griffon web site]
+* ratpack web interface
+* griffon desktop search

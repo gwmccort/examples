@@ -6,9 +6,10 @@
 * http://examples.javacodegeeks.com/core-java/itext-pdfreader-example/[PDFReader Example]
 * http://examples.javacodegeeks.com/core-java/itext-rectangle-example/[Rectangle Example]
 * http://examples.javacodegeeks.com/core-java/itext-pdfstamper-example/[PDFstamper Example]
-* http://examples.javacodegeeks.com/core-java/itext-pdftable-example/[IText PDFtable example]
+* http://examples.javacodegeeks.com/core-java/itext-pdftable-example/[PDFtable example]
 
 === T2D
+* http://examples.javacodegeeks.com/core-java/itext-html-pdf-example/[HTML to PDF Example]
 
 == Auther Arcives
 * http://www.javacodegeeks.com/author/Alex-Staveley/[Alex Staveley]

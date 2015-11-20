@@ -2,4 +2,8 @@
 
 == T2D
 * https://dzone.com/articles/working-with-java-8-optionals?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Working With Java 8 Optionals]
+<<<<<<< HEAD
 * http://www.javacodegeeks.com/2015/11/from-arrays-to-streams-and-back-with-java-8.html[From Arrays to Streams and Back]
+=======
+* http://www.javacodegeeks.com/2015/11/java-8-streams-filter-and-predicate-negation.html[Java 8 Streams: filter and predicate negation]
+>>>>>>> b55cc1e3e659395f5025cf9037ef8eb049ba1f6c

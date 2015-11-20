@@ -2,3 +2,4 @@
 
 == T2D
 * https://dzone.com/articles/working-with-java-8-optionals?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Working With Java 8 Optionals]
+* http://www.javacodegeeks.com/2015/11/from-arrays-to-streams-and-back-with-java-8.html[From Arrays to Streams and Back]

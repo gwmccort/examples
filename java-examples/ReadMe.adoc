@@ -10,6 +10,7 @@ Glen McCort <gwmccort@gmail.com>
 * http://examples.javacodegeeks.com/core-java/junit/junit-disable-test-example/[JUnit Disable Test Example]
 * http://examples.javacodegeeks.com/core-java/create-immutable-class-java/[How to create Immutable class]
 * http://www.javacodegeeks.com/2012/04/using-slf4j-with-logback-tutorial.html[slf4j with logback]
+* http://examples.javacodegeeks.com/core-java/apache/commons/cli/basicparser/org-apache-commons-cli-basicparser-example/[cli parsing]
 
 === Puzzlers
 * http://www.javapuzzlers.com/[Java Puzzlers] Traps, Pitfalls, and Corner Cases By Joshua Bloch and Neal Gafter

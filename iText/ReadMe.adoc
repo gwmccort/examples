@@ -10,6 +10,7 @@
 
 === T2D
 * http://examples.javacodegeeks.com/core-java/itext-html-pdf-example/[HTML to PDF Example]
+* http://examples.javacodegeeks.com/core-java/itext-watermark-example/[**Watermark Example**]
 
 == Auther Arcives
 * http://www.javacodegeeks.com/author/Alex-Staveley/[Alex Staveley]

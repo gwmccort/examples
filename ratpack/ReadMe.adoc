@@ -17,3 +17,4 @@ Glen McCort <gwmccort@gmail.com>
 
 -- T2D
 * http://www.slideshare.net/danveloper/slides-27337436?related=1[dan woods - Building Web Apps in Ratpack]
+* http://blog.jdriven.com/2015/11/ratpacked-using-optional-path-tokens/[Using Optional Path Tokens]

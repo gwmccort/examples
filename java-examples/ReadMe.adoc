@@ -32,3 +32,8 @@ Glen McCort <gwmccort@gmail.com>
 ** http://www.javacodegeeks.com/2015/11/mockito-verification.html[Mockito Verification]
 * http://www.javabeat.net/java-exceptions/[Exceptions Tutorial]
 * http://neo4j.com/blog/cli-markov-chains/[CLI’s Autocomplete with Markov Chains]
+* http://www.javabeat.net/java-suppressed-exceptions/[Suppressed Exceptions in Java 7]
+* https://dzone.com/articles/eric-d-schabell-jbpm-lead-kris-verlaenen-talks-pro?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[jBPM Demo: Process-driven Applications]
+* http://fxexperience.com/2015/11/controlsfx-8-40-10-now-available/[ControlsFX]
+* http://www.journaldev.com/9731/introduction-to-jms[Introduction to JMS (Java Messaging System), JMS Components]
+* http://examples.javacodegeeks.com/enterprise-java/jms/jms-client-example/[JMS Client Example]

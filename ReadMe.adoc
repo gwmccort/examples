@@ -11,6 +11,7 @@ Glen McCort <gwmccort@gmail.com>
 . asciidoctor & github pages (see jbake/gh-pages for working example)
 .. bit-bucket pages???
 . gradle multi-project
+. http://examples.javacodegeeks.com/software-development/git-remove-commit-example/[Git Remove Commit Example]
 
 == JavaScript
 * http://jsforcats.com/[JavaScript for cats]

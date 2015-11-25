@@ -9,6 +9,7 @@
 * http://javarticles.com/2015/11/guava-table-example.html[Table Example]
 
 == T2D
+* http://javarticles.com/2015/11/guava-functions-example.html[Function Example]
 * http://mrhaki.blogspot.com/2015/10/awesome-asciidoctor-using-asciidoctor.html[asciidoc javadoc]
 ** http://www.scriptscoop.net/t/aaa73d1da03d/how-to-use-asciidoclet-to-generate-asciidoc-file-from-javadoc-comments.html[How to use AsciiDoclet to generate asciidoc file from javadoc comments in .java file]
 ** https://raw.githubusercontent.com/asciidoctor/asciidoclet/master/README.adoc[GOOD EXAMPLE Asciidoclet]

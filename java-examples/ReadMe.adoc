@@ -11,6 +11,7 @@ Glen McCort <gwmccort@gmail.com>
 * http://examples.javacodegeeks.com/core-java/create-immutable-class-java/[How to create Immutable class]
 * http://www.javacodegeeks.com/2012/04/using-slf4j-with-logback-tutorial.html[slf4j with logback]
 * http://examples.javacodegeeks.com/core-java/apache/commons/cli/basicparser/org-apache-commons-cli-basicparser-example/[cli parsing]
+* http://javarticles.com/2015/11/loading-properties-file-in-java.html[Loading Properties File]
 
 === Puzzlers
 * http://www.javapuzzlers.com/[Java Puzzlers] Traps, Pitfalls, and Corner Cases By Joshua Bloch and Neal Gafter
@@ -18,6 +19,8 @@ Glen McCort <gwmccort@gmail.com>
 * https://codexplo.wordpress.com/2015/11/14/why-1000-1000-returns-false-but-100-100-returns-true-in-java/[Why 100==100 returns true]
 
 == T2D
+* javaFX
+** http://gluonhq.com/open-source/scene-builder/[SceneBuilder] now that Oracle doen't offer a download
 * asciidoc javadoc - working w/ guava project
 * https://dzone.com/articles/sorting-java-arraylist?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Different Approaches To Sorting Elements of an ArrayList in Java]
 * https://springframework.guru/sorting-java-arraylist/[SORTING JAVA ARRAYLIST]

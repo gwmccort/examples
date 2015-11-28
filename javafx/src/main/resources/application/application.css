@@ -1,0 +1,24 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root {
+	-fx-background-color: grey;
+}
+
+/* applies to all buttons */
+.button {
+	-fx-font-size: 12.0px;
+	-fx-font-weight: bold;
+	/*-fx-text-fill: red; */
+	-fx-background-color: rgba(255.0, 255.0, 255.0, 0.8);
+	-fx-padding: 6.0 6.0 6.0 6.0;
+	-fx-border-radius: 8.0;
+}
+
+#clickMe {
+	-fx-text-fill: red;
+}
+
+#randLable {
+	-fx-text-fill: green;
+	-fx-background-color: white;
+}

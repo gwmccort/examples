@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'idea'
+    id 'com.github.ben-manes.versions' version '0.11.3'
+}
+
+description = 'javafx examples'
+sourceCompatibility = '1.8'
+
+repositories {
+    jcenter()
+}
+
+task runJavaFxDemo(type: JavaExec) {
+  description = 'Run JavaFxDemo'
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'application.JavaFxDemo'
+}
+
+task runFxmlApp(type: JavaExec) {
+  description = 'Run FxmlApplication'
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'application.FxmlApplication'
+}
+
+task runCaculator(type: JavaExec) {
+  description = 'Run Caculator'
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'caculator.CaculatorApplication'
+}

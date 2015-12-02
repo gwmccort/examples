@@ -19,6 +19,7 @@ Glen McCort <gwmccort@gmail.com>
 * https://codexplo.wordpress.com/2015/11/14/why-1000-1000-returns-false-but-100-100-returns-true-in-java/[Why 100==100 returns true]
 
 == T2D
+* http://www.javacodegeeks.com/2015/11/tutorial-logging-tests.html[logging during tests]
 * javaFX
 ** http://gluonhq.com/open-source/scene-builder/[SceneBuilder] now that Oracle doen't offer a download
 * asciidoc javadoc - working w/ guava project

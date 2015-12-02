@@ -26,14 +26,15 @@ dependencies {
 
     //TODO: logback are both needed???
     def logbakeVersion = '1.1.3'
-    compile group: 'ch.qos.logback', name: 'logback-classic', version: "$logbakeVersion"
-    compile group: 'ch.qos.logback', name: 'logback-core', version: "$logbakeVersion"
+    //runtime group: 'ch.qos.logback', name: 'logback-classic', version: "$logbakeVersion"
+    //runtime group: 'ch.qos.logback', name: 'logback-core', version: "$logbakeVersion"
 
   	// needed for WalkFileTree
   	compile 'net.sf.opencsv:opencsv:2.3'
   	compile 'com.google.guava:guava:18.+'
 
     testCompile 'junit:junit:4.12'
+    testRuntime 'org.slf4j:slf4j-nop:1.7.13'
 
     // asciidoclet
     asciidoclet 'org.asciidoctor:asciidoclet:1.5.2'

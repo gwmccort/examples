@@ -26,8 +26,8 @@ dependencies {
 
     //TODO: logback are both needed???
     def logbakeVersion = '1.1.3'
-    //runtime group: 'ch.qos.logback', name: 'logback-classic', version: "$logbakeVersion"
-    //runtime group: 'ch.qos.logback', name: 'logback-core', version: "$logbakeVersion"
+    runtime group: 'ch.qos.logback', name: 'logback-classic', version: "$logbakeVersion"
+    runtime group: 'ch.qos.logback', name: 'logback-core', version: "$logbakeVersion"
 
   	// needed for WalkFileTree
   	compile 'net.sf.opencsv:opencsv:2.3'
@@ -38,6 +38,11 @@ dependencies {
 
     // asciidoclet
     asciidoclet 'org.asciidoctor:asciidoclet:1.5.2'
+}
+
+test.doLast {
+  println '---------- testRuntime classpath --------------'
+  configurations.testRuntime.each { println it }
 }
 
 // from: https://raw.githubusercontent.com/asciidoctor/asciidoclet/master/README.adoc

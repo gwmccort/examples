@@ -27,7 +27,7 @@ dependencies {
 
 	compile "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
 	compile "org.seleniumhq.selenium:selenium-htmlunit-driver:$seleniumVersion"
-	
+
 	testCompile 'junit:junit:4.12'
 
 //	testCompile("org.spockframework:spock-core:1.0-groovy-2.4") { exclude group: "org.codehaus.groovy" }
@@ -51,6 +51,7 @@ task runScript(type: JavaExec) {
 	main = 'WqTitle'
 	classpath = sourceSets.main.runtimeClasspath
 }
+
 task runWebQuery(type: JavaExec) {
 	description 'Run WebqueryTest'
 	main = 'webquery.WebqueryTest'

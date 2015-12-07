@@ -42,3 +42,4 @@ Glen McCort <gwmccort@gmail.com>
 * http://fxexperience.com/2015/11/controlsfx-8-40-10-now-available/[ControlsFX]
 * http://www.journaldev.com/9731/introduction-to-jms[Introduction to JMS (Java Messaging System), JMS Components]
 * http://examples.javacodegeeks.com/enterprise-java/jms/jms-client-example/[JMS Client Example]
+* http://examples.javacodegeeks.com/core-java/nio/java-nio-ssl-example/[nio ssl]

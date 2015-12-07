@@ -46,6 +46,8 @@ class XmPlaylist {
         Set results = [] as Set
         Browser.drive(baseUrl: 'http://dogstarradio.com') {
 
+//			println "driver: $it.getDriver()"
+
             //TODO auto set proxy better way
             def workHost = 'CRP22627'
             if (workHost == InetAddress.localHost.hostName) {

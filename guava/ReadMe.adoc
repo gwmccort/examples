@@ -7,6 +7,7 @@
 * http://javarticles.com/2015/11/guava-multimap-example.html[Multimap Example]
 * http://javarticles.com/2015/11/guava-bimap-example.html[BiMap Example]
 * http://javarticles.com/2015/11/guava-table-example.html[Table Example]
+* http://javarticles.com/2015/11/guava-multiset-examples.html[Multiset]
 
 == T2D
 * http://javarticles.com/2015/11/guava-functions-example.html[Function Example]
@@ -14,7 +15,8 @@
 ** http://www.scriptscoop.net/t/aaa73d1da03d/how-to-use-asciidoclet-to-generate-asciidoc-file-from-javadoc-comments.html[How to use AsciiDoclet to generate asciidoc file from javadoc comments in .java file]
 ** https://raw.githubusercontent.com/asciidoctor/asciidoclet/master/README.adoc[GOOD EXAMPLE Asciidoclet]
 * http://javarticles.com/2015/11/guava-rangeset-example.html[RangeSet Example]
-* http://javarticles.com/2015/11/guava-multiset-examples.html[Multiset]
+
+* http://javarticles.com/2015/12/guava-equivalence-example.html[Equivalence Example]
 
 == References
 * Packt's https://www.packtpub.com/application-development/getting-started-google-guava[Getting Started with Google Guava]

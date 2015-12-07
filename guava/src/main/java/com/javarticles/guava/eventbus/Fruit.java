@@ -1,4 +1,4 @@
-package com.javarticles.guava;
+package com.javarticles.guava.eventbus;
 
 public class Fruit {
     private String name;

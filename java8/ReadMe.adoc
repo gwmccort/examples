@@ -5,3 +5,6 @@
 * http://www.javacodegeeks.com/2015/11/from-arrays-to-streams-and-back-with-java-8.html[From Arrays to Streams and Back]
 * http://www.javacodegeeks.com/2015/11/java-8-streams-filter-and-predicate-negation.html[Java 8 Streams: filter and predicate negation]
 * http://www.javacodegeeks.com/2015/11/java-8-streams-api-grouping-partitioning-stream.html[Java 8 Streams API: Grouping and Partitioning a Stream]
+
+=== Testing
+* http://www.javacodegeeks.com/2015/12/using-mockito-without-static-imports-java-8.html[Using Mockito without static imports with Java 8]

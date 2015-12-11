@@ -12,6 +12,7 @@
 * http://examples.javacodegeeks.com/core-java/itext-html-pdf-example/[HTML to PDF Example]
 * http://examples.javacodegeeks.com/core-java/itext-watermark-example/[**Watermark Example**]
 * http://examples.javacodegeeks.com/core-java/itext-barcode-example/[Barcode Example]
+* http://examples.javacodegeeks.com/core-java/itext-merge-pdf-example/[Merge PDF Example]
 
 == Auther Arcives
 * http://www.javacodegeeks.com/author/Alex-Staveley/[Alex Staveley]

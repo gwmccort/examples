@@ -11,33 +11,31 @@ import java.util.logging.Logger
  * Created by gwmccort on 10/20/2015.
  */
 class XmPlaylist {
-//    static fileName = 'output/jamon.txt'
-//    static channel = Channels.JAMON
-    static fileName = 'output/bluegrass.txt'
-    static channel = Channels.BLUEGRASS
-
 
     static main(args) {
         println 'main...'
 
-		//todo shutoff htmlunit warnings, is there a better way
-		//from: http://software-testing-tutorials-automation.blogspot.com/2015/05/hide-comgargoylesoftwarehtmlunit.html
+		// shutoff htmlunit warnings, is there a better way???
+		// from: http://software-testing-tutorials-automation.blogspot.com/2015/05/hide-comgargoylesoftwarehtmlunit.html
 		Logger logger = Logger.getLogger("");
 		logger.setLevel(Level.OFF);
 
-        Set bands = [] as Set
+		Channels.each {
+			Set bands = [] as Set
 
-        // get bands
-        bands.addAll(getBands(channel))
+			// get bands
+			bands.addAll(getBands(it.channelNumber))
 
-        // update sorted bands to file
-        String[] origBands = new File(fileName)
-        bands.addAll(origBands)
-        new File(fileName).withWriter { out ->
-            bands.sort().each {
-                out.println it
-            }
-        }
+			// update sorted bands to file
+			String fileName = it.fileName
+			String[] origBands = new File(fileName)
+			bands.addAll(origBands)
+			new File(fileName).withWriter { out ->
+				bands.sort().each {
+					out.println it
+				}
+			}
+		}
 
         println 'finished!'
     }
@@ -55,6 +53,7 @@ class XmPlaylist {
             }
 
             to XmPlaylistPage, channel
+			//TODO get rid of this method & is assert needed???
             assert at(XmPlaylistPage)
             results = bands
         }
@@ -72,8 +71,18 @@ class XmPlaylistPage extends Page {
 
     static content = {
         bands {
-            // 2nd table, rows with bands, 2nd cell (i.e. band)
-            $('table', 1).$('tr', 3..52).collect { it.$('td', 1).text() }.unique()
+			//TODO rows are hard coded length
+
+			// make sure rows size ok
+			def playListRows = $('table', 1).$('tr')
+			if (playListRows.size() == 54) {
+				// 2nd table, rows with bands, 2nd cell (i.e. band)
+//				return $('table', 1).$('tr', 3..52).collect { it.$('td', 1).text() }.unique()
+				return playListRows[(3..52)].collect { it.$('td', 1).text() }.unique()
+			}
+			else {
+				return []
+			}
         }
     }
 
@@ -86,12 +95,15 @@ class XmPlaylistPage extends Page {
 
 //TODO is this the best way to get constants
 public enum Channels {
-    JAMON('29'), BLUEGRASS('61')
+    JAM_ON('29', 'output/jamon.txt'),
+	BLUEGRASS('61', 'output/bluegrass.txt')
 
-    private final String channelNumber
+    final String channelNumber
+	final String fileName
 
-    private Channels(String s) {
-        channelNumber = s;
+    private Channels(String cn, String fn) {
+        channelNumber = cn;
+		fileName = fn
     }
 
     public boolean equalsName(String otherName) {

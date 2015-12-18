@@ -19,3 +19,4 @@
 * http://www.javabeat.net/builder-design-pattern/[Builder Design Pattern]
 * http://www.javabeat.net/adapter-design-pattern/[Adapter Design Pattern]
 * https://dzone.com/articles/memento-pattern-1?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Memnto]
+* http://www.javacodegeeks.com/2015/12/factory-pattern.html[Factory Pattern]

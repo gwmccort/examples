@@ -1,6 +1,6 @@
 import org.openqa.selenium.htmlunit.HtmlUnitDriver
 
-println "in GebConfig driver: $driver $driver.dump()"
+//println "in GebConfig driver: $driver $driver.dump()"
 
 // set geb reports dir
 reportsDir = "build/geb-reports"
@@ -12,4 +12,4 @@ driver = {
 	driver
 }
 
-println "end GebConfig driver: $driver $driver.dump()"
+//println "end GebConfig driver: $driver $driver.dump()"

@@ -18,6 +18,7 @@ Glen McCort <gwmccort@gmail.com>
 
 == Dropwizard
 * https://dzone.com/articles/getting-started-with-dropwizard-connecting-to-a-da?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Connecting to a Database Using Hibernate]
+* https://dzone.com/articles/modern-java-web-dev-dropwizard-from-the-start-part?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Using Dropwizard From the Start]
 
 == Scala
 * https://dzone.com/articles/java-8-%CE%BBe-vs-scalapart-i?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java 8 vs. Scala: Part I]
@@ -28,7 +29,6 @@ Glen McCort <gwmccort@gmail.com>
 * http://examples.javacodegeeks.com/enterprise-java/jms/jms-topic-example/[Guide to Executable Java Applications]
 
 == Projects
-
 * asciidoc - asciidoctor gradle
 * commons - apache commons api
 * geb - groovy browser testing

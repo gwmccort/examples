@@ -43,3 +43,5 @@ Glen McCort <gwmccort@gmail.com>
 * http://www.journaldev.com/9731/introduction-to-jms[Introduction to JMS (Java Messaging System), JMS Components]
 * http://examples.javacodegeeks.com/enterprise-java/jms/jms-client-example/[JMS Client Example]
 * http://examples.javacodegeeks.com/core-java/nio/java-nio-ssl-example/[nio ssl]
+* http://javarticles.com/2015/12/jaxp-stax-stream-reader-example.html[JAXP StAX Stream Reader]
+* http://javarticles.com/2015/12/loading-configuration-file-using-yaml.html[Loading Configuration File Using YAML]

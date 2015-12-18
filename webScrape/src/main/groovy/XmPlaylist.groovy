@@ -24,6 +24,7 @@ class XmPlaylist {
 			Set bands = [] as Set
 
 			// get bands
+            println "channel: $it"
 			bands.addAll(getBands(it.channelNumber))
 
 			// update sorted bands to file
@@ -55,7 +56,12 @@ class XmPlaylist {
             to XmPlaylistPage, channel
 			//TODO get rid of this method & is assert needed???
             assert at(XmPlaylistPage)
-            results = bands
+//            results = bands
+//            results = bands ?: []
+            if (bands == null)
+                results = []
+            else
+                results = bands
         }
         results
     }
@@ -75,14 +81,19 @@ class XmPlaylistPage extends Page {
 
 			// make sure rows size ok
 			def playListRows = $('table', 1).$('tr')
-			if (playListRows.size() == 54) {
-				// 2nd table, rows with bands, 2nd cell (i.e. band)
-//				return $('table', 1).$('tr', 3..52).collect { it.$('td', 1).text() }.unique()
-				return playListRows[(3..52)].collect { it.$('td', 1).text() }.unique()
-			}
-			else {
-				return []
-			}
+
+            println "size: $playListRows.size()"
+
+            return $('table', 1).$('tr', 3..52).collect { it.$('td', 1).text() }.unique()
+
+//			if (playListRows.size() == 54) {
+//				// 2nd table, rows with bands, 2nd cell (i.e. band)
+////				return $('table', 1).$('tr', 3..52).collect { it.$('td', 1).text() }.unique()
+//				return playListRows[(3..52)].collect { it.$('td', 1).text() }.unique()
+//			}
+//			else {
+//				return []
+//			}
         }
     }
 
@@ -95,15 +106,16 @@ class XmPlaylistPage extends Page {
 
 //TODO is this the best way to get constants
 public enum Channels {
-    JAM_ON('29', 'output/jamon.txt'),
-	BLUEGRASS('61', 'output/bluegrass.txt')
+    JAM_ON('29', 'jamon.txt'),
+	BLUEGRASS('61', 'bluegrass.txt')
 
     final String channelNumber
 	final String fileName
+    final static String outDir = 'output/'
 
     private Channels(String cn, String fn) {
         channelNumber = cn;
-		fileName = fn
+		fileName = outDir + fn
     }
 
     public boolean equalsName(String otherName) {

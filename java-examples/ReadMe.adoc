@@ -45,3 +45,5 @@ Glen McCort <gwmccort@gmail.com>
 * http://examples.javacodegeeks.com/core-java/nio/java-nio-ssl-example/[nio ssl]
 * http://javarticles.com/2015/12/jaxp-stax-stream-reader-example.html[JAXP StAX Stream Reader]
 * http://javarticles.com/2015/12/loading-configuration-file-using-yaml.html[Loading Configuration File Using YAML]
+* https://dzone.com/articles/logging-with-slf4j?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Logging With SLF4J]
+* http://javarticles.com/2015/12/hazelcast-quick-start-example.html[Hazelcast Quick Start Example]

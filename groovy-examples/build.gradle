@@ -3,14 +3,18 @@ plugins {
 	id 'eclipse'
 	id 'idea'
 	id 'codenarc'
-	id 'org.asciidoctor.convert' version '1.5.2'
+	// id 'org.asciidoctor.convert' version '1.5.2'
+	id 'org.asciidoctor.convert' version '1.5.3'
 	id 'com.github.ben-manes.versions' version '0.11.3'
 }
 
-dependencies { 
-//	compile localGroovy() 
+dependencies {
+//	compile localGroovy()
 	compile 'org.codehaus.groovy:groovy-all:2.3.10'
-	
+	compile 'org.slf4j:slf4j-api:1.7.13'
+
+	runtime 'org.slf4j:slf4j-log4j12:1.7.13'
+	runtime 'log4j:log4j:1.2.17'
 	runtime 'commons-cli:commons-cli:1.2'
 }
 

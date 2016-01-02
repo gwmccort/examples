@@ -17,7 +17,7 @@
 * http://javarticles.com/2015/11/guava-rangeset-example.html[RangeSet Example]
 * http://javarticles.com/2015/12/guava-preconditions-example.html[Preconditions]
 * http://javarticles.com/2015/12/guava-classtoinstancemap-example.html[ClassToInstanceMap]
-
+* http://www.baeldung.com/whats-new-in-guava-18[Guava 18: What’s New?]
 * http://javarticles.com/2015/12/guava-equivalence-example.html[Equivalence Example]
 
 == References

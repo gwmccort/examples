@@ -45,3 +45,5 @@ Glen McCort <gwmccort@gmail.com>
 * http://examples.javacodegeeks.com/core-java/nio/java-nio-ssl-example/[nio ssl]
 * http://javarticles.com/2015/12/jaxp-stax-stream-reader-example.html[JAXP StAX Stream Reader]
 * http://javarticles.com/2015/12/loading-configuration-file-using-yaml.html[Loading Configuration File Using YAML]
+* http://www.javacodegeeks.com/2015/12/importance-tuning-thread-pools.html[tuning your thread pools]
+* http://examples.javacodegeeks.com/core-java/list-works-internally-java/[How List works internally]

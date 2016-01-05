@@ -5,6 +5,8 @@
 * http://www.javacodegeeks.com/2015/11/from-arrays-to-streams-and-back-with-java-8.html[From Arrays to Streams and Back]
 * http://www.javacodegeeks.com/2015/11/java-8-streams-filter-and-predicate-negation.html[Java 8 Streams: filter and predicate negation]
 * http://www.javacodegeeks.com/2015/11/java-8-streams-api-grouping-partitioning-stream.html[Java 8 Streams API: Grouping and Partitioning a Stream]
+* http://www.javacodegeeks.com/2015/12/functional-vs-imperative-programming-fibonacci-prime-factorial-java-8.html[Functional vs Imperative Programming. Fibonacci, Prime and Factorial in Java 8]
+* http://www.javacodegeeks.com/2015/12/using-java-8-lambdas-streams-aggregates.html[Using Java 8 Lambdas, Streams, and Aggregates]
 
 === Testing
 * http://www.javacodegeeks.com/2015/12/using-mockito-without-static-imports-java-8.html[Using Mockito without static imports with Java 8]

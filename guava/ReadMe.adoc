@@ -18,6 +18,7 @@
 * http://javarticles.com/2015/12/guava-preconditions-example.html[Preconditions]
 * http://javarticles.com/2015/12/guava-classtoinstancemap-example.html[ClassToInstanceMap]
 * https://dzone.com/articles/guava-immutablecollections-multimaps-and-java-8-co-1?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Guava ImmutableCollections, Multimaps and Java 8 Collectors]
+* http://www.baeldung.com/whats-new-in-guava-18[Guava 18: What’s New?]
 * http://javarticles.com/2015/12/guava-equivalence-example.html[Equivalence Example]
 
 == References

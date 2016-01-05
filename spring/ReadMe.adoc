@@ -7,3 +7,4 @@ and https://github.com/kolorobot/spring-boot-thymeleaf[github repro]
 
 == T2D
 * https://dzone.com/articles/under-the-boot?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Under The Boot – Spring Boot]
+* http://www.baeldung.com/introduction-to-spring-batch[Introduction to Spring Batch]

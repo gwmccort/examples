@@ -16,6 +16,9 @@ Glen McCort <gwmccort@gmail.com>
 == JavaScript
 * http://jsforcats.com/[JavaScript for cats]
 
+== NoSQL
+* http://javarticles.com/2016/01/inserting-document-using-mongodb-java-driver.html[Inserting Document using MongoDB Java Driver]
+
 == Dropwizard
 * https://dzone.com/articles/getting-started-with-dropwizard-connecting-to-a-da?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Connecting to a Database Using Hibernate]
 * https://dzone.com/articles/modern-java-web-dev-dropwizard-from-the-start-part?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Using Dropwizard From the Start]

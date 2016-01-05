@@ -47,3 +47,7 @@ Glen McCort <gwmccort@gmail.com>
 * http://javarticles.com/2015/12/loading-configuration-file-using-yaml.html[Loading Configuration File Using YAML]
 * http://www.javacodegeeks.com/2015/12/importance-tuning-thread-pools.html[tuning your thread pools]
 * http://examples.javacodegeeks.com/core-java/list-works-internally-java/[How List works internally]
+* https://dzone.com/articles/logging-with-slf4j?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Logging With SLF4J]
+* http://javarticles.com/2015/12/hazelcast-quick-start-example.html[Hazelcast Quick Start Example]
+* https://dzone.com/articles/dynamic-class-enhancement-with-cglib?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Dynamic Class Enhancement with CGLib]
+* http://www.javacodegeeks.com/2016/01/leaner-java-collections-with-fastutil.html[Leaner Java Collections with FastUtil]

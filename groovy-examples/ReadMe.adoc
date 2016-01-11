@@ -26,3 +26,4 @@
 
 == T2D
 * https://dzone.com/articles/how-to-debug-groovy-script-from-shell?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[How to Debug a Groovy Script From Shell]
+* *Static compilation* http://java-performance.info/static-code-compilation-groovy-2-0/[Static code compilation in Groovy 2.0]

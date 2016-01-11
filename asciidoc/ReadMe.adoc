@@ -17,6 +17,7 @@ find the presentation slides at https://github.com/madmas/AsciidoctorGradle-Doc2
 * Atom & Sublime preview
 * Chrome and Firefox extensions
 * IDE IDEA & Eclipse plugins
+* AsciidocFX - JavaFX editor/preview
 
 
 [TIP]

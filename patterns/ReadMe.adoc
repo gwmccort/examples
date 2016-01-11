@@ -23,3 +23,4 @@
 * https://dzone.com/articles/factory-pattern-1?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Factory Pattern]
 * http://www.javacodegeeks.com/2015/12/decorator-design-pattern-using-lambdas.html[Decorator Design Pattern using lambdas]
 * http://www.javacodegeeks.com/2016/01/container-object-pattern-new-pattern-tests.html[Container Object pattern]
+* https://dzone.com/articles/the-observer-pattern-using-modern-java?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Observer Pattern Using Modern Java]

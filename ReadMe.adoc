@@ -18,6 +18,7 @@ Glen McCort <gwmccort@gmail.com>
 
 == NoSQL
 * http://javarticles.com/2016/01/inserting-document-using-mongodb-java-driver.html[Inserting Document using MongoDB Java Driver]
+* http://examples.javacodegeeks.com/core-java/mongodb-tutorial-beginners/[MongoDB Tutorial for Beginners]
 
 == Dropwizard
 * https://dzone.com/articles/getting-started-with-dropwizard-connecting-to-a-da?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Connecting to a Database Using Hibernate]
@@ -30,6 +31,7 @@ Glen McCort <gwmccort@gmail.com>
 == Java
 * https://dzone.com/articles/executable-java-applications?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Guide to Executable Java Applications]
 * http://examples.javacodegeeks.com/enterprise-java/jms/jms-topic-example/[Guide to Executable Java Applications]
+* https://dzone.com/articles/simple-java-soap-web-service-using-jdk-tools?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java SOAP Web Service Using JDK Tools]
 
 == Projects
 * asciidoc - asciidoctor gradle

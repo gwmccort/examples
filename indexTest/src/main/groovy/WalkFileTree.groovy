@@ -11,7 +11,8 @@ import java.nio.file.attribute.BasicFileAttributes
 @Slf4j
 class WalkFileTree {
 
-	static final String DIR_PATH = 'H:/Project_Files/eBooks'
+	//	static final String DIR_PATH = 'H:/Project_Files/eBooks'
+	static final String DIR_PATH = /C:\Users\Glen\Downloads/
 
 	static main(args) {
 		println 'Starting ...'
@@ -30,9 +31,9 @@ class WalkFileTree {
 		println 'visitor size:' + visitor.pdfFiles.size()
 		visitor.pdfFiles.each() { log.info it.toString() }
 
-//		def pdfs = path.eachFileMatch(~/.*\.pdf/) {
-//			println it
-//		}
+		//		def pdfs = path.eachFileMatch(~/.*\.pdf/) {
+		//			println it
+		//		}
 
 		println 'finished!'
 	}

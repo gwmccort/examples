@@ -18,6 +18,12 @@ dependencies {
 	compile 'org.slf4j:slf4j-log4j12:1.7.13'
 	// runtime 'log4j:log4j:1.2.17'
 	compile 'log4j:log4j:1.2.17'
+
+  def luceneVersion = '5.2.0'
+	compile "org.apache.lucene:lucene-core:${luceneVersion}"
+	compile "org.apache.lucene:lucene-analyzers-common:${luceneVersion}"
+	compile "org.apache.lucene:lucene-queryparser:${luceneVersion}"
+
 }
 
 mainClassName = "WalkFileTree"

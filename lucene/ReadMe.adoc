@@ -1,11 +1,10 @@
 = Lucene - Java Code Geeks
 
-
-
 == Articles
 
 * http://examples.javacodegeeks.com/core-java/apache/lucene/lucene-indexwriter-example/[Inder Writer]
 * http://examples.javacodegeeks.com/core-java/apache/lucene/lucene-standardanalyzer-example/[Standard Analyzer]
+* http://examples.javacodegeeks.com/core-java/apache/lucene/lucene-indexing-example-2/[Lucene Analyzer Example]
 * http://www.javacodegeeks.com/2015/09/apache-lucene-fundamentals.html[Apache Lucene Fundamentals Tutorial]
 
 
@@ -16,4 +15,6 @@
 == Site Search
 
 * http://examples.javacodegeeks.com/?s=lucene[Examples Lucene]
+
+== T2D
 

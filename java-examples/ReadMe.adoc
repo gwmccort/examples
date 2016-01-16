@@ -52,3 +52,4 @@ Glen McCort <gwmccort@gmail.com>
 * https://dzone.com/articles/dynamic-class-enhancement-with-cglib?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Dynamic Class Enhancement with CGLib]
 * http://www.javacodegeeks.com/2016/01/leaner-java-collections-with-fastutil.html[Leaner Java Collections with FastUtil]
 * http://www.javacodegeeks.com/2016/01/10-examples-using-arraylist-java-tutorial.html[10 Examples of using ArrayList]
+* http://www.javacodegeeks.com/2016/01/readingwriting-tofrom-files-using-filechannel-bytebuffer-java.html[Reading/Writing to/from Files using FileChannel and ByteBuffer]

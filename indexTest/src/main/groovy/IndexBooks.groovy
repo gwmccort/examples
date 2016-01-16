@@ -26,8 +26,9 @@ import au.com.bytecode.opencsv.CSVWriter
 @Slf4j
 class IndexBooks {
 
+	private static final BOOKS_PATH = /C:\Users\Glen\Documents\Books/
+//	private static final BOOKS_PATH = 'H:/Project_Files/eBooks'
 	private static final INDEX_PATH = 'index'
-	private static final BOOKS_PATH = 'H:/Project_Files/eBooks'
 	private static final CSV_FILE = 'eBooks.csv'
 	private static final String[] EXTENSIONS = ['pdf', 'chm']
 

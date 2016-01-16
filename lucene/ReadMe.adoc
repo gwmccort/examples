@@ -1,13 +1,10 @@
 = Lucene - Java Code Geeks
 
-
-
 == Articles
 
 * http://examples.javacodegeeks.com/core-java/apache/lucene/lucene-indexwriter-example/[Inder Writer]
 * http://examples.javacodegeeks.com/core-java/apache/lucene/lucene-standardanalyzer-example/[Standard Analyzer]
 * http://www.javacodegeeks.com/2015/09/apache-lucene-fundamentals.html[Apache Lucene Fundamentals Tutorial]
-
 
 == Authors
 
@@ -17,3 +14,8 @@
 
 * http://examples.javacodegeeks.com/?s=lucene[Examples Lucene]
 
+== T2D
+
+* http://examples.javacodegeeks.com/elasticsearch/elasticsearch-tutorial-beginners/[ElasticSearch Tutorial for Beginners]
+* http://www.hascode.com/2014/07/lucene-by-example-specifying-analyzers-on-a-per-field-basis-and-writing-a-custom-analyzertokenizer/[Specifying Analyzers on a per-field-basis and writing a custom Analyzer/Tokenizer]
+* http://www.hascode.com/tag/lucene/[hasCode lucene articals]

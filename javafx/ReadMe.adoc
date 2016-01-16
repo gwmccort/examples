@@ -5,3 +5,4 @@
 * http://www.javacodegeeks.com/2015/12/javafx-tip-22-autosize-tree-table-columns.html[Autosize (Tree) Table Columns]
 * http://examples.javacodegeeks.com/core-java/javafx-imageview-example/[ImageView]
 * http://examples.javacodegeeks.com/desktop-java/swing/java-swing-checkbox-example/[Swing Checkbox]
+* http://examples.javacodegeeks.com/core-java/javafx-treeview-example/[TreeView]

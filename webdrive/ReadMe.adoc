@@ -4,3 +4,4 @@
 * http://examples.javacodegeeks.com/enterprise-java/selenium/selenium-automation-testing-tutorial/[Selenium Automation Testing Tutorial]
 * http://examples.javacodegeeks.com/enterprise-java/selenium/selenium-ide-tutorial/[Selenium IDE Tutorial]
 * http://www.javacodegeeks.com/2015/12/effective-ui-tests-selenide.html[Effective UI tests with Selenide]
+* http://examples.javacodegeeks.com/enterprise-java/selenium/selenium-junit-example/[Selenium JUnit]

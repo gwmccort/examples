@@ -6,3 +6,8 @@
 * http://examples.javacodegeeks.com/core-java/javafx-imageview-example/[ImageView]
 * http://examples.javacodegeeks.com/desktop-java/swing/java-swing-checkbox-example/[Swing Checkbox]
 * http://examples.javacodegeeks.com/core-java/javafx-treeview-example/[TreeView]
+* http://www.javacodegeeks.com/2016/01/dependency-injection-javafx-gluon-ignite-dagger.html[Dependency Injection in JavaFX with Gluon Ignite and Dagger]
+* https://dzone.com/articles/listmenu-javafx-control?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[ListMenu JavaFX Control]
+
+== Swign T2D
+* http://examples.javacodegeeks.com/desktop-java/swing/java-swing-slider-example/[Swing Slider]

@@ -1,3 +1,5 @@
 = web app
 
 * http://www.theserverside.com/discussions/thread.tss?thread_id=81515[5 Awesome Tutorials to Kick-Start your Web Programming Projects]
+
+* http://examples.javacodegeeks.com/enterprise-java/spring/mvc/spring-mvc-interceptor-tutorial/[Spring MVC Interceptor Tutorial]

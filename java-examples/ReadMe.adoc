@@ -53,3 +53,4 @@ Glen McCort <gwmccort@gmail.com>
 * http://www.javacodegeeks.com/2016/01/leaner-java-collections-with-fastutil.html[Leaner Java Collections with FastUtil]
 * http://www.javacodegeeks.com/2016/01/10-examples-using-arraylist-java-tutorial.html[10 Examples of using ArrayList]
 * http://www.javacodegeeks.com/2016/01/readingwriting-tofrom-files-using-filechannel-bytebuffer-java.html[Reading/Writing to/from Files using FileChannel and ByteBuffer]
+* http://javarticles.com/2016/01/get-annotations-and-declared-annotations-example.html[Annotations and Declared Annotations Example]

@@ -8,6 +8,11 @@
 * http://www.javacodegeeks.com/2015/12/functional-vs-imperative-programming-fibonacci-prime-factorial-java-8.html[Functional vs Imperative Programming. Fibonacci, Prime and Factorial in Java 8]
 * http://www.javacodegeeks.com/2015/12/using-java-8-lambdas-streams-aggregates.html[Using Java 8 Lambdas, Streams, and Aggregates]
 * http://www.javacodegeeks.com/2016/01/java-8-lambda-expression-design-patterns-strategy-design-pattern.html[Java 8 Lambda Expression for Design Patterns – Strategy Design Pattern]
+* https://dzone.com/articles/be-lazy-with-java-8?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Be Lazy With Java 8]
+
+
+
+
 
 === Testing
 * http://www.javacodegeeks.com/2015/12/using-mockito-without-static-imports-java-8.html[Using Mockito without static imports with Java 8]

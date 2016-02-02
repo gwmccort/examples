@@ -18,6 +18,9 @@ Glen McCort <gwmccort@gmail.com>
 ** http://cs.fit.edu/~ryan/cse4051/java-puzzlers/[examples]
 * https://codexplo.wordpress.com/2015/11/14/why-1000-1000-returns-false-but-100-100-returns-true-in-java/[Why 100==100 returns true]
 
+== Testing
+* http://javarticles.com/2016/01/junit-parametric-testing-example.html[JUnit Parametric Testing Example]
+
 == T2D
 * http://www.javacodegeeks.com/2015/11/tutorial-logging-tests.html[logging during tests]
 * javaFX

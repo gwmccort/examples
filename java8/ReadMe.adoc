@@ -9,8 +9,8 @@
 * http://www.javacodegeeks.com/2015/12/using-java-8-lambdas-streams-aggregates.html[Using Java 8 Lambdas, Streams, and Aggregates]
 * http://www.javacodegeeks.com/2016/01/java-8-lambda-expression-design-patterns-strategy-design-pattern.html[Java 8 Lambda Expression for Design Patterns – Strategy Design Pattern]
 * https://dzone.com/articles/be-lazy-with-java-8?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Be Lazy With Java 8]
-
-
+* http://www.adam-bien.com/roller/abien/entry/java_8_streams_from_list[JAVA 8 STREAMS: FROM LIST TO MAP]
+* https://dzone.com/articles/using-traits-in-java-8?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Using Traits in Java 8]
 
 
 

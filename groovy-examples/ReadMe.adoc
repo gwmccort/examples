@@ -16,6 +16,11 @@
 * http://mrhaki.blogspot.com/2009/09/groovy-goodness-parsing-commandline.html[Parsing Commandline Arguments with CliBuilder]
 * http://mrhaki.blogspot.com/2011/04/groovy-goodness-inject-logging-using.html[Inject Logging Using Annotations]
 
+== Video Presentations
+* http://www.infoq.com/presentations/groovy-ast-transformations?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global[Groovy AST Transformations]
+
+
+
 === Misc
 * https://tedvinke.wordpress.com/2015/09/25/avoid-nullpointerexception-safe-navigation-with-groovy/[Avoid NullPointerException: Safe Navigation with Groovy]
 

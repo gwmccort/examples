@@ -25,3 +25,4 @@
 * http://www.javacodegeeks.com/2016/01/container-object-pattern-new-pattern-tests.html[Container Object pattern]
 * https://dzone.com/articles/the-observer-pattern-using-modern-java?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Observer Pattern Using Modern Java]
 * http://www.javacodegeeks.com/2016/01/java-8-lambda-expression-design-patterns-strategy-design-pattern.html[Java 8 Lambda Expression for Design Patterns – Strategy Design Pattern]
+* https://dzone.com/articles/make-your-java-factories-beautiful?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Make Your Java Factories Beautiful]

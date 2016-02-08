@@ -58,3 +58,4 @@ Glen McCort <gwmccort@gmail.com>
 * http://www.javacodegeeks.com/2016/01/readingwriting-tofrom-files-using-filechannel-bytebuffer-java.html[Reading/Writing to/from Files using FileChannel and ByteBuffer]
 * http://javarticles.com/2016/01/get-annotations-and-declared-annotations-example.html[Annotations and Declared Annotations Example]
 * http://examples.javacodegeeks.com/core-java/apache/commons/net-commons/ftp/ftpclient/org-apache-commons-net-ftp-ftpclient-example/[org.apache.commons.net.ftp.ftpclient Example]
+* http://javarticles.com/2016/02/junit-fixmethodorder-annotation-example.html[@FixMethodOrder Annotation Example]

@@ -23,3 +23,4 @@ Glen McCort <gwmccort@gmail.com>
 * http://examples.javacodegeeks.com/desktop-java/ide/eclipse/eclipse-gradle-plugin-example/[Eclipse Gradle Plugin Example]
 * http://www.mkyong.com/gradle/gradle-jacoco-incompatible-version-1006/[Gradle JaCoCo - code coverage – Incompatible version 1006]
 * http://www.mkyong.com/gradle/how-to-use-gradle-wrapper/[How to use Gradle Wrapper]
+* http://zeroturnaround.com/rebellabs/making-gradle-builds-faster/[Making Gradle builds faster]

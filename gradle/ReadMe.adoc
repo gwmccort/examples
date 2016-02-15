@@ -9,6 +9,7 @@ Glen McCort <gwmccort@gmail.com>
 
 == Articles
 * http://gradle.org/migrating-a-maven-build-to-gradle/[Migrating a maven build to Gradle]
+* http://www.mkyong.com/tag/gradle/[mkyong gradle articles]
 
 == Books
 * https://leanpub.com/idiomaticgradle[Idiomatic Gradle Plugins]
@@ -23,3 +24,4 @@ Glen McCort <gwmccort@gmail.com>
 * http://examples.javacodegeeks.com/desktop-java/ide/eclipse/eclipse-gradle-plugin-example/[Eclipse Gradle Plugin Example]
 * http://www.mkyong.com/gradle/gradle-jacoco-incompatible-version-1006/[Gradle JaCoCo - code coverage – Incompatible version 1006]
 * http://www.mkyong.com/gradle/how-to-use-gradle-wrapper/[How to use Gradle Wrapper]
+* http://mrhaki.blogspot.com/2016/02/gradle-goodness-running-groovy-scripts.html[Gradle Goodness: Running Groovy Scripts Using Groovy Command Line]

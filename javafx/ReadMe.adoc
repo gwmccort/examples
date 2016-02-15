@@ -10,7 +10,6 @@
 * https://dzone.com/articles/listmenu-javafx-control?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[ListMenu JavaFX Control]
 * http://examples.javacodegeeks.com/core-java/javafx-layout-example/[JavaFX Layout Example]
 * http://examples.javacodegeeks.com/desktop-java/javafx-table-example/[JavaFX Table Example]
-* http://examples.javacodegeeks.com/desktop-java/javafx/scene/image-scene/javafx-image-example/[JavaFX Image Example]
 * https://dzone.com/articles/building-reactive-systems-with-javafx?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Reactive Systems with JavaFX]
 
 == Swing T2D

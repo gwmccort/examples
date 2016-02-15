@@ -1,6 +1,7 @@
 **/.gradle
 **/build
 **/bin
+**/classes
 **/out
 **/.DS_Store
 **/.classpath
@@ -10,4 +11,5 @@
 **/.idea
 **/*.ipr
 **/*.iws
+**/*.csv
 /.nb-gradle/

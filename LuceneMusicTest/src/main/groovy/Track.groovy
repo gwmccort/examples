@@ -31,206 +31,208 @@ import au.com.bytecode.opencsv.CSVWriter
 @TupleConstructor(force=true)
 @ToString(includeNames=true)
 class Track {
-	String artist
-	String name
-	String album
+    String artist
+    String name
+    String album
 
-	private static final INDEX = 'index'
-	private static final ARTIST_FIELD = 'artist'	private static final NAME_FIELD = 'name'	private static final ALBUM_FIELD = 'album'
-	/**
-	 * Create Track from music file tags
-	 * @param tag
-	 */
-	Track(Tag tag) {
-		artist = tag.getFirst(FieldKey.ARTIST)
-		name=tag.getFirst(FieldKey.TITLE)
-		album=tag.getFirst(FieldKey.ALBUM)
-	}
+    private static final LUCENE_INDEX = 'index'
+    private static final ARTIST_FIELD = 'artist'
+    private static final NAME_FIELD = 'name'
+    private static final ALBUM_FIELD = 'album'
 
-	/**
-	 * Convert track to array of strings
-	 * @return
-	 */
-	String[] toStringArray() {
-		[artist, name, album] as String[]
-	}
+    /**
+     * Create Track from music file tags
+     * @param tag
+     */
+    Track(Tag tag) {
+        artist = tag.getFirst(FieldKey.ARTIST)
+        name=tag.getFirst(FieldKey.TITLE)
+        album=tag.getFirst(FieldKey.ALBUM)
+    }
 
-	static main(args) {
-		println 'starting...'
-		//		indexTest()
-		//		searchTest('test')
-		//		multiSearchTest('test')
+    /**
+     * Convert track to array of strings
+     * @return
+     */
+    String[] toStringArray() {
+        [artist, name, album] as String[]
+    }
 
-		def tracks = getMp3Files()
-		println tracks.size()
-		writeTracksToCSV(tracks)
-		indexTracks(tracks)
+    static main(args) {
+        println 'starting...'
+        //		indexTest()
+        //		searchTest('test')
+        //		multiSearchTest('test')
 
-		//		writeTracksToCSV(getTracks())
-		println 'end!'
-	}
+        def tracks = getMp3Files()
+        println tracks.size()
+        writeTracksToCSV(tracks)
+        indexTracks(tracks)
 
-	static indexTest() {
-		println '>>> indexing tracks...'
+        //		writeTracksToCSV(getTracks())
+        println 'end!'
+    }
 
-		Directory dir = FSDirectory.open(Paths.get(INDEX))
-		Analyzer analyzer = new StandardAnalyzer()
-		IndexWriterConfig iwc = new IndexWriterConfig(analyzer)
+    static indexTest() {
+        println '>>> indexing tracks...'
 
-		//		iwc.setOpenMode(OpenMode.CREATE_OR_APPEND)
-		iwc.setOpenMode(OpenMode.CREATE)
-		IndexWriter writer = new IndexWriter(dir, iwc)
+        Directory dir = FSDirectory.open(Paths.get(LUCENE_INDEX))
+        Analyzer analyzer = new StandardAnalyzer()
+        IndexWriterConfig iwc = new IndexWriterConfig(analyzer)
 
-		// add track to index
-		def tracks = getTracks()
-		for (track in tracks) {
-			Document doc = new Document()
-			Field artist = new Field(ARTIST_FIELD, track.artist, TextField.TYPE_STORED)
-			Field name = new Field(NAME_FIELD, track.name, TextField.TYPE_STORED)
-			Field album = new Field(ALBUM_FIELD, track.album, TextField.TYPE_STORED)
-			doc.add(artist)
-			doc.add(name)
-			doc.add(album)
-			writer.addDocument(doc)
-		}
+        //		iwc.setOpenMode(OpenMode.CREATE_OR_APPEND)
+        iwc.setOpenMode(OpenMode.CREATE)
+        IndexWriter writer = new IndexWriter(dir, iwc)
 
-		writer.close()
-	}
+        // add track to index
+        def tracks = getTracks()
+        for (track in tracks) {
+            Document doc = new Document()
+            Field artist = new Field(ARTIST_FIELD, track.artist, TextField.TYPE_STORED)
+            Field name = new Field(NAME_FIELD, track.name, TextField.TYPE_STORED)
+            Field album = new Field(ALBUM_FIELD, track.album, TextField.TYPE_STORED)
+            doc.add(artist)
+            doc.add(name)
+            doc.add(album)
+            writer.addDocument(doc)
+        }
 
-	static indexTracks(Track[] tracks) {
-		println '>>> indexing tracks...'
+        writer.close()
+    }
 
-		Directory dir = FSDirectory.open(Paths.get(INDEX))
-		Analyzer analyzer = new StandardAnalyzer()
-		IndexWriterConfig iwc = new IndexWriterConfig(analyzer)
+    static indexTracks(Track[] tracks) {
+        println '>>> indexing tracks...'
 
-		//		iwc.setOpenMode(OpenMode.CREATE_OR_APPEND)
-		iwc.setOpenMode(OpenMode.CREATE)
-		IndexWriter writer = new IndexWriter(dir, iwc)
+        Directory dir = FSDirectory.open(Paths.get(LUCENE_INDEX))
+        Analyzer analyzer = new StandardAnalyzer()
+        IndexWriterConfig iwc = new IndexWriterConfig(analyzer)
 
-		// add track to index
-		for (track in tracks) {
-			Document doc = new Document()
-			Field artist = new Field(ARTIST_FIELD, track.artist, TextField.TYPE_STORED)
-			Field name = new Field(NAME_FIELD, track.name, TextField.TYPE_STORED)
-			Field album = new Field(ALBUM_FIELD, track.album, TextField.TYPE_STORED)
-			doc.add(artist)
-			doc.add(name)
-			doc.add(album)
-			writer.addDocument(doc)
-		}
+        //		iwc.setOpenMode(OpenMode.CREATE_OR_APPEND)
+        iwc.setOpenMode(OpenMode.CREATE)
+        IndexWriter writer = new IndexWriter(dir, iwc)
 
-		writer.close()
-	}
+        // add track to index
+        for (track in tracks) {
+            Document doc = new Document()
+            Field artist = new Field(ARTIST_FIELD, track.artist, TextField.TYPE_STORED)
+            Field name = new Field(NAME_FIELD, track.name, TextField.TYPE_STORED)
+            Field album = new Field(ALBUM_FIELD, track.album, TextField.TYPE_STORED)
+            doc.add(artist)
+            doc.add(name)
+            doc.add(album)
+            writer.addDocument(doc)
+        }
 
-	static searchTest(String queryString) {
-		println '>>> searching tracks...'
+        writer.close()
+    }
 
-		IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(INDEX)))
-		IndexSearcher searcher = new IndexSearcher(reader)
-		Analyzer analyzer = new StandardAnalyzer()
+    static searchTest(String queryString) {
+        println '>>> searching tracks...'
 
-		QueryParser parser = new QueryParser(NAME_FIELD, analyzer)
-		Query query = parser.parse(queryString)
-		//		println query
-		//		println query.class
+        IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(LUCENE_INDEX)))
+        IndexSearcher searcher = new IndexSearcher(reader)
+        Analyzer analyzer = new StandardAnalyzer()
 
-		TopDocs results = searcher.search(query, 100)
+        QueryParser parser = new QueryParser(NAME_FIELD, analyzer)
+        Query query = parser.parse(queryString)
+        //		println query
+        //		println query.class
 
-		ScoreDoc[] hits = results.scoreDocs
-		println hits.size()
-		for (sd in hits) {
-			//			println sd
-			//			println sd.dump()
-			Document doc = searcher.doc(sd.doc)
-			println "artist:${doc.get(ARTIST_FIELD)} name:${doc.get(NAME_FIELD)} album:${doc.get(ALBUM_FIELD)}"
-		}
-	}
+        TopDocs results = searcher.search(query, 100)
 
-	static multiSearchTest(String queryString) {
-		println '>>> multi field search ...'
+        ScoreDoc[] hits = results.scoreDocs
+        println hits.size()
+        for (sd in hits) {
+            //			println sd
+            //			println sd.dump()
+            Document doc = searcher.doc(sd.doc)
+            println "artist:${doc.get(ARTIST_FIELD)} name:${doc.get(NAME_FIELD)} album:${doc.get(ALBUM_FIELD)}"
+        }
+    }
 
-		IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(INDEX)))
-		IndexSearcher searcher = new IndexSearcher(reader)
-		Analyzer analyzer = new StandardAnalyzer()
+    static multiSearchTest(String queryString) {
+        println '>>> multi field search ...'
 
-		String[] fields = [ARTIST_FIELD, NAME_FIELD, ALBUM_FIELD]
-		QueryParser parser = new MultiFieldQueryParser(fields, analyzer)
-		Query query = parser.parse(queryString)
-		//		println query
-		//		println query.class
+        IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(LUCENE_INDEX)))
+        IndexSearcher searcher = new IndexSearcher(reader)
+        Analyzer analyzer = new StandardAnalyzer()
 
-		TopDocs results = searcher.search(query, 100)
+        String[] fields = [ARTIST_FIELD, NAME_FIELD, ALBUM_FIELD]
+        QueryParser parser = new MultiFieldQueryParser(fields, analyzer)
+        Query query = parser.parse(queryString)
+        //		println query
+        //		println query.class
 
-		ScoreDoc[] hits = results.scoreDocs
-		println hits.size()
-		for (sd in hits) {
-			//			println sd
-			//			println sd.dump()
-			Document doc = searcher.doc(sd.doc)
-			println "artist:${doc.get(ARTIST_FIELD)} name:${doc.get(NAME_FIELD)} album:${doc.get(ALBUM_FIELD)}"
-		}
+        TopDocs results = searcher.search(query, 100)
 
-	}
+        ScoreDoc[] hits = results.scoreDocs
+        println hits.size()
+        for (sd in hits) {
+            //			println sd
+            //			println sd.dump()
+            Document doc = searcher.doc(sd.doc)
+            println "artist:${doc.get(ARTIST_FIELD)} name:${doc.get(NAME_FIELD)} album:${doc.get(ALBUM_FIELD)}"
+        }
 
-	static Track[] getTracks() {
-		def tracks = []
-		tracks << new Track(artist:'Yonter Mountain String Band', name:'40 Miles from Denver', album:'Elevation test')
-		tracks << new Track(artist:'Grateful Dead', name:'Trucking test', album:'American Beauty')
-		tracks << new Track(artist:'Test artist', name:'test track name', album:'test album')
-		tracks
-	}
+    }
 
-	/**
-	 * Example of using jaudiotagger to get mp3 tags
-	 * @return
-	 */
-	static Track[] getMp3Files() {
-		println 'in getMp3Files...'
-		def results = []
+    static Track[] getTracks() {
+        def tracks = []
+        tracks << new Track(artist:'Yonter Mountain String Band', name:'40 Miles from Denver', album:'Elevation test')
+        tracks << new Track(artist:'Grateful Dead', name:'Trucking test', album:'American Beauty')
+        tracks << new Track(artist:'Test artist', name:'test track name', album:'test album')
+        tracks
+    }
 
-		// disable jul logging output
-		java.util.logging.Logger globalLogger = java.util.logging.Logger.getLogger("");
-		Handler[] handlers = globalLogger.getHandlers();
-		for (Handler handler : handlers) {
-			globalLogger.removeHandler(handler);
-		}
+    /**
+     * Example of using jaudiotagger to get mp3 tags
+     * @return
+     */
+    static Track[] getMp3Files(String pathRoot) {
+        println 'in getMp3Files...'
+        def results = []
 
-		//		new File(/C:\Users\Public\Music/).eachDirRecurse { dir ->
-		//			new File(/C:\Users\Glen\Music/).eachDirRecurse { dir ->
-		new File(/C:\Users\Glen\Downloads/).eachDirRecurse { dir ->
-			dir.eachFileMatch(~/.*.mp3/) { file ->
-				try {
-					//					MP3File mf = new MP3File(file)
-					MP3File mf = new MP3File(file, MP3File.LOAD_ALL, true)
-					Tag tag = mf.getTag()
-					//					Track t = new Track(artist:tag.getFirst(FieldKey.ARTIST), name:tag.getFirst(FieldKey.TITLE), album:tag.getFirst(FieldKey.ALBUM))
-					Track t = new Track(tag)
-					results << t
-				}
-				catch (Exception e) {
-					//					e.printStackTrace()
-					println e
-				}
-			}
-		}
-		results
-	}
+        // disable jul logging output
+        java.util.logging.Logger globalLogger = java.util.logging.Logger.getLogger("");
+        Handler[] handlers = globalLogger.getHandlers();
+        for (Handler handler : handlers) {
+            globalLogger.removeHandler(handler);
+        }
 
-	/**
-	 * Write tacks to a CSV file
-	 * @param tracks
-	 * @return
-	 */
-	static writeTracksToCSV(Track[] tracks) {
-		println 'in writeTracksToCSV'
-		CSVWriter writer = new CSVWriter(new FileWriter('test.csv'))
-		tracks.each { t ->
-			writer.writeNext(t.toStringArray())
-		}
-		writer.close()
-	}
+        //		new File(/C:\Users\Public\Music/).eachDirRecurse { dir ->
+        //			new File(/C:\Users\Glen\Music/).eachDirRecurse { dir ->
+        new File(pathRoot).eachDirRecurse { dir ->
+            dir.eachFileMatch(~/.*.mp3/) { file ->
+                try {
+                    //					MP3File mf = new MP3File(file)
+                    MP3File mf = new MP3File(file, MP3File.LOAD_ALL, true)
+                    Tag tag = mf.getTag()
+                    //					Track t = new Track(artist:tag.getFirst(FieldKey.ARTIST), name:tag.getFirst(FieldKey.TITLE), album:tag.getFirst(FieldKey.ALBUM))
+                    Track t = new Track(tag)
+                    results << t
+                }
+                catch (Exception e) {
+                    //					e.printStackTrace()
+                    println e
+                }
+            }
+        }
+        results
+    }
+
+    /**
+     * Write tacks to a CSV file
+     * @param tracks
+     * @return
+     */
+    static writeTracksToCSV(Track[] tracks) {
+        println 'in writeTracksToCSV'
+        CSVWriter writer = new CSVWriter(new FileWriter('Track.csv'))
+        tracks.each { t ->
+            writer.writeNext(t.toStringArray())
+        }
+        writer.close()
+    }
 
 }
-
 

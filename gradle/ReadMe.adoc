@@ -24,4 +24,8 @@ Glen McCort <gwmccort@gmail.com>
 * http://examples.javacodegeeks.com/desktop-java/ide/eclipse/eclipse-gradle-plugin-example/[Eclipse Gradle Plugin Example]
 * http://www.mkyong.com/gradle/gradle-jacoco-incompatible-version-1006/[Gradle JaCoCo - code coverage – Incompatible version 1006]
 * http://www.mkyong.com/gradle/how-to-use-gradle-wrapper/[How to use Gradle Wrapper]
+<<<<<<< HEAD
 * http://mrhaki.blogspot.com/2016/02/gradle-goodness-running-groovy-scripts.html[Gradle Goodness: Running Groovy Scripts Using Groovy Command Line]
+=======
+* http://zeroturnaround.com/rebellabs/making-gradle-builds-faster/[Making Gradle builds faster]
+>>>>>>> 526e28e6b3cacb7550ff9e49f5300726c086894b

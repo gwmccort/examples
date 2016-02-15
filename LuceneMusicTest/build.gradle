@@ -36,6 +36,12 @@ dependencies {
 mainClassName = "MusicQuery"
 run{ standardInput = System.in }
 
+task runFileTracksCSV(type: JavaExec) {
+	description 'Create a csv file of music files'
+	main = 'FileTracksCsvFile'
+	classpath = sourceSets.main.runtimeClasspath
+}
+
 task dist(type: Zip) {
 	from('.') {
 		include 'src/**/*'

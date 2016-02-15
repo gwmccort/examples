@@ -10,4 +10,5 @@
 **/.idea
 **/*.ipr
 **/*.iws
+**/*.csv
 /.nb-gradle/

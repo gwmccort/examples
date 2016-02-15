@@ -35,7 +35,7 @@ class Track {
 	String name
 	String album
 
-	private static final INDEX = 'index'
+	private static final LUCENE_INDEX = 'index'
 	private static final ARTIST_FIELD = 'artist'	private static final NAME_FIELD = 'name'	private static final ALBUM_FIELD = 'album'
 	/**
 	 * Create Track from music file tags
@@ -73,7 +73,7 @@ class Track {
 	static indexTest() {
 		println '>>> indexing tracks...'
 
-		Directory dir = FSDirectory.open(Paths.get(INDEX))
+		Directory dir = FSDirectory.open(Paths.get(LUCENE_INDEX))
 		Analyzer analyzer = new StandardAnalyzer()
 		IndexWriterConfig iwc = new IndexWriterConfig(analyzer)
 
@@ -100,7 +100,7 @@ class Track {
 	static indexTracks(Track[] tracks) {
 		println '>>> indexing tracks...'
 
-		Directory dir = FSDirectory.open(Paths.get(INDEX))
+		Directory dir = FSDirectory.open(Paths.get(LUCENE_INDEX))
 		Analyzer analyzer = new StandardAnalyzer()
 		IndexWriterConfig iwc = new IndexWriterConfig(analyzer)
 
@@ -126,7 +126,7 @@ class Track {
 	static searchTest(String queryString) {
 		println '>>> searching tracks...'
 
-		IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(INDEX)))
+		IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(LUCENE_INDEX)))
 		IndexSearcher searcher = new IndexSearcher(reader)
 		Analyzer analyzer = new StandardAnalyzer()
 
@@ -150,7 +150,7 @@ class Track {
 	static multiSearchTest(String queryString) {
 		println '>>> multi field search ...'
 
-		IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(INDEX)))
+		IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(LUCENE_INDEX)))
 		IndexSearcher searcher = new IndexSearcher(reader)
 		Analyzer analyzer = new StandardAnalyzer()
 
@@ -185,7 +185,7 @@ class Track {
 	 * Example of using jaudiotagger to get mp3 tags
 	 * @return
 	 */
-	static Track[] getMp3Files() {
+	static Track[] getMp3Files(String pathRoot) {
 		println 'in getMp3Files...'
 		def results = []
 
@@ -198,7 +198,7 @@ class Track {
 
 		//		new File(/C:\Users\Public\Music/).eachDirRecurse { dir ->
 		//			new File(/C:\Users\Glen\Music/).eachDirRecurse { dir ->
-		new File(/C:\Users\Glen\Downloads/).eachDirRecurse { dir ->
+		new File(pathRoot).eachDirRecurse { dir ->
 			dir.eachFileMatch(~/.*.mp3/) { file ->
 				try {
 					//					MP3File mf = new MP3File(file)
@@ -224,7 +224,7 @@ class Track {
 	 */
 	static writeTracksToCSV(Track[] tracks) {
 		println 'in writeTracksToCSV'
-		CSVWriter writer = new CSVWriter(new FileWriter('test.csv'))
+		CSVWriter writer = new CSVWriter(new FileWriter('Track.csv'))
 		tracks.each { t ->
 			writer.writeNext(t.toStringArray())
 		}

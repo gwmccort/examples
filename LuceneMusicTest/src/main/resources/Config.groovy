@@ -5,9 +5,9 @@
 //	}
 //}
 
-//musicDir = /C:\Users\Glen\Music/
+musicDir = /C:\Users\Glen\Music/
 //musicDir = /C:\Users\Glen\Downloads/
-musicDir = /C:\Users\Public\Music/
+//musicDir = /C:\Users\Public\Music/
 
 home {
 	musicDir = /C:\Users\Glen\Music/

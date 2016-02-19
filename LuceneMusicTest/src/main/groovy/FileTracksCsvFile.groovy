@@ -25,6 +25,7 @@ class FileTracksCsvFile {
 
 		//http://stackoverflow.com/questions/6127041/can-i-use-configslurper-to-reference-a-config-file-in-the-classpath
 //		Class scriptClass = getClass().classLoader.loadClass('Config')
+//		println scriptClass
 //		ConfigObject config = new ConfigSlurper().parse(scriptClass)
 
 //		Class scriptClass = this.class.classLoader.loadClass('Config', true, false )?.newInstance()

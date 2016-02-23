@@ -23,7 +23,8 @@ class RcClassSpec extends Specification {
 
     def "stub out DomObj"() {
         given:
-        DomObj dObjStub= Stub()
+//        DomObj dObjStub= Stub()
+        DomObjImpl dObjStub= Stub()
 //		DomObj dObj = Mock()
 //		dObj.getInfo() >> ['1':'new one']
         dObjStub.getInfo() >> {
@@ -45,12 +46,12 @@ class RcClassSpec extends Specification {
         //		m['1'] == 'new one'
         1 == 1
     }
-	
+
 	def "test stub of DomObj"() {
 		given:
 		DomObj dObj = Stub()
 		dObj.getInfo() >> ['1':'stub entry']
-		
+
 		expect:
 		dObj.getInfo()['1'] == 'stub entry'
 	}

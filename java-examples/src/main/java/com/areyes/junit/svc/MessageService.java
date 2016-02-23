@@ -1,21 +1,19 @@
 package com.areyes.junit.svc;
 
 /**
- * The Class MessageService.
- * from: http://examples.javacodegeeks.com/core-java/junit/junit-disable-test-example/
+ * The Class MessageService. from:
+ * http://examples.javacodegeeks.com/core-java/junit/junit-disable-test-example/
  */
 public class MessageService {
-	
-	
 
 	/** The message. */
 	private String message;
 
-
 	/**
 	 * Instantiates a new message service.
 	 *
-	 * @param message the message
+	 * @param message
+	 *            the message
 	 */
 	public MessageService(String message) {
 		this.message = message;
@@ -39,9 +37,11 @@ public class MessageService {
 		message = "Hi!" + message;
 		return message;
 	}
-	
+
 	/**
-	 * This will be the method to get the salutation messages specifically for executives.
+	 * This will be the method to get the salutation messages specifically for
+	 * executives.
+	 * 
 	 * @return a string
 	 */
 	public String salutationMessageForExecutives() {

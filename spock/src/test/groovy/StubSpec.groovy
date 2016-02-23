@@ -15,5 +15,28 @@ class StubSpec extends Specification {
 		expect:
 		list.size() == 3
 	}
+	
+	def "stub TestClass"() {
+		when:
+		TestClass tc = Stub()
+		tc.getInfo() >> 'from stub'
+		
+		then:
+		tc.getInfo() == 'from stub'
+	}
+	
+	def "stub StubClass"() {
+		when:
+		StubClass sc = Stub()
+		sc.getMessage() >> 'from spock stub'
+		
+		and:
+		TestClass tc = new TestClass()
+		tc.setSc(sc)
+		
+		then:
+		tc.getStubClassInfo() == 'from spock stub'
+		
+	}
 
 }

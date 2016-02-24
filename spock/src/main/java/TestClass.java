@@ -1,3 +1,4 @@
+import java.util.Map;
 
 public class TestClass {
 	
@@ -13,5 +14,9 @@ public class TestClass {
 	
 	public String getStubClassInfo() {
 		return sc.getMessage();
+	}
+	
+	public Map<String,String> getStubClassMap() {
+		return sc.getMap();
 	}
 }

@@ -36,6 +36,19 @@ class StubSpec extends Specification {
 		
 		then:
 		tc.getStubClassInfo() == 'from spock stub'
+	}
+	
+	def "stub with map"() {
+		when:
+		StubClass sc = Stub()
+		sc.getMap() >> ['1':'stub one']
+		
+		and:
+		TestClass tc = new TestClass()
+		tc.setSc(sc)
+		
+		then:
+		tc.getStubClassMap()['1'] == 'stub one'
 		
 	}
 

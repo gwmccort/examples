@@ -8,6 +8,7 @@ class HelloSpockSpec extends spock.lang.Specification {
 		"hello" == 'hello'
 	}
 
+//	@Unroll("#name length is #length")
     def "length of Spock's and his friends' names"() {
         expect:
         name.size() == length

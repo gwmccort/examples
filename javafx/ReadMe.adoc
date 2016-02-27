@@ -12,6 +12,10 @@
 * http://examples.javacodegeeks.com/desktop-java/javafx-table-example/[JavaFX Table Example]
 * https://dzone.com/articles/building-reactive-systems-with-javafx?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Reactive Systems with JavaFX]
 * http://examples.javacodegeeks.com/desktop-java/javafx/scene/javafx-scene-builder-tutorial/[JavaFX Scene Builder Tutorial]
+* http://examples.javacodegeeks.com/desktop-java/javafx/text-javafx/javafx-text-example/[JavaFX Text Example]
+
+
+
 
 == Swing T2D
 * http://examples.javacodegeeks.com/desktop-java/swing/java-swing-slider-example/[Swing Slider]

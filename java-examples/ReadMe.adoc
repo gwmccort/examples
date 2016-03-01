@@ -64,3 +64,4 @@ Glen McCort <gwmccort@gmail.com>
 * http://examples.javacodegeeks.com/core-java/apache/commons/net-commons/ftp/ftpclient/org-apache-commons-net-ftp-ftpclient-example/[org.apache.commons.net.ftp.ftpclient Example]
 * http://javarticles.com/2016/02/junit-fixmethodorder-annotation-example.html[@FixMethodOrder Annotation Example]
 * http://www.mkyong.com/java/java-how-to-join-arrays/[How to join Arrays]
+* http://www.javacodegeeks.com/2016/02/tutorial-correct-slf4j-logging-usage-check.html[Correct SLF4J logging usage and how to check it]

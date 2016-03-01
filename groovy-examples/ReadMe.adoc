@@ -19,7 +19,9 @@
 == Video Presentations
 * http://www.infoq.com/presentations/groovy-ast-transformations?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global[Groovy AST Transformations]
 
-
+== Database
+=== H2
+* http://www.h2database.com/html/grammar.html[SQL Grammer]
 
 === Misc
 * https://tedvinke.wordpress.com/2015/09/25/avoid-nullpointerexception-safe-navigation-with-groovy/[Avoid NullPointerException: Safe Navigation with Groovy]

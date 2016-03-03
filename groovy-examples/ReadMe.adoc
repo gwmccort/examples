@@ -23,6 +23,8 @@
 === H2
 * http://www.h2database.com/html/grammar.html[SQL Grammer]
 
+=== Neo4j
+* http://jexp.de/blog/2014/10/flexible-neo4j-batch-import-with-groovy/[Batch Import]
 === Misc
 * https://tedvinke.wordpress.com/2015/09/25/avoid-nullpointerexception-safe-navigation-with-groovy/[Avoid NullPointerException: Safe Navigation with Groovy]
 

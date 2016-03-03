@@ -33,6 +33,8 @@ dependencies {
 	runtime "log4j:log4j:1.2.17"
 
 	compile 'com.h2database:h2:1.4.191'
+	compile 'com.xlson.groovycsv:groovycsv:1.1'
+	
 
 	runtime 'commons-cli:commons-cli:1.3.+'
 }

@@ -6,8 +6,6 @@ import groovy.sql.Sql
  * Groovy SQL example:
  * http://mrhaki.blogspot.com/2009/10/groovy-goodness-groovy-sql.html
  * http://www.schibsted.pl/2015/06/groovy-sql-an-easy-way-to-database-scripting/
- * @author Glen
- *
  */
 class GroovySql {
 
@@ -62,7 +60,6 @@ class GroovySql {
 		//db.execute 'insert into languages (id, name) values(null, "Groovy")'
 		sql.execute "insert into languages(id, name) values(null, 'Groovy')"
 		sql.execute "insert into languages(id, name) values(null, 'Java')"
-
 
 		sql.eachRow("select id, name from languages") { row -> println "$row.id $row.name" }
 	}

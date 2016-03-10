@@ -11,6 +11,7 @@ musicDir = /C:\Users\Glen\Music/
 
 home {
 	musicDir = /C:\Users\Glen\Music/
+//	musicDir = /P:\FANTOM HDS721010CLA332\Media\Music/
 	iTunesDir = /C:\Users\Glen\Music\iTunes/
 }
 

@@ -1,12 +1,16 @@
+import groovy.util.logging.Slf4j
+
 /**
  * Create a CSV file of MusicFileTracks
  *
  * @author Glen
  *
  */
+@Slf4j
 class FileTracksCsvFile {
 
 	static main(args) {
+		def musicDir = ''
 
 		// set default configuration
 		def config = new ConfigSlurper().parse(new File("src/main/resources/Config.groovy").toURI().toURL())
@@ -16,9 +20,10 @@ class FileTracksCsvFile {
 		}
 
 		// command line args
-		def cli = new CliBuilder(usage: "FileTracksCsvFile [-he]")
+		def cli = new CliBuilder(usage: "FileTracksCsvFile [-hem]")
 		cli.h(longOpt: 'help'  , 'usage information'   , required: false)
 		cli.e(longOpt: 'env', 'config environment[home|work]', required: false)
+		cli.m(longOpt: 'musicDir', 'music directory', required: false)
 		OptionAccessor opt = cli.parse(args)
 		//		if(opt.h || opt.arguments().isEmpty()) {
 		if(opt.h) {
@@ -26,18 +31,13 @@ class FileTracksCsvFile {
 			System.exit(0)
 		}
 		if(opt.e){
-			println "opt e:" + opt.e
 			env = config.opt.e
 		}
-
-		println env.musicDir
-
-		//		println ClassLoader.getSystemResource('Config.groovy').class
-
-		//		println System.getProperty('java.class.path')
-		//		System.exit(0)
-
-
+		if(opt.m){
+            musicDir = opt.m
+		} else {
+			musicDir = env.musicDir
+		}
 
 		//TODO don't use toURL & create a config class
 		//works	in eclipse & idea
@@ -59,12 +59,14 @@ class FileTracksCsvFile {
 		//		println this.class.getClassLoader()
 
 		//		System.exit(0)
-		FileTrack[] tracks = FileTrack.getMp3Files(env.musicDir)
+		FileTrack[] tracks = FileTrack.getMp3Files(musicDir)
 
-		println tracks.size()
-		for (track in tracks) {
-			println track
-		}
+        if(log.isDebugEnabled()) {
+            log.debug("tracks size:{}", tracks.size())
+            for (track in tracks) {
+                log.debug track.toString()
+            }
+        }
 
 		FileTrack.writeTracksToCSV(tracks)
 	}

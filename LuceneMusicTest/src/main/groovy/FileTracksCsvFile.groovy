@@ -12,6 +12,7 @@ class FileTracksCsvFile {
 		def config = new ConfigSlurper().parse(new File("src/main/resources/Config.groovy").toURI().toURL())
 		def env = config.home
 		if (InetAddress.localHost.hostName=='CRP22627'){
+			println '-----------work env'
 			env = config.work
 		}
 
@@ -59,6 +60,7 @@ class FileTracksCsvFile {
 		//		println this.class.getClassLoader()
 
 		//		System.exit(0)
+		println "musicDir: ${env.musicDir}"
 		FileTrack[] tracks = FileTrack.getMp3Files(env.musicDir)
 
 		println tracks.size()

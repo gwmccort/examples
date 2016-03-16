@@ -24,14 +24,15 @@ class FileTrack extends Track {
 		album=tag.getFirst(FieldKey.ALBUM)
 		filePath = fileName
 	}
-	
+
 	/**
 	 * Example of using jaudiotagger to get mp3 tags
 	 * @return
 	 */
 	static FileTrack[] getMp3Files(String pathRoot) {
+		println "getMp3Files"
 		def results = []
-		
+
 //		Pattern fileRegExp = ~/.*.(mp3|flac)/
 		Pattern fileRegExp = ~/.*.(mp3)/
 
@@ -45,8 +46,12 @@ class FileTrack extends Track {
 		///^(apple|banana)$/
 		//		new File(/C:\Users\Public\Music/).eachDirRecurse { dir ->
 		//			new File(/C:\Users\Glen\Music/).eachDirRecurse { dir ->
+		println "pathRoot: $pathRoot"
+		//TODO: doesn't work if no subdirs!!!
 		new File(pathRoot).eachDirRecurse { dir ->
+			println "dir: $dir"
 			dir.eachFileMatch(fileRegExp) { file ->
+				println "file: $file"
 				try {
 					//					MP3File mf = new MP3File(file)
 					MP3File mf = new MP3File(file, MP3File.LOAD_ALL, true)
@@ -63,7 +68,7 @@ class FileTrack extends Track {
 		}
 		results
 	}
-	
+
 	/**
 	 * Convert track to array of strings
 	 * @return
@@ -71,7 +76,7 @@ class FileTrack extends Track {
 	String[] toStringArray() {
 		[artist, name, album, filePath] as String[]
 	}
-	
+
 	/**
 	 * Write tacks to a CSV file
 	 * @param tracks

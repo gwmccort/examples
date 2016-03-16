@@ -16,14 +16,17 @@ class FileTracksCsvFile {
 		def config = new ConfigSlurper().parse(new File("src/main/resources/Config.groovy").toURI().toURL())
 		def env = config.home
 		if (InetAddress.localHost.hostName=='CRP22627'){
+			println '-----------work env'
 			env = config.work
 		}
 
 		// command line args
 		def cli = new CliBuilder(usage: "FileTracksCsvFile [-hem]")
-		cli.h(longOpt: 'help'  , 'usage information'   , required: false)
-		cli.e(longOpt: 'env', 'config environment[home|work]', required: false)
-		cli.m(longOpt: 'musicDir', 'music directory', required: false)
+		cli.with {
+			h(longOpt: 'help'  , 'usage information'   , required: false)
+			e(longOpt: 'env', 'config environment[home|work]', required: false)
+			m(longOpt: 'musicDir', 'music directory', args: 1, required: false)
+		}
 		OptionAccessor opt = cli.parse(args)
 		//		if(opt.h || opt.arguments().isEmpty()) {
 		if(opt.h) {
@@ -38,6 +41,7 @@ class FileTracksCsvFile {
 		} else {
 			musicDir = env.musicDir
 		}
+		println "musicDir: $musicDir"
 
 		//TODO don't use toURL & create a config class
 		//works	in eclipse & idea
@@ -60,13 +64,19 @@ class FileTracksCsvFile {
 
 		//		System.exit(0)
 		FileTrack[] tracks = FileTrack.getMp3Files(musicDir)
+		println "musicDir: ${env.musicDir}"
 
-        if(log.isDebugEnabled()) {
-            log.debug("tracks size:{}", tracks.size())
-            for (track in tracks) {
-                log.debug track.toString()
-            }
+    if(log.isDebugEnabled()) {
+        log.debug("tracks size:{}", tracks.size())
+        for (track in tracks) {
+            log.debug track.toString()
         }
+    }
+
+		// println tracks.size()
+		// for (track in tracks) {
+		// 	println track
+		// }
 
 		FileTrack.writeTracksToCSV(tracks)
 	}

@@ -201,8 +201,11 @@ class Track {
 
         //		new File(/C:\Users\Public\Music/).eachDirRecurse { dir ->
         //			new File(/C:\Users\Glen\Music/).eachDirRecurse { dir ->
+		println "pathRoot: $pathRoot"
         new File(pathRoot).eachDirRecurse { dir ->
+			println "dir: $dir"
             dir.eachFileMatch(~/.*.mp3/) { file ->
+				println "file: $file"
                 try {
                     //					MP3File mf = new MP3File(file)
                     MP3File mf = new MP3File(file, MP3File.LOAD_ALL, true)

@@ -1,0 +1,66 @@
+plugins {
+	id 'java'
+	id 'eclipse'
+	id 'idea'
+	id 'com.github.ben-manes.versions' version '0.12.0'
+}
+
+description = 'Tika in Action'
+
+repositories {
+	jcenter()
+	mavenCentral()
+    maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    compile group: 'org.apache.lucene', name: 'lucene-core', version:'3.5.0'
+
+    // compile group: 'org.apache.tika', name: 'tika-parsers', version:'1.0'
+    // def tikaVersion = '0.4'
+    // def tikaVersion = '1.0' //works
+    def tikaVersion = '1.12'
+    compile "org.apache.tika:tika-core:$tikaVersion"
+    compile "org.apache.tika:tika-parsers:$tikaVersion"
+    compile "org.apache.tika:tika-app:$tikaVersion"
+
+
+    // compile group: 'org.apache.commons', name: 'commons-lang3', version:'3.1'
+    compile 'javax.jcr:jcr:2.0'
+
+    def jackrabbitVersion = '2.12.1'
+    compile "org.apache.jackrabbit:jackrabbit-jcr-server:$jackrabbitVersion"
+    compile "org.apache.jackrabbit:jackrabbit-core:$jackrabbitVersion"
+}
+
+configurations {
+	compile.exclude group:'org.slf4j'
+}
+
+task runMyFirstTika(type: JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'tikainaction.chapter2.MyFirstTika'
+  args 'TestPdf.pdf'
+}
+
+// sourceSets {
+//     main {
+//         java {
+//             srcDir 'src'
+//             exclude '**/chapter6/**'
+//             exclude '**/chapter9/**'
+//        }
+//    }
+//    // test {
+//    //      java {
+//    //          srcDir 'src'
+//    //          exclude '**/chapter2/**'
+//    //          exclude '**/chapter4/**'
+//    //     }
+//    // }
+// }
+
+// test {
+//     exclude '**/chapter2/**'
+//     exclude '**/chapter4/**'
+// }

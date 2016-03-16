@@ -1,0 +1,27 @@
+plugins {
+	id 'java'
+	id 'eclipse'
+	id 'maven'
+	id 'idea'
+	id 'com.github.ben-manes.versions' version '0.12.0'
+}
+
+group = 'com.rov3r.examples'
+version = '1.0.0'
+
+description = """Lucene Example Project"""
+
+//sourceCompatibility = 1.5
+//targetCompatibility = 1.5
+
+repositories {
+	jcenter()
+	mavenCentral()
+    maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    compile group: 'org.apache.lucene', name: 'lucene-core', version:'3.5.0'
+    compile group: 'org.apache.tika', name: 'tika-parsers', version:'1.0'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version:'3.1'
+}

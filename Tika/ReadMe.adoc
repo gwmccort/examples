@@ -1,0 +1,6 @@
+= Tika
+
+* http://www.tutorialspoint.com/tika/tika_quick_guide.htm[Tika quick guide]
+* http://www.hashcode.eti.br/?p=420[es & tika]
+* http://events.linuxfoundation.org/sites/events/files/slides/1s_and_0s.pdf[tika pdf]
+* https://www.talend.com/products/data-preparation[Talend data preparation]

@@ -18,3 +18,7 @@
 * https://dzone.com/articles/junit-5-setup?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Junit 5 - Setup]
 * http://javarticles.com/2016/02/junit-rule-based-testrule-example.html[JUnit @Rule Based TestRule Example]
 * http://javarticles.com/2016/02/junit-timeout-testrule-example.html[JUnit Timeout TestRule Example]
+
+== Mockito
+===T2D
+* https://examples.javacodegeeks.com/core-java/mockito/mockito-thenreturn-example/[ThenReturn Example]

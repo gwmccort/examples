@@ -27,3 +27,6 @@
 * http://www.javacodegeeks.com/2016/01/java-8-lambda-expression-design-patterns-strategy-design-pattern.html[Java 8 Lambda Expression for Design Patterns – Strategy Design Pattern]
 * https://dzone.com/articles/make-your-java-factories-beautiful?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Make Your Java Factories Beautiful]
 * https://dzone.com/articles/design-patterns-observer-pattern?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Observer Pattern]
+* https://dzone.com/articles/design-patters-facade-pattern?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Façade Pattern]
+* https://dzone.com/articles/factory-pattern-2?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Factory Pattern]
+* https://dzone.com/articles/the-factory-design-pattern?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[The Factory Design Pattern]

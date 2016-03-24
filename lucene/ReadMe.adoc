@@ -20,3 +20,4 @@
 * http://examples.javacodegeeks.com/elasticsearch/elasticsearch-tutorial-beginners/[ElasticSearch Tutorial for Beginners]
 * http://www.hascode.com/2014/07/lucene-by-example-specifying-analyzers-on-a-per-field-basis-and-writing-a-custom-analyzertokenizer/[Specifying Analyzers on a per-field-basis and writing a custom Analyzer/Tokenizer]
 * http://www.hascode.com/tag/lucene/[hasCode lucene articals]
+* https://www.javacodegeeks.com/2016/03/logging-requests-elasticsearch.html[Logging Requests to Elasticsearch]

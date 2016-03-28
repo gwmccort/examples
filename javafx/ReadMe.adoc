@@ -1,6 +1,11 @@
 = JavaFX
 
+== Packages
+* graph - JavaFX Scene Graph Example
+** https://examples.javacodegeeks.com/desktop-java/javafx/scene/chart/javafx-graph-example/[JavaFX Graph Example]
+
 == T2D
+* gradle javafx plugin
 * http://examples.javacodegeeks.com/desktop-java/swing/java-swing-boxlayout-example/[Swing BoxLayout]
 * http://www.javacodegeeks.com/2015/12/javafx-tip-22-autosize-tree-table-columns.html[Autosize (Tree) Table Columns]
 * http://examples.javacodegeeks.com/core-java/javafx-imageview-example/[ImageView]

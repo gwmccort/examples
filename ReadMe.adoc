@@ -13,6 +13,30 @@ Glen McCort <gwmccort@gmail.com>
 . gradle multi-project
 . http://examples.javacodegeeks.com/software-development/git-remove-commit-example/[Git Remove Commit Example]
 
+== Projects
+* link:asciidoc\ReadMe.adoc[asciidoc] - asciidoctor gradle
+* link:commons\ReadMe.adoc[commons] - apache commons api
+* link:geb\ReadMe.adoc[geb] - groovy browser testing
+* gradle
+** CopyPasteDetection - use PMD's copy/paste dector (cpd) on pdm's jar's
+** webapp
+* link:groovy-examples\ReadMe.adoc[groovy-examples] - groovy examples from Java Code Geeks
+* link:guava\ReadMe.adoc[guava] - google's guava api
+* link:iText\ReadMe.adoc[iText] - java pdf api
+* link:java8\ReadMe.adoc[java8] - java 8 examples
+* link:java-examples\ReadMe.adoc[java-examples] - java examples
+* link:jbake\ReadMe.adoc[jbake] - create web blog's with asciidoc on github pages
+* lazybones-templates - how to create a lazybones template
+* link:lucene\ReadMe.adoc[lucene] - lucene search
+* link:LuceneMusicTest\ReadMe.adoc[LuceneMusicTest] - lucene music  wip
+* link:luceneWriter\ReadMe.adoc[luceneWriter] - lucene writer
+* link:patterns\ReadMe.adoc[patterns] - design patterns
+* link:spock\ReadMe.adoc[spock] - spock gradle
+* link:spring\ReadMe.adoc[spring] - spring framework examples
+* link:webdrive\ReadMe.adoc[webdrive] - selenium webdrive java examples
+* link:webScrape\ReadMe.adoc[webScrape] - scrape music web sites
+
+
 == JavaScript
 * http://jsforcats.com/[JavaScript for cats]
 
@@ -32,26 +56,3 @@ Glen McCort <gwmccort@gmail.com>
 * https://dzone.com/articles/executable-java-applications?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Guide to Executable Java Applications]
 * http://examples.javacodegeeks.com/enterprise-java/jms/jms-topic-example/[Guide to Executable Java Applications]
 * https://dzone.com/articles/simple-java-soap-web-service-using-jdk-tools?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java SOAP Web Service Using JDK Tools]
-
-== Projects
-* asciidoc - asciidoctor gradle
-* commons - apache commons api
-* geb - groovy browser testing
-* gradle
-** CopyPasteDetection - use PMD's copy/paste dector (cpd) on pdm's jar's
-** webapp
-* groovy-examples - groovy examples from Java Code Geeks
-* guava - google's guava api
-* iText - java pdf api
-* java8 - java 8 examples
-* java-examples - java examples
-* jbake - create web blog's with asciidoc on github pages
-* lazybones-templates - how to create a lazybones template
-* lucene - lucene search
-* LuceneMusicTest - lucene music  wip
-* luceneWriter - lucene writer
-* patterns - design patterns
-* spock - spock gradle
-* spring - spring framework examples
-* webdrive - selenium webdrive java examples
-* webScrape - scrape music web sites

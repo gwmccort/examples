@@ -1,5 +1,3 @@
-
-
 import geb.Browser
 import geb.Page
 import groovy.util.logging.Slf4j;

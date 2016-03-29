@@ -1,0 +1,7 @@
+C:\windows\SysWOW64\cmd.exe /c ""C:\Program Files\Git\bin\bash.exe" --login -i"
+
+C:\windows\SysWOW64\cmd.exe /c ""C:\Program Files\Git\bin\bash.exe" --login -i "C:\Program Files\Docker Toolbox\start.sh""
+
+"C:\Program Files\Git\bin\bash.exe" --login -i "C:\Program Files\Docker Toolbox\start.sh"
+
+C:\windows\SysWOW64\cmd.exe /c ""C:\Program Files\Git\bin\bash.exe" --login -i -new_console:C:"C:\Program Files\Docker Toolbox\docker-quickstart-terminal.ico" "C:\Program Files\Docker Toolbox\start.sh"

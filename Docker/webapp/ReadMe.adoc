@@ -1,0 +1,29 @@
+= web app
+
+* http://www.theserverside.com/discussions/thread.tss?thread_id=81515[5 Awesome Tutorials to Kick-Start your Web Programming Projects]
+
+* http://examples.javacodegeeks.com/enterprise-java/spring/mvc/spring-mvc-interceptor-tutorial/[Spring MVC Interceptor Tutorial]
+
+== Docker
+
+* https://hub.docker.com/_/tomcat/[docker hub tomcat]
+
+[qanda]
+build war::
+`gradle war`
+
+build docker image::
+`docker build -t webapp .`
+
+start docker container::
+`docker run -p 8080:8080 --name webapp webapp`
+
+open web page::
+`http://192.168.99.100:8080/webapp`
+
+attach to running container::
+`docker run -it webapp /bin/bash`
+
+=== Docker & AWS
+* https://www.linkedin.com/pulse/tutorial-deploying-your-first-docker-container-aws-ec2-wootton[Tutorial - Deploying Your First Docker Container On The AWS EC2 Container Service]
+* http://www.ybrikman.com/writing/2015/11/11/running-docker-aws-ground-up/[Running Docker on AWS from the ground up]

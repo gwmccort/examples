@@ -66,3 +66,5 @@ Glen McCort <gwmccort@gmail.com>
 * http://www.mkyong.com/java/java-how-to-join-arrays/[How to join Arrays]
 * http://www.javacodegeeks.com/2016/02/tutorial-correct-slf4j-logging-usage-check.html[Correct SLF4J logging usage and how to check it]
 * http://www.javacodegeeks.com/2016/02/easy-database-manipulation-groovy-gradle.html[Easy Database Manipulation with Groovy and Gradle]
+* http://www.mkyong.com/java/java-how-to-overrides-equals-and-hashcode/[How to override equals and hashCode]
+* http://www.mkyong.com/java/java-compare-enum-value/[Compare Enum value]

@@ -4,6 +4,12 @@
 * graph - JavaFX Scene Graph Example
 ** https://examples.javacodegeeks.com/desktop-java/javafx/scene/chart/javafx-graph-example/[JavaFX Graph Example]
 
+== Issues
+[qanda]
+eclipse access restriction errors on javafx classes::
+From http://stackoverflow.com/questions/9266632/access-restriction-is-not-accessible-due-to-restriction-on-required-library[stack overflow],
+Configure Build Path>Libraries>select JRE-Access rules>edit add javafx/** as accessible
+
 == T2D
 * gradle javafx plugin
 * http://examples.javacodegeeks.com/desktop-java/swing/java-swing-boxlayout-example/[Swing BoxLayout]

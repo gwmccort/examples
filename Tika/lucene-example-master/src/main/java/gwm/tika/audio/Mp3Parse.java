@@ -1,27 +1,20 @@
 package gwm.tika.audio;
 
 import java.io.File;
-
 import java.io.FileInputStream;
-
 import java.io.IOException;
 
 import org.apache.tika.exception.TikaException;
-
 import org.apache.tika.metadata.Metadata;
-
 import org.apache.tika.parser.ParseContext;
-
 import org.apache.tika.parser.mp3.LyricsHandler;
-
 import org.apache.tika.parser.mp3.Mp3Parser;
-
 import org.apache.tika.sax.BodyContentHandler;
-
 import org.xml.sax.SAXException;
 
 /**
  * @author Glen
+ * 
  * @see <a href=
  *      http://www.tutorialspoint.com/tika/tika_extracting_mp3_files.htm>Extracting
  *      mp3 Files</a>

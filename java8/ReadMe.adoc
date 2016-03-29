@@ -13,6 +13,9 @@
 * https://dzone.com/articles/using-traits-in-java-8?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Using Traits in Java 8]
 * http://www.mkyong.com/java8/java-8-stringjoiner-example/[StringJoiner example]
 * https://dzone.com/articles/draft-a-story-of-checked-exceptions-and-java-8-lam?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Checked Exceptions and Java 8 Lambda Expressions]
+* https://www.javacodegeeks.com/2016/03/java-8-declare-private-protected-methods-interfaces.html[Declare Private and Protected Methods in Interfaces]
+
+
 
 === Testing
 * http://www.javacodegeeks.com/2015/12/using-mockito-without-static-imports-java-8.html[Using Mockito without static imports with Java 8]

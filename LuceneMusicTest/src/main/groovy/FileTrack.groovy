@@ -9,10 +9,14 @@ import org.jaudiotagger.tag.Tag
 
 import au.com.bytecode.opencsv.CSVWriter
 
+/**
+ * Track from an MP3 file
+ * @author gwmccort
+ *
+ */
 @ToString(includeNames=true, includeSuper=true)
 class FileTrack extends Track {
 	String filePath
-
 
 	/**
 	 * Create Track from music file tags

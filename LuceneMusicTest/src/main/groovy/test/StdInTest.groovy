@@ -1,5 +1,11 @@
 package test
 
+/**
+ * Read input from console (stdin)
+ *
+ * @author gwmccort
+ *
+ */
 class StdInTest {
 
 	static main(args) {

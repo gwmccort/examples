@@ -17,6 +17,8 @@ import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.ParseContext;
 import org.apache.tika.parser.pdf.PDFParser;
 import org.apache.tika.sax.BodyContentHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Get pdf meta data from tika by walking a directory tree.
@@ -26,13 +28,28 @@ import org.apache.tika.sax.BodyContentHandler;
  */
 public class PdfWalker {
 
-	final static String START_PATH = "H:\\Project_Files\\eBooks";
+//	final static String START_PATH = "H:\\Project_Files\\eBooks";
+	final static String START_PATH = "C:\\Users\\Glen\\Downloads\\Torrents\\Completed";
+	
+	private static final Logger log = LoggerFactory.getLogger(PdfWalker.class);
+
 
 	public static void main(String[] args) throws Exception {
 		PdfWalker pw = new PdfWalker();
+		
+//		File file = new File("PdfWalker.log");
+//		FileWriter fw = new FileWriter(file.getAbsoluteFile());
+//		BufferedWriter log = new BufferedWriter(fw);
+//		try {
+//		log.write("starting\n");
+//		log.write("starting\n");
+//		log.write("starting\n");
+//		log.close();
+//		System.out.println("PdfWalker.main()");
+//		System.exit(0);
 
 		for (Path p : pw.walkWithVisitor(Paths.get(START_PATH))) {
-			System.out.println("------- pdf path:" + p);
+			log.info("pdf path:{}",p);
 
 			BodyContentHandler handler = new BodyContentHandler(-1); // ignore
 																		// limit
@@ -54,10 +71,13 @@ public class PdfWalker {
 
 			System.out.println("title:" + metadata.get("title"));
 			if (null == metadata.get("title") || metadata.get("title").equals("") || metadata.get("title").equals("Java: Graphical User Interfaces")) {
-				System.out.println("-------- title blank or junk");
-				System.out.println("title from file name:" + getTitleFromFileName(p));
+//				System.out.println("-------- title blank or junk");
+//				System.out.println("title from file name:" + getTitleFromFileName(p));
+				log.info("-------- title blank or junk");
+				log.info("title from file name:{}", getTitleFromFileName(p));
 			} else {
-				System.out.println("not blank or null title:" + metadata.get("title"));
+//				System.out.println("not blank or null title:" + metadata.get("title"));
+				log.info("not blank or null title:{}", metadata.get("title"));
 			}
 			// getting metadata of the document
 			// System.out.println("---------Metadata of the PDF:");
@@ -67,6 +87,10 @@ public class PdfWalker {
 			// }
 
 		}
+//		}
+//		finally {
+//			log.close();
+//		}
 
 	}
 	

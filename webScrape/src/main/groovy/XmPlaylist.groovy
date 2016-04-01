@@ -1,6 +1,6 @@
 import geb.Browser
 import geb.Page
-import groovy.util.logging.Slf4j;
+import groovy.util.logging.Slf4j
 
 import java.util.logging.Level
 import java.util.logging.Logger
@@ -26,6 +26,9 @@ class XmPlaylist {
 
 			// get bands
 			bands.addAll(getBands(it.channelNumber))
+
+			//XXX
+			println "channel:$it bands:${bands}"
 
 			// update sorted bands to file
 			String fileName = it.fileName
@@ -57,10 +60,14 @@ class XmPlaylist {
 //			assert at(XmPlaylistPage)
 			//            results = bands
 			//            results = bands ?: []
-			if (bands == null)
+			if (bands == null) {
 				results = []
-			else
+				println 'bands null'
+			}
+			else {
 				results = bands
+				println "bands: $bands"
+			}
 		}
 		results
 	}
@@ -81,9 +88,11 @@ class XmPlaylistPage extends Page {
 			// make sure rows size ok
 			def playListTbl = $('table', 1)
 			try {
-				//				println "size: $playListRows.size() class: ${playListRows.class}"
-				//				println "in try class: ${playListRows.class}"
-				//				println "pl text:" + playListRows.text()
+//								println "size: $playListRows.size() class: ${playListRows.class}"
+//								println "in try class: ${playListRows.class}"
+//								println "pl text:" + playListRows.text()
+
+				println playListTbl.$('tr').size()//XXX
 
 				if (playListTbl.$('tr') == 54) {
 					return playListTbl.$('tr', 3..52).collect { it.$('td', 1).text() }.unique()

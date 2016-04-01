@@ -1,8 +1,13 @@
 = Muisc Search
 Glen McCort <gwmccort.gmail.com>
 
+== Lucene
+=== Luke
+* https://github.com/DmitryKey/luke/releases/tag/pivot-luke-5.5.0[luke 5.5.0] - works with current lucene version
+
 == T2D
 * look at https://github.com/griffon/griffon[griffon build]
 ** http://griffon-framework.org/[griffon web site]
 * ratpack web interface
 * griffon desktop search
+* http://groovy-lang.org/design-patterns.html#_visitor_pattern[groovy visitor pattern]

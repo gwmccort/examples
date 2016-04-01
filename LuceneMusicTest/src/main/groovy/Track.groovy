@@ -28,6 +28,12 @@ import org.jaudiotagger.tag.Tag
 
 import au.com.bytecode.opencsv.CSVWriter
 
+/**
+ * Music track model.
+ *
+ * @author gwmccort
+ *
+ */
 @TupleConstructor(force=true)
 @ToString(includeNames=true)
 class Track {
@@ -42,7 +48,7 @@ class Track {
 
     /**
      * Create Track from music file tags
-     * @param tag
+     * @param tag mp3 metadata
      */
     Track(Tag tag) {
         artist = tag.getFirst(FieldKey.ARTIST)
@@ -52,7 +58,7 @@ class Track {
 
     /**
      * Convert track to array of strings
-     * @return
+     * @return String array of track information
      */
     String[] toStringArray() {
         [artist, name, album] as String[]
@@ -73,7 +79,10 @@ class Track {
         println 'end!'
     }
 
-    static indexTest() {
+    /**
+     * Test adding items to lucene index.
+     */
+    static void indexTest() {
         println '>>> indexing tracks...'
 
         Directory dir = FSDirectory.open(Paths.get(LUCENE_INDEX))
@@ -85,7 +94,7 @@ class Track {
         IndexWriter writer = new IndexWriter(dir, iwc)
 
         // add track to index
-        def tracks = getTracks()
+        def tracks = getSampleTracks()
         for (track in tracks) {
             Document doc = new Document()
             Field artist = new Field(ARTIST_FIELD, track.artist, TextField.TYPE_STORED)
@@ -100,7 +109,11 @@ class Track {
         writer.close()
     }
 
-    static indexTracks(Track[] tracks) {
+    /**
+     * Index list of tracks to lucene
+     * @param tracks list of tracks
+     */
+    static void indexTracks(Track[] tracks) {
         println '>>> indexing tracks...'
 
         Directory dir = FSDirectory.open(Paths.get(LUCENE_INDEX))
@@ -112,7 +125,7 @@ class Track {
         IndexWriter writer = new IndexWriter(dir, iwc)
 
         // add track to index
-        for (track in tracks) {
+        for (track in sampleTracks) {
             Document doc = new Document()
             Field artist = new Field(ARTIST_FIELD, track.artist, TextField.TYPE_STORED)
             Field name = new Field(NAME_FIELD, track.name, TextField.TYPE_STORED)
@@ -126,7 +139,11 @@ class Track {
         writer.close()
     }
 
-    static searchTest(String queryString) {
+    /**
+     * Search lucene index
+     * @param queryString lucene query
+     */
+    static void searchTest(String queryString) {
         println '>>> searching tracks...'
 
         IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(LUCENE_INDEX)))
@@ -176,7 +193,11 @@ class Track {
 
     }
 
-    static Track[] getTracks() {
+    /**
+     * Get list of tracks for testing
+     * @return list of tracks
+     */
+    static Track[] getSampleTracks() {
         def tracks = []
         tracks << new Track(artist:'Yonter Mountain String Band', name:'40 Miles from Denver', album:'Elevation test')
         tracks << new Track(artist:'Grateful Dead', name:'Trucking test', album:'American Beauty')
@@ -186,7 +207,7 @@ class Track {
 
     /**
      * Example of using jaudiotagger to get mp3 tags
-     * @return
+     * @return list of tracks
      */
     static Track[] getMp3Files(String pathRoot) {
         println 'in getMp3Files...'
@@ -226,12 +247,11 @@ class Track {
     /**
      * Write tacks to a CSV file
      * @param tracks
-     * @return
      */
-    static writeTracksToCSV(Track[] tracks) {
+    static void writeTracksToCSV(Track[] tracks) {
         println 'in writeTracksToCSV'
         CSVWriter writer = new CSVWriter(new FileWriter('Track.csv'))
-        tracks.each { t ->
+        sampleTracks.each { t ->
             writer.writeNext(t.toStringArray())
         }
         writer.close()

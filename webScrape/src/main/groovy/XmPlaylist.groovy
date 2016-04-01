@@ -7,7 +7,13 @@ import java.util.logging.Logger
 
 /**
  * Get bands from Xm playlist using Geb Page object
- * Created by gwmccort on 10/20/2015.
+ *<p>
+ * <b>Issues:</b>
+ * <ul>
+ *     <li>output isn't being sorted
+ * </ul>
+ *
+ * @author Created by gwmccort on 10/20/2015.
  */
 @Slf4j
 class XmPlaylist {
@@ -22,7 +28,10 @@ class XmPlaylist {
 		logger.setLevel(Level.OFF);
 
 		Channels.each {
+			log.info('channel:{}', it.channelNumber)
 			Set bands = [] as Set
+
+
 
 			// get bands
 			bands.addAll(getBands(it.channelNumber))
@@ -74,14 +83,19 @@ class XmPlaylist {
 	}
 }
 
+/**
+ * Geb Page object for dogstar radio search results
+ */
+@Slf4j
 class XmPlaylistPage extends Page {
 
-	// url of page
+	/** url of page */
 	static url = '/search_xm_playlist.php'
 
-	// check page is opened
+	/** check page is opened */
 	static at = { title == 'XM Playlist Search - XM Satellite Radio - DogstarRadio.com' }
 
+    /** context of page */
 	static content = {
 		bands {
 			//TODO rows are hard coded length to 54 entries per page!!!
@@ -93,12 +107,15 @@ class XmPlaylistPage extends Page {
 //								println "in try class: ${playListRows.class}"
 //								println "pl text:" + playListRows.text()
 
-//				println 'playListTbl rows:' + playListTbl.$('tr').size()//XXX
+				int tableSize = playListTbl.$('tr').size()
+                log.debug("payListTbl rows: {}", tableSize)
 
 				//needed to add size???
-				if (playListTbl.$('tr').size() == 54) {
+//				if (playListTbl.$('tr').size() == 54) {
+				if (tableSize>5) {
 //					println 'tr == 54'
-					return playListTbl.$('tr', 3..52).collect { it.$('td', 1).text() }.unique()
+//					return playListTbl.$('tr', 3..52).collect { it.$('td', 1).text() }.unique()
+					return playListTbl.$('tr', 3..tableSize-2).collect { it.$('td', 1).text() }.unique()
 				}
 				else {
 //					println 'tr != 54 return blank list'

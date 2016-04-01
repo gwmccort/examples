@@ -13,7 +13,7 @@ import java.util.logging.Logger
 class XmPlaylist {
 
 	static main(args) {
-		println 'main...'
+		println 'XmPlaylist.main...'
 		log.trace 'main'
 
 		// shutoff htmlunit warnings, is there a better way???
@@ -28,7 +28,7 @@ class XmPlaylist {
 			bands.addAll(getBands(it.channelNumber))
 
 			//XXX
-			println "channel:$it bands:${bands}"
+//			println "channel:$it bands:${bands}"
 
 			// update sorted bands to file
 			String fileName = it.fileName
@@ -40,6 +40,7 @@ class XmPlaylist {
 		}
 
 		println 'finished!'
+		log.trace 'main finished!'
 	}
 
 	private static Set getBands(channel) {
@@ -62,11 +63,11 @@ class XmPlaylist {
 			//            results = bands ?: []
 			if (bands == null) {
 				results = []
-				println 'bands null'
+//				println 'bands null'
 			}
 			else {
 				results = bands
-				println "bands: $bands"
+//				println "bands: $bands"
 			}
 		}
 		results
@@ -83,22 +84,26 @@ class XmPlaylistPage extends Page {
 
 	static content = {
 		bands {
-			//TODO rows are hard coded length
+			//TODO rows are hard coded length to 54 entries per page!!!
 
 			// make sure rows size ok
-			def playListTbl = $('table', 1)
+			def playListTbl = $('table', 1) //second table
 			try {
 //								println "size: $playListRows.size() class: ${playListRows.class}"
 //								println "in try class: ${playListRows.class}"
 //								println "pl text:" + playListRows.text()
 
-				println playListTbl.$('tr').size()//XXX
+//				println 'playListTbl rows:' + playListTbl.$('tr').size()//XXX
 
-				if (playListTbl.$('tr') == 54) {
+				//needed to add size???
+				if (playListTbl.$('tr').size() == 54) {
+//					println 'tr == 54'
 					return playListTbl.$('tr', 3..52).collect { it.$('td', 1).text() }.unique()
 				}
-				else
+				else {
+//					println 'tr != 54 return blank list'
 					return []
+				}
 			}
 			catch (e) {
 				println e
@@ -124,7 +129,10 @@ class XmPlaylistPage extends Page {
 	}
 }
 
-//TODO is this the best way to get constants
+/**
+ * XM Channel definition for Jam On and Blugrass Junction
+ * TODO is this the best way to get constants
+ */
 public enum Channels {
 	JAM_ON('29', 'jamon.txt'),
 	BLUEGRASS('61', 'bluegrass.txt')

@@ -1,4 +1,4 @@
-package newmodel
+package trait_model
 
 
 //@ToString(includeNames=true)

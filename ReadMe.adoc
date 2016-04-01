@@ -58,3 +58,6 @@ Glen McCort <gwmccort@gmail.com>
 * https://dzone.com/articles/executable-java-applications?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Guide to Executable Java Applications]
 * http://examples.javacodegeeks.com/enterprise-java/jms/jms-topic-example/[Guide to Executable Java Applications]
 * https://dzone.com/articles/simple-java-soap-web-service-using-jdk-tools?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java SOAP Web Service Using JDK Tools]
+
+== Git
+* https://examples.javacodegeeks.com/software-development/git/git-undo-commit-example/[Git Undo Commit Example]

@@ -30,3 +30,4 @@
 * https://dzone.com/articles/design-patters-facade-pattern?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Façade Pattern]
 * https://dzone.com/articles/factory-pattern-2?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Factory Pattern]
 * https://dzone.com/articles/the-factory-design-pattern?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[The Factory Design Pattern]
+* https://dzone.com/articles/mediator-pattern-1?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Mediator Pattern]

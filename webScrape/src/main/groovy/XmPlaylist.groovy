@@ -10,7 +10,6 @@ import java.util.logging.Logger
  *<p>
  * <b>Issues:</b>
  * <ul>
- *     <li>output isn't being sorted
  * </ul>
  *
  * @author Created by gwmccort on 10/20/2015.
@@ -19,37 +18,31 @@ import java.util.logging.Logger
 class XmPlaylist {
 
 	static main(args) {
-		println 'XmPlaylist.main...'
-		log.trace 'main'
+		log.info 'XmPlaylist.main...'
 
 		// shutoff htmlunit warnings, is there a better way???
 		// from: http://software-testing-tutorials-automation.blogspot.com/2015/05/hide-comgargoylesoftwarehtmlunit.html
 		Logger logger = Logger.getLogger("");
 		logger.setLevel(Level.OFF);
 
-		Channels.each {
-			log.info('channel:{}', it.channelNumber)
+		Channels.each { ch ->
+			log.info('channel:{} file name:{}', ch.channelNumber, ch.fileName)
 			Set bands = [] as Set
 
-
-
-			// get bands
-			bands.addAll(getBands(it.channelNumber))
-
-			//XXX
-//			println "channel:$it bands:${bands}"
+			// get bands from page
+			bands.addAll(getBands(ch.channelNumber))
 
 			// update sorted bands to file
-			String fileName = it.fileName
+			String fileName = ch.fileName
 			String[] origBands = new File(fileName)
 			bands.addAll(origBands)
+//			bands = bands.sort()
 			new File(fileName).withWriter { out ->
-				bands.each { out.println it }
+				bands.sort().each { out.println it }
 			}
 		}
 
-		println 'finished!'
-		log.trace 'main finished!'
+		log.info 'main finished!'
 	}
 
 	private static Set getBands(channel) {

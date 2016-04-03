@@ -4,6 +4,10 @@ plugins {
 	id 'idea'
 	id 'com.github.ben-manes.versions' version '0.12.0'
 	id "com.github.tkruse.groovysh" version "1.0.8"
+	// id "org.asciidoctor.gradle.asciidoctor" version "1.5.1" //works not latest
+	// id "org.asciidoctor:asciidoctor-gradle-plugin" version "1.5.3"
+	// id "org.asciidoctor.asciidoctor-gradle-plugin" version "1.5.3"
+	id 'org.asciidoctor.convert' version '1.5.3'
 }
 
 description = 'scrape web sites'
@@ -38,6 +42,10 @@ dependencies {
 //	 compile("org.spockframework:spock-core:1.1-groovy-2.3-SNAPSHOT") { exclude group: "org.codehaus.groovy" }
 
 	compile 'org.ccil.cowan.tagsoup:tagsoup:1.2.1'
+}
+
+asciidoctor {
+    attributes 'toc' : 'left'
 }
 
 task runXM(type: JavaExec) {

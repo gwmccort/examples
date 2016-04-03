@@ -1,0 +1,19 @@
+= Web Scraping
+Glen McCort <gwmccort@gmail.com>
+
+== Sites
+=== Dogstar (xm radio playlist)
+* url: http://dogstarradio.com/search_xm_playlist.php?channel=29[]
+
+=== JamBase
+* website has changed
+* *non working url*: http://jambase.com/shows/Shows.aspx?Zip=52403[]
+* current url: http://www.jambase.com/shows?mode=all&start=20160401&address=CedarRapids&region=US-IA&country=US&radius=100[]
+
+== References
+* http://www.gebish.org/[gebish.org]
+* http://www.gebish.org/manual/current/[Book of Geb]
+** http://www.gebish.org/manual/current/#the-page[Page Object]
+* GitHub's https://github.com/asciidoctor/asciidoctor-gradle-examples[asciidoctor/asciidoctor-gradle-examples]
+
+include::../../../ReadMe.adoc[]

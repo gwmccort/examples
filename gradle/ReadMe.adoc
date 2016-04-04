@@ -10,6 +10,8 @@ Glen McCort <gwmccort@gmail.com>
 == Articles
 * http://gradle.org/migrating-a-maven-build-to-gradle/[Migrating a maven build to Gradle]
 * http://www.mkyong.com/tag/gradle/[mkyong gradle articles]
+* http://www.slideshare.net/KostasSaidis/an-introduction-to-gradle-for-java-developers[An Introduction to Gradle for Java Developers]
+
 
 == Books
 * https://leanpub.com/idiomaticgradle[Idiomatic Gradle Plugins]

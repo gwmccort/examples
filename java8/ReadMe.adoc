@@ -14,7 +14,7 @@
 * http://www.mkyong.com/java8/java-8-stringjoiner-example/[StringJoiner example]
 * https://dzone.com/articles/draft-a-story-of-checked-exceptions-and-java-8-lam?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Checked Exceptions and Java 8 Lambda Expressions]
 * https://www.javacodegeeks.com/2016/03/java-8-declare-private-protected-methods-interfaces.html[Declare Private and Protected Methods in Interfaces]
-
+* https://dzone.com/articles/transforming-collections-java-8-collectors-api?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Transforming Collections — Java 8 Collectors API]
 
 
 === Testing

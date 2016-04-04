@@ -7,10 +7,15 @@
 == Blogs
 * http://mrhaki.blogspot.com/search/label/Spocklight[Mr Haki's Spocklight Posts]
 
+== Presentations
+* http://codepipes.com/presentations/spock-vs-junit.pdf[Spock vs Junit]
+
+
 == T2D
 * http://www.javacodegeeks.com/tag/spock/[java code geek spock tag]
 ** http://www.javacodegeeks.com/tag/gradle/[Spock 1.0 with Groovy 2.4 configuration comparison in Maven and Gradle]
 * http://www.javacodegeeks.com/2015/11/smart-package-structure-to-improve-testability.html[Smart package structure to improve testability]
+* http://codepipes.com/presentations/spock-vs-junit.pdf[Spock vs Junit]
 
 
 == JUnit

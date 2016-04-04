@@ -54,6 +54,8 @@ Glen McCort <gwmccort@gmail.com>
 * https://dzone.com/articles/java-8-%CE%BBe-vs-scalapart-i?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java 8 vs. Scala: Part I]
 * https://dzone.com/articles/java-8-vs-scalapart-ii-streams-api?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[part 2]
 * https://dzone.com/articles/developing-scala-in-atom-with-ensime?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Scala in Atom With Ensime]
+* https://dzone.com/articles/singleton-implementation-in-scala?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Singleton Implementation in Scala]
+
 == Java
 * https://dzone.com/articles/executable-java-applications?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Guide to Executable Java Applications]
 * http://examples.javacodegeeks.com/enterprise-java/jms/jms-topic-example/[Guide to Executable Java Applications]

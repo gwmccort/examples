@@ -1,7 +1,13 @@
 
-
-
 == ReadMe
+
+=== Programs
+* XmPlaylist.groovy - scrape xm radio playlists for JamOn and Bluegrass Junction
+[source,groovy]
+.XmPlaylist.groovy
+----
+include::src/main/groovy/XmPlaylist.groovy
+----
 
 === T2D
 *  [ ] JamBase site changed

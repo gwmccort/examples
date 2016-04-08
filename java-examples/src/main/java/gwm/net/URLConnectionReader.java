@@ -7,18 +7,10 @@ import java.net.URLConnection;
 
 /**
  * Read url response to test proxy settings
+ *  See <a href="http://google.com">http://google.com</a>
  * 
- * @see <a href=
- *      "http://stackoverflow.com/questions/1359689/how-to-send-http-request-in-java>stack
- *      overflow</a>
+ * @see <a href="http://google.com">google</a>
  * 
- * @see <a href=
- *      "http://docs.oracle.com/javase/8/docs/technotes/guides/net/proxies.html">
- *      java 8 http proxy</a>
- * 
- * @see <a href=
- *      "https://docs.oracle.com/javase/8/docs/api/java/net/doc-files/net-properties.html">
- *      java 8 Networking Properties</a>
  * 
  * @author gwmccort
  *
@@ -42,3 +34,20 @@ public class URLConnectionReader {
 		in.close();
 	}
 }
+
+/*
+ * @see <a href="http://json.org/">The JSON site</a>
+ * 
+ * <p><a href=
+ *      "http://stackoverflow.com/questions/1359689/how-to-send-http-request-in-java">stack
+ *      overflow</a>
+ * 
+* @see <a href=
+ *      "http://docs.oracle.com/javase/8/docs/technotes/guides/net/proxies.html">
+ *      java 8 http proxy</a>
+ * 
+ * @see <a href=
+ *      "https://docs.oracle.com/javase/8/docs/api/java/net/doc-files/net-properties.html">
+ *      java 8 Networking Properties</a>
+ * 
+*/

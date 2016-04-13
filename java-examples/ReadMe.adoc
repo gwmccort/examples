@@ -2,19 +2,19 @@
 Glen McCort <gwmccort@gmail.com>
 
 == Examples
-* gwm.nio.WalkFileTree ????
+* gwm.nio.WalkFileTree - Shows how to use nio file visitor, guava multi-map and csv file writer.
 
 == Articles
-* http://javarticles.com/2015/11/java-file-compression-example.html[File Compression]
-* http://javarticles.com/2015/11/java-decompressing-files-example.html[Decompressing Files]
+* http://javarticles.com/2015/11/java-file-compression-example.html[File Compression] - com.javarticles.io.FileCompressionExample
+* http://javarticles.com/2015/11/java-decompressing-files-example.html[Decompressing Files] - com.javarticles.io.DecompressFile
 * http://examples.javacodegeeks.com/core-java/junit/junit-disable-test-example/[JUnit Disable Test Example]
 * http://examples.javacodegeeks.com/core-java/create-immutable-class-java/[How to create Immutable class]
 * http://www.javacodegeeks.com/2012/04/using-slf4j-with-logback-tutorial.html[slf4j with logback]
-* http://examples.javacodegeeks.com/core-java/apache/commons/cli/basicparser/org-apache-commons-cli-basicparser-example/[cli parsing]
-* http://javarticles.com/2015/11/loading-properties-file-in-java.html[Loading Properties File]
+* http://examples.javacodegeeks.com/core-java/apache/commons/cli/basicparser/org-apache-commons-cli-basicparser-example/[cli parsing] -  com.architectcorner.cli.parsing
+* http://javarticles.com/2015/11/loading-properties-file-in-java.html[Loading Properties File] - com.javarticles.properties.PropertyLoaderExample
 
 === Database
-* http://www.javatips.net/blog/2014/07/h2-in-memory-database-example[H2 In-Memory] - gwm.h2.H2MemoryDatabaseExample
+* http://www.javatips.net/blog/2014/07/h2-in-memory-database-example[H2 In-Memory] - gwm.h2.H2MemoryDatabaseExample.BasicParserExample
 * http://www.mkyong.com/spring/spring-embedded-database-examples/[Spring embedded database] - T2D
 
 === Puzzlers

@@ -68,3 +68,4 @@ Glen McCort <gwmccort@gmail.com>
 * http://www.javacodegeeks.com/2016/02/easy-database-manipulation-groovy-gradle.html[Easy Database Manipulation with Groovy and Gradle]
 * http://www.mkyong.com/java/java-how-to-overrides-equals-and-hashcode/[How to override equals and hashCode]
 * http://www.mkyong.com/java/java-compare-enum-value/[Compare Enum value]
+* https://dzone.com/articles/an-introduction-to-the-java-collections-framework?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Introduction to the Java Collections Framework]

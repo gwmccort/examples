@@ -25,8 +25,13 @@
 * http://javarticles.com/2016/02/junit-timeout-testrule-example.html[JUnit Timeout TestRule Example]
 * https://www.javacodegeeks.com/2016/03/improve-junit-experience-annotation.html[Improve Your JUnit Experience with this Annotation]
 * https://dzone.com/articles/junit-testing-part-i-setup-with-simple-example?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[JUnit Testing Part I: Setup With Simple Example]
+* https://www.javacodegeeks.com/2016/04/junit-5-architecture.html[JUnit 5 – Architecture]
+* https://www.javacodegeeks.com/2016/04/replace-rules-junit-5.html[Replace Rules in JUnit 5]
+
+
 
 == Mockito
 ===T2D
 * https://examples.javacodegeeks.com/core-java/mockito/mockito-thenreturn-example/[ThenReturn Example]
 * https://examples.javacodegeeks.com/core-java/mockito/mockito-captor-example/[Mockito Captor Example]
+* https://examples.javacodegeeks.com/core-java/mockito/mockito-mock-private-method-example-with-powermock/[Mockito Mock Private Method Example with PowerMock]

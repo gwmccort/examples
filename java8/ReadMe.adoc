@@ -15,6 +15,13 @@
 * https://dzone.com/articles/draft-a-story-of-checked-exceptions-and-java-8-lam?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Checked Exceptions and Java 8 Lambda Expressions]
 * https://www.javacodegeeks.com/2016/03/java-8-declare-private-protected-methods-interfaces.html[Declare Private and Protected Methods in Interfaces]
 * https://dzone.com/articles/transforming-collections-java-8-collectors-api?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Transforming Collections — Java 8 Collectors API]
+* http://www.mkyong.com/java8/java-how-to-convert-array-to-stream/[Convert Array to Stream]
+* https://dzone.com/articles/simplifying-nested-loops-with-java-8-lambdas?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Simplifying Nested Loops With Java 8 Lambdas]
+* https://dzone.com/articles/jdk-8-arrayssort-versus-arraysparallelsort?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Arrays#sort vs. Arrays#parallelSort]
+* https://dzone.com/articles/java-8-default-methods-in-interfaces?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Default Methods in Interfaces]
+* https://dzone.com/articles/introduction-to-java-8-streams?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Introduction to Java 8 Streams]
+* https://dzone.com/articles/java-8-functional-interfaces-sam[Functional Interfaces (SAM)]
+
 
 
 === Testing

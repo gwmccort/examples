@@ -72,7 +72,8 @@ class Track {
 		//		multiSearchTest('test')
 
 //		def tracks = getMp3Files(/P:\FANTOM HDS721010CLA332\Media\Xmas Music/)
-		def tracks = getMp3Files(/P:\FANTOM HDS721010CLA332\Media\Music/)
+//		def tracks = getMp3Files(/P:\FANTOM HDS721010CLA332\Media\Music/)
+		def tracks = getMp3Files(/\\FREENAS\NAS Share\iTunesG480-new\Music/)
 		println "tracks size: ${tracks.size()}"
 		writeTracksToCSV(tracks)
 		indexTracks(tracks)

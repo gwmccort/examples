@@ -1,5 +1,8 @@
+import static groovy.io.FileType.FILES
 import groovy.transform.ToString
 
+import java.nio.file.Path
+import java.nio.file.Paths
 import java.util.logging.Handler
 import java.util.regex.Pattern
 
@@ -11,11 +14,13 @@ import au.com.bytecode.opencsv.CSVWriter
 
 /**
  * Track from an MP3 file
+ * @see Track
  * @author gwmccort
  *
  */
 @ToString(includeNames=true, includeSuper=true)
 class FileTrack extends Track {
+	/** path of track */
 	String filePath
 
 	/**
@@ -31,13 +36,86 @@ class FileTrack extends Track {
 
 	/**
 	 * Example of using jaudiotagger to get mp3 tags
+	 * @return list of tracks
+	 */
+	static FileTrack[] getMp3Files(String pathName) {
+		def results = []
+		Path path = Paths.get(pathName)
+		
+		// disable jul logging output
+		java.util.logging.Logger globalLogger = java.util.logging.Logger.getLogger("");
+		Handler[] handlers = globalLogger.getHandlers();
+		for (Handler handler : handlers) {
+			globalLogger.removeHandler(handler);
+		}
+
+		path.eachFileRecurse(FILES) { file ->
+			if (file.toString() ==~ /.*\.(mp3)$/) {
+				try {
+					//					MP3File mf = new MP3File(file)
+					MP3File mf = new MP3File(file.toFile(), MP3File.LOAD_ALL, true)
+					Tag tag = mf.getTag()
+					//					Track t = new Track(artist:tag.getFirst(FieldKey.ARTIST), name:tag.getFirst(FieldKey.TITLE), album:tag.getFirst(FieldKey.ALBUM))
+					FileTrack track = new FileTrack(tag, file.toString())
+					results << track
+				}
+				catch (Exception e) {
+					//					e.printStackTrace()
+					println e
+				}
+			}
+		}
+		results
+	}
+
+	/**
+	 * Example of using jaudiotagger to get mp3 tags
+	 * @return list of tracks
+	 */
+	static FileTrack[] getMp3Files_new(String pathRoot) {
+		def results = []
+
+		// disable jul logging output
+		java.util.logging.Logger globalLogger = java.util.logging.Logger.getLogger("");
+		Handler[] handlers = globalLogger.getHandlers();
+		for (Handler handler : handlers) {
+			globalLogger.removeHandler(handler);
+		}
+
+		//		new File(/C:\Users\Public\Music/).eachDirRecurse { dir ->
+		//			new File(/C:\Users\Glen\Music/).eachDirRecurse { dir ->
+		println "pathRoot: $pathRoot"
+		new File(pathRoot).eachDirRecurse { dir ->
+			//			println "dir: $dir"
+			dir.eachFileMatch(~/.*.mp3/) { file ->
+				//				println "file: $file"
+				try {
+					//					MP3File mf = new MP3File(file)
+					MP3File mf = new MP3File(file, MP3File.LOAD_ALL, true)
+					Tag tag = mf.getTag()
+					//					Track t = new Track(artist:tag.getFirst(FieldKey.ARTIST), name:tag.getFirst(FieldKey.TITLE), album:tag.getFirst(FieldKey.ALBUM))
+					FileTrack t = new FileTrack(tag, file.toString())
+					results << t
+				}
+				catch (Exception e) {
+					//					e.printStackTrace()
+					println e
+				}
+			}
+		}
+		results
+	}
+
+
+	/**
+	 * Example of using jaudiotagger to get mp3 tags
 	 * @return
 	 */
-	static FileTrack[] getMp3Files(String pathRoot) {
+	static FileTrack[] getMp3Files_old(String pathRoot) {
 		println "getMp3Files"
 		def results = []
 
-//		Pattern fileRegExp = ~/.*.(mp3|flac)/
+		//		Pattern fileRegExp = ~/.*.(mp3|flac)/
 		Pattern fileRegExp = ~/.*.(mp3)/
 
 		// disable jul logging output
@@ -53,7 +131,7 @@ class FileTrack extends Track {
 		println "pathRoot: $pathRoot"
 		//TODO: doesn't work if no subdirs!!!
 		new File(pathRoot).eachDirRecurse { dir ->
-			println "dir: $dir"
+			//			println "dir: $dir"
 			dir.eachFileMatch(fileRegExp) { file ->
 				println "file: $file"
 				try {

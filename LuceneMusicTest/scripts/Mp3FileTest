@@ -1,0 +1,3 @@
+#/usr/bin/bash
+
+java -cp build/libs/LuceneMusicTest.jar Mp3FileTest $@

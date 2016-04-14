@@ -1,6 +1,10 @@
 = Muisc Search
 Glen McCort <gwmccort.gmail.com>
 
+== Scripts
+* FileTrackCsv - create a csv file from musit tracks
+* Mp3FileTest - test Mp3MusicTrack
+
 == Lucene
 === Luke
 * https://github.com/DmitryKey/luke/releases/tag/pivot-luke-5.5.0[luke 5.5.0] - works with current lucene version

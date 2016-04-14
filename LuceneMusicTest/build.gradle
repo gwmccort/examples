@@ -69,6 +69,12 @@ task runFileTracksCSV(type: JavaExec) {
 	classpath = sourceSets.main.runtimeClasspath
 }
 
+task runMp3Test(type: JavaExec) {
+	description 'Test mp3 file of music files'
+	main = 'Mp3FileTest'
+	classpath = sourceSets.main.runtimeClasspath
+}
+
 task dist(type: Zip) {
 	from('.') {
 		include 'src/**/*'

@@ -29,6 +29,8 @@ Configure Build Path>Libraries>select JRE-Access rules>edit add javafx/** as acc
 * https://examples.javacodegeeks.com/desktop-java/javafx/event-javafx/javafx-drag-drop-example/[Drag and Drop Example]
 * https://www.javacodegeeks.com/2016/03/javafx-tip-23-save-memory-shadow-fields-properties.html[JavaFX Tip 23: Save Memory! Shadow Fields for Properties]
 * https://examples.javacodegeeks.com/desktop-java/javafx/javafx-3d-shapes-example/[3D Shapes]
+* https://www.javacodegeeks.com/2016/04/new-calendarfx-view-monthgridview.html[New CalendarFX View: MonthGridView!]
+
 
 == Swing T2D
 * http://examples.javacodegeeks.com/desktop-java/swing/java-swing-slider-example/[Swing Slider]

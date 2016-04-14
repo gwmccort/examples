@@ -32,3 +32,5 @@
 * https://dzone.com/articles/the-factory-design-pattern?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[The Factory Design Pattern]
 * https://dzone.com/articles/mediator-pattern-1?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Mediator Pattern]
 * https://dzone.com/articles/singleton-patterns-20-years-later?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[The Singleton Pattern, 20 Years Later]
+* https://dzone.com/articles/the-flyweight-pattern?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Flyweight Pattern]
+* https://github.com/mariofusco/from-gof-to-lambda[GOF Patterns with lambda]

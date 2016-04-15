@@ -30,6 +30,7 @@ Configure Build Path>Libraries>select JRE-Access rules>edit add javafx/** as acc
 * https://www.javacodegeeks.com/2016/03/javafx-tip-23-save-memory-shadow-fields-properties.html[JavaFX Tip 23: Save Memory! Shadow Fields for Properties]
 * https://examples.javacodegeeks.com/desktop-java/javafx/javafx-3d-shapes-example/[3D Shapes]
 * https://www.javacodegeeks.com/2016/04/new-calendarfx-view-monthgridview.html[New CalendarFX View: MonthGridView!]
+* https://examples.javacodegeeks.com/desktop-java/javafx/fxml/javafx-fxml-tutorial/[JavaFX FXML Tutorial]
 
 
 == Swing T2D

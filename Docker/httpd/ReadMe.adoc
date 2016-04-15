@@ -1,0 +1,20 @@
+= Apache httpd & tomcat
+
+* https://beautifulbytes.wordpress.com/2016/01/04/set-up-apache-httpd-and-tomcat-with-docker-compose/[Set up Apache httpd and Tomcat with docker-compose]
+
+== apache httpd
+* DockerHub's https://hub.docker.com/_/httpd/[httpd]
+* A Docker image with an Apache HTTP Server redirecting requests to an Apache Tomcat. https://hub.docker.com/r/dezoito18/apache-http-tomcat/[docker hub]
+* http://stackoverflow.com/questions/3499809/what-are-the-best-sites-books-for-learning-apache[What are the best sites/books for learning Apache?]
+* https://dzone.com/articles/how-set-tomcat-apache-and[How To Set Up a Tomcat, Apache and mod_jk Cluster]
+
+start bash on running container:
+----
+docker exec -it sad_liskov bash
+----
+
+* http://www.adam-bien.com/roller/abien/entry/new_docker_images_for_java[dockerlands] - dockerfiles for JavaEE & other servers
+* http://blogs.atlassian.com/2013/06/deploy-java-apps-with-docker-awesome/[Deploy Java Apps With Docker = Awesome]
+* Docker https://docs.docker.com/engine/reference/glossary/[glossary]
+* https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/[Best practices for writing Dockerfiles]
+* CentOS on https://hub.docker.com/r/_/centos/[DockerHub]

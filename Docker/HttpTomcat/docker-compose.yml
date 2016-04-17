@@ -21,10 +21,10 @@ businessapp:
    container_name: "business"
 http:
    volumes:
-  #   - $PWD/httpd/conf/jk_mod/jk.conf:/etc/apache2/mods-available/jk.conf
     - $PWD/logs:/var/log/apache2
-    # - $PWD/httpd/conf/jk_mod/workers.properties:/etc/libapache2-mod-jk/workers.properties
-    # - $PWD/httpd/conf/apache2/000-default.conf:/etc/apache2/sites-available/000-default.conf
+    - $PWD/httpd/conf/jk_mod/jk.conf:/etc/apache2/mods-available/jk.conf
+    - $PWD/httpd/conf/jk_mod/workers.properties:/etc/libapache2-mod-jk/workers.properties
+    - $PWD/httpd/conf/apache2/000-default.conf:/etc/apache2/sites-available/000-default.conf
    ports:
      - "80:80"
    image: mg:httpd

@@ -1,0 +1,13 @@
+= CentOS
+
+* http://www.vagrantbox.es/ - boxes
+* opscode/centos/7 - http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-7.0_chef-provisionerless.box
+
+----
+vagrant box add centos-7.0 http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ce ntos-7.0_chef-provisionerless.box
+vagrant init centos-7.0
+vagrant up
+----
+
+* https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-7-on-centos-7-via-yum[tomcat install]
+* https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-apache-startstop.html[start/stop apache]

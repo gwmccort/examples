@@ -23,7 +23,7 @@
 * https://dzone.com/articles/java-8-default-methods-in-interfaces?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Default Methods in Interfaces]
 * https://dzone.com/articles/introduction-to-java-8-streams?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Introduction to Java 8 Streams]
 * https://dzone.com/articles/java-8-functional-interfaces-sam[Functional Interfaces (SAM)]
-
+* https://dzone.com/articles/closure-based-state-java?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Closure-based State]
 
 === Testing
 * http://www.javacodegeeks.com/2015/12/using-mockito-without-static-imports-java-8.html[Using Mockito without static imports with Java 8]

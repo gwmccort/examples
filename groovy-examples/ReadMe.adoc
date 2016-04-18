@@ -38,3 +38,4 @@
 * *Static compilation* http://java-performance.info/static-code-compilation-groovy-2-0/[Static code compilation in Groovy 2.0]
 * https://examples.javacodegeeks.com/jvm-languages/groovy/groovy-json-example/[Json Example]
 * https://examples.javacodegeeks.com/jvm-languages/groovy/groovy-dictionary-example/[Groovy Dictionary Example]
+* https://examples.javacodegeeks.com/jvm-languages/groovy/groovy-script-tutorial-beginners/[Groovy Script Tutorial for Beginners]

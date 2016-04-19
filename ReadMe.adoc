@@ -1,18 +1,6 @@
 = Examples
 Glen McCort <gwmccort@gmail.com>
 
-== Vagrant
-* https://scotch.io/tutorials/get-vagrant-up-and-running-in-no-time[Get VAGRANT UP and Running in No Time]
-* https://ttmm.io/tech/vagrant-windows/[Vagrant and Windows]
-
-----
-vagrant init ubuntu/trusty64
-----
-
-=== Issues
-. proxy error trying to do `up`
-.. tried http://tmatilai.github.io/vagrant-proxyconf/[Proxy Configuration Plugin for Vagrant], but it didn't work :-(
-
 == T2D
 . git push/pull w/o password
 .. https://help.github.com/articles/caching-your-github-password-in-git/[Caching your GitHub password in Git]
@@ -75,3 +63,6 @@ vagrant init ubuntu/trusty64
 
 == Git
 * https://examples.javacodegeeks.com/software-development/git/git-undo-commit-example/[Git Undo Commit Example]
+
+== Jetty
+* https://examples.javacodegeeks.com/enterprise-java/jetty/jetty-nio-example/[Jetty NIO Example]

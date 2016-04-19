@@ -1,5 +1,8 @@
 = Java 8
 
+== Code
+* https://dzone.com/articles/introduction-to-java-8-streams?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Introduction to Java 8 Streams] - package org.smarttechie;
+
 == T2D
 * https://dzone.com/articles/working-with-java-8-optionals?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Working With Java 8 Optionals]
 * http://www.javacodegeeks.com/2015/11/from-arrays-to-streams-and-back-with-java-8.html[From Arrays to Streams and Back]
@@ -21,9 +24,10 @@
 * https://dzone.com/articles/simplifying-nested-loops-with-java-8-lambdas?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Simplifying Nested Loops With Java 8 Lambdas]
 * https://dzone.com/articles/jdk-8-arrayssort-versus-arraysparallelsort?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Arrays#sort vs. Arrays#parallelSort]
 * https://dzone.com/articles/java-8-default-methods-in-interfaces?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Default Methods in Interfaces]
-* https://dzone.com/articles/introduction-to-java-8-streams?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Introduction to Java 8 Streams]
 * https://dzone.com/articles/java-8-functional-interfaces-sam[Functional Interfaces (SAM)]
 * https://dzone.com/articles/closure-based-state-java?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Closure-based State]
+* https://dzone.com/articles/zlwell-written-java?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Well-Written Java 8, 8 Ways]
+
 
 === Testing
 * http://www.javacodegeeks.com/2015/12/using-mockito-without-static-imports-java-8.html[Using Mockito without static imports with Java 8]

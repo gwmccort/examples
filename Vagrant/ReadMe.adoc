@@ -1,0 +1,22 @@
+= Vagrant
+
+* https://scotch.io/tutorials/get-vagrant-up-and-running-in-no-time[Get VAGRANT UP and Running in No Time]
+* https://ttmm.io/tech/vagrant-windows/[Vagrant and Windows]
+
+----
+vagrant init ubuntu/trusty64
+----
+
+=== Issues
+. proxy error trying to do `up`
+.. tried http://tmatilai.github.io/vagrant-proxyconf/[Proxy Configuration Plugin for Vagrant], but it didn't work :-(
+
+
+== Proxy
+* proxy for shell to be able to do a `vagrant up` at work
+----
+export http_proxy=http://proxy:9090
+export https_proxy=http://proxy:9090
+----
+* http://tmatilai.github.io/vagrant-proxyconf/[Proxy Configuration Plugin for Vagrant] - set up proxies for tools in a vagrant
+* http://digitaldrummerj.me/vagrant-behind-proxy-server/[VAGRANT PART 6 - BEHIND A PROXY SERVER]

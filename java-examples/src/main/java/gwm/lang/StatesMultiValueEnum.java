@@ -1,4 +1,4 @@
-package lang;
+package gwm.lang;
 
 /* regular javadoc
  * Multi-value enum example from:

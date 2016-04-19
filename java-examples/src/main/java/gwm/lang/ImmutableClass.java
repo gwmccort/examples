@@ -1,4 +1,4 @@
-package lang;
+package gwm.lang;
 /**
  * How to create Immutable class in java
  * from: http://examples.javacodegeeks.com/core-java/create-immutable-class-java/

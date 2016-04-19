@@ -2,7 +2,7 @@ package lang;
 
 import org.junit.Test;
 
-import lang.StatesMultiValueEnum;
+import gwm.lang.StatesMultiValueEnum;
 
 /**
  * Multi-value enum example from:

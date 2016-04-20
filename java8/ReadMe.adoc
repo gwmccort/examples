@@ -27,6 +27,9 @@
 * https://dzone.com/articles/java-8-functional-interfaces-sam[Functional Interfaces (SAM)]
 * https://dzone.com/articles/closure-based-state-java?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Closure-based State]
 * https://dzone.com/articles/zlwell-written-java?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Well-Written Java 8, 8 Ways]
+* https://dzone.com/articles/converting-string-configuration-properties-to-othe?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java 8 Configuration Defaults Using Optional]
+* https://www.javacodegeeks.com/2016/04/default-static-methods-interfaces.html[Default & Static Methods In Interfaces]
+
 
 
 === Testing

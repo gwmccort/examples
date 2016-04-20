@@ -29,3 +29,4 @@ Glen McCort <gwmccort@gmail.com>
 * http://mrhaki.blogspot.com/2016/02/gradle-goodness-running-groovy-scripts.html[Gradle Goodness: Running Groovy Scripts Using Groovy Command Line]
 * http://zeroturnaround.com/rebellabs/making-gradle-builds-faster/[Making Gradle builds faster]
 * http://mrhaki.blogspot.com/2016/02/gradle-goodness-create-objects-with-dsl.html[Create Objects Using DSL With Domain Object Containers]
+* https://kousenit.wordpress.com/2016/04/20/excluding-gradle-tasks-with-a-name-pattern/[Excluding Gradle Tasks with a Name Pattern]

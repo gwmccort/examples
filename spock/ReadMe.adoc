@@ -27,7 +27,7 @@
 * https://dzone.com/articles/junit-testing-part-i-setup-with-simple-example?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[JUnit Testing Part I: Setup With Simple Example]
 * https://www.javacodegeeks.com/2016/04/junit-5-architecture.html[JUnit 5 – Architecture]
 * https://www.javacodegeeks.com/2016/04/replace-rules-junit-5.html[Replace Rules in JUnit 5]
-
+* https://www.javacodegeeks.com/2016/04/junit-5-extension-model.html[JUnit 5 – Extension Model]
 
 
 == Mockito

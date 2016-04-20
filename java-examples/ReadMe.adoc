@@ -26,6 +26,7 @@ Glen McCort <gwmccort@gmail.com>
 * http://javarticles.com/2016/01/junit-parametric-testing-example.html[JUnit Parametric Testing Example]
 
 == T2D
+* http://www.yegor256.com/2016/04/05/printers-instead-of-getters.html[Printers Instead of Getters] - several outputs
 * https://www.javacodegeeks.com/2016/04/2-rookie-java-constants-enums-pitfalls.html[Java Constants and Enums Pitfalls]
 * http://www.javacodegeeks.com/2015/11/tutorial-logging-tests.html[logging during tests]
 * javaFX

@@ -1,6 +1,8 @@
 = Asciidoctor Gradle Examples
 Glen McCort <gwmccort@gmail.com>
 
+include::../../../asciidoc-ReadMe.adoc[]
+
 == Examples
 * Asciidoctor Gradle Examples http://danhyun.github.io/asciidoctor-gradle-examples/[documentation] and https://github.com/danhyun/asciidoctor-gradle-examples[github reprository]
 
@@ -21,7 +23,7 @@ shortcuts.
 // Define unicode for Apple Command key.
 :commandkey: &#89w84;
 
-Press kbd:[{commandkey} + 1] or kbd:[Ctrl + 1] 
+Press kbd:[{commandkey} + 1] or kbd:[Ctrl + 1]
 to access the _Project_ view.
 
 To zoom out press kbd:[Ctrl + -].
@@ -37,4 +39,3 @@ Find files with kbd:[Ctrl + Alt + N] or kbd:[{commandkey} + Shift + N].
 ----
 include::Sample.groovy[tags=helloMethod]
 ----
-

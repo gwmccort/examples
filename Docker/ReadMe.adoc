@@ -1,5 +1,10 @@
 = Examples
 Glen McCort <gwmccort@gmail.com>
 
-==T2D
+== Presentations
+* https://www.javacodegeeks.com/2016/03/docker-tooling-eclipse-video.html[Docker Tooling in Eclipse Video]
+
+== T2D
 * https://www.javacodegeeks.com/2016/04/introduction-docker-part-1.html[An Introduction to Docker – Part 1]
+* Multiple containers
+** https://www.reddit.com/r/docker/comments/4g8dpv/advice_running_multiple_dockerized_web_apps_with/[running multiple dockerized web apps with port 80 & 443]

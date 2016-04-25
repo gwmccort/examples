@@ -10,6 +10,7 @@ vagrant init ubuntu/trusty64
 === Issues
 . proxy error trying to do `up`
 .. tried http://tmatilai.github.io/vagrant-proxyconf/[Proxy Configuration Plugin for Vagrant], but it didn't work :-(
+.. needed to add http_proxy to Vagrantfile
 
 
 == Proxy
@@ -20,3 +21,50 @@ export https_proxy=http://proxy:9090
 ----
 * http://tmatilai.github.io/vagrant-proxyconf/[Proxy Configuration Plugin for Vagrant] - set up proxies for tools in a vagrant
 * http://digitaldrummerj.me/vagrant-behind-proxy-server/[VAGRANT PART 6 - BEHIND A PROXY SERVER]
+* https://coderwall.com/p/oooszg/vagrant-tweaks-to-make-it-more-like-your-local-command-line-app[Vagrant tweaks to make it more like your local command line app]
+* https://gist.github.com/joseym/1857468[vagrant bash aliases]
+
+== centos
+
+[qanda]
+shutdown::
+subo shutdown now
+reboot::
+sudo  reboot
+
+== yum
+
+[qanda]
+list installed packages::
+yum list installed
+install java::
+yum search java | grep 'java-' +
+yum install java-1.8.0-openjdk.x86_64
+
+== httpd
+
+* http://localhost
+* https://www.centos.org/docs/5/html/Deployment_Guide-en-US/ch-httpd.html[centos apache http manual]
+
+[qanda]
+install::
+  sudo yum install httpd
+start::
+  sudo apachectl start
+start on reboot::
+  chkconfig httpd on
+
+To get more deeply into it, you can look at /etc/rc.d/rc.3. You'll see a bunch of symbolic links beginning with either k or s. Those with s are started at boot in runlevel 3.
+
+* http://linux.die.net/man/[linux man pages]
+
+== tomcat
+
+* http://localhost:8080
+* https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-7-on-centos-7-via-yum[How To Install Apache Tomcat 7 on CentOS 7 via Yum]
+
+[qanda]
+start/stop/restart::
+sudo systemctl start tomcat
+start as service::
+sudo systemctl enable tomcat

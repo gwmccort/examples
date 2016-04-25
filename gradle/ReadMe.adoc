@@ -12,6 +12,8 @@ Glen McCort <gwmccort@gmail.com>
 * http://www.mkyong.com/tag/gradle/[mkyong gradle articles]
 * http://www.slideshare.net/KostasSaidis/an-introduction-to-gradle-for-java-developers[An Introduction to Gradle for Java Developers]
 
+== Presentations
+* http://www.slideshare.net/KostasSaidis/an-introduction-to-gradle-for-java-developers[An Introduction to Gradle for Java Developers]
 
 == Books
 * https://leanpub.com/idiomaticgradle[Idiomatic Gradle Plugins]

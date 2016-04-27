@@ -18,6 +18,8 @@ Glen McCort <gwmccort@gmail.com>
 === Database
 * http://www.javatips.net/blog/2014/07/h2-in-memory-database-example[H2 In-Memory] - gwm.h2.H2MemoryDatabaseExample.BasicParserExample
 * http://www.mkyong.com/spring/spring-embedded-database-examples/[Spring embedded database] - T2D
+* https://www.javacodegeeks.com/2016/04/using-jinq-jpa-h2.html[Using JINQ with JPA and H2]
+** https://dzone.com/articles/presentation-and-use-h2[Presentation and Use of H2 Database Engine]
 
 === Puzzlers
 * http://www.javapuzzlers.com/[Java Puzzlers] Traps, Pitfalls, and Corner Cases By Joshua Bloch and Neal Gafter

@@ -11,6 +11,7 @@ From http://stackoverflow.com/questions/9266632/access-restriction-is-not-access
 Configure Build Path>Libraries>select JRE-Access rules>edit add javafx/** as accessible
 
 == T2D
+* https://examples.javacodegeeks.com/desktop-java/javafx/javafx-applications-efxclipse/[JavaFX Applications with e(fx)clipse]
 * gradle javafx plugin
 * http://examples.javacodegeeks.com/desktop-java/swing/java-swing-boxlayout-example/[Swing BoxLayout]
 * http://www.javacodegeeks.com/2015/12/javafx-tip-22-autosize-tree-table-columns.html[Autosize (Tree) Table Columns]

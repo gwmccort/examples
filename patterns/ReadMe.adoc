@@ -34,3 +34,4 @@
 * https://dzone.com/articles/singleton-patterns-20-years-later?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[The Singleton Pattern, 20 Years Later]
 * https://dzone.com/articles/the-flyweight-pattern?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Flyweight Pattern]
 * https://github.com/mariofusco/from-gof-to-lambda[GOF Patterns with lambda]
+* https://dzone.com/articles/java-builders?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java Builders From The Start]

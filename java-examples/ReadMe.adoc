@@ -12,6 +12,8 @@ Glen McCort <gwmccort@gmail.com>
 * http://www.javacodegeeks.com/2012/04/using-slf4j-with-logback-tutorial.html[slf4j with logback]
 * http://examples.javacodegeeks.com/core-java/apache/commons/cli/basicparser/org-apache-commons-cli-basicparser-example/[cli parsing] -  com.architectcorner.cli.parsing
 * http://javarticles.com/2015/11/loading-properties-file-in-java.html[Loading Properties File] - com.javarticles.properties.PropertyLoaderExample
+* https://www.javacodegeeks.com/2016/04/parameterless-generic-method-antipattern.html[The Parameterless Generic Method Antipattern] - gwm.lang.Scanner
+
 
 === Database
 * http://www.javatips.net/blog/2014/07/h2-in-memory-database-example[H2 In-Memory] - gwm.h2.H2MemoryDatabaseExample.BasicParserExample
@@ -22,8 +24,11 @@ Glen McCort <gwmccort@gmail.com>
 ** http://cs.fit.edu/~ryan/cse4051/java-puzzlers/[examples]
 * https://codexplo.wordpress.com/2015/11/14/why-1000-1000-returns-false-but-100-100-returns-true-in-java/[Why 100==100 returns true]
 
-== Testing
+=== Testing
 * http://javarticles.com/2016/01/junit-parametric-testing-example.html[JUnit Parametric Testing Example]
+
+=== Authors
+* Java Code Geeks https://www.javacodegeeks.com/author/Lukas-Eder/[Lukas Eder] creator of jOOQ
 
 == T2D
 * http://www.yegor256.com/2016/04/05/printers-instead-of-getters.html[Printers Instead of Getters] - several outputs
@@ -71,3 +76,5 @@ Glen McCort <gwmccort@gmail.com>
 * http://www.mkyong.com/java/java-how-to-overrides-equals-and-hashcode/[How to override equals and hashCode]
 * http://www.mkyong.com/java/java-compare-enum-value/[Compare Enum value]
 * https://dzone.com/articles/an-introduction-to-the-java-collections-framework?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Introduction to the Java Collections Framework]
+* logging
+** https://dzone.com/articles/logback-configuration-using-groovy?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Logback Configuration: Using Groovy]

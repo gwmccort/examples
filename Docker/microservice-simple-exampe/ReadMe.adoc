@@ -1,0 +1,4 @@
+= Microservices with Camel, Spring Boot and Docker
+
+* http://www.sixtree.com.au/articles/2016/microservices-springboot-camel-docker/[article]
+* https://github.com/sohrab-/microservice-simple-example[github repro]

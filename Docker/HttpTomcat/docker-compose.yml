@@ -12,6 +12,8 @@ searchapp:
     - "8009"
    image: mg:tomcat
    container_name: "search"
+   ports:
+   - "8080:8080"
 businessapp:
    volumes:
     - $PWD/tomcat/businessapp-webapps:/usr/local/tomcat/webapps

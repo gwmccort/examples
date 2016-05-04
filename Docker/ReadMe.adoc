@@ -13,3 +13,5 @@ Glen McCort <gwmccort@gmail.com>
 * Multiple containers
 ** https://www.reddit.com/r/docker/comments/4g8dpv/advice_running_multiple_dockerized_web_apps_with/[running multiple dockerized web apps with port 80 & 443]
 * https://www.javacodegeeks.com/2016/04/service-discovery-docker-consul-part-1.html[Service Discovery with Docker and Consul: part 1]
+* https://www.brianchristner.io/docker-cleanup-script-comparison/[Docker Cleanup Scripts Comparison]
+* https://blog.ouseful.info/2016/05/03/using-docker-as-a-personal-productvity-tool-running-command-line-apps/[Running Command Line Apps Bundled in Docker Containers]

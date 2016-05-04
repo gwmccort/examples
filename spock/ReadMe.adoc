@@ -35,3 +35,7 @@
 * https://examples.javacodegeeks.com/core-java/mockito/mockito-thenreturn-example/[ThenReturn Example]
 * https://examples.javacodegeeks.com/core-java/mockito/mockito-captor-example/[Mockito Captor Example]
 * https://examples.javacodegeeks.com/core-java/mockito/mockito-mock-private-method-example-with-powermock/[Mockito Mock Private Method Example with PowerMock]
+
+== JMeter
+* http://www.tothenew.com/blog/7-things-you-must-know-about-load-testing-using-jmeter/[7 Things You Must Know About Load-Testing Using JMeter]
+* http://www.tothenew.com/blog/jmeter-master-slave-setup-in-multiple-aws-regions/[JMeter Master Slave Setup In Multiple AWS Regions]

@@ -8,6 +8,12 @@ Glen McCort <gwmccort@gmail.com>
 == References
 * http://www.intrapesite.ro/access-docker-application-by-hostname/[Access docker application by hostname] &  http://stackoverflow.com/questions/27715770/accessing-an-apache-server-in-a-docker-container-using-a-hostname[stackoverflow question]
 
+=== Compose
+* https://www.linux.com/learn/introduction-docker-compose-tool-multi-container-applications[Introduction to Docker Compose Tool for Multi-Container Applications]
+* https://www.linux.com/learn/docker-volumes-and-networks-compose[Docker Volumes and Networks with Compose]
+* http://zeroturnaround.com/rebellabs/preparing-an-environment-with-docker-compose/[Preparing an environment with Docker Compose]
+
+
 == T2D
 * https://www.javacodegeeks.com/2016/04/introduction-docker-part-1.html[An Introduction to Docker – Part 1]
 * Multiple containers

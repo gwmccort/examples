@@ -1,0 +1,58 @@
+= Docker
+Glen McCort <gwmccort@gmail.com>
+
+== Apache & tomcat
+* http://www.ibm.com/support/knowledgecenter/SS6QYM_9.2.0/com.ibm.help.vm.install.doc/c_VM_SettingUpApacheAsAFront-EndToTomcat.html[Setting Up Apache as a Front-End to Tomcat - IBM]
+
+== Containers
+* https://github.com/CentOS/CentOS-Dockerfiles[CentOS dockerfiles]
+
+== Presentations
+* https://www.javacodegeeks.com/2016/03/docker-tooling-eclipse-video.html[Docker Tooling in Eclipse Video]
+
+== References
+* http://www.intrapesite.ro/access-docker-application-by-hostname/[Access docker application by hostname] &  http://stackoverflow.com/questions/27715770/accessing-an-apache-server-in-a-docker-container-using-a-hostname[stackoverflow question]
+
+=== Compose
+* https://www.linux.com/learn/introduction-docker-compose-tool-multi-container-applications[Introduction to Docker Compose Tool for Multi-Container Applications]
+* https://www.linux.com/learn/docker-volumes-and-networks-compose[Docker Volumes and Networks with Compose]
+* http://zeroturnaround.com/rebellabs/preparing-an-environment-with-docker-compose/[Preparing an environment with Docker Compose]
+
+== Resources
+* Codefresh - tools for Docker, http://codefresh.io/blog/[blog]
+** Containers101, https://vimeo.com/channels/containers101[Vimeo channel] & http://www.meetup.com/Containers-101-online-meetup/[meetup]
+
+== Useful Docker Commands
+[qanda]
+Get docker port::
+docker port <container>
+
+Get docker-machine ip::
+docker-machine ip default
+
+Run container with name::
+docker run -d -P --name <name> <image>
+
+Copy file from container::
+docker cp -L cotainer:/path/to/file .
+
+=== Docker alias
+* https://github.com/tcnksm/docker-alias/blob/master/zshrc
+* https://kartar.net/2014/03/useful-docker-bash-functions-and-aliases/
+
+== References
+* http://networkstatic.net/10-examples-of-how-to-get-docker-container-ip-address/[10 examples to get docker ip address]
+* https://linuxconfig.org/how-to-retrieve-docker-container-s-internal-ip-address[how to get container internal ip address]
+* https://www.ibm.com/developerworks/community/blogs/millarde/entry/docker_standalone_webserver?lang=en[Doing it the Docker way: Standalone web server]
+* http://trimc-devops.blogspot.com/2015/03/running-docker-applications-apache.html[Docker and Apache Tomcat]
+* https://www.toptal.com/devops/getting-started-with-docker-simplifying-devops[Getting Started with Docker: Simplifying Devops] - ping example
+* http://thediscoblog.com/blog/2014/06/13/docker-containers-with-gradle-in-4-steps/[Docker Containers With Gradle in 4 Steps]
+* http://container-solutions.com/how-to-build-docker-images-with-gradle/[How to build Docker images with Gradle]
+
+== T2D
+* https://www.javacodegeeks.com/2016/04/introduction-docker-part-1.html[An Introduction to Docker – Part 1]
+* Multiple containers
+** https://www.reddit.com/r/docker/comments/4g8dpv/advice_running_multiple_dockerized_web_apps_with/[running multiple dockerized web apps with port 80 & 443]
+* https://www.javacodegeeks.com/2016/04/service-discovery-docker-consul-part-1.html[Service Discovery with Docker and Consul: part 1]
+* https://www.brianchristner.io/docker-cleanup-script-comparison/[Docker Cleanup Scripts Comparison]
+* https://blog.ouseful.info/2016/05/03/using-docker-as-a-personal-productvity-tool-running-command-line-apps/[Running Command Line Apps Bundled in Docker Containers]

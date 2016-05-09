@@ -41,6 +41,10 @@ docker cp -L cotainer:/path/to/file .
 * https://github.com/tcnksm/docker-alias/blob/master/zshrc
 * https://kartar.net/2014/03/useful-docker-bash-functions-and-aliases/
 
+=== Docker Tips
+* https://mercurenews.com/en/10-tips-tricks-with-docker/[10 Tips & Tricks with Docker]
+
+
 == References
 * http://networkstatic.net/10-examples-of-how-to-get-docker-container-ip-address/[10 examples to get docker ip address]
 * https://linuxconfig.org/how-to-retrieve-docker-container-s-internal-ip-address[how to get container internal ip address]

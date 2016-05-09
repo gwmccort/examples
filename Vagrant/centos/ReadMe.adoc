@@ -4,7 +4,7 @@
 * opscode/centos/7 - http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-7.0_chef-provisionerless.box
 
 ----
-vagrant box add centos-7.0 http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ce ntos-7.0_chef-provisionerless.box
+vagrant box add centos-7.0 http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-7.0_chef-provisionerless.box
 vagrant init centos-7.0
 vagrant up
 ----

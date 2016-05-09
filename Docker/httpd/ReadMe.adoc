@@ -8,6 +8,14 @@
 * http://stackoverflow.com/questions/3499809/what-are-the-best-sites-books-for-learning-apache[What are the best sites/books for learning Apache?]
 * https://dzone.com/articles/how-set-tomcat-apache-and[How To Set Up a Tomcat, Apache and mod_jk Cluster]
 
+=== Commands
+[qanda]
+Run httpd container with port 80 open::
+docker run  -p 80:80 httpd
+
+Connect to Apache httpd on docker::
+http://192.168.99.100/
+
 
 == Docker
 * http://stackoverflow.com/questions/33966225/shared-folder-in-docker-with-windows-not-only-c-user-path[mount non user volumes in a container]

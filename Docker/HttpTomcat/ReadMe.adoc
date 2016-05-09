@@ -1,0 +1,49 @@
+= Httpd & Tomcat
+
+* https://beautifulbytes.wordpress.com/2016/01/04/set-up-apache-httpd-and-tomcat-with-docker-compose/[Set up Apache httpd and Tomcat with docker-compose]
+
+
+== URL's
+* httpd: http://192.168.99.100/
+* search: http://192.168.99.100/search
+
+== Apache Commands (ubu)
+[qanda]
+Test server configuration::
+apachectl configtest
+
+Connect to httpd-proxy::
+docker exec -it mg:httpd bash
+
+List docker container ip::
+docker inspect search
+
+== Issues
+* Can't get to tomcat servers
+** Error in mod_jk error log
+
+=== Networking
+
+* http-proxy:/etc/hosts
+----
+root@7294dfeb3c63:/# cat /etc/hosts
+127.0.0.1       localhost
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+172.17.0.3      7294dfeb3c63
+----
+
+* search:/etc/hosts
+----
+root@8d34a528b7f3:/usr/local/tomcat# cat /etc/hosts
+127.0.0.1       localhost
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+172.17.0.4      8d34a528b7f3
+----

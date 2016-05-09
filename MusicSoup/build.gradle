@@ -1,0 +1,80 @@
+//buildscript {
+//	repositories {
+//		jcenter()
+//	}
+//
+//	dependencies {
+////		classpath 'com.github.ben-manes:gradle-versions-plugin:0.4'
+//		classpath 'com.github.ben-manes:gradle-versions-plugin:0.12.0'
+//	}
+//}
+//
+//apply {
+//	plugin 'groovy'
+//	plugin 'eclipse'
+//	plugin 'pmd'
+//	plugin 'codenarc'
+//	plugin 'versions'
+//}
+
+
+plugins {
+	id 'groovy'
+	id 'eclipse'
+	id 'idea'
+	id 'com.github.ben-manes.versions' version '0.12.0'
+	id 'pmd'
+	id 'codenarc'
+
+	// for asciidoclet, DONT SEEM TO NEED THIS
+	// id 'com.github.jruby-gradle.base' version '0.1.5'
+}
+
+repositories {
+	jcenter()
+	mavenCentral()
+}
+
+dependencies {
+	//	compile localGroovy()
+	compile 'org.codehaus.groovy:groovy-all:2.4.+'
+
+	// html parsers
+	compile 'org.ccil.cowan.tagsoup:tagsoup:1.2.1'
+	compile 'net.sourceforge.nekohtml:nekohtml:1.9.22'
+	
+	// fix xalan error???
+	compile 'xalan:xalan:2.7.2'
+
+}
+
+task run(dependsOn: ['runJamBase', 'runXmRadio'])
+
+task runJamBase(type: JavaExec) {
+	main = 'music.JamBase'
+	classpath = sourceSets.main.runtimeClasspath
+	systemProperties = System.properties
+}
+
+task runXmRadio(type: JavaExec) {
+	description = 'Run XmRadio playlist scraper'
+	main = 'music.XmRadio'
+	classpath sourceSets.main.runtimeClasspath
+	systemProperties = System.properties
+}
+
+task runHelloJava(type: JavaExec) {
+	main = 'HelloJava'
+	classpath = sourceSets.main.runtimeClasspath
+	systemProperties = System.properties
+}
+
+codenarc.ignoreFailures = true
+
+codenarc {
+	// Change version of CodeNarc.
+	//toolVersion = 0.17
+	// Change name of configuration file. Default value
+	// is file('config/codenarc/codenarc.xml')
+	configFile = file('config/codenarc/rules.groovy')
+}

@@ -1,0 +1,36 @@
+version: "2"
+
+services:
+  portalapp:
+     volumes:
+      - $PWD/tomcat/portal-webapps:/usr/local/tomcat/webapps
+     expose:
+      - "8009"
+     image: mg:tomcat
+     container_name: "portal"
+  searchapp:
+     volumes:
+      - $PWD/tomcat/search-webapps:/usr/local/tomcat/webapps
+     expose:
+      - "8009"
+     image: mg:tomcat
+     container_name: "search"
+     ports:
+     - "8080:8080"
+  businessapp:
+     volumes:
+      - $PWD/tomcat/businessapp-webapps:/usr/local/tomcat/webapps
+     expose:
+      - "8009"
+     image: mg:tomcat
+     container_name: "business"
+  http:
+     volumes:
+      - $PWD/logs:/var/log/apache2
+      - $PWD/httpd/conf/jk_mod/jk.conf:/etc/apache2/mods-available/jk.conf
+      - $PWD/httpd/conf/jk_mod/workers.properties:/etc/libapache2-mod-jk/workers.properties
+      - $PWD/httpd/conf/apache2/000-default.conf:/etc/apache2/sites-available/000-default.conf
+     ports:
+       - "80:80"
+     image: mg:httpd
+     container_name: "http-proxy"

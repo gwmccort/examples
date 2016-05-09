@@ -18,9 +18,10 @@ Glen McCort <gwmccort@gmail.com>
 * https://www.linux.com/learn/docker-volumes-and-networks-compose[Docker Volumes and Networks with Compose]
 * http://zeroturnaround.com/rebellabs/preparing-an-environment-with-docker-compose/[Preparing an environment with Docker Compose]
 
-== Resources
+==== Resources
 * Codefresh - tools for Docker, http://codefresh.io/blog/[blog]
 ** Containers101, https://vimeo.com/channels/containers101[Vimeo channel] & http://www.meetup.com/Containers-101-online-meetup/[meetup]
+*** https://github.com/containers101/demochat[github demochat]
 
 == Useful Docker Commands
 [qanda]

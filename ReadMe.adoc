@@ -66,3 +66,6 @@ Glen McCort <gwmccort@gmail.com>
 
 == Jetty
 * https://examples.javacodegeeks.com/enterprise-java/jetty/jetty-nio-example/[Jetty NIO Example]
+
+== Ruby
+* http://jruby-gradle.org/#running-some-ruby[JRuby/Gradle]

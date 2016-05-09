@@ -1,8 +1,15 @@
 = Examples
 Glen McCort <gwmccort@gmail.com>
 
-== Presentations
+== Resources
+* https://rominirani.com/docker-tutorial-series-a7e6ff90a023#.eyajcv98v[Docker Tutorial Series]
+
+=== Presentations
 * https://www.javacodegeeks.com/2016/03/docker-tooling-eclipse-video.html[Docker Tooling in Eclipse Video]
+
+== Tools
+=== Compose
+* https://examples.javacodegeeks.com/devops/docker/docker-compose-example/[Docker Compose example]
 
 == T2D
 * https://www.javacodegeeks.com/2016/04/introduction-docker-part-1.html[An Introduction to Docker – Part 1]

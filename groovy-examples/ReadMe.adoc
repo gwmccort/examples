@@ -26,6 +26,10 @@
 === Video's
 * http://www.infoq.com/presentations/groovy-ast-transformations?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global[Groovy AST Transformations]
 
+== Codenarc
+* https://speakerdeck.com/jlstrater/codenarc-revisited-gum[Codenarc Revisited GUM]
+** https://github.com/jlstrater/gr8data
+
 == Database
 === H2
 * http://www.h2database.com/html/grammar.html[SQL Grammer]

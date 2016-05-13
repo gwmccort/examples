@@ -11,6 +11,7 @@ Glen McCort <gwmccort@gmail.com>
 * http://gradle.org/migrating-a-maven-build-to-gradle/[Migrating a maven build to Gradle]
 * http://www.mkyong.com/tag/gradle/[mkyong gradle articles]
 * http://www.slideshare.net/KostasSaidis/an-introduction-to-gradle-for-java-developers[An Introduction to Gradle for Java Developers]
+* https://www.javacodegeeks.com/tag/gradle/[java code geeks gradle posts]
 
 == Presentations
 * http://www.slideshare.net/KostasSaidis/an-introduction-to-gradle-for-java-developers[An Introduction to Gradle for Java Developers]
@@ -32,3 +33,4 @@ Glen McCort <gwmccort@gmail.com>
 * http://zeroturnaround.com/rebellabs/making-gradle-builds-faster/[Making Gradle builds faster]
 * http://mrhaki.blogspot.com/2016/02/gradle-goodness-create-objects-with-dsl.html[Create Objects Using DSL With Domain Object Containers]
 * https://kousenit.wordpress.com/2016/04/20/excluding-gradle-tasks-with-a-name-pattern/[Excluding Gradle Tasks with a Name Pattern]
+* https://www.javacodegeeks.com/2016/05/manage-dependencies-gradle-multi-project-build.html[How to manage dependencies in a Gradle multi-project build]

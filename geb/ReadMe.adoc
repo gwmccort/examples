@@ -18,6 +18,10 @@ Glen McCort <gwmccort@gmail.com>
 * http://www.tothenew.com/blog/using-modules-to-avoid-structures-repetition-in-geb-test-pages/[Using Modules to avoid structures repetition in Geb Test Pages]
 * http://adhockery.blogspot.com/2010/11/modelling-repeating-structures-with-geb.html[Modelling repeating structures with Geb page objects]
 
+== Tools
+* http://betamax.software/[BetaMax] records http
+** skill matter video https://skillsmatter.com/skillscasts/2804-testing-http-dependencies-with-betamax[Testing HTTP dependencies with Betamax]
+
 == Example
 * type commands
 ....

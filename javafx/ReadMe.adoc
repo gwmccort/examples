@@ -33,7 +33,7 @@ Configure Build Path>Libraries>select JRE-Access rules>edit add javafx/** as acc
 * https://www.javacodegeeks.com/2016/04/new-calendarfx-view-monthgridview.html[New CalendarFX View: MonthGridView!]
 * https://examples.javacodegeeks.com/desktop-java/javafx/fxml/javafx-fxml-tutorial/[JavaFX FXML Tutorial]
 * https://examples.javacodegeeks.com/core-java/javafx-effects-example/[JavaFX Effects Example]
-
+* https://examples.javacodegeeks.com/desktop-java/javafx/javafx-fxgraph-example/[JavaFX FXGraph]
 
 
 == Swing T2D

@@ -81,3 +81,4 @@ Glen McCort <gwmccort@gmail.com>
 * logging
 ** https://dzone.com/articles/logback-configuration-using-groovy?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Logback Configuration: Using Groovy]
 * https://dzone.com/articles/java-hashcode-and-equals-deep-dive?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java Hashcode and Equals Deep Dive]
+* http://www.journaldev.com/10689/log4j-tutorial[log4j tutorial]

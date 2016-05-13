@@ -36,9 +36,14 @@ docker run -d -P --name <name> <image>
 Copy file from container::
 docker cp -L cotainer:/path/to/file .
 
+== Tips
+* http://stackoverflow.com/questions/33966225/shared-folder-in-docker-with-windows-not-only-c-user-path[Shared folder in Docker. With Windows. Not only “C/user/” path]
+
+
 === Docker alias
 * https://github.com/tcnksm/docker-alias/blob/master/zshrc
 * https://kartar.net/2014/03/useful-docker-bash-functions-and-aliases/
+
 
 == References
 * http://networkstatic.net/10-examples-of-how-to-get-docker-container-ip-address/[10 examples to get docker ip address]
@@ -56,3 +61,5 @@ docker cp -L cotainer:/path/to/file .
 * https://www.javacodegeeks.com/2016/04/service-discovery-docker-consul-part-1.html[Service Discovery with Docker and Consul: part 1]
 * https://www.brianchristner.io/docker-cleanup-script-comparison/[Docker Cleanup Scripts Comparison]
 * https://blog.ouseful.info/2016/05/03/using-docker-as-a-personal-productvity-tool-running-command-line-apps/[Running Command Line Apps Bundled in Docker Containers]
+* http://thediscoblog.com/blog/2014/06/13/docker-containers-with-gradle-in-4-steps/[Docker Containers With Gradle in 4 Steps]
+* http://thediscoblog.com/blog/2014/05/05/dockerfiles-in-a-jiffy/[Dockerfiles in a Jiffy]

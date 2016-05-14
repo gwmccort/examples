@@ -9,3 +9,8 @@
 
 == References
 * http://www.ibm.com/developerworks/opensource/tutorials/os-apache-tika/[Understanding information content with Apache Tika]
+
+== Java Mp3 Tag libraries
+* http://id3.org/Implementations[id3.org]
+* https://sourceforge.net/projects/jd3lib/[jd3Lib]
+* http://www.jthink.net/jaudiotagger/[Jaudiotagger], https://bitbucket.org/ijabz/jaudiotagger[git repro]

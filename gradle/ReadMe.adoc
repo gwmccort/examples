@@ -16,6 +16,9 @@ Glen McCort <gwmccort@gmail.com>
 == Presentations
 * http://www.slideshare.net/KostasSaidis/an-introduction-to-gradle-for-java-developers[An Introduction to Gradle for Java Developers]
 
+== Tutorials
+* http://www.vogella.com/tutorials/EclipseGradle/article.html[Using the Gradle build system in the Eclipse IDE]
+
 == Books
 * https://leanpub.com/idiomaticgradle[Idiomatic Gradle Plugins]
 

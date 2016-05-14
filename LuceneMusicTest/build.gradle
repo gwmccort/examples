@@ -37,6 +37,7 @@ dependencies {
 	compile "org.apache.lucene:lucene-queryparser:${luceneVersion}"
 
 	compile 'org:jaudiotagger:2.0.3'
+	//TODO:latest version compile 'net.jthink:jaudiotagger:2.2.5'
 	compile 'net.sf.opencsv:opencsv:2.3'
 
 	// testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'

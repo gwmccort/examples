@@ -39,7 +39,9 @@ docker cp -L cotainer:/path/to/file .
 
 == Tips
 * http://stackoverflow.com/questions/33966225/shared-folder-in-docker-with-windows-not-only-c-user-path[Shared folder in Docker. With Windows. Not only “C/user/” path]
-
+  & http://stackoverflow.com/questions/30864466/whats-the-best-way-to-share-files-from-windows-to-boot2docker-vm[What's the best way to share files from Windows to Boot2docker VM]
+  & http://stackoverflow.com/questions/30040708/how-to-mount-local-volumes-in-docker-machine[instructions to make permanent]
+* http://blog.pavelsklenar.com/5-useful-docker-tip-and-tricks-on-windows/[5 Useful Docker Tips and Tricks on Windows]
 
 === Docker alias
 * https://github.com/tcnksm/docker-alias/blob/master/zshrc

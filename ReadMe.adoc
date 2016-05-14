@@ -66,6 +66,7 @@ Glen McCort <gwmccort@gmail.com>
 * https://examples.javacodegeeks.com/software-development/git/git-push-origin-example/[Git Push Origin Example]
 * https://examples.javacodegeeks.com/software-development/git/git-rename-branch-example/[Git Rename Branch Example]
 * https://examples.javacodegeeks.com/category/software-development/git/[java code geeks git posts]
+* https://examples.javacodegeeks.com/software-development/git/create-git-repo-example/[Create Git Repo]
 
 == Jetty
 * https://examples.javacodegeeks.com/enterprise-java/jetty/jetty-nio-example/[Jetty NIO Example]

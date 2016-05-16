@@ -9,6 +9,7 @@ Glen McCort <gwmccort@gmail.com>
 
 == Presentations
 * https://www.javacodegeeks.com/2016/03/docker-tooling-eclipse-video.html[Docker Tooling in Eclipse Video]
+* https://www.youtube.com/watch?v=OzfmRMNBwlE[An Introduction to Web Apps with Docker]
 
 == References
 * http://www.intrapesite.ro/access-docker-application-by-hostname/[Access docker application by hostname] &  http://stackoverflow.com/questions/27715770/accessing-an-apache-server-in-a-docker-container-using-a-hostname[stackoverflow question]
@@ -42,7 +43,7 @@ docker cp -L cotainer:/path/to/file .
   & http://stackoverflow.com/questions/30864466/whats-the-best-way-to-share-files-from-windows-to-boot2docker-vm[What's the best way to share files from Windows to Boot2docker VM]
   & http://stackoverflow.com/questions/30040708/how-to-mount-local-volumes-in-docker-machine[instructions to make permanent]
 * http://blog.pavelsklenar.com/5-useful-docker-tip-and-tricks-on-windows/[5 Useful Docker Tips and Tricks on Windows]
-
+* GOOD: http://www.smartjava.org/content/10-practical-docker-tips-day-day-docker-usage[10 Practical Docker Tips for Day to Day Docker usage]
 === Docker alias
 * https://github.com/tcnksm/docker-alias/blob/master/zshrc
 * https://kartar.net/2014/03/useful-docker-bash-functions-and-aliases/

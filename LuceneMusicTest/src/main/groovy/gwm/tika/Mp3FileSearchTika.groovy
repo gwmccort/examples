@@ -15,37 +15,41 @@ import org.xml.sax.helpers.DefaultHandler
 class Mp3FileSearchTika {
 
 	static main(args) {
-		String pathName = 'C:/Users/Glen/Music'
-		Path path = Paths.get(pathName)
+		//		String pathName = 'C:/Users/Glen/Music'
+		String pathName = 'C:\\Users\\Public\\Music\\Sample Music'
 
-		path.eachFileRecurse(FILES) { path2 ->
-			if (path2.toString() ==~ /.*\.(mp3)$/) {
+		Paths.get(pathName).eachFileRecurse(FILES) { path ->
+			if (path.toString() ==~ /.*\.(mp3)$/) {
 
-				//				InputStream input = new FileInputStream(new File(file));
-				InputStream input = new FileInputStream(path2.toFile());
 				ContentHandler handler = new DefaultHandler();
-				Metadata metadata = new Metadata();
 				Parser parser = new Mp3Parser();
 				ParseContext parseCtx = new ParseContext();
-				parser.parse(input, handler, metadata, parseCtx);
-				input.close();
+				path.withInputStream { stream ->
+					//					ContentHandler handler = new DefaultHandler();
+					Metadata metadata = new Metadata();
+					//					Parser parser = new Mp3Parser();
+					//					ParseContext parseCtx = new ParseContext();
+					parser.parse(stream, handler, metadata, parseCtx);
 
-				//				String[] metadataNames = metadata.names();
-				//				for (String name : metadataNames) {
-				//					println(name + ": " + metadata.get(name));
-				//				}
+					// print all metadata
+					//					String[] metadataNames = metadata.names();
+					//					for (String name : metadataNames) {
+					//						println(name + ": " + metadata.get(name));
+					//					}
 
-				// Retrieve the necessary info from metadata
-				// Names - title, xmpDM:artist etc. - mentioned below may differ
-				// based
-				// on the standard used for processing and storing standardized
-				// and/or
-				// proprietary information relating to the contents of a file.
+					// Retrieve the necessary info from metadata
+					// Names - title, xmpDM:artist etc. - mentioned below may differ
+					// based
+					// on the standard used for processing and storing standardized
+					// and/or
+					// proprietary information relating to the contents of a file.
 
-				println "-------- $path2 --------"
-				println("Title: " + metadata.get("title"));
-				println("Artists: " + metadata.get("xmpDM:artist"));
-				println("Genre: " + metadata.get("xmpDM:genre"));
+					println "-------- $path --------"
+					println("Title: " + metadata.get("title"));
+					println("Artists: " + metadata.get("xmpDM:artist"));
+					println("Track: " + metadata.get("xmpDM:trackNumber"));
+					println("Genre: " + metadata.get("xmpDM:genre"));
+				}
 			}
 		}
 	}

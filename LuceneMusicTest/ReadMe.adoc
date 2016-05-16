@@ -9,6 +9,17 @@ Glen McCort <gwmccort.gmail.com>
 === Luke
 * https://github.com/DmitryKey/luke/releases/tag/pivot-luke-5.5.0[luke 5.5.0] - works with current lucene version
 
+== Mp3 tag libraries
+* https://github.com/mpatric/mp3agic[mp3agic]
+** https://github.com/mpatric/mp3agic-examples[mp3agic examples]
+* https://bitbucket.org/ijabz/jaudiotagger[Jaudiotagger, bitbucket repro]
+
+== groovy & tika
+* http://www.groovy-tutorial.org/basic-files/#_file_information[groovy tika, file information]
+
+=== Video
+* https://www.youtube.com/watch?v=OrwO_Q4QJNc[meta data of a mp3 song in java part 1]
+
 == T2D
 * look at https://github.com/griffon/griffon[griffon build]
 ** http://griffon-framework.org/[griffon web site]

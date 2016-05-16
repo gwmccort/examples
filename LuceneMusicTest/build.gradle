@@ -13,6 +13,9 @@ sourceCompatibility = '1.8'
 repositories {
 	jcenter()
 	mavenCentral()
+
+	// new jaudiotagger repro
+	maven { url "https://dl.bintray.com/ijabz/maven" }
 }
 
 dependencies {
@@ -38,8 +41,8 @@ dependencies {
 	compile "org.apache.lucene:lucene-analyzers-common:${luceneVersion}"
 	compile "org.apache.lucene:lucene-queryparser:${luceneVersion}"
 
-	compile 'org:jaudiotagger:2.0.3'
-	//TODO:latest version compile 'net.jthink:jaudiotagger:2.2.5'
+	// compile 'org:jaudiotagger:2.0.3'
+	compile 'net.jthink:jaudiotagger:2.2.5' //need to specify special maven repro
 
 	compile 'net.sf.opencsv:opencsv:2.3'
 

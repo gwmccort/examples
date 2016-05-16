@@ -34,7 +34,7 @@ Configure Build Path>Libraries>select JRE-Access rules>edit add javafx/** as acc
 * https://examples.javacodegeeks.com/desktop-java/javafx/fxml/javafx-fxml-tutorial/[JavaFX FXML Tutorial]
 * https://examples.javacodegeeks.com/core-java/javafx-effects-example/[JavaFX Effects Example]
 * https://examples.javacodegeeks.com/desktop-java/javafx/javafx-fxgraph-example/[JavaFX FXGraph]
-
+* https://www.javacodegeeks.com/2016/05/javafx-8-datepicker-swing-application.html[JavaFX 8 DatePicker in Swing Application]
 
 == Swing T2D
 * http://examples.javacodegeeks.com/desktop-java/swing/java-swing-slider-example/[Swing Slider]

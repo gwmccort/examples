@@ -1,7 +1,7 @@
 = Httpd & Tomcat
 
 * https://beautifulbytes.wordpress.com/2016/01/04/set-up-apache-httpd-and-tomcat-with-docker-compose/[Set up Apache httpd and Tomcat with docker-compose]
-
+* https://hub.docker.com/r/dezoito18/apache-http-tomcat/ another image on docker hub
 
 == URL's
 * httpd: http://192.168.99.100/

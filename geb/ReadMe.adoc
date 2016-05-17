@@ -14,6 +14,10 @@ Glen McCort <gwmccort@gmail.com>
 * https://jaxenter.com/tutorial-groovy-functional-testing-with-geb-104382.html[Tutorial: Groovy Functional Testing with Geb]
 * http://desmontandojava.blogspot.com/2012/06/scraping-with-groovy-ii-geb.html[Scraping with Groovy (II): Geb]
 
+=== Videos
+* http://greachconf.com/speakers/jacob-aae-mikkelsen-geb-for-browser-automation/
+** https://github.com/JacobAae/greach-2016-geb-for-browser-automation[github repro] with ratpack example
+
 == Help
 * http://www.tothenew.com/blog/using-modules-to-avoid-structures-repetition-in-geb-test-pages/[Using Modules to avoid structures repetition in Geb Test Pages]
 * http://adhockery.blogspot.com/2010/11/modelling-repeating-structures-with-geb.html[Modelling repeating structures with Geb page objects]

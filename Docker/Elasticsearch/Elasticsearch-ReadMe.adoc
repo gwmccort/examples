@@ -1,0 +1,12 @@
+= Elasticsearch
+* http://examples.javacodegeeks.com/elasticsearch/elasticsearch-tutorial-beginners/[ElasticSearch Tutorial for Beginners]
+* https://www.javacodegeeks.com/2016/03/logging-requests-elasticsearch.html[Logging Requests to Elasticsearch]
+* http://joelabrahamsson.com/elasticsearch-101/[elasticsearch 101]
+* http://www.elasticsearchtutorial.com/
+
+== Docker image
+* https://hub.docker.com/r/_/elasticsearch/
+
+
+== Books
+* https://leanpub.com/elasticsearch-quick-start

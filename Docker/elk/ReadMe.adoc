@@ -4,6 +4,8 @@
 * http://elk-docker.readthedocs.org/[doc's]
 * http://192.168.99.100:9200/
 
+* https://github.com/deviantony/docker-elk uses docker-compose with separate containers
+
 == Books
 
 * https://www.packtpub.com/big-data-and-business-intelligence/learning-elk-stack[Learning ELK Stack]

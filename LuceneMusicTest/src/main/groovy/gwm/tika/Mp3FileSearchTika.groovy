@@ -15,8 +15,8 @@ import org.xml.sax.helpers.DefaultHandler
 class Mp3FileSearchTika {
 
 	static main(args) {
-		//		String pathName = 'C:/Users/Glen/Music'
-		String pathName = 'C:\\Users\\Public\\Music\\Sample Music'
+		String pathName = 'C:/Users/Glen/Music'
+		//		String pathName = 'C:\\Users\\Public\\Music\\Sample Music'
 
 		Paths.get(pathName).eachFileRecurse(FILES) { path ->
 			if (path.toString() ==~ /.*\.(mp3)$/) {

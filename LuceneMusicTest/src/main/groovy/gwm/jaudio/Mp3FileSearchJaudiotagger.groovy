@@ -13,8 +13,8 @@ import org.jaudiotagger.tag.Tag
 class Mp3FileSearchJaudiotagger {
 
 	static main(args) {
-//		String pathName = 'C:/Users/Glen/Music'
-		String pathName = 'C:\\Users\\Public\\Music\\Sample Music'
+		String pathName = 'C:/Users/Glen/Music'
+//		String pathName = 'C:\\Users\\Public\\Music\\Sample Music'
 
 		// disable jul logging output
 		java.util.logging.Logger globalLogger = java.util.logging.Logger.getLogger("");

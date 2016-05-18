@@ -1,6 +1,9 @@
 = Muisc Search
 Glen McCort <gwmccort.gmail.com>
 
+== Classes
+* gwm.model.Track - track's & example of getting from file tree, indexing and searching
+
 == Scripts
 * FileTrackCsv - create a csv file from musit tracks
 * Mp3FileTest - test Mp3MusicTrack

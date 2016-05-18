@@ -37,7 +37,7 @@ import au.com.bytecode.opencsv.CSVWriter
 //@Slf4j
 @TupleConstructor(force=true)
 @ToString(includeNames=true)
-class Track {
+class OldTrack {
 	String artist
 	String name
 	String album
@@ -51,7 +51,7 @@ class Track {
 	 * Create Track from music file tags
 	 * @param tag mp3 metadata
 	 */
-	Track(Tag tag) {
+	OldTrack(Tag tag) {
 		artist = tag.getFirst(FieldKey.ARTIST)
 		name=tag.getFirst(FieldKey.TITLE)
 		album=tag.getFirst(FieldKey.ALBUM)
@@ -114,7 +114,7 @@ class Track {
 	 * Index list of tracks to lucene
 	 * @param tracks list of tracks
 	 */
-	static void indexTracks(Track[] tracks) {
+	static void indexTracks(OldTrack[] tracks) {
 		println '>>> indexing tracks...'
 
 		Directory dir = FSDirectory.open(Paths.get(LUCENE_INDEX))
@@ -199,11 +199,11 @@ class Track {
 	 * Get list of tracks for testing
 	 * @return list of tracks
 	 */
-	static Track[] getSampleTracks() {
+	static OldTrack[] getSampleTracks() {
 		def tracks = []
-		tracks << new Track(artist:'Yonter Mountain String Band', name:'40 Miles from Denver', album:'Elevation test')
-		tracks << new Track(artist:'Grateful Dead', name:'Trucking test', album:'American Beauty')
-		tracks << new Track(artist:'Test artist', name:'test track name', album:'test album')
+		tracks << new OldTrack(artist:'Yonter Mountain String Band', name:'40 Miles from Denver', album:'Elevation test')
+		tracks << new OldTrack(artist:'Grateful Dead', name:'Trucking test', album:'American Beauty')
+		tracks << new OldTrack(artist:'Test artist', name:'test track name', album:'test album')
 		tracks
 	}
 
@@ -211,7 +211,7 @@ class Track {
 	 * Example of using jaudiotagger to get mp3 tags
 	 * @return list of tracks
 	 */
-	static Track[] getMp3Files(String pathRoot) {
+	static OldTrack[] getMp3Files(String pathRoot) {
 		println 'in getMp3Files...'
 		def results = []
 
@@ -234,7 +234,7 @@ class Track {
 					MP3File mf = new MP3File(file, MP3File.LOAD_ALL, true)
 					Tag tag = mf.getTag()
 					//					Track t = new Track(artist:tag.getFirst(FieldKey.ARTIST), name:tag.getFirst(FieldKey.TITLE), album:tag.getFirst(FieldKey.ALBUM))
-					Track t = new Track(tag)
+					OldTrack t = new OldTrack(tag)
 					results << t
 				}
 				catch (Exception e) {
@@ -250,7 +250,7 @@ class Track {
 	 * Write tacks to a CSV file
 	 * @param tracks
 	 */
-	static void writeTracksToCSV(Track[] tracks) {
+	static void writeTracksToCSV(OldTrack[] tracks) {
 		println 'in writeTracksToCSV'
 		CSVWriter writer = new CSVWriter(new FileWriter('Track.csv'))
 		//        sampleTracks.each { t ->

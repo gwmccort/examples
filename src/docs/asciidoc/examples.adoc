@@ -1,0 +1,42 @@
+= Examples
+Glen McCort <gwmccort@gmail.com>
+
+include::../../../ReadMe.adoc[]
+
+== Miscellaneous Topics
+
+=== JavaScript
+* http://jsforcats.com/[JavaScript for cats]
+
+=== NoSQL
+* http://javarticles.com/2016/01/inserting-document-using-mongodb-java-driver.html[Inserting Document using MongoDB Java Driver]
+* http://examples.javacodegeeks.com/core-java/mongodb-tutorial-beginners/[MongoDB Tutorial for Beginners]
+
+=== Dropwizard
+* https://dzone.com/articles/getting-started-with-dropwizard-connecting-to-a-da?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Connecting to a Database Using Hibernate]
+* https://dzone.com/articles/modern-java-web-dev-dropwizard-from-the-start-part?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Using Dropwizard From the Start]
+
+=== Scala
+* https://dzone.com/articles/java-8-%CE%BBe-vs-scalapart-i?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java 8 vs. Scala: Part I]
+* https://dzone.com/articles/java-8-vs-scalapart-ii-streams-api?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[part 2]
+* https://dzone.com/articles/developing-scala-in-atom-with-ensime?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Scala in Atom With Ensime]
+* https://dzone.com/articles/singleton-implementation-in-scala?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Singleton Implementation in Scala]
+
+=== Java
+* https://dzone.com/articles/executable-java-applications?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Guide to Executable Java Applications]
+* http://examples.javacodegeeks.com/enterprise-java/jms/jms-topic-example/[Guide to Executable Java Applications]
+* https://dzone.com/articles/simple-java-soap-web-service-using-jdk-tools?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java SOAP Web Service Using JDK Tools]
+
+=== Git
+* https://examples.javacodegeeks.com/software-development/git/git-undo-commit-example/[Git Undo Commit Example]
+* https://examples.javacodegeeks.com/software-development/git/git-push-origin-example/[Git Push Origin Example]
+* https://examples.javacodegeeks.com/software-development/git/git-rename-branch-example/[Git Rename Branch Example]
+* https://examples.javacodegeeks.com/category/software-development/git/[java code geeks git posts]
+* https://examples.javacodegeeks.com/software-development/git/create-git-repo-example/[Create Git Repo]
+* http://examples.javacodegeeks.com/software-development/git-remove-commit-example/[Git Remove Commit Example]
+
+=== Jetty
+* https://examples.javacodegeeks.com/enterprise-java/jetty/jetty-nio-example/[Jetty NIO Example]
+
+=== Ruby
+* http://jruby-gradle.org/#running-some-ruby[JRuby/Gradle]

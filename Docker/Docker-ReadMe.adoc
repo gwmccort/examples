@@ -69,3 +69,4 @@ docker cp -L cotainer:/path/to/file .
 * https://blog.ouseful.info/2016/05/03/using-docker-as-a-personal-productvity-tool-running-command-line-apps/[Running Command Line Apps Bundled in Docker Containers]
 * http://thediscoblog.com/blog/2014/06/13/docker-containers-with-gradle-in-4-steps/[Docker Containers With Gradle in 4 Steps]
 * http://thediscoblog.com/blog/2014/05/05/dockerfiles-in-a-jiffy/[Dockerfiles in a Jiffy]
+* https://examples.javacodegeeks.com/devops/docker/docker-tutorial-beginners/[Docker Tutorial for Beginners]

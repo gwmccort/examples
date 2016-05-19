@@ -17,6 +17,7 @@ import org.apache.lucene.index.IndexReader
 import org.apache.lucene.index.IndexWriter
 import org.apache.lucene.index.IndexWriterConfig
 import org.apache.lucene.index.IndexWriterConfig.OpenMode
+import org.apache.lucene.queryparser.classic.MultiFieldQueryParser
 import org.apache.lucene.queryparser.classic.QueryParser
 import org.apache.lucene.search.IndexSearcher
 import org.apache.lucene.search.Query
@@ -37,7 +38,6 @@ import org.jaudiotagger.tag.Tag
  * </ol>
  *
  * @author gwmccort
- *
  */
 @ToString(includeNames=true)
 class Track {
@@ -53,11 +53,11 @@ class Track {
 	private static final NAME_FIELD = 'name'
 	private static final ALBUM_FIELD = 'album'
 
-//	enum FIELD {
-//		artist,
-//		name,
-//		album
-//	}
+	//	enum FIELD {
+	//		artist,
+	//		name,
+	//		album
+	//	}
 
 	/**
 	 * Create a track from music file tag
@@ -79,7 +79,8 @@ class Track {
 	 * @param args
 	 */
 	static main(args) {
-		String pathName = 'C:\\Users\\Public\\Music\\Sample Music'
+		String pathName = 'C:\\Users\\Glen\\Music'
+		//				String pathName = 'C:\\Users\\Public\\Music\\Sample Music'
 
 		def tracks = getFileTracks(pathName)
 
@@ -106,7 +107,7 @@ class Track {
 
 		//search test
 		println '-------- search'
-		searchTest('Sleep')
+		searchTest('cheese')
 	}
 
 	/**
@@ -160,7 +161,14 @@ class Track {
 		IndexSearcher searcher = new IndexSearcher(reader)
 		Analyzer analyzer = new StandardAnalyzer()
 
-		QueryParser parser = new QueryParser(NAME_FIELD, analyzer)
+		// single field
+//		QueryParser parser = new QueryParser(NAME_FIELD, analyzer)
+		
+		// multi field
+		String[] fields = [ARTIST_FIELD, NAME_FIELD, ALBUM_FIELD]
+		QueryParser parser = new MultiFieldQueryParser(fields, analyzer)
+
+		
 		Query query = parser.parse(queryString)
 		//		println query
 		//		println query.class

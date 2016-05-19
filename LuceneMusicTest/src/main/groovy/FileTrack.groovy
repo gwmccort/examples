@@ -19,7 +19,7 @@ import au.com.bytecode.opencsv.CSVWriter
  *
  */
 @ToString(includeNames=true, includeSuper=true)
-class FileTrack extends Track {
+class FileTrack extends OldTrack {
 	/** path of track */
 	String filePath
 

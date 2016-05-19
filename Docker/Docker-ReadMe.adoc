@@ -1,6 +1,10 @@
 = Docker
 Glen McCort <gwmccort@gmail.com>
 
+== T2CO
+* https://github.com/docker/community/tree/master/tutorials/java[Docker for Java Developers]
+** https://github.com/docker/community[docker community]
+
 == Apache & tomcat
 * http://www.ibm.com/support/knowledgecenter/SS6QYM_9.2.0/com.ibm.help.vm.install.doc/c_VM_SettingUpApacheAsAFront-EndToTomcat.html[Setting Up Apache as a Front-End to Tomcat - IBM]
 
@@ -23,6 +27,8 @@ Glen McCort <gwmccort@gmail.com>
 * Codefresh - tools for Docker, http://codefresh.io/blog/[blog]
 ** Containers101, https://vimeo.com/channels/containers101[Vimeo channel] & http://www.meetup.com/Containers-101-online-meetup/[meetup]
 *** https://github.com/containers101/demochat[github demochat]
+
+* Java Code Geeks https://examples.javacodegeeks.com/category/devops/docker/[Docker category]
 
 == Useful Docker Commands
 [qanda]

@@ -53,4 +53,5 @@
 * https://examples.javacodegeeks.com/jvm-languages/groovy/groovy-json-example/[Json Example]
 * https://examples.javacodegeeks.com/jvm-languages/groovy/groovy-dictionary-example/[Groovy Dictionary Example]
 * https://examples.javacodegeeks.com/jvm-languages/groovy/groovy-script-tutorial-beginners/[Groovy Script Tutorial for Beginners]
-*https://tedvinke.wordpress.com/2016/04/14/2-rookie-java-constants-and-enums-pitfalls/[2 Rookie Java Constants and Enums Pitfalls]
+* https://tedvinke.wordpress.com/2016/04/14/2-rookie-java-constants-and-enums-pitfalls/[2 Rookie Java Constants and Enums Pitfalls]
+* http://mrhaki.blogspot.com/2016/05/groovy-goodness-creating-files-and.html[Groovy Goodness: Creating Files And Directories With Nice DSL Using FileTreeBuilder]

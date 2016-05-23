@@ -1,0 +1,28 @@
+version: '2'
+services:
+ elasticsearch:
+  image: elasticsearch
+  container_name: elasticsearch
+  ports:
+   - "9200:9200"
+   - "9300:9300"
+  #command: bin/plugin -DproxyHost=proxy -DproxyPort=9090 install mobz/elasticsearch-head
+ kibana:
+  image: kibana
+  container_name: kibana
+  depends_on:
+    - elasticsearch
+  ports:
+    - "5601:5601"
+ #  environment:
+ #   - MYSQL_ROOT_PASSWORD=root
+ #   - MYSQL_DATABASE=ghost
+ #   - MYSQL_USER=ghost
+ #   - MYSQL_PASSWORD=password
+ # ghost:
+ #  build: ./ghost
+ #  container_name: ghost
+ #  depends_on:
+ #    - mysql
+ #  ports:
+ #    - "80:2368"

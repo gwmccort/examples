@@ -8,6 +8,21 @@ Glen McCort <gwmccort@gmail.com>
 ** https://github.com/maxfields2000/dockerjenkins_tutorial
 * http://live-rg-engineering.pantheonsite.io/news/building-jenkins-inside-ephemeral-docker-container[BUILDING WITH JENKINS INSIDE AN EPHEMERAL DOCKER CONTAINER]
 
+== Projects
+* cowsay - simple hello world
+* Elasticsearch/
+* elk/
+* galoshe/
+* gradle-java - create docker container from gradle 
+* gradle-java-old/
+* httpd/
+* HttpTomcat/
+* microservice-simple-exampe/
+* purlsite/
+* ratpack - create docker container from gradle
+* solr/
+* webapp/
+
 == Apache & tomcat
 * http://www.ibm.com/support/knowledgecenter/SS6QYM_9.2.0/com.ibm.help.vm.install.doc/c_VM_SettingUpApacheAsAFront-EndToTomcat.html[Setting Up Apache as a Front-End to Tomcat - IBM]
 
@@ -53,6 +68,7 @@ docker cp -L cotainer:/path/to/file .
   & http://stackoverflow.com/questions/30040708/how-to-mount-local-volumes-in-docker-machine[instructions to make permanent]
 * http://blog.pavelsklenar.com/5-useful-docker-tip-and-tricks-on-windows/[5 Useful Docker Tips and Tricks on Windows]
 * GOOD: http://www.smartjava.org/content/10-practical-docker-tips-day-day-docker-usage[10 Practical Docker Tips for Day to Day Docker usage]
+
 === Docker alias
 * https://github.com/tcnksm/docker-alias/blob/master/zshrc
 * https://kartar.net/2014/03/useful-docker-bash-functions-and-aliases/
@@ -78,7 +94,4 @@ docker cp -L cotainer:/path/to/file .
 * https://blog.ouseful.info/2016/05/03/using-docker-as-a-personal-productvity-tool-running-command-line-apps/[Running Command Line Apps Bundled in Docker Containers]
 * http://thediscoblog.com/blog/2014/06/13/docker-containers-with-gradle-in-4-steps/[Docker Containers With Gradle in 4 Steps]
 * http://thediscoblog.com/blog/2014/05/05/dockerfiles-in-a-jiffy/[Dockerfiles in a Jiffy]
-<<<<<<< HEAD
 * https://examples.javacodegeeks.com/devops/docker/docker-tutorial-beginners/[Docker Tutorial for Beginners]
-=======
->>>>>>> 294a77cc25802c0c31b072c8dca978532a63744f

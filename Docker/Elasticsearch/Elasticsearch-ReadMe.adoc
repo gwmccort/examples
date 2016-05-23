@@ -6,7 +6,29 @@
 
 == Docker image
 * https://hub.docker.com/r/_/elasticsearch/
+* https://hub.docker.com/_/kibana/
 
+=== Commands
+[qanda]
+start docker elasticsearch image::
+docker run -d -p 9200:9200 -p 9300:9300 elasticsearch
+
+test if elasticsearch working::
+http://192.168.99.100:9200/?pretty +
+curl -G '192.168.99.100:9200/?pretty'
+
+list installed plugins::
+http://192.168.99.100:9200/_nodes/plugins?pretty
+
+install plugin behind firewall::
+bin/plugin -DproxyHost=proxy -DproxyPort=9090 install mobz/elasticsearch-head
+
+head plugin url::
+http://192.168.99.100:9200/_plugin/head/
+
+=== Plugins
+* https://github.com/mobz/elasticsearch-head
 
 == Books
 * https://leanpub.com/elasticsearch-quick-start
+* Online version of https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html[Elasticsearch: The Definitive Guide]

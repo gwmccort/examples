@@ -1,0 +1,23 @@
+Asciidoctor.js Live Preview 1.5.4.110
+Aternity Information Systems Extension 1.0.85
+BlazeMeter | The Load Testing Cloud 2.3.1
+Calculator 2.1.11
+Cisco WebEx Extension 1.0.1
+Clock 1.2
+Delicious Bookmarks Extension 2.0.75
+Delicious Tools 1.8
+Google Docs Offline 1.4
+Google Drawings 1.1
+Google Hangouts 2016.520.418.1
+Google Hangouts 2015.1204.418.1
+Google Keep - notes and lists 3.1.16204.15
+Google Plus WebApp 0.7.5
+Google Sheets 1.1
+Google Slides 0.9
+Google Tasks (by Google) 1.2
+Legacy Browser Support 4.1
+Readability 3.0.15
+Save to Pocket 1.9.42
+Send from Gmail (by Google) 1.16
+Session Buddy 3.4.7
+Spaces 1.7.16134.1756

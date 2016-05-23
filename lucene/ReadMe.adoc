@@ -20,3 +20,4 @@
 * http://www.hascode.com/2014/07/lucene-by-example-specifying-analyzers-on-a-per-field-basis-and-writing-a-custom-analyzertokenizer/[Specifying Analyzers on a per-field-basis and writing a custom Analyzer/Tokenizer]
 * http://www.hascode.com/tag/lucene/[hasCode lucene articals]
 * https://www.javacodegeeks.com/2016/04/handle-stop-words-hibernate-search-5-5-2-apache-lucene-5-4-x.html[How to handle Stop Words ]
+* https://www.javacodegeeks.com/2016/05/learning-lucene-2.html[Learning Lucene]

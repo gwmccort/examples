@@ -101,8 +101,6 @@ class Track {
 			for (t in tracks) {
 				t.index(writer)
 			}
-			//TODO: use with to close???
-			//		writer.close()
 		}
 
 		//search test
@@ -157,31 +155,31 @@ class Track {
 	 * @param queryString lucene query
 	 */
 	static void searchTest(String queryString) {
+		//TODO: withCloseable
 		IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(LUCENE_INDEX)))
-		IndexSearcher searcher = new IndexSearcher(reader)
-		Analyzer analyzer = new StandardAnalyzer()
+		reader.withCloseable {
+			IndexSearcher searcher = new IndexSearcher(reader)
+			Analyzer analyzer = new StandardAnalyzer()
 
-		// single field
-//		QueryParser parser = new QueryParser(NAME_FIELD, analyzer)
-		
-		// multi field
-		String[] fields = [ARTIST_FIELD, NAME_FIELD, ALBUM_FIELD]
-		QueryParser parser = new MultiFieldQueryParser(fields, analyzer)
+			// single field
+			//		QueryParser parser = new QueryParser(NAME_FIELD, analyzer)
 
-		
-		Query query = parser.parse(queryString)
-		//		println query
-		//		println query.class
+			// multi field
+			String[] fields = [ARTIST_FIELD, NAME_FIELD, ALBUM_FIELD]
+			QueryParser parser = new MultiFieldQueryParser(fields, analyzer)
 
-		TopDocs results = searcher.search(query, 100)
+			Query query = parser.parse(queryString)
+			TopDocs results = searcher.search(query, 100)
 
-		ScoreDoc[] hits = results.scoreDocs
-		println hits.size()
-		for (sd in hits) {
-			//			println sd
-			//			println sd.dump()
-			Document doc = searcher.doc(sd.doc)
-			println "artist:${doc.get(ARTIST_FIELD)} name:${doc.get(NAME_FIELD)} album:${doc.get(ALBUM_FIELD)}"
+			ScoreDoc[] hits = results.scoreDocs
+			println "hits: ${hits.size()}"
+
+			for (sd in hits) {
+				//			println sd
+				//			println sd.dump()
+				Document doc = searcher.doc(sd.doc)
+				println "artist:${doc.get(ARTIST_FIELD)} name:${doc.get(NAME_FIELD)} album:${doc.get(ALBUM_FIELD)}"
+			}
 		}
 	}
 

@@ -4,6 +4,9 @@ Glen McCort <gwmccort@gmail.com>
 == T2CO
 * https://github.com/docker/community/tree/master/tutorials/java[Docker for Java Developers]
 ** https://github.com/docker/community[docker community]
+* https://engineering.riotgames.com/news/putting-jenkins-docker-container[PUTTING JENKINS IN A DOCKER CONTAINER]
+** https://github.com/maxfields2000/dockerjenkins_tutorial
+* http://live-rg-engineering.pantheonsite.io/news/building-jenkins-inside-ephemeral-docker-container[BUILDING WITH JENKINS INSIDE AN EPHEMERAL DOCKER CONTAINER]
 
 == Apache & tomcat
 * http://www.ibm.com/support/knowledgecenter/SS6QYM_9.2.0/com.ibm.help.vm.install.doc/c_VM_SettingUpApacheAsAFront-EndToTomcat.html[Setting Up Apache as a Front-End to Tomcat - IBM]

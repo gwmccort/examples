@@ -1,4 +1,17 @@
 apply plugin: 'application'
+apply plugin: 'docker'
+apply plugin: 'com.github.ben-manes.versions'
+
+buildscript {
+    repositories { jcenter() }
+    dependencies {
+        classpath 'se.transmode.gradle:gradle-docker:1.2'
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.12.0'
+    }
+}
+
+description = 'Create docker image from hello world java app'
+mainClassName = 'HelloJava'
 
 repositories {
     jcenter()
@@ -6,6 +19,18 @@ repositories {
 
 dependencies {
     compile 'org.slf4j:slf4j-api:1.7.18'
-
     testCompile 'junit:junit:4.12'
+}
+
+
+task buildDocker(type: Docker, dependsOn: jar) {
+	dockerfile = file('Dockerfile')
+	doFirst {
+
+	// need to copy jar to build/docker...
+    copy {
+      from jar
+      into "$stageDir/build/libs"
+    }
+  }
 }

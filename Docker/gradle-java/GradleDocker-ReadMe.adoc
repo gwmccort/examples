@@ -1,0 +1,20 @@
+= Gradle Docker
+
+* https://github.com/Transmode/gradle-docker[transmode gradle-docker]
+
+== Docker manual
+. Build jar +
+`gradle jar`
+
+. user docker to build image +
+`docker build -t hello-java .`
+
+== Create docker image with gradle
+* `gradle distDocker`
+[NOTE]
+====
+Creates a large image
+====
+
+* with docker task +
+`gradle buildDocker`

@@ -35,3 +35,19 @@ http://192.168.99.100:5601/
 == Books
 * https://leanpub.com/elasticsearch-quick-start
 * Online version of https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html[Elasticsearch: The Definitive Guide]
+
+----
+curl -XGET "http://dm:9200/?pretty"
+
+curl -XGET "http://dm:9200/_search?pretty" -d'
+{
+   "query": {
+      "match_all": {}
+   }
+}'
+
+curl -XPOST "http://dm:9200/website/blog/" -d'
+{
+    "name": "glen"
+}'
+----

@@ -1,0 +1,8 @@
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'org.elasticsearch:elasticsearch-groovy:2.1.2'
+}

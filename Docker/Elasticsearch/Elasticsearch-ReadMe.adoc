@@ -4,6 +4,13 @@
 * http://joelabrahamsson.com/elasticsearch-101/[elasticsearch 101]
 * http://www.elasticsearchtutorial.com/
 
+* https://github.com/elastic/elasticsearch-definitive-guide[elasticsearch definitive guide github]
+** https://gist.github.com/clintongormley/8579281[load data]
+
+* https://www.elastic.co/blog/making-elasticsearch-groovy-er[Making Elasticsearch Groovy-er]
+* https://github.com/elastic/elasticsearch-groovy/blob/master/docs/quickstart.asciidoc[elasticsearch-groovy]
+* https://www.packtpub.com/books/content/extending-elasticsearch-scripting[Extending ElasticSearch with Scripting]
+
 == Docker image
 * https://hub.docker.com/r/_/elasticsearch/
 * https://hub.docker.com/_/kibana/

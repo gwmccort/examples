@@ -1,2 +1,0 @@
-
-* http://jetbrains.github.io/spek/[spek] - spock like test framework

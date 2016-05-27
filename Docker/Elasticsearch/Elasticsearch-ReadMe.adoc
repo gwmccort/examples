@@ -15,6 +15,10 @@
 * https://hub.docker.com/r/_/elasticsearch/
 * https://hub.docker.com/_/kibana/
 
+
+=== kibana
+* https://www.elastic.co/guide/en/kibana/current/getting-started.html[load data]
+
 === Commands
 [qanda]
 start docker elasticsearch image::

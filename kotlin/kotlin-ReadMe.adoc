@@ -1,5 +1,7 @@
 == Kotlin
 
+=== Gradle
+* Gradle plugin https://plugins.gradle.org/plugin/com.zoltu.kotlin[kotlin plugin com.zoltu.kotlin]
 
 === T2D
 * https://dzone.com/articles/exercises-in-kotlin-part-2-high-level-syntax-and-v

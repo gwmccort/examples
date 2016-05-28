@@ -11,6 +11,9 @@
 * https://github.com/elastic/elasticsearch-groovy/blob/master/docs/quickstart.asciidoc[elasticsearch-groovy]
 * https://www.packtpub.com/books/content/extending-elasticsearch-scripting[Extending ElasticSearch with Scripting]
 
+== Elasticsearch components
+* https://www.elastic.co/guide/en/kibana/current/index.html[kibana]
+
 == Docker image
 * https://hub.docker.com/r/_/elasticsearch/
 * https://hub.docker.com/_/kibana/

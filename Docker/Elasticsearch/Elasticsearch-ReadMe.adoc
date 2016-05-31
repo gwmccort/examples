@@ -11,6 +11,10 @@
 * https://github.com/elastic/elasticsearch-groovy/blob/master/docs/quickstart.asciidoc[elasticsearch-groovy]
 * https://www.packtpub.com/books/content/extending-elasticsearch-scripting[Extending ElasticSearch with Scripting]
 
+== Front End Tutorial
+* https://www.sitepoint.com/building-recipe-search-site-angular-elasticsearch/
+* http://jptoto.jp/my-elasticsearch-tools-list/
+
 == Elasticsearch components
 * https://www.elastic.co/guide/en/kibana/current/index.html[kibana]
 
@@ -18,9 +22,11 @@
 * https://hub.docker.com/r/_/elasticsearch/
 * https://hub.docker.com/_/kibana/
 
-
 === kibana
 * https://www.elastic.co/guide/en/kibana/current/getting-started.html[load data]
+
+== Tools
+* http://jptoto.jp/my-elasticsearch-tools-list/[]
 
 === Commands
 [qanda]
@@ -28,20 +34,23 @@ start docker elasticsearch image::
 docker run -d -p 9200:9200 -p 9300:9300 elasticsearch
 
 test if elasticsearch working::
-http://192.168.99.100:9200/?pretty +
-curl -G '192.168.99.100:9200/?pretty'
+http://dm:9200/?pretty +
+curl -G 'dm:9200/?pretty'
 
 list installed plugins::
-http://192.168.99.100:9200/_nodes/plugins?pretty
+http://dm:9200/_nodes/plugins?pretty
 
 install plugin behind firewall::
 bin/plugin -DproxyHost=proxy -DproxyPort=9090 install mobz/elasticsearch-head
 
 head plugin url::
-http://192.168.99.100:9200/_plugin/head/
+http://dm:9200/_plugin/head/
 
 kibana url::
-http://192.168.99.100:5601/
+http://dm:5601/
+
+bulk load music trackd::
+curl -XPOST 'dm:9200/music/file/_bulk?pretty' --data-binary @mp3.json
 
 === Plugins
 * https://github.com/mobz/elasticsearch-head

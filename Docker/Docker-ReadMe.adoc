@@ -13,7 +13,7 @@ Glen McCort <gwmccort@gmail.com>
 * Elasticsearch/
 * elk/
 * galoshe/
-* gradle-java - create docker container from gradle 
+* gradle-java - create docker container from gradle
 * gradle-java-old/
 * httpd/
 * HttpTomcat/
@@ -22,6 +22,11 @@ Glen McCort <gwmccort@gmail.com>
 * ratpack - create docker container from gradle
 * solr/
 * webapp/
+
+== Issues
+[qanda]
+set docker-machine ip::
+dmvbf.bat, from http://stackoverflow.com/questions/32639765/how-do-i-create-a-docker-machine-with-a-specific-url-using-docker-machine-and-vi[stackoverflow question]
 
 == Apache & tomcat
 * http://www.ibm.com/support/knowledgecenter/SS6QYM_9.2.0/com.ibm.help.vm.install.doc/c_VM_SettingUpApacheAsAFront-EndToTomcat.html[Setting Up Apache as a Front-End to Tomcat - IBM]

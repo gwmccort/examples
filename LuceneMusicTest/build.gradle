@@ -46,6 +46,9 @@ dependencies {
 
 	compile 'net.sf.opencsv:opencsv:2.3'
 
+	compile group: 'org.codehaus.groovy.modules.http-builder', name: 'http-builder', version: '0.7.1'
+
+
 	// testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
 	testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
 }

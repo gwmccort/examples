@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -XPUT 'http://192.168.99.100:9200/us/user/1?pretty=1' -d '
+curl -XPUT 'http://dm:9200/us/user/1?pretty=1' -d '
 {
    "email" : "john@smith.com",
    "name" : "John Smith",
@@ -8,7 +8,7 @@ curl -XPUT 'http://192.168.99.100:9200/us/user/1?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/gb/user/2?pretty=1' -d '
+curl -XPUT 'http://dm:9200/gb/user/2?pretty=1' -d '
 {
    "email" : "mary@jones.com",
    "name" : "Mary Jones",
@@ -16,7 +16,7 @@ curl -XPUT 'http://192.168.99.100:9200/gb/user/2?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/gb/tweet/3?pretty=1' -d '
+curl -XPUT 'http://dm:9200/gb/tweet/3?pretty=1' -d '
 {
    "date" : "2014-09-13",
    "name" : "Mary Jones",
@@ -25,7 +25,7 @@ curl -XPUT 'http://192.168.99.100:9200/gb/tweet/3?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/us/tweet/4?pretty=1' -d '
+curl -XPUT 'http://dm:9200/us/tweet/4?pretty=1' -d '
 {
    "date" : "2014-09-14",
    "name" : "John Smith",
@@ -34,7 +34,7 @@ curl -XPUT 'http://192.168.99.100:9200/us/tweet/4?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/gb/tweet/5?pretty=1' -d '
+curl -XPUT 'http://dm:9200/gb/tweet/5?pretty=1' -d '
 {
    "date" : "2014-09-15",
    "name" : "Mary Jones",
@@ -43,7 +43,7 @@ curl -XPUT 'http://192.168.99.100:9200/gb/tweet/5?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/us/tweet/6?pretty=1' -d '
+curl -XPUT 'http://dm:9200/us/tweet/6?pretty=1' -d '
 {
    "date" : "2014-09-16",
    "name" : "John Smith",
@@ -52,7 +52,7 @@ curl -XPUT 'http://192.168.99.100:9200/us/tweet/6?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/gb/tweet/7?pretty=1' -d '
+curl -XPUT 'http://dm:9200/gb/tweet/7?pretty=1' -d '
 {
    "date" : "2014-09-17",
    "name" : "Mary Jones",
@@ -61,7 +61,7 @@ curl -XPUT 'http://192.168.99.100:9200/gb/tweet/7?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/us/tweet/8?pretty=1' -d '
+curl -XPUT 'http://dm:9200/us/tweet/8?pretty=1' -d '
 {
    "date" : "2014-09-18",
    "name" : "John Smith",
@@ -69,7 +69,7 @@ curl -XPUT 'http://192.168.99.100:9200/us/tweet/8?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/gb/tweet/9?pretty=1' -d '
+curl -XPUT 'http://dm:9200/gb/tweet/9?pretty=1' -d '
 {
    "date" : "2014-09-19",
    "name" : "Mary Jones",
@@ -78,7 +78,7 @@ curl -XPUT 'http://192.168.99.100:9200/gb/tweet/9?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/us/tweet/10?pretty=1' -d '
+curl -XPUT 'http://dm:9200/us/tweet/10?pretty=1' -d '
 {
    "date" : "2014-09-20",
    "name" : "John Smith",
@@ -87,7 +87,7 @@ curl -XPUT 'http://192.168.99.100:9200/us/tweet/10?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/gb/tweet/11?pretty=1' -d '
+curl -XPUT 'http://dm:9200/gb/tweet/11?pretty=1' -d '
 {
    "date" : "2014-09-21",
    "name" : "Mary Jones",
@@ -96,7 +96,7 @@ curl -XPUT 'http://192.168.99.100:9200/gb/tweet/11?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/us/tweet/12?pretty=1' -d '
+curl -XPUT 'http://dm:9200/us/tweet/12?pretty=1' -d '
 {
    "date" : "2014-09-22",
    "name" : "John Smith",
@@ -105,7 +105,7 @@ curl -XPUT 'http://192.168.99.100:9200/us/tweet/12?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/gb/tweet/13?pretty=1' -d '
+curl -XPUT 'http://dm:9200/gb/tweet/13?pretty=1' -d '
 {
    "date" : "2014-09-23",
    "name" : "Mary Jones",
@@ -114,7 +114,7 @@ curl -XPUT 'http://192.168.99.100:9200/gb/tweet/13?pretty=1' -d '
 }
 '
 
-curl -XPUT 'http://192.168.99.100:9200/us/tweet/14?pretty=1' -d '
+curl -XPUT 'http://dm:9200/us/tweet/14?pretty=1' -d '
 {
    "date" : "2014-09-24",
    "name" : "John Smith",

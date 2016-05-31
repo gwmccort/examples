@@ -1,6 +1,8 @@
 package gwm.model
 
 import static groovy.io.FileType.FILES
+import groovy.json.JsonBuilder
+import groovy.json.JsonOutput
 import groovy.transform.ToString
 
 import java.nio.file.Path
@@ -74,8 +76,25 @@ class Track {
 	}
 
 	/**
+	 * Convert track to json
+	 * @return track as json string
+	 */
+	String toJson() {
+		JsonBuilder builder = new JsonBuilder()
+		builder {
+			name name
+			artist artist
+			album album
+			albumArtist albumArtist
+			track track
+			path path.toString()
+		}
+		//		JsonOutput.toJson(builder)
+		builder
+	}
+
+	/**
 	 * Test reading tracks, printing, indexing and searching
-	 *
 	 * @param args
 	 */
 	static main(args) {
@@ -89,6 +108,35 @@ class Track {
 			println t
 		}
 
+		println '--------- print json tracks'
+		for (t in tracks) {
+			println t.toJson()
+		}
+
+		bulkLoadJson(tracks)
+
+
+		//		indexTracks(tracks)
+		//
+		//		//search test
+		//		println '-------- search'
+		//		searchTest('cheese')
+	}
+
+	/**
+	 * Create a bulk load file for Elasticsearch
+	 * @param tracks list of Track
+	 */
+	static bulkLoadJson(Track[] tracks) {
+		new File('mp3.json').withWriter{ out ->
+			tracks.eachWithIndex { track, index ->
+				out.println "{\"index\":{\"_id\":\"$index\"}}"
+				out.println track.toJson()
+			}
+		}
+	}
+
+	static indexTracks(Track[] tracks) {
 		println '------- index tracks'
 		Directory dir = FSDirectory.open(Paths.get(LUCENE_INDEX))
 		Analyzer analyzer = new StandardAnalyzer()
@@ -102,10 +150,6 @@ class Track {
 				t.index(writer)
 			}
 		}
-
-		//search test
-		println '-------- search'
-		searchTest('cheese')
 	}
 
 	/**

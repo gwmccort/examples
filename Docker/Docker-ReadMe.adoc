@@ -100,3 +100,4 @@ docker cp -L cotainer:/path/to/file .
 * http://thediscoblog.com/blog/2014/06/13/docker-containers-with-gradle-in-4-steps/[Docker Containers With Gradle in 4 Steps]
 * http://thediscoblog.com/blog/2014/05/05/dockerfiles-in-a-jiffy/[Dockerfiles in a Jiffy]
 * https://examples.javacodegeeks.com/devops/docker/docker-tutorial-beginners/[Docker Tutorial for Beginners]
+* https://www.javacodegeeks.com/2016/06/ensuring-containers-always-running-dockers-restart-policy.html[Ensuring Containers Are Always Running with Docker’s Restart Policy]

@@ -3,6 +3,8 @@
 == Packages
 * graph - JavaFX Scene Graph Example
 ** https://examples.javacodegeeks.com/desktop-java/javafx/scene/chart/javafx-graph-example/[JavaFX Graph Example]
+* FXCharts - charts examples
+** https://examples.javacodegeeks.com/desktop-java/javafx/javafx-charts-example/[JavaFX Charts Example]
 
 == Issues
 [qanda]

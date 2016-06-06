@@ -38,5 +38,8 @@
 * https://dzone.com/articles/java-8-declare-private-and-protected-methods-in-in?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java 8: Declare Private and Protected Methods in Interfaces]
 * https://dzone.com/articles/an-intro-to-java-8-default-interfaces?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[An Intro to Java 8 Default Interfaces]
 * https://dzone.com/articles/java-8-lambda-functions-usage-examples?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Lambda Functions—Usage and Examples]
+* https://www.javacodegeeks.com/2016/06/back-completablefuture-java-8-feature-highlight.html[Back to the CompletableFuture: Java 8 Feature Highlight]
+* https://dzone.com/articles/applying-java-8-idioms-to-existing-code?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Applying Java 8 Idioms to Existing Code]
+
 === Testing
 * http://www.javacodegeeks.com/2015/12/using-mockito-without-static-imports-java-8.html[Using Mockito without static imports with Java 8]

@@ -7,3 +7,5 @@
 * https://dzone.com/articles/exercises-in-kotlin-part-2-high-level-syntax-and-v
 * http://jetbrains.github.io/spek/[spek] - spock like test framework
 * https://dzone.com/articles/exercises-in-kotlin-part-4-control-flows-and-retur?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Exercises in Kotlin: Part 4 - Control Flows and Return]
+* https://www.javacodegeeks.com/2016/05/kotlin-java-developers-10-features-will-love-kotlin.html
+* https://github.com/mcxiaoke/awesome-kotlin

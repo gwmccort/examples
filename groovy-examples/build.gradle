@@ -32,6 +32,9 @@ dependencies {
 	def log4jVersion = '1.7.18'
 	compile "org.slf4j:slf4j-api:$log4jVersion"
 	runtime "org.slf4j:slf4j-log4j12:$log4jVersion"
+	
+	compile 'org.bitbucket.novakmi:plantumlbuilder:0.4.4'
+	compile group: 'net.sourceforge.plantuml', name: 'plantuml', version: '8041'
 
 	runtime "log4j:log4j:1.2.17"
 }

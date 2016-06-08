@@ -24,9 +24,8 @@ class ElasticsearchRestExample {
 			body = [
 				query : [
 					match : [
-						name : 'track'
+						name : 'World'
 					]
-
 				]
 			]
 

@@ -1,3 +1,5 @@
+import java.io.File
+
 /**
  * My first test of kotlin
  *
@@ -11,12 +13,17 @@ fun main(args: Array<String>) {
     println(greetings())
     println("sum(1,2): ${sum(1, 2)}")
 
+<<<<<<< HEAD
     var radius: Double = 1.0
     val increment = 1
     // increment = increment + 1 <-- will not compile since increment is a val
     println("The radius of a circle with radius ${radius} is ${circleArea(radius)}")
     radius = radius + increment
     println("The radius of a circle with radius ${radius} is ${circleArea(radius)}")
+=======
+    // reads all the lines from a file and prints them out
+    File("build.gradle").forEachLine { println(it) }
+>>>>>>> 5f5c4fed4c12de188a4b4843963c863df97425bc
 }
 
 fun sum(a: Int, b: Int): Int {

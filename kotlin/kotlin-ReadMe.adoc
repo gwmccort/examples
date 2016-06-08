@@ -6,3 +6,5 @@
 === T2D
 * https://dzone.com/articles/exercises-in-kotlin-part-2-high-level-syntax-and-v
 * http://jetbrains.github.io/spek/[spek] - spock like test framework
+* https://www.javacodegeeks.com/2016/05/kotlin-java-developers-10-features-will-love-kotlin.html
+* https://github.com/mcxiaoke/awesome-kotlin

@@ -1,5 +1,6 @@
 /**
  * process text copies from chrome extension page
+ * chrome://extensions/
  */
 
 String[] lines = new File('chrome-extensions.txt')

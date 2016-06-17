@@ -1,14 +1,16 @@
 package gwm.mx
 
 import groovy.transform.ToString
+import groovy.util.logging.Slf4j
 
+@Slf4j
 class TclExample {
 
 	/*
 	 MQL<17>print rel "Affected Item" select totype fromtype tcl;
 	 {{relationship type} {Affected Item} {{totype} {{totype} {Part}} {{totype} {CAD Drawing}} {{totype} {CAD Model}} {{totype} {Drawing Print}} {{totype} {Part Specification}}} {{fromtype} {{fromtype} {Change}}}}
 	 MQL<19>print rel "Affected Item" select totype fromtype ;
-	 relationship type   Affected Item 
+	 relationship type   Affected Item
 	 totype = Part
 	 totype = CAD Drawing
 	 totype = CAD Model
@@ -95,24 +97,65 @@ class TclExample {
 		//			}
 		//		}
 
+		def relationships = readRelationships()
+
+		println "rels size: $relationships.size"
+
+		//		rels.each { println it }
+		//
+		printGraph(relationships)
+	}
+
+	private static printGraph(List relationships) {
+		new File('graph.dot').withWriter { out ->
+			out.println 'digraph {'
+
+			relationships.each { rel ->
+				//				if (rel.name == 'Affected Item') {
+
+				boolean isPrint = false
+				String printType = 'Organization'
+
+				rel.totype.each { to ->
+
+					if (to == printType) {
+						log.info 'rel:{} to:{}', rel.name, to
+						isPrint = true
+					}
+
+					rel.fromtype.each { from ->
+						if (isPrint || from == printType) {
+							log.info 'rel:{} isPrint:{} from:{}', rel.name, isPrint, from
+							out.println "  \"$to\" -> \"$from\"[label=\"$rel.name\"];"
+						}
+					}
+				}
+
+				//				}
+
+			}
+
+			out.println '}'
+		}
+	}
+
+	static List readRelationships() {
 		def rels = []
 		def rel
 
-		def regex = ~/^\s+(?<key>.*) = (?<value>.*)$/
-		new File(/C:\Users\Glen\Downloads\rel.txt/).eachLine {
+		def keyValueRegex = ~/^\s+(?<key>.*) = (?<value>.*)$/
+		//		new File(/C:\Users\Glen\Downloads\rel.txt/).eachLine {
+		new File(/H:\Project_Files\PdmUpgrade\Schema\relationship.txt/).eachLine {
 			//			println "---------- $it"
-			def m = (it =~ regex)
+			def m = (it =~ keyValueRegex)
 			if (m.matches()) {
 				//				println "${m.group('key')} : ${m.group('value')}"
 				def key = m.group('key')
 				def value = m.group('value')
 				switch (key) {
 					case 'name':
-					//						println rel
-					//						println !rel
-					//						System.exit(0)
+					// add rel to list
 						if (rel) {
-							//							println 'adding $rel'
 							rels << rel
 						}
 						rel = new Relationship(name: value)
@@ -128,21 +171,9 @@ class TclExample {
 			}
 			//			else println "----------NO MATCH: $it"
 		}
-
-		println "rels size: $rels.size"
-
-		rels.each { println it }
-		
-		new File('graph.dot').withWriter { out ->
-			out.println 'digraph {'
-			rels.each { rel2 ->
-				rel2.totype.each { to ->
-					rel2.fromtype.each { from ->  out.println "  \"$to\" -> \"$from\"[label=\"$rel.name\"];" }
-				}
-			}
-			out.println '}'
-		}
+		return rels
 	}
+
 }
 
 @ToString

@@ -21,6 +21,9 @@
 * http://www.baeldung.com/whats-new-in-guava-18[Guava 18: What’s New?]
 * http://javarticles.com/2015/12/guava-equivalence-example.html[Equivalence Example]
 * https://dzone.com/articles/guava-immutablecollections-multimaps-and-java-8-co-1?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[ImmutableCollections, Multimaps and Java 8 Collectors]
+* http://www.baeldung.com/guava-set-function-map-tutorial[Guava Set + Function = Map]
+* http://www.tutorialspoint.com/guava/index.htm[guava tutorialspoint]
+
 == References
 * Packt's https://www.packtpub.com/application-development/getting-started-google-guava[Getting Started with Google Guava]
 ** 'C:\Users\Glen\Documents\Books\Java\API\Guava'

@@ -144,8 +144,8 @@ class TclExample {
 		def rel
 
 		def keyValueRegex = ~/^\s+(?<key>.*) = (?<value>.*)$/
-		//		new File(/C:\Users\Glen\Downloads\rel.txt/).eachLine {
-		new File(/H:\Project_Files\PdmUpgrade\Schema\relationship.txt/).eachLine {
+		new File(/C:\Users\Glen\Downloads\rel.txt/).eachLine {
+			//		new File(/H:\Project_Files\PdmUpgrade\Schema\relationship.txt/).eachLine {
 			//			println "---------- $it"
 			def m = (it =~ keyValueRegex)
 			if (m.matches()) {

@@ -41,7 +41,7 @@
 * https://www.javacodegeeks.com/2016/06/back-completablefuture-java-8-feature-highlight.html[Back to the CompletableFuture: Java 8 Feature Highlight]
 * https://dzone.com/articles/applying-java-8-idioms-to-existing-code?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Applying Java 8 Idioms to Existing Code]
 * https://www.javacodegeeks.com/2016/06/java-8-converting-anonymous-classes-lambda-expressions.html[Converting Anonymous Classes to Lambda Expressions]
-
+* http://www.baeldung.com/mgirating-to-java-8-date-time-api[java8 date]
 
 
 === Testing

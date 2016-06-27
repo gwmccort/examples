@@ -13,7 +13,12 @@ import org.apache.lucene.search.ScoreDoc
 import org.apache.lucene.search.TopDocs
 import org.apache.lucene.store.FSDirectory
 
-
+/**
+ * Query Lucene via the command line
+ * 
+ * @author Glen
+ *
+ */
 class MusicQuery {
 
 	private static final INDEX = 'index'

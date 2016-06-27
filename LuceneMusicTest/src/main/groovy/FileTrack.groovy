@@ -1,8 +1,11 @@
 import static groovy.io.FileType.FILES
 import groovy.transform.ToString
 
+import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
+import java.nio.file.attribute.BasicFileAttributes
+import java.nio.file.attribute.FileTime
 import java.util.logging.Handler
 import java.util.regex.Pattern
 
@@ -22,6 +25,8 @@ import au.com.bytecode.opencsv.CSVWriter
 class FileTrack extends OldTrack {
 	/** path of track */
 	String filePath
+	long size
+	FileTime lastModified
 
 	/**
 	 * Create Track from music file tags
@@ -32,6 +37,12 @@ class FileTrack extends OldTrack {
 		name=tag.getFirst(FieldKey.TITLE)
 		album=tag.getFirst(FieldKey.ALBUM)
 		filePath = fileName
+		
+		// get path attributes
+		Path path = Paths.get(filePath) //TODO should get a path not string
+		BasicFileAttributes bfa  = Files.readAttributes(path, BasicFileAttributes.class)
+		size = bfa.size()
+		lastModified  = bfa.lastModifiedTime()
 	}
 
 	/**
@@ -156,7 +167,7 @@ class FileTrack extends OldTrack {
 	 * @return
 	 */
 	String[] toStringArray() {
-		[artist, name, album, filePath] as String[]
+		[artist, name, album, filePath, size, lastModified] as String[]
 	}
 
 	/**

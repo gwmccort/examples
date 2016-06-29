@@ -106,7 +106,30 @@ class TclExample {
 		printGraph(relationships)
 	}
 
-	private static printGraph(List relationships) {
+	static printGraph(List relationships) {
+		new File('graph.dot').withWriter { out ->
+			out.println 'digraph {'
+
+			// get relationships attached to type
+//			def type = 'Organization'
+			def type = 'Part'
+			def typeRels = relationships.findAll {
+				it.totype.contains(type) || it.fromtype.contains(type)
+			}
+
+			typeRels.each { rel ->
+				rel.totype.each { to ->
+					rel.fromtype.each { from ->
+						out.println "  \"$to\" -> \"$from\"[label=\"$rel.name\"];"
+					}
+				}
+			}
+
+			out.println '}'
+		}
+	}
+
+	static printGraphOld(List relationships) {
 		new File('graph.dot').withWriter { out ->
 			out.println 'digraph {'
 
@@ -144,8 +167,8 @@ class TclExample {
 		def rel
 
 		def keyValueRegex = ~/^\s+(?<key>.*) = (?<value>.*)$/
-		new File(/C:\Users\Glen\Downloads\rel.txt/).eachLine {
-			//		new File(/H:\Project_Files\PdmUpgrade\Schema\relationship.txt/).eachLine {
+		//		new File(/C:\Users\Glen\Downloads\rel.txt/).eachLine {
+		new File(/H:\Project_Files\PdmUpgrade\Schema\relationship.txt/).eachLine {
 			//			println "---------- $it"
 			def m = (it =~ keyValueRegex)
 			if (m.matches()) {

@@ -42,6 +42,7 @@
 * https://dzone.com/articles/applying-java-8-idioms-to-existing-code?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Applying Java 8 Idioms to Existing Code]
 * https://www.javacodegeeks.com/2016/06/java-8-converting-anonymous-classes-lambda-expressions.html[Converting Anonymous Classes to Lambda Expressions]
 * https://www.javacodegeeks.com/2016/06/java-8-default-method-resolution-rules.html[Default Method Resolution Rules]
+* http://www.baeldung.com/mgirating-to-java-8-date-time-api[java8 date]
 
 
 === Testing

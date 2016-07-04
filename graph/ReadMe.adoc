@@ -10,3 +10,4 @@
 
 == References
 * https://www.manning.com/books/visualizing-graph-data[Visualizing Graph Data]
+* examples\groovy-examples\src\main\groovy\gwm\mx\TclExample.groovy - creates a graphviz dot file from matrix relationships

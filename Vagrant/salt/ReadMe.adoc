@@ -1,0 +1,21 @@
+= Salt Vagrant Example
+
+== Commands
+[qanda]
+http://serverfault.com/questions/529049/how-do-i-list-all-connected-salt-stack-minions[Minion status]::
+  salt-run manage.status +
+  salt '*' test.ping
+Run a command::
+  salt '*' cmd.run 'ls -l'
+Apply a state::
+  salt '*' state.apply nettools
+Install a package::
+  salt '*' pkg.install httpd
+List installed packages::
+  salt '*' pkg.list_pkgs
+
+== Resources
+* https://docs.saltstack.com/en/latest/[Documentation]
+* https://docs.saltstack.com/en/getstarted/[Getting started tutorial]
+* https://docs.saltstack.com/en/getstarted/fundamentals/[Getting started demo environment]
+** https://github.com/UtahDave/salt-vagrant-demo[git hub repro]

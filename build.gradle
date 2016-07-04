@@ -7,9 +7,5 @@ description = 'example projects stored on bitbucket'
 
 asciidoctor {
 	attributes	'toc': 'left',
-    'projDir': "$projectDir"
-}
-
-task x() {
-  println "$projectDir"
+    'projDir': "$projectDir"  //add property
 }

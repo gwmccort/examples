@@ -24,7 +24,8 @@ import au.com.bytecode.opencsv.CSVWriter;
 public class WalkFileTree {
 	private static final String CRC_CSV_FILE = "crc.csv";
 	// private static final String DIR_PATH = "h:/Project_Files/src";
-	private static final String DIR_PATH = "c:/users/gwmccort/.gradle";
+//	private static final String DIR_PATH = "c:/users/gwmccort/.gradle";
+	private static final String DIR_PATH = "c:/users/glen/.gradle";
 
 	public static void main(String[] args) throws Exception {
 		Path path = Paths.get(DIR_PATH);

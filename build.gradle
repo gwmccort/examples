@@ -6,5 +6,10 @@ plugins {
 description = 'example projects stored on bitbucket'
 
 asciidoctor {
-	attributes	'toc': 'left'
+	attributes	'toc': 'left',
+    'projDir': "$projectDir"
+}
+
+task x() {
+  println "$projectDir"
 }

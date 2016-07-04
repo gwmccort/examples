@@ -1,7 +1,8 @@
 = Examples
 Glen McCort <gwmccort@gmail.com>
 
-include::../../../ReadMe.adoc[]
+// include::../../../ReadMe.adoc[]
+include::{projDir}/ReadMe.adoc[]
 
 == Miscellaneous Topics
 

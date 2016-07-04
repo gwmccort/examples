@@ -1,0 +1,12 @@
+= Graph Data
+
+== Programs
+* https://gephi.org/[Gephi]
+** https://gephi.org/users/supported-graph-formats/[file formats]
+* http://www.graphviz.org/[graphviz]
+
+== File Formats
+* http://plantuml.com/[PlantUML] - creates uml diagrams via a text file
+
+== References
+* https://www.manning.com/books/visualizing-graph-data[Visualizing Graph Data]

@@ -19,3 +19,10 @@ List installed packages::
 * https://docs.saltstack.com/en/getstarted/[Getting started tutorial]
 * https://docs.saltstack.com/en/getstarted/fundamentals/[Getting started demo environment]
 ** https://github.com/UtahDave/salt-vagrant-demo[git hub repro]
+
+== Info
+* proxy for shell to be able to do a `vagrant up` at work
+----
+export http_proxy=http://proxy:9090
+export https_proxy=http://proxy:9090
+----

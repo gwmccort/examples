@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       vb.memory = 1024
   end
 
-  # try to set proxy
+  # set up proxy for inside of rc firewall
   if Vagrant.has_plugin?("vagrant-proxyconf")
     config.proxy.http     = "http://proxy:9090"
     config.proxy.https    = "http://proxy:9090"

@@ -4,6 +4,9 @@ Glen McCort <gwmccort@gmail.com>
 // include::../../../ReadMe.adoc[]
 include::{projDir}/ReadMe.adoc[]
 
+== groovy examples
+include::{projDir}/groovy-examples/ReadMe.adoc[]
+
 == Miscellaneous Topics
 
 === JavaScript

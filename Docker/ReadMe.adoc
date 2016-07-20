@@ -16,3 +16,4 @@ Glen McCort <gwmccort@gmail.com>
 * Multiple containers
 ** https://www.reddit.com/r/docker/comments/4g8dpv/advice_running_multiple_dockerized_web_apps_with/[running multiple dockerized web apps with port 80 & 443]
 * https://www.javacodegeeks.com/2016/04/service-discovery-docker-consul-part-1.html[Service Discovery with Docker and Consul: part 1]
+* https://www.javacodegeeks.com/2016/07/labels-constraints-docker-daemon-service.html[Labels and Constraints with Docker Daemon and Service]

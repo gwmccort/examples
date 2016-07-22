@@ -1,11 +1,11 @@
-= Java Code Geeks - Groovy Examples
+== Groovy Examples
 
-== Resources
+=== Resources
 * https://www.reddit.com/r/groovy[reddit/groovy]
 
-== Articles
+=== Articles
 
-=== Java Code Geeks
+==== Java Code Geeks
 * http://examples.javacodegeeks.com/core-java/groovy-array-example/[Groovy Arrays]
 * http://examples.javacodegeeks.com/core-java/groovy-list-example/[Groovy List]
 * http://examples.javacodegeeks.com/core-java/groovy-substring-example/[Groovy Substring]
@@ -15,31 +15,32 @@
 * http://examples.javacodegeeks.com/core-java/groovy-closure-example-2/[Groovy Closure Example]
 * http://examples.javacodegeeks.com/core-java/util/regex/groovy-regex-example/[Groovy Regex]
 
-=== Groovy Goodness
+==== Groovy Goodness
 * http://mrhaki.blogspot.com/2009/09/groovy-goodness-parsing-commandline.html[Parsing Commandline Arguments with CliBuilder]
 * http://mrhaki.blogspot.com/2011/04/groovy-goodness-inject-logging-using.html[Inject Logging Using Annotations]
 
-== Presentations
+=== Presentations
 * http://www.slideshare.net/KostasSaidis/apache-groovy-the-language-and-the-ecosystem?utm_campaign=Groovy%2BCalamari&utm_medium=web&utm_source=Groovy_Calamari32[Apache Groovy: the language and the ecosystem]
 * http://www.slideshare.net/KostasSaidis/an-introduction-to-groovy-for-java-developers[An Introduction to Groovy for Java Developers]
 
-=== Video's
+==== Video's
 * http://www.infoq.com/presentations/groovy-ast-transformations?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global[Groovy AST Transformations]
 
-=== Examples
+==== Examples
 * http://www.groovy-tutorial.org/[The Groovy Tutorial]
 
-== Codenarc
+=== Codenarc
 * https://speakerdeck.com/jlstrater/codenarc-revisited-gum[Codenarc Revisited GUM]
 ** https://github.com/jlstrater/gr8data
 
-== Database
-=== H2
+=== Database
+==== H2
 * http://www.h2database.com/html/grammar.html[SQL Grammer]
 
-=== Neo4j
+==== Neo4j
 * http://jexp.de/blog/2014/10/flexible-neo4j-batch-import-with-groovy/[Batch Import]
-=== Misc
+
+==== Misc
 * https://tedvinke.wordpress.com/2015/09/25/avoid-nullpointerexception-safe-navigation-with-groovy/[Avoid NullPointerException: Safe Navigation with Groovy]
 
 == Auther Arcives

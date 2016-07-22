@@ -19,3 +19,24 @@ List installed packages::
 * https://docs.saltstack.com/en/getstarted/[Getting started tutorial]
 * https://docs.saltstack.com/en/getstarted/fundamentals/[Getting started demo environment]
 ** https://github.com/UtahDave/salt-vagrant-demo[git hub repro]
+* https://z900collector.wordpress.com/linux/saltstack-handy-scripting-tips/[SaltStack – Handy scripting Tips]
+* https://www.packtpub.com/networking-and-servers/salt-cookbook[Salt Cookbook] from packet publishing
+* https://docs.google.com/document/d/1wiA1AEu50mekxQawKofM5gvCesNC2_7kGo9UFccrquQ/edit[RC Salt Cheat Sheet-gdoc]
+
+== Info
+* proxy for shell to be able to do a `vagrant up` at work
+----
+export http_proxy=http://proxy:9090
+export https_proxy=http://proxy:9090
+----
+** add this to Vagrantfile to get vm's to be able to access proxy
+----
+# try to set proxy
+if Vagrant.has_plugin?("vagrant-proxyconf")
+  config.proxy.http     = "http://proxy:9090"
+  config.proxy.https    = "http://proxy:9090"
+  config.proxy.no_proxy = "localhost,127.0.0.1,.rockwellcollins.com"
+end
+----
+* http://digitaldrummerj.me/vagrant-behind-proxy-server/[VAGRANT PART 6 - BEHIND A PROXY SERVER]
+** vagrant plugin install vagrant-proxyconf

@@ -13,3 +13,4 @@
 == T2D
 * https://clusterhq.com/2016/01/12/a-single-node-elk-flocker/[Deploying and migrating an Elasticsearch-Logstash-Kibana stack using Docker Part 1]
 * https://clusterhq.com/2016/01/12/b-multinode-elk-flocker/[Deploying and migrating an Elasticsearch-Logstash-Kibana stack using Docker Part 2]
+* https://www.exoscale.ch/syslog/2016/07/11/elk-docker/Deploy[ELK with Docker]

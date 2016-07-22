@@ -8,6 +8,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider "virtualbox" do |vb|
       vb.memory = 1024
   end
+
+  # set up proxy for inside of rc firewall
+  if Vagrant.has_plugin?("vagrant-proxyconf")
+    config.proxy.http     = "http://proxy:9090"
+    config.proxy.https    = "http://proxy:9090"
+    config.proxy.no_proxy = "localhost,127.0.0.1,.rockwellcollins.com"
+  end
+
   config.vm.define :master do |master_config|
     master_config.vm.box = "ubuntu/trusty64"
     master_config.vm.host_name = 'saltmaster.local'

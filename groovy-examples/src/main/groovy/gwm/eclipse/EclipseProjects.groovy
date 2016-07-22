@@ -7,7 +7,10 @@ import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
 
+import com.opencsv.CSVWriter
+
 /**
+ * Eclipse utility to find workspaces and project location
  * @author gwmccort
  * @see <a href="http://mrhaki.blogspot.com/2014/04/groovy-goodness-converting-byte-array.html">Groovy Goodness: Converting Byte Array to Hex String</a>
  *
@@ -19,22 +22,33 @@ import java.nio.file.Paths
 class EclipseProjects {
 
 	static main(args) {
-		Path path = Paths.get(/H:\Project_Files\Workspaces\bitbucket-examples/)
-		//		Path path = Paths.get(/H:\Project_Files\Workspaces/)
 
 		//		readBytes(new File(/H:\Project_Files\Workspaces\bitbucket-examples\.metadata\.plugins\org.eclipse.core.resources\.projects\java-examples\.location/))
 
 		//		List projects = getProjects(path)
 		//		projects.each() { println it }
 
-		List projs = Project.getProjects(path)
-		projs.each() { println it }
+		//		// get projects in workspace
+		//		Path path = Paths.get(/H:\Project_Files\Workspaces\bitbucket-examples/)
+		//		List projs = Project.getProjects(path)
+		//		projs.each() { println it }
 
 
-		//		// get workspaces
-		//		List ws = Workspace.getWorkspaces(path)
-		//		ws.each() { println it}
+		// get workspaces
+		//		Path path = Paths.get(/H:\Project_Files\Workspaces/)
+		Path path = Paths.get(/H:\Project_Files\Workspaces\bitbucket-examples/)
+		List workspaces = Workspace.getWorkspaces(path)
 
+		CSVWriter writer = new CSVWriter(new FileWriter("eclipse-workspaces.csv"))
+		writer.with() {
+			workspaces.each() { ws ->
+				ws.toStringArray().each() { line ->
+					println "line: $line ${line.class}"
+					String[] sa = line as String[]
+					writer.writeNext(sa)
+				}
+			}
+		}
 	}
 
 	static List<Path> getProjects(Path path) {
@@ -82,8 +96,6 @@ class EclipseProjects {
 			// get uri of project location
 			def x = (sb =~ /URI\/\/(\p{Print}*)/)[0][1]
 			println "x: $x"
-
-
 		}
 		else println "-------- $file doesn't exist!!!"
 	}
@@ -92,10 +104,10 @@ class EclipseProjects {
 /**
  * Eclipse project
  */
-@ToString
+@ToString(includeNames=true, includePackage=false)
 class Project {
 	String name
-	String path
+	String uri
 	boolean isLocal
 
 	static final String PROJ_LOCATION = '.metadata\\.plugins\\org.eclipse.core.resources\\.projects'
@@ -110,32 +122,44 @@ class Project {
 		List results = []
 		Path projPath = Paths.get(path.toString(), PROJ_LOCATION)
 
-		projPath.eachFile(DIRECTORIES) { dir ->
+		try {
+			projPath.eachFile(DIRECTORIES) { dir ->
 
-			// skip .org.eclipse.jdt.core.external.folders folder
-			if (dir.getFileName().toString() != '.org.eclipse.jdt.core.external.folders') {
-				Path locPath = Paths.get(dir.toString(), '.location')
-				if (Files.exists(locPath)) {
-					results << new Project(name: dir.getFileName(),  path: getProjectLocation(locPath), isLocal: false)
-				}
-				else {
-					results << new Project(name: dir.getFileName(), isLocal: true)
+				// skip .org.eclipse.jdt.core.external.folders folder
+				if (dir.getFileName().toString() != '.org.eclipse.jdt.core.external.folders') {
+					Path locPath = Paths.get(dir.toString(), '.location')
+					if (Files.exists(locPath)) {
+						results << new Project(name: dir.getFileName(),  uri: getProjectLocation(locPath), isLocal: false)
+					}
+					else {
+						results << new Project(name: dir.getFileName(), isLocal: true)
+					}
 				}
 			}
+			return results
 		}
-		return results
+		catch (Exception e) {
+			println "getProjects path: $path"
+			e.printStackTrace()
+		}
 	}
 
 	private static String getProjectLocation(Path path) {
-		//TODO make this more clear
-		return (new String(path.getBytes()) =~ /URI\/\/(\p{Print}*)/)[0][1]
+		try {
+			//TODO make this more clear
+			return (new String(path.getBytes()) =~ /URI\/\/(\p{Print}*)/)[0][1]
+		}
+		catch (Exception e) {
+			println "getProjectLocation path: $path"
+			e.printStackTrace()
+		}
 	}
 }
 
 /**
  * Eclipse workspace
  */
-@ToString
+@ToString(includeNames=true, includePackage=false)
 class Workspace {
 	String name
 	Path path
@@ -156,9 +180,16 @@ class Workspace {
 			if (dir.toString().endsWith(METADATA)) {
 				Path wsPath = dir.getParent()
 				//TODO get projects
-				results << new Workspace(name: wsPath.getFileName(), path: wsPath)
+				results << new Workspace(name: wsPath.getFileName(), path: wsPath, projects: Project.getProjects(wsPath))
 			}
 		}
+		return results
+	}
+
+	List<String[]> toStringArray() {
+		List results = []
+		results << ([name, path] as String[])
+		println "results[0]: $results[0] ${results[0].class}"
 		return results
 	}
 }

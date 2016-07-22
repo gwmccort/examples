@@ -45,6 +45,7 @@
 * http://www.baeldung.com/mgirating-to-java-8-date-time-api[java8 date]
 * https://dzone.com/articles/java-8-optional-replace-your-get-calls?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Optional—Replace Your Get() Calls]
 * http://www.baeldung.com/java-8-collectors[Guide to Java 8 Collectors]
+* https://blog.jetbrains.com/idea/2016/07/java-8-top-tips/[Java 8 top tips]
 
 === Testing
 * http://www.javacodegeeks.com/2015/12/using-mockito-without-static-imports-java-8.html[Using Mockito without static imports with Java 8]

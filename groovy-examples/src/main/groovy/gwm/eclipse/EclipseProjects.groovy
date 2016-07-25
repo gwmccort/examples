@@ -37,18 +37,18 @@ class EclipseProjects {
 		// get workspaces
 		//		Path path = Paths.get(/H:\Project_Files\Workspaces/)
 		Path path = Paths.get(/H:\Project_Files\Workspaces\bitbucket-examples/)
-		List workspaces = Workspace.getWorkspaces(path)
+		List<Workspace> workspaces = Workspace.getWorkspaces(path)
 
+		// create csv file
 		CSVWriter writer = new CSVWriter(new FileWriter("eclipse-workspaces.csv"))
-		writer.with() {
-			workspaces.each() { ws ->
-				ws.toStringArray().each() { line ->
-					println "line: $line ${line.class}"
-					String[] sa = line as String[]
-					writer.writeNext(sa)
-				}
+		//		writer.with() {
+		workspaces.each() { ws ->
+			ws.toStringArray().each() { line ->
+				writer.writeNext(line)
 			}
 		}
+		writer.close()
+		//		}
 	}
 
 	static List<Path> getProjects(Path path) {
@@ -154,6 +154,10 @@ class Project {
 			e.printStackTrace()
 		}
 	}
+
+	List<String[]> toStringArray() {
+		return ([name, uri, isLocal] as String[])
+	}
 }
 
 /**
@@ -179,6 +183,7 @@ class Workspace {
 		path.eachFileRecurse(DIRECTORIES) { dir ->
 			if (dir.toString().endsWith(METADATA)) {
 				Path wsPath = dir.getParent()
+
 				//TODO get projects
 				results << new Workspace(name: wsPath.getFileName(), path: wsPath, projects: Project.getProjects(wsPath))
 			}
@@ -188,8 +193,9 @@ class Workspace {
 
 	List<String[]> toStringArray() {
 		List results = []
-		results << ([name, path] as String[])
-		println "results[0]: $results[0] ${results[0].class}"
+		for (proj in projects) {
+			results << (([name, path] + proj.toStringArray()) as String[])
+		}
 		return results
 	}
 }

@@ -8,6 +8,8 @@
 ----
 include::src/main/groovy/XmPlaylist.groovy
 ----
+=== Sites
+* http://dogstarradio.com/search_xm_playlist.php[xm playlist search at dogstar]
 
 === T2D
 *  [ ] JamBase site changed

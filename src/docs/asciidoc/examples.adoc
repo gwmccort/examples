@@ -32,6 +32,7 @@ include::{projDir}/groovy-examples/ReadMe.adoc[]
 * https://dzone.com/articles/simple-java-soap-web-service-using-jdk-tools?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Java SOAP Web Service Using JDK Tools]
 
 === Git
+* https://www.javacodegeeks.com/2016/07/git-tutorial.html[Git Tutorial – The Ultimate Guide]
 * https://examples.javacodegeeks.com/software-development/git/git-undo-commit-example/[Git Undo Commit Example]
 * https://examples.javacodegeeks.com/software-development/git/git-push-origin-example/[Git Push Origin Example]
 * https://examples.javacodegeeks.com/software-development/git/git-rename-branch-example/[Git Rename Branch Example]

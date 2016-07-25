@@ -48,6 +48,7 @@ Configure Build Path>Libraries>select JRE-Access rules>edit add javafx/** as acc
 * https://examples.javacodegeeks.com/desktop-java/jfreechart/jfree-candlestick-chart-example/[Jfree Candlestick Chart]
 * https://examples.javacodegeeks.com/desktop-java/swing/java-swing-table-example/[Swing Table Example]
 * https://examples.javacodegeeks.com/desktop-java/swing/java-swing-button-example/[Swing Button Example]
+* https://examples.javacodegeeks.com/core-java/java-swing-menu-example/[Swing Menu Example]
 
 
 == GWT T2D

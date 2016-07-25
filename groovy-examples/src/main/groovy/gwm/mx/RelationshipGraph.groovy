@@ -4,7 +4,7 @@ import groovy.transform.ToString
 import groovy.util.logging.Slf4j
 
 @Slf4j
-class TclExample {
+class RelationshipGraph {
 
 	/*
 	 MQL<17>print rel "Affected Item" select totype fromtype tcl;

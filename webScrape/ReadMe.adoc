@@ -14,3 +14,7 @@ include::src/main/groovy/XmPlaylist.groovy
 === T2D
 *  [ ] JamBase site changed
 ** JamBase.groovy, music/JamBase.groovy & music/JamBaseSchedule.groovy
+* http://glaforge.appspot.com/article/web-scraping-and-rest-api-calls-on-app-engine-with-jsoup-and-groovy-wslite?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+glaforge+%28Guillaume+Laforge%27s+blog+feed%29[Web scraping and REST API calls on App Engine with Jsoup and groovy-wslite]
+* http://sergiodelamo.es/geb-programmer-hidden-content-and-mouse-over-events/[Geb Programmer – Hidden Content and Mouse over Events]
+* http://sergiodelamo.es/geb-programmer-user-agent-spoofing/[Geb Programmer – User Agent Spoofing]
+* http://sergiodelamo.es/geb-programmer-how-to-run-geb-with-phantomjs-driver-in-desktop-size/[Geb Programmer – How to run Geb with PhantomJS Driver in desktop size]

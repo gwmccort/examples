@@ -6,7 +6,7 @@ plugins {
     id 'checkstyle'
     id 'jdepend'
     id 'pmd'
-    id 'com.github.ben-manes.versions' version '0.11.3'
+    id 'com.github.ben-manes.versions' version '0.13.0'
 
     // for asciidoclet, DONT SEEM TO NEED THIS
     // id 'com.github.jruby-gradle.base' version '0.1.5'
@@ -38,6 +38,8 @@ dependencies {
   	// needed for WalkFileTree
   	compile 'net.sf.opencsv:opencsv:2.3'
   	compile 'com.google.guava:guava:18.+'
+	  
+	compile 'com.opencsv:opencsv:3.8'
 
     testCompile 'junit:junit:4.12'
     testRuntime 'org.slf4j:slf4j-nop:1.7.13'

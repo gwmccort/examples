@@ -1,7 +1,10 @@
 #GonePhishin
 #jamtronica
+@JSchwartzNYC
 @MountainJam
+@PrettyLights
 @SXMJamON
+@finkerton
 @nmasi5
 A Hit Of
 ALO
@@ -14,6 +17,7 @@ American Babies
 Anders Osborne
 Animus Rexx
 Ari Fink
+BadBadNotGood
 Bela Fleck & The Flecktones
 Ben Harper
 Ben Harper/Innocent Criminals
@@ -21,6 +25,7 @@ Big Gigantic
 Big Gigantic/GRiZ
 Big Something
 Black Crowes
+Bonnie Prince Billy
 Break Science
 Bruce Hornsby/The Noisemakers
 Budos Band
@@ -39,6 +44,7 @@ Eric Krasno
 Fare Thee Well
 Fruition
 GRiZ/Big Gigantic
+GRiZ/Jessie Arlen
 GRiZ/Orlando Napier
 Galactic
 Galactic/Macy Gray
@@ -52,6 +58,7 @@ Grateful Dead
 Grateful Dead/Branford Marsalis
 Greensky Bluegrass
 Hezekiah Walker
+Hiatus Kaiyote
 Infamous Stringdusters/Ronnie McCour
 J.J. Cale
 Jack Stratton
@@ -71,7 +78,9 @@ Lotus
 Maceo Parker
 Marco Benevento
 Marcus King Band/Warren Haynes
+Matisyahu/Mihali
 Medeski Martin & Wood
+Michael Franti
 Michael Franti & Spearhead
 Michael Franti/Donna Rele/Supa Dups
 Moon Taxi
@@ -84,6 +93,7 @@ New Music!
 Nick Masi
 Nicki Bluhm & The Gramblers
 Nigel Hall
+North Mississippi Allstars
 Papadosio
 Pham duc Thanh
 Phil Lesh & Friends
@@ -144,6 +154,7 @@ Ween
 Wheels Of Soul
 White Denim
 Widespread Panic
+Widespread Panic w/ Jerry Joseph
 Widespread Panic/Megablaster Horns
 Widespread Panic/Warren Haynes
 Wilco

@@ -63,7 +63,7 @@ b.driver.setProxy("proxy", 9090)
 
 == T2D
 * http://www.grailsbrasil.com.br/blog/index.php/2015/11/11/geb-automatizando-seu-browser-com-groovy/[geb article]
-
+* http://sergiodelamo.es/geb-programmer-user-agent-spoofing/[User Agent Spoofing]
 == Music
 
 == kat

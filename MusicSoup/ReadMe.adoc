@@ -1,0 +1,7 @@
+= MusicSoup Web Scraping
+
+* tagsoup
+** https://mvnrepository.com/artifact/org.ccil.cowan.tagsoup/tagsoup[maven]
+
+* https://jsoup.org/[jsoup]
+** https://mvnrepository.com/artifact/org.jsoup/jsoup[maven]

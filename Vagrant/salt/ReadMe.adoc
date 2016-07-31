@@ -14,6 +14,9 @@ Install a package::
 List installed packages::
   salt '*' pkg.list_pkgs
 
+=== topics
+* https://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html[Formulas]
+
 == Resources
 * https://docs.saltstack.com/en/latest/[Documentation]
 * https://docs.saltstack.com/en/getstarted/[Getting started tutorial]
@@ -22,6 +25,7 @@ List installed packages::
 * https://z900collector.wordpress.com/linux/saltstack-handy-scripting-tips/[SaltStack – Handy scripting Tips]
 * https://www.packtpub.com/networking-and-servers/salt-cookbook[Salt Cookbook] from packet publishing
 * https://docs.google.com/document/d/1wiA1AEu50mekxQawKofM5gvCesNC2_7kGo9UFccrquQ/edit[RC Salt Cheat Sheet-gdoc]
+* http://bencane.com/2013/09/03/getting-started-with-saltstack-by-example-automatically-installing-nginx/[Automatically Installing nginx]
 
 == Info
 * proxy for shell to be able to do a `vagrant up` at work
@@ -40,3 +44,21 @@ end
 ----
 * http://digitaldrummerj.me/vagrant-behind-proxy-server/[VAGRANT PART 6 - BEHIND A PROXY SERVER]
 ** vagrant plugin install vagrant-proxyconf
+
+* Find ip of vagrant machine
+** vagrant ssh minion1
+** ifconfig
+
+* https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-apache-startstop.html[start apache]
+** sudo apachectl start
+
+* java
+** yum install java-1.8.0-openjdk.x86_64
+
+* tomcat
+** https://oracle-base.com/articles/linux/apache-tomcat-installation-on-linux[tomcat install on rhel]
+** salt '*' cmd.run '/opt/apache-tomcat-7.0.70/bin/startup.sh'
+** salt '*' cmd.run '/opt/apache-tomcat-7.0.70/bin/shutdown.sh'
+** yum install
+*** start: sudo systemctl start tomcat
+** http://stackoverflow.com/questions/36370062/using-salt-module-tomcat-for-deploying-war-file[slat deploy war]

@@ -7,9 +7,12 @@ import org.jsoup.*
  */
 
 // set proxy for work
-//System.properties << [proxyHost:'usproxy', proxyPort:'9090']
-System.setProperty("http.proxyHost", "proxy")
-System.setProperty("http.proxyPort", "9090")
+//System.setProperty("http.proxyHost", "proxy")
+//System.setProperty("http.proxyPort", "9090")
+workHost = 'CRP22627'
+if (workHost==InetAddress.localHost.hostName) {
+	System.properties << ['http.proxyHost':'proxy', 'http.proxyPort':'9090']
+}
 
 def url = 'http://www.jambase.com/shows?mode=all&start=20160728&address=Cedar+Rapids&region=US-IA&country=US&radius=60'
 def doc = Jsoup.connect(url)

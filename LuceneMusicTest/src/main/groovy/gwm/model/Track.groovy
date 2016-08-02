@@ -2,13 +2,15 @@ package gwm.model
 
 import static groovy.io.FileType.FILES
 import groovy.json.JsonBuilder
-import groovy.json.JsonOutput
+import groovy.transform.InheritConstructors
 import groovy.transform.ToString
 
 import java.nio.file.Path
 import java.nio.file.Paths
 import java.util.logging.Handler
 
+import org.apache.commons.lang.builder.EqualsBuilder
+import org.apache.commons.lang.builder.HashCodeBuilder
 import org.apache.lucene.analysis.Analyzer
 import org.apache.lucene.analysis.standard.StandardAnalyzer
 import org.apache.lucene.document.Document
@@ -41,7 +43,8 @@ import org.jaudiotagger.tag.Tag
  *
  * @author gwmccort
  */
-@ToString(includeNames=true)
+@InheritConstructors
+@ToString(includeNames=true, includePackage=false)
 class Track {
 	String artist
 	String albumArtist
@@ -73,6 +76,37 @@ class Track {
 		albumArtist = tag.getFirst(FieldKey.ALBUM_ARTIST)
 		track = tag.getFirst(FieldKey.TRACK)
 		this.path = path
+	}
+
+	/*
+	 * override equals & hashCode
+	 * http://tech-tips-tridib.blogspot.com/2012/02/overriding-equals-in-groovy.html
+	 * https://myshittycode.com/2013/10/29/groovy-java-lang-stackoverflowerror-when-implementing-equals/
+	 */
+
+	@Override
+	boolean equals(Object o) {
+		if (this.is(o)){
+			return true
+		}
+		if (o==null || !(o instanceof Track)) {
+			return false
+		}
+		Track rhs = (Track) o;
+		return new EqualsBuilder()
+				.append(name, rhs?.name)
+				.append(album, rhs?.album)
+				.append(artist, rhs?.artist)
+				.isEquals();
+	}
+
+	@Override
+	public int hashCode() {
+		return new HashCodeBuilder()
+				.append(name)
+				.append(album)
+				.append(artist)
+				.toHashCode();
 	}
 
 	/**

@@ -3,6 +3,7 @@ package gwm.model
 import static groovy.io.FileType.FILES
 import groovy.json.JsonBuilder
 import groovy.transform.InheritConstructors
+import groovy.transform.Sortable
 import groovy.transform.ToString
 
 import java.nio.file.Path
@@ -43,9 +44,11 @@ import org.jaudiotagger.tag.Tag
  *
  * @author gwmccort
  */
+@Sortable(includes = ['name', 'album', 'artist'])
 @InheritConstructors
 @ToString(includeNames=true, includePackage=false)
 class Track {
+//	class Track implements Comparable<Track>{
 	String artist
 	String albumArtist
 	String track
@@ -108,6 +111,12 @@ class Track {
 				.append(artist)
 				.toHashCode();
 	}
+	
+	//TODO: @Sortable http://mrhaki.blogspot.com/2014/05/groovy-goodness-use-sortable-annotation.html
+//	@Override
+//	int compareTo(Object o) {
+//		return this <=> o
+//	}
 
 	/**
 	 * Convert track to json

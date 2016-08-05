@@ -50,4 +50,29 @@ class TrackSpec extends Specification {
 		then:
 		tracks == [t1, t2]
 	}
+	
+//	@Ignore
+	def "set sort"() {
+		when:
+		Track t1 = new Track(name:'name1', artist:'artist1', album:'album')
+		Set<Track> s1 = [] as Set
+		s1 << t1
+		
+		def t2 = new Track(name:'name2', artist:'artist1', album:'album')
+		Set<Track> s2 = [] as Set
+		s2 << t2
+		
+		def t3 = new Track(name:'name3', artist:'artist1', album:'album')
+		Set<Track> s3 = [] as Set
+		s3 << t3
+		
+		Set<Track> tracks = [] as Set
+		tracks.addAll(t2, t3, t1)
+		tracks = tracks.sort()
+		
+		then:
+		tracks[0].name == t1.name
+		tracks[1].name == t2.name
+		tracks[2].name == t3.name
+	}
 }

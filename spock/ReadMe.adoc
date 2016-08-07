@@ -39,3 +39,6 @@
 == JMeter
 * http://www.tothenew.com/blog/7-things-you-must-know-about-load-testing-using-jmeter/[7 Things You Must Know About Load-Testing Using JMeter]
 * http://www.tothenew.com/blog/jmeter-master-slave-setup-in-multiple-aws-regions/[JMeter Master Slave Setup In Multiple AWS Regions]
+
+== JaCoCo
+* http://www.baeldung.com/jacoco[A Guide to JaCoCo]

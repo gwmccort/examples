@@ -44,11 +44,13 @@ import org.jaudiotagger.tag.Tag
  *
  * @author gwmccort
  */
-@Sortable(includes = ['name', 'album', 'artist'])
+@Sortable(includes = ['name', 'album', 'artist']) //TODO sort tree sort is slower that hash sort
 @InheritConstructors
 @ToString(includeNames=true, includePackage=false)
 class Track {
 //	class Track implements Comparable<Track>{
+	
+	//TODO only use track properties 
 	String artist
 	String albumArtist
 	String track

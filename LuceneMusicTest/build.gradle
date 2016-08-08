@@ -46,7 +46,12 @@ dependencies {
 	// compile 'org:jaudiotagger:2.0.3'
 	compile 'net.jthink:jaudiotagger:2.2.5' //need to specify special maven repro
 
-	compile 'net.sf.opencsv:opencsv:2.3'
+	compile 'net.sf.opencsv:opencsv:1.7'
+//	compile 'net.sf.opencsv:opencsv:2.3'
+//	compile 'com.opencsv:opencsv:3.8'
+	compile 'org.apache.commons:commons-csv:1.4'
+//	compile 'org.apache.commons:commons-csv:1.5-SNAPSHOT'
+	
 
 	compile group: 'org.codehaus.groovy.modules.http-builder', name: 'http-builder', version: '0.7.2'
 //		compile group: 'org.codehaus.groovy.modules.http-builder', name: 'http-builder', version: '0.7.1'

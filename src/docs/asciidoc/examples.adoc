@@ -40,6 +40,7 @@ include::{projDir}/groovy-examples/ReadMe.adoc[]
 * https://examples.javacodegeeks.com/software-development/git/create-git-repo-example/[Create Git Repo]
 * http://examples.javacodegeeks.com/software-development/git-remove-commit-example/[Git Remove Commit Example]
 * https://examples.javacodegeeks.com/software-development/git/git-delete-local-branch-example/[Delete Local Branch]
+* https://examples.javacodegeeks.com/software-development/git/git-tree-viewer-example/[Git Tree View]
 
 === Jetty
 * https://examples.javacodegeeks.com/enterprise-java/jetty/jetty-nio-example/[Jetty NIO Example]

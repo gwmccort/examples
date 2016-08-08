@@ -4,6 +4,7 @@ import gwm.model.Track
 
 import java.nio.file.Paths
 
+import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang.time.StopWatch
 
 import au.com.bytecode.opencsv.CSVReader
@@ -21,11 +22,18 @@ public class ReadMusicFileCSV {
 		def input = /C:\Users\Glen\Src\github\music\Mp3File\bitrate.csv/
 		def reader = new CSVReader(new FileReader(input))
 
+		// 
+		
 		def line
 		Set<Track> tracksPogo = [] as Set
 		while ((line = reader.readNext()) != null) {
 			try {
-			tracksPogo << new Track(albumArtist:line[0], artist:line[1], album:line[2], name:line[3], path:Paths.get(line[5]))
+				
+				println line[5]
+				println FilenameUtils.separatorsToSystem(line[5])
+				
+				tracksPogo << new Track(albumArtist:line[0], artist:line[1], album:line[2], name:line[3], path:Paths.get(line[5]))
+				//					tracksPogo << new Track(albumArtist:line[0], artist:line[1], album:line[2], name:line[3], path:Paths.get(FileNameUtils.separatorsToSystem(line[5]))
 			}
 			catch (Exception e) {
 				println e
@@ -37,6 +45,7 @@ public class ReadMusicFileCSV {
 		Set<Track> tracksNas = [] as Set
 		while ((line = reader.readNext()) != null) {
 			tracksNas << new Track(albumArtist:line[0], artist:line[1], album:line[2], name:line[3], path:Paths.get(line[5]))
+//					tracksNas << new Track(albumArtist:line[0], artist:line[1], album:line[2], name:line[3], path:Paths.get(FileNameUtils.separatorsToSystem(line[5]))
 		}
 
 		def stopWatch = new StopWatch()
@@ -49,12 +58,10 @@ public class ReadMusicFileCSV {
 
 		stopWatch.stop()
 		println "${diff.size()} $stopWatch"
-		
+
 		new File('pogo-nas.txt').withWriter{ out ->
-			diff.each() {
-				out.println it
-			}
+			diff.each() { out.println it }
 		}
-			
+
 	}
 }

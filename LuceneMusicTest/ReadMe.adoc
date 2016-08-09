@@ -1,27 +1,3 @@
-= Muisc Search
-Glen McCort <gwmccort.gmail.com>
-
-== Classes
-* gwm.model.Track - track's & example of getting from file tree, indexing and searching
-
-== Scripts
-* FileTrackCsv - create a csv file from musit tracks
-* Mp3FileTest - test Mp3MusicTrack
-
-== Lucene
-=== Luke
-* https://github.com/DmitryKey/luke/releases/tag/pivot-luke-5.5.0[luke 5.5.0] - works with current lucene version
-
-== Mp3 tag libraries
-* https://github.com/mpatric/mp3agic[mp3agic]
-** https://github.com/mpatric/mp3agic-examples[mp3agic examples]
-* https://bitbucket.org/ijabz/jaudiotagger[Jaudiotagger, bitbucket repro]
-
-== groovy & tika
-* http://www.groovy-tutorial.org/basic-files/#_file_information[groovy tika, file information]
-
-=== Video
-* https://www.youtube.com/watch?v=OrwO_Q4QJNc[meta data of a mp3 song in java part 1]
 
 == Issues
 * latest version of open csv eats windows path seperator

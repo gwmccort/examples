@@ -10,7 +10,7 @@ package gwm.lang
  * @author gwmccort
  *
  */
-class ClassIterable implements Iterable{
+class ClassIterable implements Iterable {
 	Integer maxValue
 	String name
 	private Integer counter = 0
@@ -31,6 +31,11 @@ class ClassIterable implements Iterable{
 		counter.properties.each { prop, value ->
 			println "prop: $prop"
 			println "value: $value"
+		}
+
+		println counter.properties.collect() { prop, val ->
+			if(prop in ["metaClass","class"]) return
+			val
 		}
 	}
 

@@ -48,6 +48,7 @@
 * https://blog.jetbrains.com/idea/2016/07/java-8-top-tips/[Java 8 top tips]
 * https://examples.javacodegeeks.com/core-java/time/java-8-date-time-api-tutorial/[Java 8 Date and Time API Tutorial]
 * https://blog.jetbrains.com/idea/2016/07/java-8-top-tips/[idea java 8 tips]
+* Guide to time and date https://dzone.com/articles/guide-to-time-and-date-in-java-part-1[part 1] & https://dzone.com/articles/guide-to-time-and-date-in-java-part-2[part 2]
 
 === Testing
 * http://www.javacodegeeks.com/2015/12/using-mockito-without-static-imports-java-8.html[Using Mockito without static imports with Java 8]

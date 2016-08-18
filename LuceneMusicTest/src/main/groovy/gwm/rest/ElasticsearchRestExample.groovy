@@ -6,10 +6,16 @@ import groovy.json.JsonOutput
 import groovyx.net.http.HTTPBuilder
 
 
+/**
+ * Connect to docker ElasticSearch server and get information
+ * 
+ * @author gwmccort
+ *
+ */
 class ElasticsearchRestExample {
 
 	static main(args) {
-		HTTPBuilder http = new HTTPBuilder('http://192.168.99.100:9200')
+		HTTPBuilder http = new HTTPBuilder('http://192.168.99.100:9200') // docker es server
 
 		http.get(path: '/') { resp, json ->
 			println resp.status

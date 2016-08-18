@@ -1,5 +1,5 @@
 
-== Issues
+=== Issues
 * latest version of open csv eats windows path seperator
 ** https://sourceforge.net/p/opencsv/bugs/125/[bug report]
 *** use older version net.sf.opencsv:opencsv:1.7
@@ -7,7 +7,7 @@
 **** https://examples.javacodegeeks.com/core-java/apache/commons/csv-commons/writeread-csv-files-with-apache-commons-csv-example/[tutorial on commons csv]
 
 
-== T2D
+=== T2D
 * look at https://github.com/griffon/griffon[griffon build]
 ** http://griffon-framework.org/[griffon web site]
 * ratpack web interface

@@ -40,7 +40,7 @@ Configure Build Path>Libraries>select JRE-Access rules>edit add javafx/** as acc
 * https://examples.javacodegeeks.com/desktop-java/javafx/javafx-canvas-example/[JavaFX Canvas Example]
 * https://examples.javacodegeeks.com/desktop-java/javafx/javafx-html-editor-example/[JavaFX HTML Editor Example]
 * https://examples.javacodegeeks.com/desktop-java/javafx/javafx-concurrent-framework/[JavaFX Concurrent Framework]
-
+* https://examples.javacodegeeks.com/desktop-java/javafx/javafx-stage-example/[JavaFX Stage Example]
 
 == Swing T2D
 * http://examples.javacodegeeks.com/desktop-java/swing/java-swing-slider-example/[Swing Slider]

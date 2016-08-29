@@ -7,6 +7,9 @@ Glen McCort <gwmccort@gmail.com>
 * mutli-project - multi-project example
 * webapp - web application example
 
+== Resources
+* https://github.com/ksoichiro/awesome-gradle[Awesome Gradle]
+
 == Articles
 * http://gradle.org/migrating-a-maven-build-to-gradle/[Migrating a maven build to Gradle]
 * http://www.mkyong.com/tag/gradle/[mkyong gradle articles]

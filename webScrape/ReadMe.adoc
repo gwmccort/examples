@@ -11,6 +11,9 @@ include::src/main/groovy/XmPlaylist.groovy
 === Sites
 * http://dogstarradio.com/search_xm_playlist.php[xm playlist search at dogstar]
 
+=== Articles
+* https://objectpartners.com/2016/04/20/automatically-download-os-specific-webdriver-executable/[Automatically download OS-specific WebDriver executable]
+
 === T2D
 *  [ ] JamBase site changed
 ** JamBase.groovy, music/JamBase.groovy & music/JamBaseSchedule.groovy

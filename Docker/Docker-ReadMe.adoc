@@ -9,6 +9,7 @@ Glen McCort <gwmccort@gmail.com>
 * http://live-rg-engineering.pantheonsite.io/news/building-jenkins-inside-ephemeral-docker-container[BUILDING WITH JENKINS INSIDE AN EPHEMERAL DOCKER CONTAINER]
 * https://blog.docker.com/2016/06/dockercon-hands-on-labs/[Learn Docker at Hands-on Labs at DockerCon 2016]
 ** https://github.com/docker/dceu_tutorials
+* https://www.javacodegeeks.com/2016/08/reducing-docker-image-size.html[Reducing Your Docker Image Size]
 
 
 == Projects

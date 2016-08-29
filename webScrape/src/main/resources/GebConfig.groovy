@@ -8,7 +8,7 @@ reportsDir = "build/geb-reports"
 // enable javascript in htmlunit
 driver = {
 	def driver = new HtmlUnitDriver()
-	driver.javascriptEnabled = true
+//	driver.javascriptEnabled = true // this just starting xm radio scraping, was working before???
 	driver
 }
 

@@ -1,0 +1,21 @@
+plugins {
+    id 'war'
+    id 'eclipse-wtp'
+    // id 'jetty'
+    id "com.bmuschko.tomcat" version "2.2.5"
+    // id 'org.asciidoctor.convert' version '1.5.3'
+    id 'com.github.ben-manes.versions' version '0.13.0'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile group: 'com.sun.jersey', name: 'jersey-server', version:'1.8'
+
+    def tomcatVersion = '7.0.70'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+           "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
+           "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+}

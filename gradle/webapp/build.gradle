@@ -2,9 +2,9 @@ plugins {
     id 'war'
     id 'eclipse-wtp'
     id 'jetty'
-    id "com.bmuschko.tomcat" version "2.2.3"
-    id 'org.asciidoctor.convert' version '1.5.2'
-    id 'com.github.ben-manes.versions' version '0.11.3'
+    id "com.bmuschko.tomcat" version "2.2.5"
+    id 'org.asciidoctor.convert' version '1.5.3'
+    id 'com.github.ben-manes.versions' version '0.13.0'
 }
 
 description = 'Example gradle web application w/ bootstrap'
@@ -17,7 +17,7 @@ dependencies {
     providedCompile group: 'javax', name: 'javaee-api', version:'7.0'
     compile 'org.apache.commons:commons-io:1.3.2'
     compile 'log4j:log4j:1.2.17'
-    
+
     // webjars
     compile 'org.webjars:webjars-servlet-2.x:1.1'
     compile 'org.webjars:bootstrap:3.3.5'
@@ -28,9 +28,9 @@ dependencies {
 	tomcat "org.apache.tomcat:catalina:${tomcatVersion}",
 		   "org.apache.tomcat:coyote:${tomcatVersion}",
 		   "org.apache.tomcat:jasper:${tomcatVersion}"
-*/		  
+*/
 
-	def tomcatVersion = '7.0.59'
+    def tomcatVersion = '7.0.70'
     tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
            "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
            "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"

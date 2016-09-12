@@ -8,6 +8,9 @@
 === Gradle
 * Gradle plugin https://plugins.gradle.org/plugin/com.zoltu.kotlin[kotlin plugin com.zoltu.kotlin]
 
+== Videos
+* https://2016.javazone.no/program/kotlin-ready-for-production[Kotlin ready for prroduction]
+
 === T2D
 * https://dzone.com/articles/exercises-in-kotlin-part-2-high-level-syntax-and-v
 * http://jetbrains.github.io/spek/[spek] - spock like test framework

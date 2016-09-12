@@ -2,4 +2,8 @@
 
 Rest jax-rs hello world example from http://www.mkyong.com/webservices/jax-rs/jersey-hello-world-example/
 
-http://localhost:8080/rest/rest/hello/glen
+One parameter service:
+http://localhost:8080/jaxrs/rest/hello/glen
+
+Two parameter service:
+http://localhost:8080/jaxrs/rest/hello/myName/myMessage

@@ -1,0 +1,13 @@
+= Asciidoctor Gradle Examples
+Glen McCort <gwmccort@gmail.com>
+
+include::../../../jaxrs-ReadMe.adoc[]
+
+== Articles
+* http://www.mkyong.com/webservices/jax-rs/jersey-hello-world-example/[jersey hello world example]
+* https://examples.javacodegeeks.com/enterprise-java/rest/jax-rs-pathparam-example/[JAX-RS @PathParam Example] including multiple path parameters
+* http://www.vogella.com/tutorials/REST/article.html[REST with Java (JAX-RS) using Jersey - Tutorial]
+
+== Books
+* http://shop.oreilly.com/product/0636920028925.do[RESTful Java with JAX-RS 2.0, 2nd Edition] and https://github.com/oreillymedia/restful_java_jax-rs_2_0[source] on github
+* http://shop.oreilly.com/product/9781783287963.do[RESTful Java Patterns and Best Practices]

@@ -1,5 +1,6 @@
 = Vagrant
 
+== Notes
 * https://scotch.io/tutorials/get-vagrant-up-and-running-in-no-time[Get VAGRANT UP and Running in No Time]
 * https://ttmm.io/tech/vagrant-windows/[Vagrant and Windows]
 

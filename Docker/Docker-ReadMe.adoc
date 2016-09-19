@@ -10,7 +10,11 @@ Glen McCort <gwmccort@gmail.com>
 * https://blog.docker.com/2016/06/dockercon-hands-on-labs/[Learn Docker at Hands-on Labs at DockerCon 2016]
 ** https://github.com/docker/dceu_tutorials
 * https://www.javacodegeeks.com/2016/08/reducing-docker-image-size.html[Reducing Your Docker Image Size]
+* https://github.com/docker/community[docker community on github]
 
+== Books
+* http://shop.oreilly.com/product/0636920050872.do[Docker for Java Developers] and https://github.com/arun-gupta/oreilly-docker-book[github repro]
+** https://blog.jetbrains.com/idea/2016/05/webinar-recording-docker-for-java-developers/[video]
 
 == Projects
 * cowsay - simple hello world

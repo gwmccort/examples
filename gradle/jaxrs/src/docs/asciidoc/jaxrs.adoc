@@ -1,7 +1,10 @@
-= Asciidoctor Gradle Examples
+= jax-rs Webservice Examples
 Glen McCort <gwmccort@gmail.com>
 
 include::../../../jaxrs-ReadMe.adoc[]
+
+== Documentation
+* link:../../docs/javadoc/index.html[javadoc]
 
 == Articles
 * http://www.mkyong.com/webservices/jax-rs/jersey-hello-world-example/[jersey hello world example]

@@ -2,7 +2,7 @@ plugins {
     id 'war'
     id 'eclipse-wtp'
     // id 'jetty'
-    id "com.bmuschko.tomcat" version "2.2.5"
+    id "com.bmuschko.tomcat" version "2.2.5" //https://github.com/bmuschko/gradle-tomcat-plugin
     id 'org.asciidoctor.convert' version '1.5.3'
     id 'com.github.ben-manes.versions' version '0.13.0'
 }
@@ -12,12 +12,29 @@ repositories {
 }
 
 dependencies {
-    compile group: 'com.sun.jersey', name: 'jersey-server', version:'1.8'
+  compile group: 'com.sun.jersey', name: 'jersey-server', version:'1.8'
 
-    def tomcatVersion = '7.0.70'
-    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
-           "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
-           "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+  def tomcatVersion = '7.0.70'
+  tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+         "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
+         "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+
+/*
+  def tomcatVersion = '6.0.44'
+  tomcat "org.apache.tomcat:catalina:${tomcatVersion}",
+     "org.apache.tomcat:coyote:${tomcatVersion}",
+     "org.apache.tomcat:jasper:${tomcatVersion}"
+*/
+}
+
+// alse delete eclipse build dir on clean
+clean {
+  delete 'bin'
+}
+
+tomcat {
+  //	httpPort = "8181"
+  	stopPort = 8191 // default 8081 is used at work
 }
 
 // where to put tomcat log

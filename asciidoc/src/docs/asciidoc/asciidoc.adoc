@@ -1,7 +1,8 @@
 = Asciidoctor Gradle Examples
 Glen McCort <gwmccort@gmail.com>
+:sectnums:
 
-include::../../../asciidoc-ReadMe.adoc[]
+include::../../../asciidoc-ReadMe.adoc[[leveloffset=+1]]
 
 == Examples
 * Asciidoctor Gradle Examples http://danhyun.github.io/asciidoctor-gradle-examples/[documentation] and https://github.com/danhyun/asciidoctor-gradle-examples[github reprository]

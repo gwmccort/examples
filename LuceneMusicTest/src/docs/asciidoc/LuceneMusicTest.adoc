@@ -1,5 +1,8 @@
 = LuceneMusicTest
 Glen McCort <gwmccort.gmail.com>
+:sectnums:
+
+include::../../../ReadMe.adoc[[leveloffset=+1]]
 
 == Documentation
 * link:../../docs/groovydoc/index.html[GroovyDoc]
@@ -31,8 +34,6 @@ Glen McCort <gwmccort.gmail.com>
 === Video
 * https://www.youtube.com/watch?v=OrwO_Q4QJNc[meta data of a mp3 song in java part 1]
 
-== ReadMe
-include::../../../ReadMe.adoc[]
 
 == T2CO
 * http://octaviospain.github.io/Musicott/[Musicott] is an application that manages and plays music files. Coded in Java 8 with JavaFX. Uses JAudioTagger to read and write the metadata, Json-io for persistence, TestFx for testing, and some components from ControlsFx.

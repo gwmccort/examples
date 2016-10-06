@@ -2,6 +2,8 @@
 Glen McCort <gwmccort@gmail.com>
 :sectnums:
 
+This is the top
+
 include::../../../asciidoc-ReadMe.adoc[[leveloffset=+1]]
 
 == Examples
@@ -32,7 +34,6 @@ To zoom out press kbd:[Ctrl + -].
 Find files with kbd:[Ctrl + Alt + N] or kbd:[{commandkey} + Shift + N].
 
 === http://mrhaki.blogspot.com/2014/04/awesome-asciidoc-include-partial-parts.html[Include Partial Parts from Code Samples]
-
 ==== Sample Asciidoc
 
 [source,groovy]
@@ -40,3 +41,21 @@ Find files with kbd:[Ctrl + Alt + N] or kbd:[{commandkey} + Shift + N].
 ----
 include::Sample.groovy[tags=helloMethod]
 ----
+<1> call out for method
+<2> call out for string
+
+== http://mrhaki.blogspot.com/2014/05/awesome-asciidoc-explain-code-with.html[Code callouts]
+[source,groovy]
+----
+package com.mrhaki.adoc
+
+class Sample {
+    String username // <1>
+
+    String toString() {
+        "${username?.toUpperCase() ?: 'not-defined'}" // <2>
+    }
+}
+----
+<1> Simple property definition where Groovy will generate the +setUsername+ and +getUsername+ methods.
+<2> Return username in upper case if set, otherwise return +not-defined+.

@@ -4,8 +4,8 @@ package com.mrhaki.blog.groovy
 class Sample {
 
     // tag::helloMethod[]
-    String hello() {
-        'Asciidoc rules!'
+    String hello() { //<1>
+        'Asciidoc rules!' //<2>
     }
     // end::helloMethod[]
 

@@ -4,10 +4,19 @@ Glen McCort <gwmccort@gmail.com>
 
 This is the top
 
+== FAQ's
+[qanda]
+Why callouts not rendering as dots?::
+  Need to add `'icons': 'font'` to attributes in build.gradle asciidoctor configuration
+
+One more question::answer
+
 include::../../../asciidoc-ReadMe.adoc[[leveloffset=+1]]
 
 == Examples
-* Asciidoctor Gradle Examples http://danhyun.github.io/asciidoctor-gradle-examples/[documentation] and https://github.com/danhyun/asciidoctor-gradle-examples[github reprository]
+* Asciidoctor Gradle Examples
+** Dan Allen's https://github.com/asciidoctor/asciidoctor-gradle-examples[github] & http://asciidoctor.github.io/asciidoctor-gradle-examples/[outpug]
+** Danny's older http://danhyun.github.io/asciidoctor-gradle-examples/[documentation] and https://github.com/danhyun/asciidoctor-gradle-examples[github reprository]
 
 == Example from Awesome Asciidoctor
 From mrhaki http://mrhaki.blogspot.com/search/label/Awesome%3AAsciidoctor[Awsome Asciidoctor blog]

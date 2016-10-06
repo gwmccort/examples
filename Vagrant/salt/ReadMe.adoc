@@ -26,6 +26,7 @@ List installed packages::
 * https://www.packtpub.com/networking-and-servers/salt-cookbook[Salt Cookbook] from packet publishing
 * https://docs.google.com/document/d/1wiA1AEu50mekxQawKofM5gvCesNC2_7kGo9UFccrquQ/edit[RC Salt Cheat Sheet-gdoc]
 * http://bencane.com/2013/09/03/getting-started-with-saltstack-by-example-automatically-installing-nginx/[Automatically Installing nginx]
+* https://www.youtube.com/user/SaltStack[SaltStack YouTube channel]
 
 == Info
 * proxy for shell to be able to do a `vagrant up` at work

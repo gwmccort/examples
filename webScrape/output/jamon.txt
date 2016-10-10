@@ -7,6 +7,7 @@
 @MountainJam
 @PrettyLights
 @SXMJamON
+@Vulfpeck
 @finkerton
 @nmasi5
 A Hit Of
@@ -33,6 +34,8 @@ Bonnie Prince Billy
 Break Science
 Bruce Hornsby/The Noisemakers
 Budos Band
+Canned Heat
+Captain Beefheart & The Magic Band
 Charles Wright/Watts 103rd Street Rh
 Chris Robinson
 Chris Robinson Brotherhood
@@ -48,6 +51,7 @@ Discover
 Eric Krasno
 Fare Thee Well
 Fruition
+Funkadelic
 Furthur/Trey Anastasio
 GRiZ/Big Gigantic
 GRiZ/Eric Krasno/Brasstracks
@@ -56,17 +60,22 @@ GRiZ/Orlando Napier
 Galactic
 Galactic/Macy Gray
 Gary Clark Jr.
+George Harrison
 God Street Wine
 God Street Wine w/Bob Weir
 Gone Phishin
 Gone Phishin'
 Gov't Mule
+Gov't Mule/Jason Bonham
 Gov't Mule/Marcus King Band
+Grace Potter/Bob Weir
 Grateful Dead
 Grateful Dead/Branford Marsalis
 Greensky Bluegrass
+Hawkwind
 Hezekiah Walker
 Hiatus Kaiyote
+Infamous Stringdusters
 Infamous Stringdusters/Ronnie McCour
 J.J. Cale
 Jack Stratton
@@ -83,12 +92,14 @@ Leftover Salmon
 Lettuce
 Lettuce/Nigel Hall
 Lotus
+Loudon Wainwright III
 Maceo Parker
 Marco Benevento
 Marcus King Band/Warren Haynes
 Matisyahu
 Matisyahu/Mihali
 Medeski Martin & Wood
+Merry Clayton
 Michael Franti
 Michael Franti & Spearhead
 Michael Franti/Donna Rele/Supa Dups
@@ -115,9 +126,11 @@ RAQ
 Railroad Earth
 Ratatat
 Rebelution
+Reed Mathis/Electric Beethoven
 Revivalists
 Roger Waters w/ My Morning Jacket &
 Roll Your Own
+Ron Wood
 Rusted Root
 STS9
 STS9 w/ Dom Lalli
@@ -134,6 +147,7 @@ Stef Scamardo
 Steve Kimock & Friends
 Steve Kimock w/Marco Benevento & Ada
 String Cheese Incident
+String Cheese Incident/Butch Trucks/
 String Cheese Incident/Soul Rebels B
 Superhuman Happiness
 TAUK

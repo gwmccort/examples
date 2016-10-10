@@ -17,6 +17,7 @@
 == PdfBox
 * https://www.javacodegeeks.com/2016/07/apache-pdfbox-2.html[PDFBox 2]
 * https://www.javacodegeeks.com/2016/07/apache-pdfbox-command-line-tools-no-java-coding-required.html[PDFBox Command-line Tools: No Java Coding Required]
+* https://dzone.com/articles/apache-pdfbox-dont-leave-home-without-it?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+dzone%2Fjava[Apache PDFBox. Don’t Leave Home Without It.]
 
 == Auther Arcives
 * http://www.javacodegeeks.com/author/Alex-Staveley/[Alex Staveley]

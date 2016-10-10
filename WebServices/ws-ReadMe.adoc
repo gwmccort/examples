@@ -1,0 +1,14 @@
+= Web Services
+
+== Projects
+* jaxrs - RESTFul web service example
+
+== SOAP
+=== Axis2
+* http://www.journaldev.com/255/axis2-web-services-tutorial[AXIS2 Web Services Tutorial]
+** http://localhost:8080/axis2/
+* https://axis.apache.org/axis2/java/core/docs/quickstartguide.html[Quick start guide]
+* https://gist.github.com/zhouqianli/4345544[gradle generate client classes from wsdl]
+
+== T2D
+* https://axis.apache.org/axis2/java/core/docs/quickstartguide.html[Axis2 quick start guide]

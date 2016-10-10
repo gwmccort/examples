@@ -147,7 +147,6 @@ class XmPlaylistPage extends Page {
  */
 public enum Channels {
 	JAM_ON('29', 'jamon.txt'),
-//	BLUEGRASS('61', 'bluegrass.txt')
 	BLUEGRASS('62', 'bluegrass.txt')
 
 	final String channelNumber

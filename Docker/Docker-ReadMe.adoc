@@ -11,10 +11,14 @@ Glen McCort <gwmccort@gmail.com>
 ** https://github.com/docker/dceu_tutorials
 * https://www.javacodegeeks.com/2016/08/reducing-docker-image-size.html[Reducing Your Docker Image Size]
 * https://github.com/docker/community[docker community on github]
+* https://www.pythian.com/blog/simplify-docker-interactions-bash-aliases/[Simplifying docker interactions with bash aliases]
 
-== Books
+== Docker for Java
+* http://event.on24.com/r.htm?e=1134473&s=1&k=C40B8B017C1B76BC844806F160C75F74[Docker for Java Developers] webinar
+** https://github.com/docker/labs/blob/master/java/readme.adoc
 * http://shop.oreilly.com/product/0636920050872.do[Docker for Java Developers] and https://github.com/arun-gupta/oreilly-docker-book[github repro]
 ** https://blog.jetbrains.com/idea/2016/05/webinar-recording-docker-for-java-developers/[video]
+* http:/docs.docker.com
 
 == Projects
 * cowsay - simple hello world
@@ -30,6 +34,10 @@ Glen McCort <gwmccort@gmail.com>
 * ratpack - create docker container from gradle
 * solr/
 * webapp/
+
+== Tutorials
+* https://blog.docker.com/2016/09/java-development-using-docker/[Java development using docker video]
+** https://github.com/docker/labs[docker labs github repro]
 
 == Issues
 [qanda]

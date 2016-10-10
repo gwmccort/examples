@@ -1,5 +1,8 @@
 = Salt Vagrant Example
 
+== Test Url's
+* http://192.168.50.11[minion1 apache httpd]
+
 == Commands
 [qanda]
 http://serverfault.com/questions/529049/how-do-i-list-all-connected-salt-stack-minions[Minion status]::
@@ -26,6 +29,8 @@ List installed packages::
 * https://www.packtpub.com/networking-and-servers/salt-cookbook[Salt Cookbook] from packet publishing
 * https://docs.google.com/document/d/1wiA1AEu50mekxQawKofM5gvCesNC2_7kGo9UFccrquQ/edit[RC Salt Cheat Sheet-gdoc]
 * http://bencane.com/2013/09/03/getting-started-with-saltstack-by-example-automatically-installing-nginx/[Automatically Installing nginx]
+* https://www.youtube.com/user/SaltStack[SaltStack YouTube channel]
+* https://clinta.github.io/Salt-User-Management/[Salt User Management]
 
 == Info
 * proxy for shell to be able to do a `vagrant up` at work
@@ -62,3 +67,17 @@ end
 ** yum install
 *** start: sudo systemctl start tomcat
 ** http://stackoverflow.com/questions/36370062/using-salt-module-tomcat-for-deploying-war-file[slat deploy war]
+
+== masterless
+
+`salt-call --local test.ping`
+
+* https://docs.saltstack.com/en/latest/topics/tutorials/quickstart.html[SaltStack Masterless Quickstart]
+* https://gist.github.com/akoumjian/4237504[Salt Masterless Quickstart] on github
+
+== Articles
+
+* https://docs.saltstack.com/en/getstarted/config/files.html[managed files]
+** https://www.pythian.com/blog/managing-files-with-saltstack/[managing files with saltstack]
+
+* https://www.msolution.io/2015/10/13/discover-the-power-of-cloud-computing-with-aws-and-salt/[AWS & Salt]

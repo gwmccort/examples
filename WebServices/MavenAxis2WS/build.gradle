@@ -1,0 +1,26 @@
+plugins {
+  id 'war'
+  id 'maven'
+  id 'com.github.ben-manes.versions' version '0.13.0'
+}
+
+group = 'com.ratra.ws'
+version = '1.0.0-SNAPSHOT'
+
+description = """MavenAxis2WS"""
+
+// sourceCompatibility = 1.5
+// targetCompatibility = 1.5
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+    compile group: 'org.apache.axis2', name: 'axis2', version:'1.5.4'
+    compile group: 'org.apache.axis2', name: 'axis2-transport-http', version:'1.5.4'
+    compile group: 'org.apache.axis2', name: 'axis2-transport-local', version:'1.5.4'
+    compile group: 'org.apache.xmlbeans', name: 'xmlbeans', version:'2.4.0'
+    testCompile group: 'junit', name: 'junit', version:'3.8.1'
+    providedCompile group: 'javax.servlet', name: 'servlet-api', version:'2.5'
+}

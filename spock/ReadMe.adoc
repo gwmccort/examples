@@ -9,7 +9,9 @@
 
 == Presentations
 * http://codepipes.com/presentations/spock-vs-junit.pdf[Spock vs Junit]
-
+* http://cur.at/CwiM3YE?m=web[Interesting Nooks and Crannies of Spock]
+** http://cur.at/nIaTuFP?m=web[slides]
+** http://cur.at/9iXzdZ4?m=web[GR8Conf EU Youtube Channel]
 
 == T2D
 * http://www.javacodegeeks.com/tag/spock/[java code geek spock tag]

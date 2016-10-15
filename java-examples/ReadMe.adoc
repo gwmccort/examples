@@ -93,3 +93,4 @@ Glen McCort <gwmccort@gmail.com>
 * http://www.journaldev.com/10703/log4j-appenders-tutorial[Log4j Appenders Tutorial]
 * http://www.journaldev.com/10698/log4j-properties-file-example[log4j.properties File Example]
 * https://examples.javacodegeeks.com/enterprise-java/logback/logback-appender-example/[Logback Appender Example]
+* http://www.baeldung.com/lsf4j-with-log4j2-logback[Introduction to SLF4J]

@@ -33,7 +33,7 @@ class XmPlaylist {
 			bands.addAll(getBands(ch.channelNumber))
 
 			//og.info(bands.toString())
-			
+
 			// update sorted bands to file
 			String fileName = ch.fileName
 			String[] origBands = new File(fileName)

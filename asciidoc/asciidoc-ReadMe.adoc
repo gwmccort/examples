@@ -1,6 +1,6 @@
 // Asciidoc Read Me
 
-= ReadMe
+//= ReadMe
 
 == Presentations
 * https://github.com/madmas/AsciidoctorGradle-Doc2Life[Documentation brought to life: Asciidoctor & Gradle (Greach 2015)],
@@ -12,6 +12,7 @@ find the presentation slides at https://github.com/madmas/AsciidoctorGradle-Doc2
 ** Dan Allen's presentation https://github.com/mojavelinux/decks[GitHub repro] published at http://mojavelinux.github.io/decks/
 * https://docs.google.com/document/d/1CGmYYuID8VM9rv4cEoaKHtfzoe8WoMB7imqrq4cxzGQ/edit[Google doc]
 * http://www.vogella.com/tutorials/AsciiDoc/article.html[vogella's asciidoc tutorial]
+* O'Relly's http://chimera.labs.oreilly.com/books/1230000000065/ch04.html[AsciiDoc 101] from Atlas manual
 
 == Tools
 * Asciidoctor

@@ -84,6 +84,8 @@ Glen McCort <gwmccort@gmail.com>
 * http://www.journaldev.com/12014/opencsv-csvreader-csvwriter-example[OpenCSV CSVReader CSVWriter Example]
 * https://examples.javacodegeeks.com/core-java/java-nio-read-file-example/[Nio Read File Example]
 * http://www.baeldung.com/regular-expressions-java[A Guide To Java Regular Expressions API]
+* https://dzone.com/articles/java-extensible-enum-with-interface?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Extensible Enum With Interface]
+* http://www.baeldung.com/java-nio-selector[Java NIO Selector]
 
 * logging
 ** https://dzone.com/articles/logback-configuration-using-groovy?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[Logback Configuration: Using Groovy]

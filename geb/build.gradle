@@ -2,7 +2,7 @@ plugins {
 	id 'groovy'
 	id 'eclipse'
 	id 'idea'
-	id 'com.github.ben-manes.versions' version '0.12.0'
+	id 'com.github.ben-manes.versions' version '0.13.0'
 	id "com.github.tkruse.groovysh" version "1.0.8"
 	id 'de.aaschmid.cpd' version '0.5'
 }
@@ -13,7 +13,8 @@ repositories {
 }
 
 dependencies {
-	def gebVersion = '0.12.2'
+	// def gebVersion = '0.12.2'
+	def gebVersion = '1.0'
 	def seleniumVersion = '2.48.2'
 
 	//	compile localGroovy()

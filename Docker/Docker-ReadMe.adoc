@@ -12,6 +12,7 @@ Glen McCort <gwmccort@gmail.com>
 * https://www.javacodegeeks.com/2016/08/reducing-docker-image-size.html[Reducing Your Docker Image Size]
 * https://github.com/docker/community[docker community on github]
 * https://www.pythian.com/blog/simplify-docker-interactions-bash-aliases/[Simplifying docker interactions with bash aliases]
+* https://www.javacodegeeks.com/2016/10/build-docker-images-maven-gradle.html[Build Docker Images with Maven and Gradle]
 
 == Docker for Java
 * http://event.on24.com/r.htm?e=1134473&s=1&k=C40B8B017C1B76BC844806F160C75F74[Docker for Java Developers] webinar

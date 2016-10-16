@@ -29,10 +29,10 @@ dependencies {
 	 runtime 'org.slf4j:slf4j-log4j12:1.7.13'
 	 runtime 'log4j:log4j:1.2.17'
 
-	def gebVersion = '0.12.2'
+	// def gebVersion = '0.12.2'
 	compile "org.gebish:geb-core:$gebVersion"
 
-	def seleniumVersion = '2.48.2'
+	// def seleniumVersion = '2.48.2'
 	compile "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
 	compile "org.seleniumhq.selenium:selenium-htmlunit-driver:$seleniumVersion"
 
@@ -66,4 +66,3 @@ task runGebTest(type: JavaExec) {
 	main = 'GebTest'
 	classpath = sourceSets.main.runtimeClasspath
 }
-

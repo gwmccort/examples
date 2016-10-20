@@ -12,3 +12,9 @@
 == References
 * https://www.manning.com/books/visualizing-graph-data[Visualizing Graph Data]
 * examples\groovy-examples\src\main\groovy\gwm\mx\TclExample.groovy - creates a graphviz dot file from matrix relationships
+
+== Graphviz
+* https://blogs.itemis.com/en/editing-graphviz-.dot-files-with-the-gef-dot-editor[Editing Graphviz *.dot files with the GEF DOT Editor]
+
+== Neo4j
+* Semantic PDM using Neo4j https://neo4j.com/blog/semantic-pdm-graph-data-model-schleich/[video]

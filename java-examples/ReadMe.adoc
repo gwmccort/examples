@@ -1,10 +1,10 @@
-= Java Examples
-Glen McCort <gwmccort@gmail.com>
 
-== Examples
+== Java Examples
+
+=== Examples
 * gwm.nio.WalkFileTree - Shows how to use nio file visitor, guava multi-map and csv file writer.
 
-== Articles
+=== Articles
 * http://javarticles.com/2015/11/java-file-compression-example.html[File Compression] - com.javarticles.io.FileCompressionExample
 * http://javarticles.com/2015/11/java-decompressing-files-example.html[Decompressing Files] - com.javarticles.io.DecompressFile
 * http://examples.javacodegeeks.com/core-java/junit/junit-disable-test-example/[JUnit Disable Test Example]
@@ -15,27 +15,27 @@ Glen McCort <gwmccort@gmail.com>
 * https://www.javacodegeeks.com/2016/04/parameterless-generic-method-antipattern.html[The Parameterless Generic Method Antipattern] - gwm.lang.Scanner
 
 
-=== Database
+==== Database
 * http://www.javatips.net/blog/2014/07/h2-in-memory-database-example[H2 In-Memory] - gwm.h2.H2MemoryDatabaseExample.BasicParserExample
 * http://www.mkyong.com/spring/spring-embedded-database-examples/[Spring embedded database] - T2D
 * https://www.javacodegeeks.com/2016/04/using-jinq-jpa-h2.html[Using JINQ with JPA and H2]
 ** https://dzone.com/articles/presentation-and-use-h2[Presentation and Use of H2 Database Engine]
 * http://neo4j.com/blog/neo4j-video-tutorials/[The Easiest Way to Learn Neo4j: Video Tutorials]
 
-=== Puzzlers
+==== Puzzlers
 * http://www.javapuzzlers.com/[Java Puzzlers] Traps, Pitfalls, and Corner Cases By Joshua Bloch and Neal Gafter
 ** http://cs.fit.edu/~ryan/cse4051/java-puzzlers/[examples]
-* https://codexplo.wordpress.com/2015/11/14/why-1000-1000-returns-false-but-100-100-returns-true-in-java/[Why 100==100 returns true]
+* https://codexplo.wordpress.com/2015/11/14/why-1000-1000-returns-false-but-100-100-returns-true-in-java/[Why 100===100 returns true]
 
-=== Tools
+==== Tools
 * https://dzone.com/articles/jdeps-simple-dependency-analysis?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[JDeps: Simple Dependency Analysis]
-=== Testing
+==== Testing
 * http://javarticles.com/2016/01/junit-parametric-testing-example.html[JUnit Parametric Testing Example]
 
-=== Authors
+==== Authors
 * Java Code Geeks https://www.javacodegeeks.com/author/Lukas-Eder/[Lukas Eder] creator of jOOQ
 
-== T2D
+=== T2D
 * http://www.yegor256.com/2016/04/05/printers-instead-of-getters.html[Printers Instead of Getters] - several outputs
 * https://www.javacodegeeks.com/2016/04/2-rookie-java-constants-enums-pitfalls.html[Java Constants and Enums Pitfalls]
 * http://www.javacodegeeks.com/2015/11/tutorial-logging-tests.html[logging during tests]

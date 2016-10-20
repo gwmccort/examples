@@ -1,3 +1,4 @@
+
 == Groovy Examples
 
 === Resources
@@ -43,12 +44,12 @@
 ==== Misc
 * https://tedvinke.wordpress.com/2015/09/25/avoid-nullpointerexception-safe-navigation-with-groovy/[Avoid NullPointerException: Safe Navigation with Groovy]
 
-== Auther Arcives
+=== Auther Arcives
 * http://mrhaki.blogspot.com/search/label/Groovy%3AGoodness[mrhaki's Groovy Goodness]
 * http://www.javacodegeeks.com/author/Alex-Staveley/[Alex Staveley]
 * http://examples.javacodegeeks.com/author/huseyin-babal/[Huseyin Babal]
 
-== T2D
+=== T2D
 * https://dzone.com/articles/how-to-debug-groovy-script-from-shell?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava[How to Debug a Groovy Script From Shell]
 * *Static compilation* http://java-performance.info/static-code-compilation-groovy-2-0/[Static code compilation in Groovy 2.0]
 * https://examples.javacodegeeks.com/jvm-languages/groovy/groovy-json-example/[Json Example]

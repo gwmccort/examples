@@ -1,13 +1,11 @@
 = Examples
 Glen McCort <gwmccort@gmail.com>
 
-// include::../../../ReadMe.adoc[]
 include::{projDir}/ReadMe.adoc[]
-
-== groovy examples
 include::{projDir}/groovy-examples/ReadMe.adoc[]
+include::{projDir}/java-examples/ReadMe.adoc[]
 
-== Miscellaneous Topics
+== #Miscellaneous Topics#
 
 === JavaScript
 * http://jsforcats.com/[JavaScript for cats]
